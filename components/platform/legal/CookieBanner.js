@@ -67,10 +67,10 @@ export default function CookieBanner(props) {
             body: [
               <Section alignItems={isMobile || isTablet ? "flex-start" : "center"} flexDirection={isMobile || isTablet ? "column" : "row"} gap="1rem" justifyContent={isMobile || isTablet ? "flex-start" : "space-between"} key="content" padding="0px">
                 <Text color="#0f172a" text={cookieBanner.text[language]} />
-                <Section flexDirection="row" gap="0.5rem" key="actions" padding="0px" width="auto">
-                  <Button onClick={() => rejectAll()} text={cookieBanner.reject[language]} />
-                  <Button onClick={() => acceptAll()} text={cookieBanner.acceptAll[language]} theme="primary" />
-                  <Button onClick={() => setShowModal(true)} text={cookieBanner.preferences[language]} />
+                <Section flexDirection="row" gap="0.5rem" key="actions" padding="0px" width={isMobile ? "100%" : "auto"}>
+                  <Button fontSize={isMobile ? "12px" : "16px"} onClick={() => rejectAll()} text={cookieBanner.reject[language]} width={isMobile ? "100%" : "auto"} />
+                  <Button fontSize={isMobile ? "12px" : "16px"} onClick={() => acceptAll()} text={cookieBanner.acceptAll[language]} theme="primary" width={isMobile ? "100%" : "auto"} />
+                  <Button fontSize={isMobile ? "12px" : "16px"} onClick={() => setShowModal(true)} text={cookieBanner.preferences[language]} width={isMobile ? "100%" : "auto"} />
                 </Section>
               </Section>,
             ],
