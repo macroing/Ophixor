@@ -18,6 +18,7 @@ import { useLanguage } from "@/context/language";
 
 import changeLog from "@/ChangeLog.json" with { type: "json" };
 import platform from "@/definitions/platform-resources.json" with { type: "json" };
+import platformData from "@/definitions/platform-data.json" with { type: "json" };
 
 import importedStyles from "./page.module.css";
 
@@ -67,33 +68,33 @@ export default function ChangeLogPage(props) {
                                 <Icon icon={getBadgeIcon(entry.type)} size={11} style={{ color: "inherit" }} /> {getBadgeText(entry.type, language)}
                               </Badge>
                             </Section>
-                            {entry.component && <Text color="#64748b" fontSize="0.85rem" text={entry.component?.[language] ?? entry.component} />}
+                            {entry.component && <Text color="#64748b" fontSize="0.85rem" text={platformData.component.types[entry.component]?.label?.[language] ?? entry.component} />}
                             <Text color="#475569" text={entry.description?.[language] ?? entry.description} />
                             {entry.meta?.actions && (
                               <Section flexDirection="row" flexWrap="wrap" gap="0.4rem" padding="0.5rem 0 0 0">
-                                {entry.meta.actions.map((action) => (
-                                  <Badge backgroundColor="#e0f2fe" color="#0369a1" fontSize="0.7rem" key={action?.[language] ?? action} text={action?.[language] ?? action} />
+                                {entry.meta.actions.map((action, actionIndex) => (
+                                  <Badge backgroundColor="#e0f2fe" color="#0369a1" fontSize="0.7rem" key={action + "-" + actionIndex} text={platformData.action.types[action]?.label?.[language] ?? action} />
                                 ))}
                               </Section>
                             )}
                             {entry.meta?.expressions && (
                               <Section flexDirection="row" flexWrap="wrap" gap="0.4rem" padding="0.5rem 0 0 0">
-                                {entry.meta.expressions.map((expression) => (
-                                  <Badge backgroundColor="#e0f2fe" color="#0369a1" fontSize="0.7rem" key={expression?.[language] ?? expression} text={expression?.[language] ?? expression} />
+                                {entry.meta.expressions.map((expression, expressionIndex) => (
+                                  <Badge backgroundColor="#e0f2fe" color="#0369a1" fontSize="0.7rem" key={expression + "-" + expressionIndex} text={platformData.expression.types[expression]?.label?.[language] ?? expression} />
                                 ))}
                               </Section>
                             )}
                             {entry.meta?.props && (
                               <Section flexDirection="row" flexWrap="wrap" gap="0.4rem" padding="0.5rem 0 0 0">
-                                {entry.meta.props.map((prop) => (
-                                  <Badge backgroundColor="#f1f5f9" color="#334155" fontSize="0.7rem" key={prop?.[language] ?? prop} text={prop?.[language] ?? prop} />
+                                {entry.meta.props.map((prop, propIndex) => (
+                                  <Badge backgroundColor="#f1f5f9" color="#334155" fontSize="0.7rem" key={prop + "-" + propIndex} text={platformData.component.props[prop]?.[language] ?? prop} />
                                 ))}
                               </Section>
                             )}
                             {entry.meta?.variants && (
                               <Section flexDirection="row" flexWrap="wrap" gap="0.4rem" padding="0.5rem 0 0 0">
-                                {entry.meta.variants.map((variant) => (
-                                  <Badge backgroundColor="#eef2ff" color="#3730a3" fontSize="0.7rem" key={variant?.[language] ?? variant} text={variant?.[language] ?? variant} />
+                                {entry.meta.variants.map((variant, variantIndex) => (
+                                  <Badge backgroundColor="#eef2ff" color="#3730a3" fontSize="0.7rem" key={variant + "-" + variantIndex} text={platformData.component.variants[variant]?.[language] ?? variant} />
                                 ))}
                               </Section>
                             )}

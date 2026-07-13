@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-13",
+    "entries": [
+      {
+        "id": "2026-07-13-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
     "date": "2026-07-12",
     "entries": [
       {
@@ -1993,10 +2005,7 @@
       {
         "id": "2026-03-27-fix-alert",
         "type": "fix",
-        "component": {
-          "en": "Alert",
-          "sv": "Meddelande"
-        },
+        "component": "Alert",
         "title": {
           "en": "Fix labels from Swedish to English",
           "sv": "Fixat etiketter på svenska till engelska"
