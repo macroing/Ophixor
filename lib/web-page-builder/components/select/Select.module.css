@@ -1,0 +1,165 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.select {
+  --select-background-color: var(--pc-semantic-surface-base);
+  --select-border-color: var(--pc-semantic-border-default);
+  --select-border-radius: 8px;
+  --select-border-width: 1px;
+  --select-box-shadow-focus: var(--pc-semantic-focus-ring);
+  --select-color: var(--pc-semantic-text-primary);
+  --select-height: auto;
+  --select-max-height: none;
+  --select-max-width: none;
+  --select-min-height: 44px;
+  --select-min-width: auto;
+  --select-padding: 0.6rem 0.75rem;
+  --select-width: 100%;
+
+  background-color: var(--select-background-color);
+  border: var(--select-border-width) solid var(--select-border-color);
+  border-radius: var(--select-border-radius);
+  color: var(--select-color);
+  cursor: auto;
+  display: flex;
+  height: var(--select-height);
+  max-height: var(--select-max-height);
+  max-width: var(--select-max-width);
+  min-height: var(--select-min-height);
+  min-width: var(--select-min-width);
+  padding: var(--select-padding);
+  position: relative;
+  width: var(--select-width);
+}
+
+.select > .arrow {
+  color: var(--select-color);
+  margin-left: 8px;
+}
+
+.select > .options {
+  background-color: var(--select-background-color);
+  border: var(--select-border-width) solid var(--select-border-color);
+  border-radius: var(--select-border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  left: 0;
+  max-height: 300px;
+  min-width: 100%;
+  overflow-y: auto;
+  position: absolute;
+  scrollbar-color: #374151 #1f2937;
+  scrollbar-width: thin;
+  top: 100%;
+  width: auto;
+  z-index: 1000;
+}
+
+.select > .options::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.select > .options::-webkit-scrollbar-track {
+  background-color: #111827;
+}
+
+.select > .options::-webkit-scrollbar-thumb {
+  background-color: #374151;
+  border-radius: 6px;
+}
+
+.select > .options::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+
+.select > .options::-webkit-scrollbar-thumb:active {
+  background-color: #6b7280;
+}
+
+.select > .options > .option {
+  color: var(--select-color);
+  cursor: pointer;
+  min-width: 100%;
+  opacity: 0.75;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.select > .options > .option:hover {
+  background: var(--select-background-color);
+  opacity: 1;
+}
+
+.select > .options > .option.option_selected {
+  background: var(--select-background-color);
+}
+
+.select > .trigger {
+  align-items: center;
+  background: var(--select-background-color);
+  border: var(--select-border-width) solid var(--select-border-color);
+  border-radius: var(--select-border-radius);
+  color: var(--select-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.select > .trigger:hover {
+  background: var(--select-background-color);
+  border-color: var(--select-border-color);
+}
+
+.select:active {
+  cursor: grabbing;
+}
+
+.select:hover {
+  border-color: var(--select-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.select:focus {
+  border-color: var(--select-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.select:focus-visible {
+  border-color: var(--select-border-color);
+  box-shadow: var(--select-box-shadow-focus);
+}
+
+.select.select_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.select.select_content_only {
+  cursor: auto;
+}
+
+.select.select_content_only:hover {
+  outline: none;
+}
+
+.select.select_content_only:focus {
+  border-color: var(--select-border-color);
+  outline: none;
+}
+
+.select.select_content_only:focus-visible {
+  border-color: var(--select-border-color);
+  box-shadow: var(--select-box-shadow-focus);
+}
+
+.select.select_content_only:read-only {
+  border-color: var(--select-border-color);
+  box-shadow: none;
+  outline: none;
+}

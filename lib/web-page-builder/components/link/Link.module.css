@@ -1,0 +1,71 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.link {
+  --link-background-color: transparent;
+  --link-background-color-hover: transparent;
+  --link-border-color: transparent;
+  --link-border-color-hover: transparent;
+  --link-border-radius: 0px;
+  --link-border-width: 0px;
+  --link-color: var(--pc-semantic-text-primary);
+  --link-color-hover: var(--pc-semantic-interactive-link-hover);
+  --link-cursor: pointer;
+  --link-cursor-hover: pointer;
+  --link-font-family: inherit;
+  --link-font-size: 1rem;
+  --link-font-style: normal;
+  --link-font-weight: normal;
+  --link-line-height: normal;
+  --link-padding: 0px;
+  --link-text-align: left;
+  --link-text-decoration: none;
+  --link-text-decoration-hover: none;
+  --link-transition: none;
+
+  background-color: var(--link-background-color);
+  border: var(--link-border-width) solid var(--link-border-color);
+  border-radius: var(--link-border-radius);
+  color: var(--link-color);
+  cursor: var(--link-cursor);
+  font-family: var(--link-font-family);
+  font-size: var(--link-font-size);
+  font-style: var(--link-font-style);
+  font-weight: var(--link-font-weight);
+  line-height: var(--link-line-height);
+  padding: var(--link-padding);
+  position: relative;
+  text-align: var(--link-text-align);
+  text-decoration: var(--link-text-decoration);
+  transition: var(--link-transition);
+}
+
+.link:active {
+  cursor: grabbing;
+}
+
+.link:hover {
+  background-color: var(--link-background-color-hover);
+  border-color: var(--link-border-color-hover);
+  color: var(--link-color-hover);
+  cursor: var(--link-cursor-hover);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+  text-decoration: var(--link-text-decoration-hover);
+}
+
+.link.link_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.link.link_content_only {
+  cursor: var(--link-cursor);
+}
+
+.link.link_content_only:hover {
+  cursor: var(--link-cursor-hover);
+  outline: none;
+}

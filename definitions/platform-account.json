@@ -1,0 +1,74 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "account": {
+    "title": {
+      "en": "Account",
+      "sv": "Konto"
+    },
+    "accountInformation": {
+      "en": "Account information",
+      "sv": "Kontoinformation"
+    },
+    "email": {
+      "en": "E-mail address",
+      "sv": "E-postadress"
+    },
+    "plan": {
+      "en": "Plan",
+      "sv": "Plan"
+    },
+    "changePasswordTitle": {
+      "en": "Change password",
+      "sv": "Ändra lösenord"
+    },
+    "currentPassword": {
+      "en": "Current password",
+      "sv": "Nuvarande lösenord"
+    },
+    "newPassword": {
+      "en": "New password",
+      "sv": "Nytt lösenord"
+    },
+    "newPasswordConfirm": {
+      "en": "Confirm new password",
+      "sv": "Bekräfta nytt lösenord"
+    },
+    "changePasswordSubmit": {
+      "en": "Change password",
+      "sv": "Ändra lösenord"
+    },
+    "deleteAccountTitle": {
+      "en": "Delete account",
+      "sv": "Radera konto"
+    },
+    "deleteAccountText": {
+      "en": "Delete your account permanently. This action cannot be undone.",
+      "sv": "Radera ditt konto permanent. Det går inte att ångra denna åtgärd."
+    },
+    "deleteAccountButton": {
+      "en": "Delete account",
+      "sv": "Radera konto"
+    },
+    "deleteAccountDialogTitle": {
+      "en": "Delete account",
+      "sv": "Radera konto"
+    },
+    "deleteAccountDialogText": {
+      "en": "Are you sure you want to delete your account?",
+      "sv": "Är du säker på att du vill radera ditt konto?"
+    },
+    "deleteAccountDialogCancel": {
+      "en": "Cancel",
+      "sv": "Avbryt"
+    },
+    "deleteAccountDialogDelete": {
+      "en": "Delete",
+      "sv": "Radera"
+    }
+  }
+}

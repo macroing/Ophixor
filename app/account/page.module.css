@@ -1,0 +1,38 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.grid {
+  grid-template-columns: 1fr;
+}
+
+.header {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (min-width: 769px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

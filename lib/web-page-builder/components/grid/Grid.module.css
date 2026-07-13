@@ -1,0 +1,139 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.grid {
+  --grid-align-content: stretch;
+  --grid-align-items: normal;
+  --grid-background-color: transparent;
+  --grid-border-color: transparent;
+  --grid-border-radius: 0px;
+  --grid-border-width: 0px;
+  --grid-gap: 1rem;
+  --grid-grid-template-columns: 1fr;
+  --grid-height: auto;
+  --grid-justify-content: flex-start;
+  --grid-justify-items: legacy;
+  --grid-margin: 0px;
+  --grid-max-height: none;
+  --grid-max-width: none;
+  --grid-overflow: visible;
+  --grid-padding: 1rem;
+  --grid-width: 100%;
+
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  background-color: var(--grid-background-color);
+  border: var(--grid-border-width) solid var(--grid-border-color);
+  border-radius: var(--grid-border-radius);
+  cursor: auto;
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: var(--grid-grid-template-columns);
+  height: var(--grid-height);
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  margin: var(--grid-margin);
+  max-height: var(--grid-max-height);
+  max-width: var(--grid-max-width);
+  overflow: var(--grid-overflow);
+  padding: var(--grid-padding);
+  position: relative;
+  width: var(--grid-width);
+}
+
+.grid.grid_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  display: flex;
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px #0f172a;
+}
+
+.grid:active {
+  cursor: grabbing;
+}
+
+.grid:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.grid.grid_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.grid.grid_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.grid.grid_drag_over.grid_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.grid.grid_drag_over.grid_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.grid.grid_drag_over.grid_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.grid.grid_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.grid > .grid_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.grid.grid_content_only {
+  cursor: auto;
+}
+
+.grid.grid_content_only:hover {
+  outline: none;
+}

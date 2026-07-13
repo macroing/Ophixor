@@ -1,0 +1,134 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.radio_group {
+  --radio-group-background-color-option: var(--pc-semantic-surface-base);
+  --radio-group-background-color-option-checked: var(--pc-foundation-color-primary-50);
+  --radio-group-background-color-option-icon: var(--pc-semantic-surface-base);
+  --radio-group-background-color-option-icon-circle: var(--pc-semantic-interactive-primary);
+  --radio-group-border-color-option: var(--pc-foundation-color-gray-300);
+  --radio-group-border-color-option-checked: var(--pc-semantic-interactive-primary);
+  --radio-group-border-color-option-icon: var(--pc-foundation-color-gray-400);
+  --radio-group-border-color-option-icon-checked: var(--pc-semantic-interactive-primary);
+  --radio-group-color-label: var(--pc-semantic-text-primary);
+  --radio-group-color-label-required: var(--pc-foundation-color-danger-600);
+  --radio-group-color-option: var(--pc-semantic-text-primary);
+
+  border: none;
+  cursor: auto;
+  margin: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.radio_group:active {
+  cursor: grabbing;
+}
+
+.radio_group:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.radio_group.radio_group_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.radio_group.radio_group_content_only {
+  cursor: auto;
+}
+
+.radio_group.radio_group_content_only:hover {
+  outline: none;
+}
+
+.radio_group > .label {
+  color: var(--radio-group-color-label);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.radio_group > .label > .label_required {
+  color: var(--radio-group-color-label-required);
+  margin-left: 0.25rem;
+}
+
+.radio_group > .radio_group_options {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.radio_group > .radio_group_options > .radio_group_option {
+  align-items: center;
+  background-color: var(--radio-group-background-color-option);
+  border: 1px solid var(--radio-group-border-color-option);
+  border-radius: 8px;
+  color: var(--radio-group-color-option);
+  cursor: pointer;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.radio_group > .radio_group_options > .radio_group_option > .icon {
+  background-color: var(--radio-group-background-color-option-icon);
+  border: 2px solid var(--radio-group-border-color-option-icon);
+  border-radius: 50%;
+  display: grid;
+  flex-shrink: 0;
+  height: 16px;
+  place-items: center;
+  width: 16px;
+}
+
+.radio_group > .radio_group_options > .radio_group_option > .icon > .circle {
+  background-color: var(--radio-group-background-color-option-icon-circle);
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.radio_group > .radio_group_options > .radio_group_option > .label {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.radio_group > .radio_group_options > .radio_group_option.radio_group_option_checked {
+  background-color: var(--radio-group-background-color-option-checked);
+  border-color: var(--radio-group-border-color-option-checked);
+}
+
+.radio_group > .radio_group_options > .radio_group_option.radio_group_option_checked > .icon {
+  border-color: var(--radio-group-border-color-option-icon-checked);
+}
+
+.radio_group > .radio_group_options > .radio_group_option.radio_group_option_disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.radio_group > .radio_group_options > .radio_group_option > input {
+  margin-right: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.radio_group.radio_group_horizontal > .radio_group_options {
+  display: flex;
+}
+
+.radio_group.radio_group_horizontal > .radio_group_options > .radio_group_option {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0px;
+}

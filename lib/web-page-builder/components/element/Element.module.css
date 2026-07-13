@@ -1,0 +1,101 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.element {
+}
+
+.element.element_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.element:active {
+  cursor: grabbing;
+}
+
+.element:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.element.element_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.element.element_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.element.element_drag_over.element_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.element.element_drag_over.element_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.element.element_drag_over.element_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.element.element_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.element > .element_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.element.element_content_only {
+  cursor: auto;
+}
+
+.element.element_content_only:hover {
+  outline: none;
+}

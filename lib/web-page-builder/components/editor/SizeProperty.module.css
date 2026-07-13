@@ -1,0 +1,18 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.size_property {
+  align-items: start;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+
+.size_property > .inline_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

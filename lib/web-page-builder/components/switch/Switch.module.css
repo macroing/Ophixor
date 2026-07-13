@@ -1,0 +1,92 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.switch {
+  --switch-background-color: var(--pc-semantic-surface-base);
+  --switch-background-color-active: var(--pc-semantic-interactive-primary);
+  --switch-border-color: var(--pc-semantic-border-default);
+  --switch-height: auto;
+  --switch-max-height: none;
+  --switch-max-width: none;
+  --switch-min-height: auto;
+  --switch-min-width: auto;
+  --switch-transition: 0.25s ease;
+  --switch-width: auto;
+
+  align-items: center;
+  cursor: auto;
+  display: inline-flex;
+  gap: 0.5rem;
+  height: var(--switch-height);
+  max-height: var(--switch-max-height);
+  max-width: var(--switch-max-width);
+  min-height: var(--switch-min-height);
+  min-width: var(--switch-min-width);
+  position: relative;
+  width: var(--switch-width);
+}
+
+.switch:active {
+  cursor: grabbing;
+}
+
+.switch:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.switch.switch_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.switch.switch_content_only {
+  cursor: auto;
+}
+
+.switch.switch_content_only:hover {
+  outline: none;
+}
+
+.switch > input {
+  display: none;
+}
+
+.switch > .toggle {
+  background: var(--switch-border-color);
+  border-radius: 999px;
+  cursor: pointer;
+  height: 24px;
+  max-height: 24px;
+  max-width: 42px;
+  min-height: 24px;
+  min-width: 42px;
+  position: relative;
+  width: 42px;
+}
+
+.switch > .toggle::after {
+  background: var(--switch-background-color);
+  border-radius: 50%;
+  content: "";
+  height: 18px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: var(--switch-transition);
+  width: 18px;
+}
+
+.switch > input:checked + .toggle {
+  background: var(--switch-background-color-active);
+}
+
+.switch > input:checked + .toggle::after {
+  transform: translateX(18px);
+}
+
+.switch.switch_disabled > .toggle {
+  cursor: default;
+}

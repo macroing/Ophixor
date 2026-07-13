@@ -1,0 +1,1356 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "websiteAdmin": {
+    "backToWebsites": {
+      "en": "Back to websites",
+      "sv": "Tillbaka till webbplatser"
+    },
+    "navigation": {
+      "overview": {
+        "en": "Overview",
+        "sv": "Översikt"
+      },
+      "pages": {
+        "en": "Pages",
+        "sv": "Sidor"
+      },
+      "media": {
+        "en": "Media",
+        "sv": "Media"
+      },
+      "templates": {
+        "en": "Templates",
+        "sv": "Mallar"
+      },
+      "models": {
+        "en": "Models",
+        "sv": "Modeller"
+      },
+      "integrations": {
+        "en": "Integrations",
+        "sv": "Integrationer"
+      },
+      "collaborators": {
+        "en": "Collaborators",
+        "sv": "Samarbetspartners"
+      },
+      "analytics": {
+        "en": "Analytics",
+        "sv": "Analys"
+      },
+      "settings": {
+        "en": "Settings",
+        "sv": "Inställningar"
+      }
+    },
+    "notFound": {
+      "title": {
+        "en": "404 - Page not found",
+        "sv": "404 - Sidan hittades inte"
+      },
+      "text": {
+        "en": "The requested page could not be found.",
+        "sv": "Sidan du försökte besöka kunde inte hittas."
+      }
+    },
+    "accessibilitySettingsForm": {
+      "saveSuccess": {
+        "en": "Your website has been saved.",
+        "sv": "Din webbplats har sparats."
+      },
+      "saveFailure": {
+        "en": "Your website could not be saved.",
+        "sv": "Din webbplats kunde inte sparas."
+      },
+      "title": {
+        "en": "Accessibility",
+        "sv": "Tillgänglighet"
+      },
+      "status": {
+        "en": "Status",
+        "sv": "Status"
+      },
+      "active": {
+        "en": "Active",
+        "sv": "Aktiv"
+      },
+      "disabled": {
+        "en": "Disabled",
+        "sv": "Inaktiverad"
+      },
+      "draft": {
+        "en": "Draft",
+        "sv": "Utkast"
+      },
+      "visibility": {
+        "en": "Visibility",
+        "sv": "Synlighet"
+      },
+      "private": {
+        "en": "Private",
+        "sv": "Privat"
+      },
+      "public": {
+        "en": "Public",
+        "sv": "Publik"
+      },
+      "unlisted": {
+        "en": "Unlisted",
+        "sv": "Ej listad"
+      },
+      "save": {
+        "en": "Save",
+        "sv": "Spara"
+      },
+      "saving": {
+        "en": "Saving...",
+        "sv": "Sparar..."
+      }
+    },
+    "createForm": {
+      "title": {
+        "en": "Create new website",
+        "sv": "Skapa ny webbplats"
+      },
+      "text": {
+        "en": "Start building a new website. You can customize everything except the code later.",
+        "sv": "Börja bygg på en ny webbplats. Du kan ändra allt förutom koden senare."
+      },
+      "name": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "namePlaceholder": {
+        "en": "For example: My Company Website",
+        "sv": "T.ex. Min Företagssida"
+      },
+      "description": {
+        "en": "Description",
+        "sv": "Beskrivning"
+      },
+      "descriptionPlaceholder": {
+        "en": "An optional description",
+        "sv": "En valfri beskrivning"
+      },
+      "code": {
+        "en": "Code",
+        "sv": "Kod"
+      },
+      "codePlaceholder": {
+        "en": "my-company-website",
+        "sv": "min-företagssida"
+      },
+      "url": {
+        "en": "Link",
+        "sv": "Länk"
+      },
+      "urlPlaceholder": {
+        "en": "https://ophixor.com/website-admin/my-company-website",
+        "sv": "https://ophixor.com/website-admin/min-företagssida"
+      },
+      "create": {
+        "en": "Create website",
+        "sv": "Skapa webbplats"
+      },
+      "creating": {
+        "en": "Creating website...",
+        "sv": "Skapar webbplats..."
+      }
+    },
+    "deleteForm": {
+      "title": {
+        "en": "Delete website",
+        "sv": "Radera webbplatsen"
+      },
+      "text": {
+        "en": "By deleting this website you will also permanently delete all pages, media, templates, models, data, integrations, collaborators and user accounts that are associated with it. The platform user accounts associated with your collaborators will of course not be deleted.",
+        "sv": "När du raderar webbplatsen kommer du även radera alla sidor, media, mallar, modeller, data, integrationer, samarbetspartners och användarkonton som är associerade med den. Plattformsanvändarkontona som är associerade med dina samarbetspartners kommer givetvis inte bli raderade."
+      },
+      "button": {
+        "en": "Delete website",
+        "sv": "Radera webbplatsen"
+      },
+      "dialogTitle": {
+        "en": "Delete website",
+        "sv": "Radera webbplatsen"
+      },
+      "dialogText": {
+        "en": "Are you sure you want to delete the website?",
+        "sv": "Är du säker på att du vill radera webbplatsen?"
+      },
+      "dialogCancel": {
+        "en": "Cancel",
+        "sv": "Avbryt"
+      },
+      "dialogDelete": {
+        "en": "Delete",
+        "sv": "Radera"
+      }
+    },
+    "generalSettingsForm": {
+      "saveSuccess": {
+        "en": "Your website has been saved.",
+        "sv": "Din webbplats har sparats."
+      },
+      "saveFailure": {
+        "en": "Your website could not be saved.",
+        "sv": "Din webbplats kunde inte sparas."
+      },
+      "title": {
+        "en": "General information",
+        "sv": "Generell information"
+      },
+      "name": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "namePlaceholder": {
+        "en": "For example: My Company Website",
+        "sv": "T.ex. Min Företagssida"
+      },
+      "description": {
+        "en": "Description",
+        "sv": "Beskrivning"
+      },
+      "descriptionPlaceholder": {
+        "en": "An optional description",
+        "sv": "En valfri beskrivning"
+      },
+      "defaultLanguage": {
+        "en": "Default language",
+        "sv": "Standardspråk"
+      },
+      "english": {
+        "en": "English",
+        "sv": "Engelska"
+      },
+      "swedish": {
+        "en": "Swedish",
+        "sv": "Svenska"
+      },
+      "save": {
+        "en": "Save",
+        "sv": "Spara"
+      },
+      "saving": {
+        "en": "Saving...",
+        "sv": "Sparar..."
+      }
+    },
+    "integrationForm": {
+      "generalInformationTitle": {
+        "en": "Integration",
+        "sv": "Integration"
+      },
+      "namePlaceholder": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "descriptionPlaceholder": {
+        "en": "Description",
+        "sv": "Beskrivning"
+      },
+      "baseUrlPlaceholder": {
+        "en": "Base URL (https://api.example.com)",
+        "sv": "Utgångs-URL (https://api.example.com)"
+      },
+      "authenticationTitle": {
+        "en": "Authentication",
+        "sv": "Autentisering"
+      },
+      "none": {
+        "en": "None",
+        "sv": "Ingen"
+      },
+      "apiKey": {
+        "en": "API key",
+        "sv": "API-nyckel"
+      },
+      "apiKeyPlaceholder": {
+        "en": "API key",
+        "sv": "API-nyckel"
+      },
+      "apiKeyHeaderPlaceholder": {
+        "en": "Header (e.g. x-api-key)",
+        "sv": "Huvud (t.ex. x-api-nyckel)"
+      },
+      "basic": {
+        "en": "Basic",
+        "sv": "Grundläggande"
+      },
+      "basicUsernamePlaceholder": {
+        "en": "Username",
+        "sv": "Användarnamn"
+      },
+      "basicPasswordPlaceholder": {
+        "en": "Password",
+        "sv": "Lösenord"
+      },
+      "bearer": {
+        "en": "Bearer",
+        "sv": "Bärare"
+      },
+      "bearerTokenPlaceholder": {
+        "en": "Bearer token",
+        "sv": "Bärar-token"
+      },
+      "endpointsTitle": {
+        "en": "Endpoints",
+        "sv": "Slutpunkter"
+      },
+      "addEndpoint": {
+        "en": "Add endpoint",
+        "sv": "Lägg till slutpunkt"
+      },
+      "saveIntegration": {
+        "en": "Save integration",
+        "sv": "Spara integration"
+      },
+      "createIntegration": {
+        "en": "Create integration",
+        "sv": "Skapa integration"
+      },
+      "hideAdvanced": {
+        "en": "Hide advanced",
+        "sv": "Dölj avancerat"
+      },
+      "showAdvanced": {
+        "en": "Show advanced",
+        "sv": "Visa avancerat"
+      },
+      "newEndpoint": {
+        "en": "New endpoint",
+        "sv": "Ny slutpunkt"
+      },
+      "keyPlaceholder": {
+        "en": "Key",
+        "sv": "Nyckel"
+      },
+      "request": {
+        "en": "Request",
+        "sv": "Förfrågan"
+      },
+      "headers": {
+        "en": "Headers",
+        "sv": "Huvud"
+      },
+      "query": {
+        "en": "Query",
+        "sv": "Parameterlista"
+      },
+      "body": {
+        "en": "Body",
+        "sv": "Innehåll"
+      },
+      "cache": {
+        "en": "Cache",
+        "sv": "Cache"
+      },
+      "ttlPlaceholder": {
+        "en": "TTL",
+        "sv": "TTL"
+      },
+      "hideEndpointTest": {
+        "en": "Hide endpoint test",
+        "sv": "Dölj slutpunktstest"
+      },
+      "showEndpointTest": {
+        "en": "Show endpoint test",
+        "sv": "Visa slutpunkstest"
+      },
+      "fields": {
+        "en": "fields",
+        "sv": "fält"
+      },
+      "pathPlaceholder": {
+        "en": "/users",
+        "sv": "/användare"
+      },
+      "edit": {
+        "body": {
+          "en": "Edit body schema",
+          "sv": "Redigera schemat för innehållet"
+        },
+        "headers": {
+          "en": "Edit headers schema",
+          "sv": "Redigera schemat för huvudet"
+        },
+        "query": {
+          "en": "Edit query schema",
+          "sv": "Redigera schemat för parameterlistan"
+        }
+      }
+    },
+    "endpointTester": {
+      "title": {
+        "en": "Test endpoint",
+        "sv": "Testa slutpunkt"
+      },
+      "headers": {
+        "en": "Headers",
+        "sv": "Huvud"
+      },
+      "query": {
+        "en": "Query",
+        "sv": "Parameterlista"
+      },
+      "body": {
+        "en": "Body",
+        "sv": "Innehåll"
+      },
+      "running": {
+        "en": "Running...",
+        "sv": "Kör..."
+      },
+      "run": {
+        "en": "Run request",
+        "sv": "Kör förfrågan"
+      },
+      "addItem": {
+        "en": "Add item",
+        "sv": "Lägg till föremål"
+      }
+    },
+    "jsonSchemaEditorDialog": {
+      "cancel": {
+        "en": "Cancel",
+        "sv": "Avbryt"
+      },
+      "save": {
+        "en": "Save",
+        "sv": "Spara"
+      },
+      "addEnumValue": {
+        "en": "Add enum value",
+        "sv": "Lägg till uppräkningstyp"
+      },
+      "addObjectField": {
+        "en": "Add object field",
+        "sv": "Lägg till objektfält"
+      },
+      "object": {
+        "en": "Object",
+        "sv": "Objekt"
+      },
+      "array": {
+        "en": "Array",
+        "sv": "Lista"
+      },
+      "string": {
+        "en": "String",
+        "sv": "Textsträng"
+      },
+      "number": {
+        "en": "Number",
+        "sv": "Nummer"
+      },
+      "boolean": {
+        "en": "Boolean",
+        "sv": "Boolesk"
+      },
+      "required": {
+        "en": "Required",
+        "sv": "Obligatorisk"
+      },
+      "nullable": {
+        "en": "Nullable",
+        "sv": "Kan vara inget"
+      },
+      "minLengthPlaceholder": {
+        "en": "Min length",
+        "sv": "Minimal längd"
+      },
+      "maxLengthPlaceholder": {
+        "en": "Max length",
+        "sv": "Maximal längd"
+      },
+      "minValuePlaceholder": {
+        "en": "Min value",
+        "sv": "Minimalt värde"
+      },
+      "maxValuePlaceholder": {
+        "en": "Max value",
+        "sv": "Maximalt värde"
+      },
+      "items": {
+        "en": "Items",
+        "sv": "Föremål"
+      },
+      "fieldNamePlaceholder": {
+        "en": "my_field_name",
+        "sv": "mitt_fältnamn"
+      }
+    },
+    "integrations": {
+      "title": {
+        "en": "Integrations",
+        "sv": "Integrationer"
+      },
+      "titleIntegration": {
+        "en": "Integration",
+        "sv": "Integration"
+      },
+      "text": {
+        "en": "Manage your integrations.",
+        "sv": "Hantera dina integrationer."
+      },
+      "backToIntegrations": {
+        "en": "Back to integrations",
+        "sv": "Tillbaka till integrationer"
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "createNewIntegration": {
+        "en": "+ Create new integration",
+        "sv": "+ Skapa ny integration"
+      },
+      "integrationInformationCard": {
+        "active": {
+          "en": "Active",
+          "sv": "Aktiv"
+        },
+        "lastUpdated": {
+          "en": "Last updated",
+          "sv": "Senast uppdaterad"
+        },
+        "open": {
+          "en": "Open",
+          "sv": "Öppna"
+        },
+        "delete": {
+          "en": "Delete",
+          "sv": "Radera"
+        },
+        "dialogTitle": {
+          "en": "Delete integration",
+          "sv": "Radera integration"
+        },
+        "dialogText": {
+          "en": "Are you sure you want to delete the integration?",
+          "sv": "Är du säker på att du vill radera integrationen?"
+        },
+        "dialogCancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "dialogDelete": {
+          "en": "Delete",
+          "sv": "Radera"
+        }
+      }
+    },
+    "integrationsNew": {
+      "title": {
+        "en": "Create integration",
+        "sv": "Skapa integration"
+      },
+      "text": {
+        "en": "Create a new integration by filling in the fields below.",
+        "sv": "Skapa en ny integration genom att fylla i fälten nedan."
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      }
+    },
+    "media": {
+      "title": {
+        "en": "Media",
+        "sv": "Media"
+      },
+      "titleUploadImage": {
+        "en": "Upload image",
+        "sv": "Ladda upp bild"
+      },
+      "text": {
+        "en": "Manage your media.",
+        "sv": "Hantera dina mediafiler."
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "platformImageUploader": {
+        "noRotation": {
+          "en": "No rotation",
+          "sv": "Ingen rotation"
+        },
+        "free": {
+          "en": "Free",
+          "sv": "Fri"
+        },
+        "selectImage": {
+          "en": "Select image",
+          "sv": "Välj bild"
+        },
+        "crop": {
+          "en": "Crop",
+          "sv": "Beskär"
+        },
+        "applyCrop": {
+          "en": "Apply crop",
+          "sv": "Applicera beskärning"
+        },
+        "upload": {
+          "en": "Upload",
+          "sv": "Ladda upp"
+        },
+        "reset": {
+          "en": "Reset",
+          "sv": "Återställ"
+        },
+        "filter": {
+          "NoFilter": {
+            "en": "No filter",
+            "sv": "Inget filter"
+          },
+          "Grayscale": {
+            "en": "Grayscale",
+            "sv": "Gråskala"
+          },
+          "Sepia": {
+            "en": "Sepia",
+            "sv": "Sepia"
+          },
+          "Invert": {
+            "en": "Invert",
+            "sv": "Invertera"
+          },
+          "BoxBlur": {
+            "en": "Box blur",
+            "sv": "Box-oskärpa"
+          },
+          "GaussianBlur": {
+            "en": "Gaussian blur",
+            "sv": "Gaussian-oskärpa"
+          },
+          "Sharpen": {
+            "en": "Sharpen",
+            "sv": "Skärpa"
+          },
+          "Emboss": {
+            "en": "Emboss",
+            "sv": "Prägling"
+          },
+          "RidgeDetection": {
+            "en": "Ridge detection",
+            "sv": "Åsdetektion"
+          },
+          "Sobel": {
+            "en": "Sobel",
+            "sv": "Sobel"
+          }
+        }
+      },
+      "uploadImage": {
+        "en": "+ Upload image",
+        "sv": "+ Ladda upp bild"
+      },
+      "copyLink": {
+        "en": "Copy link",
+        "sv": "Kopiera länk"
+      },
+      "linkCopied": {
+        "en": "Link copied",
+        "sv": "Länk kopierad"
+      },
+      "delete": {
+        "en": "Delete",
+        "sv": "Radera"
+      },
+      "dialogTitle": {
+        "en": "Delete media",
+        "sv": "Radera media"
+      },
+      "dialogText": {
+        "en": "Are you sure you want to delete the media?",
+        "sv": "Är du säker på att du vill radera mediafilen?"
+      },
+      "dialogCancel": {
+        "en": "Cancel",
+        "sv": "Avbryt"
+      },
+      "dialogDelete": {
+        "en": "Delete",
+        "sv": "Radera"
+      }
+    },
+    "overview": {
+      "title": {
+        "en": "Websites",
+        "sv": "Webbplatser"
+      },
+      "text": {
+        "en": "Manage your websites.",
+        "sv": "Hantera dina webbplatser."
+      },
+      "create": {
+        "en": "+ Create new website",
+        "sv": "+ Skapa ny webbplats"
+      },
+      "informationCard": {
+        "active": {
+          "en": "Active",
+          "sv": "Aktiv"
+        },
+        "disabled": {
+          "en": "Disabled",
+          "sv": "Inaktiverad"
+        },
+        "draft": {
+          "en": "Draft",
+          "sv": "Utkast"
+        },
+        "unknown": {
+          "en": "Unknown",
+          "sv": "Okänd"
+        },
+        "lastUpdated": {
+          "en": "Last updated",
+          "sv": "Senast uppdaterad"
+        },
+        "open": {
+          "en": "Open",
+          "sv": "Öppna"
+        },
+        "settings": {
+          "en": "Settings",
+          "sv": "Inställningar"
+        }
+      }
+    },
+    "pages": {
+      "title": {
+        "en": "Pages",
+        "sv": "Sidor"
+      },
+      "text": {
+        "en": "Manage your pages.",
+        "sv": "Hantera dina sidor."
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "createNewPage": {
+        "en": "+ Create new page",
+        "sv": "+ Skapa ny sida"
+      },
+      "editor": {
+        "all": {
+          "en": "All",
+          "sv": "Alla"
+        },
+        "apply": {
+          "en": "Apply",
+          "sv": "Applicera"
+        },
+        "cancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "changeExpression": {
+          "en": "Change expression",
+          "sv": "Ändra uttryck"
+        },
+        "componentTemplateSaveDialog": {
+          "title": {
+            "en": "Create template",
+            "sv": "Skapa mall"
+          },
+          "labelTitle": {
+            "en": "Label",
+            "sv": "Etikett"
+          },
+          "labelPlaceholder": {
+            "en": "My template",
+            "sv": "Min mall"
+          },
+          "typeTitle": {
+            "en": "Type",
+            "sv": "Typ"
+          },
+          "typePlaceholder": {
+            "en": "my-template",
+            "sv": "min-mall"
+          },
+          "descriptionTitle": {
+            "en": "Description",
+            "sv": "Beskrivning"
+          },
+          "descriptionPlaceholder": {
+            "en": "My description.",
+            "sv": "Min beskrivning."
+          },
+          "cancel": {
+            "en": "Cancel",
+            "sv": "Avbryt"
+          },
+          "create": {
+            "en": "Create",
+            "sv": "Skapa"
+          }
+        },
+        "components": {
+          "en": "Components",
+          "sv": "Komponenter"
+        },
+        "contextMenu": {
+          "backward": {
+            "en": "backward",
+            "sv": "bakåt"
+          },
+          "copy": {
+            "en": "Copy",
+            "sv": "Kopiera"
+          },
+          "createTemplate": {
+            "en": "Create template",
+            "sv": "Skapa mall"
+          },
+          "edit": {
+            "en": "Edit",
+            "sv": "Redigera"
+          },
+          "exportPageToHtml": {
+            "en": "Export page to HTML",
+            "sv": "Exportera sidan till HTML"
+          },
+          "forward": {
+            "en": "forward",
+            "sv": "framåt"
+          },
+          "from": {
+            "en": "from",
+            "sv": "från"
+          },
+          "move": {
+            "en": "Move",
+            "sv": "Flytta"
+          },
+          "pasteInto": {
+            "en": "Paste into",
+            "sv": "Klistra in"
+          },
+          "pasteIntoSecondary": {
+            "en": "Paste into",
+            "sv": "Klistra in i"
+          },
+          "remove": {
+            "en": "Remove",
+            "sv": "Ta bort"
+          },
+          "viewPageCode": {
+            "en": "View page code",
+            "sv": "Visa sidans kod"
+          }
+        },
+        "default": {
+          "en": "Default",
+          "sv": "Standard"
+        },
+        "desktop": {
+          "en": "Desktop",
+          "sv": "Dator"
+        },
+        "mobile": {
+          "en": "Mobile",
+          "sv": "Mobiltelefon"
+        },
+        "notSelected": {
+          "en": "-- Not selected --",
+          "sv": "-- Ej vald --"
+        },
+        "redo": {
+          "en": "Redo",
+          "sv": "Upprepa"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "selectColor": {
+          "en": "Select color",
+          "sv": "Välj färg"
+        },
+        "tablet": {
+          "en": "Tablet",
+          "sv": "Platta"
+        },
+        "tabs": {
+          "action": {
+            "en": "Action",
+            "sv": "Händelser"
+          },
+          "appearance": {
+            "en": "Appearance",
+            "sv": "Utseende"
+          },
+          "content": {
+            "en": "Content",
+            "sv": "Innehåll"
+          },
+          "dataSource": {
+            "en": "Data source",
+            "sv": "Datakälla"
+          },
+          "layout": {
+            "en": "Layout",
+            "sv": "Layout"
+          },
+          "media": {
+            "en": "Media",
+            "sv": "Media"
+          },
+          "optimization": {
+            "en": "Optimization",
+            "sv": "Optimering"
+          },
+          "privacy": {
+            "en": "Privacy",
+            "sv": "Sekretess"
+          },
+          "selectors": {
+            "en": "Selectors",
+            "sv": "Selektorer"
+          },
+          "variants": {
+            "en": "Variants",
+            "sv": "Varianter"
+          },
+          "visibility": {
+            "en": "Visibility",
+            "sv": "Synlighet"
+          }
+        },
+        "templates": {
+          "en": "Templates",
+          "sv": "Mallar"
+        },
+        "undo": {
+          "en": "Undo",
+          "sv": "Ångra"
+        }
+      },
+      "accessibilitySettingsForm": {
+        "title": {
+          "en": "Accessibility",
+          "sv": "Tillgänglighet"
+        },
+        "status": {
+          "en": "Status",
+          "sv": "Status"
+        },
+        "archived": {
+          "en": "Archived",
+          "sv": "Arkiverad"
+        },
+        "draft": {
+          "en": "Draft",
+          "sv": "Utkast"
+        },
+        "published": {
+          "en": "Published",
+          "sv": "Publicerad"
+        },
+        "visibility": {
+          "en": "Visibility",
+          "sv": "Synlighet"
+        },
+        "password": {
+          "en": "Password",
+          "sv": "Lösenord"
+        },
+        "private": {
+          "en": "Private",
+          "sv": "Privat"
+        },
+        "public": {
+          "en": "Public",
+          "sv": "Publik"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      },
+      "createForm": {
+        "title": {
+          "en": "Create new page",
+          "sv": "Skapa ny sida"
+        },
+        "name": {
+          "en": "Name",
+          "sv": "Namn"
+        },
+        "namePlaceholder": {
+          "en": "For example: About Us",
+          "sv": "T.ex. Om Oss"
+        },
+        "description": {
+          "en": "Description",
+          "sv": "Beskrivning"
+        },
+        "descriptionPlaceholder": {
+          "en": "An optional description",
+          "sv": "En frivillig beskrivning"
+        },
+        "parentPage": {
+          "en": "Parent page",
+          "sv": "Föräldersida"
+        },
+        "slug": {
+          "en": "Slug",
+          "sv": "Slug"
+        },
+        "slugPlaceholder": {
+          "en": "about-us",
+          "sv": "om-oss"
+        },
+        "path": {
+          "en": "Path",
+          "sv": "Sökväg"
+        },
+        "pathPlaceholder": {
+          "en": "/about-us",
+          "sv": "/om-oss"
+        },
+        "url": {
+          "en": "Link",
+          "sv": "Länk"
+        },
+        "urlPlaceholder": {
+          "en": "/about-us",
+          "sv": "/om-oss"
+        },
+        "create": {
+          "en": "Create",
+          "sv": "Skapa"
+        },
+        "creating": {
+          "en": "Creating...",
+          "sv": "Skapar..."
+        }
+      },
+      "deleteForm": {
+        "title": {
+          "en": "Delete page",
+          "sv": "Radera sidan"
+        },
+        "text": {
+          "en": "By deleting this page you will also permanently delete all of its history.",
+          "sv": "När du raderar sidan kommer du även radera all historik kopplad till den."
+        },
+        "button": {
+          "en": "Delete page",
+          "sv": "Radera sidan"
+        },
+        "dialogTitle": {
+          "en": "Delete page",
+          "sv": "Radera sidan"
+        },
+        "dialogText": {
+          "en": "Are you sure you want to delete the page?",
+          "sv": "Är du säker på att du vill radera sidan?"
+        },
+        "dialogCancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "dialogDelete": {
+          "en": "Delete",
+          "sv": "Radera"
+        }
+      },
+      "generalSettingsForm": {
+        "title": {
+          "en": "General information",
+          "sv": "Generell information"
+        },
+        "name": {
+          "en": "Name",
+          "sv": "Namn"
+        },
+        "namePlaceholder": {
+          "en": "",
+          "sv": ""
+        },
+        "description": {
+          "en": "Description",
+          "sv": "Beskrivning"
+        },
+        "descriptionPlaceholder": {
+          "en": "",
+          "sv": ""
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      },
+      "informationCard": {
+        "archived": {
+          "en": "Archived",
+          "sv": "Arkiverad"
+        },
+        "draft": {
+          "en": "Draft",
+          "sv": "Utkast"
+        },
+        "published": {
+          "en": "Published",
+          "sv": "Publicerad"
+        },
+        "lastUpdated": {
+          "en": "Last updated",
+          "sv": "Senast uppdaterad"
+        },
+        "open": {
+          "en": "Open",
+          "sv": "Öppna"
+        },
+        "view": {
+          "en": "View",
+          "sv": "Visa"
+        }
+      },
+      "operationsCard": {
+        "edit": {
+          "en": "Edit",
+          "sv": "Redigera"
+        },
+        "view": {
+          "en": "View",
+          "sv": "Visa"
+        }
+      },
+      "seoSettingsForm": {
+        "title": {
+          "en": "Search engine optimization",
+          "sv": "Sökmotoroptimering"
+        },
+        "basicSeoTitle": {
+          "en": "Basic search engine optimization",
+          "sv": "Grundläggande sökmotoroptimering"
+        },
+        "seoTitle": {
+          "en": "Title",
+          "sv": "Titel"
+        },
+        "seoDescription": {
+          "en": "Description",
+          "sv": "Beskrivning"
+        },
+        "canonicalUrl": {
+          "en": "Canonical URL",
+          "sv": "Kanonisk URL"
+        },
+        "visibilityTitle": {
+          "en": "Search engine visibility",
+          "sv": "Synlighet för sökmotorer"
+        },
+        "noIndex": {
+          "en": "No index",
+          "sv": "Ingen indexering"
+        },
+        "noFollow": {
+          "en": "No follow",
+          "sv": "Inga följare"
+        },
+        "socialSharingTitle": {
+          "en": "Social sharing (Open Graph)",
+          "sv": "Social närvaro (Open Graph)"
+        },
+        "ogTitle": {
+          "en": "Title",
+          "sv": "Titel"
+        },
+        "ogDescription": {
+          "en": "Description",
+          "sv": "Beskrivning"
+        },
+        "ogImage": {
+          "en": "Image",
+          "sv": "Bild"
+        },
+        "advancedTitle": {
+          "en": "Advanced (optional)",
+          "sv": "Avancerat (frivilligt)"
+        },
+        "keywords": {
+          "en": "Keywords",
+          "sv": "Nyckelold"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      },
+      "socketSettingsForm": {
+        "title": {
+          "en": "WebSocket",
+          "sv": "Websocket"
+        },
+        "enabled": {
+          "en": "Enabled",
+          "sv": "Påslagen"
+        },
+        "connectingAutomatically": {
+          "en": "Connecting automatically",
+          "sv": "Automatisk anslutning"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      },
+      "statusManager": {
+        "archived": {
+          "en": "Your page is archived. An archived page can only be viewed in the editor.",
+          "sv": "Din sida är arkiverad. En arkiverad sida kan enbart visas i editorn."
+        },
+        "draft": {
+          "en": "Your page is in draft mode. A page in draft mode can only be viewed in the editor.",
+          "sv": "Din sida är ett utkast. En sida som är ett utkast kan enbart visas i editorn."
+        },
+        "published": {
+          "en": "Your page is published. A published page can be viewed, but who can view it depends on its visibility.",
+          "sv": "Din sida är publicerad. En publicerad sida kan visas, men vem som kan se den beror på sidans synlighet."
+        },
+        "nothingToPublish": {
+          "en": "No draft content to publish.",
+          "sv": "Det finns inget utkast att publicera."
+        },
+        "title": {
+          "en": "Status",
+          "sv": "Status"
+        },
+        "publish": {
+          "en": "Publish",
+          "sv": "Publicera"
+        },
+        "publishChanges": {
+          "en": "Publish changes",
+          "sv": "Publicera ändringar"
+        },
+        "unpublish": {
+          "en": "Unpublish",
+          "sv": "Opublicera"
+        },
+        "archive": {
+          "en": "Archive",
+          "sv": "Arkivera"
+        }
+      },
+      "visibilityForm": {
+        "publishBeforePublic": {
+          "en": "You must publish the page before making it public.",
+          "sv": "Du måste publicera sidan innan du gör den publik."
+        },
+        "title": {
+          "en": "Visibility",
+          "sv": "Synlighet"
+        },
+        "visibility": {
+          "en": "Visibility",
+          "sv": "Synlighet"
+        },
+        "private": {
+          "en": "Private",
+          "sv": "Privat"
+        },
+        "public": {
+          "en": "Public",
+          "sv": "Publik"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      }
+    },
+    "pagesNew": {
+      "title": {
+        "en": "Create new page",
+        "sv": "Skapa ny sida"
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      }
+    },
+    "settings": {
+      "title": {
+        "en": "Settings",
+        "sv": "Inställningar"
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      }
+    },
+    "templates": {
+      "title": {
+        "en": "Templates",
+        "sv": "Mallar"
+      },
+      "text": {
+        "en": "Manage your templates. You create them in the editor.",
+        "sv": "Hantera dina mallar. Du skapar dem inne i editorn."
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "templateInformationCard": {
+        "button": {
+          "en": "Delete",
+          "sv": "Radera"
+        },
+        "dialogTitle": {
+          "en": "Delete template",
+          "sv": "Radera mall"
+        },
+        "dialogText": {
+          "en": "Are you sure you want to delete the template?",
+          "sv": "Är du säker på att du vill radera mallen?"
+        },
+        "dialogCancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "dialogDelete": {
+          "en": "Delete",
+          "sv": "Radera"
+        }
+      }
+    }
+  }
+}

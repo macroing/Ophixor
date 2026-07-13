@@ -1,0 +1,280 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "admin": {
+    "convert": {
+      "url": {
+        "en": "Link",
+        "sv": "Länk"
+      },
+      "convert": {
+        "en": "Convert",
+        "sv": "Konvertera"
+      }
+    },
+    "notFound": {
+      "title": {
+        "en": "404 - Page not found",
+        "sv": "404 - Sidan hittades inte"
+      },
+      "text": {
+        "en": "The requested page could not be found.",
+        "sv": "Sidan du försökte besöka kunde inte hittas."
+      }
+    },
+    "overview": {
+      "title": {
+        "en": "Welcome!",
+        "sv": "Välkommen!"
+      },
+      "textA": {
+        "en": "You are logged in as",
+        "sv": "Du är inloggad som"
+      },
+      "textB": {
+        "en": "To manage users click on",
+        "sv": "För att hantera användare klicka på"
+      },
+      "textC": {
+        "en": "Users",
+        "sv": "Användare"
+      },
+      "textD": {
+        "en": "and to manage websites click on",
+        "sv": "och för att hantera webbplatser klicka på"
+      },
+      "textE": {
+        "en": "Websites",
+        "sv": "Webbplatser"
+      }
+    },
+    "users": {
+      "title": {
+        "en": "Users",
+        "sv": "Användare"
+      },
+      "email": {
+        "en": "E-mail",
+        "sv": "E-post"
+      },
+      "administrator": {
+        "en": "Administrator",
+        "sv": "Administratör"
+      },
+      "plan": {
+        "en": "Plan",
+        "sv": "Plan"
+      },
+      "createdAt": {
+        "en": "Created at",
+        "sv": "Skapad"
+      },
+      "updatedAt": {
+        "en": "Updated at",
+        "sv": "Uppdaterad"
+      },
+      "yes": {
+        "en": "Yes",
+        "sv": "Ja"
+      },
+      "no": {
+        "en": "No",
+        "sv": "Nej"
+      }
+    },
+    "user": {
+      "title": {
+        "en": "Account",
+        "sv": "Konto"
+      },
+      "accountInformation": {
+        "en": "Account information",
+        "sv": "Kontoinformation"
+      },
+      "email": {
+        "en": "E-mail address",
+        "sv": "E-postadress"
+      },
+      "administrator": {
+        "en": "Administrator",
+        "sv": "Administratör"
+      },
+      "yes": {
+        "en": "Yes",
+        "sv": "Ja"
+      },
+      "no": {
+        "en": "No",
+        "sv": "Nej"
+      },
+      "plan": {
+        "en": "Plan",
+        "sv": "Plan"
+      },
+      "createdAt": {
+        "en": "Created at",
+        "sv": "Skapad"
+      },
+      "updatedAt": {
+        "en": "Updated at",
+        "sv": "Uppdaterad"
+      },
+      "activatedAt": {
+        "en": "Activated at",
+        "sv": "Aktiverad"
+      },
+      "activate": {
+        "en": "Activate",
+        "sv": "Aktivera"
+      },
+      "changePasswordTitle": {
+        "en": "Change password",
+        "sv": "Ändra lösenord"
+      },
+      "newPassword": {
+        "en": "New password",
+        "sv": "Nytt lösenord"
+      },
+      "newPasswordConfirm": {
+        "en": "Confirm new password",
+        "sv": "Bekräfta nytt lösenord"
+      },
+      "changePasswordSubmit": {
+        "en": "Change password",
+        "sv": "Ändra lösenord"
+      },
+      "changeAdministratorTitle": {
+        "en": "Change administrator",
+        "sv": "Ändra administratör"
+      },
+      "changeAdministratorSubmit": {
+        "en": "Change administrator",
+        "sv": "Ändra administratör"
+      },
+      "changePlanTitle": {
+        "en": "Change plan",
+        "sv": "Ändra plan"
+      },
+      "changePlanSubmit": {
+        "en": "Change plan",
+        "sv": "Ändra plan"
+      },
+      "deleteAccountTitle": {
+        "en": "Delete account",
+        "sv": "Radera konto"
+      },
+      "deleteAccountText": {
+        "en": "Delete your account permanently. This action cannot be undone.",
+        "sv": "Radera ditt konto permanent. Det går inte att ångra denna åtgärd."
+      },
+      "deleteAccountTextAlternative": {
+        "en": "Delete the account permanently. This action cannot be undone.",
+        "sv": "Radera kontot permanent. Det går inte att ångra denna åtgärd."
+      },
+      "deleteAccountButton": {
+        "en": "Delete account",
+        "sv": "Radera konto"
+      },
+      "deleteAccountDialogTitle": {
+        "en": "Delete account",
+        "sv": "Radera konto"
+      },
+      "deleteAccountDialogText": {
+        "en": "Are you sure you want to delete your account?",
+        "sv": "Är du säker på att du vill radera ditt konto?"
+      },
+      "deleteAccountDialogTextAlternative": {
+        "en": "Are you sure you want to delete the account?",
+        "sv": "Är du säker på att du vill radera kontot?"
+      },
+      "deleteAccountDialogCancel": {
+        "en": "Cancel",
+        "sv": "Avbryt"
+      },
+      "deleteAccountDialogDelete": {
+        "en": "Delete",
+        "sv": "Radera"
+      }
+    },
+    "websites": {
+      "active": {
+        "en": "Active",
+        "sv": "Aktiv"
+      },
+      "disabled": {
+        "en": "Disabled",
+        "sv": "Inaktiverad"
+      },
+      "draft": {
+        "en": "Draft",
+        "sv": "Utkast"
+      },
+      "unknown": {
+        "en": "Unknown",
+        "sv": "Okänd"
+      },
+      "private": {
+        "en": "Private",
+        "sv": "Privat"
+      },
+      "public": {
+        "en": "Public",
+        "sv": "Publik"
+      },
+      "unlisted": {
+        "en": "Unlisted",
+        "sv": "Ej listad"
+      },
+      "title": {
+        "en": "Websites",
+        "sv": "Webbplatser"
+      },
+      "name": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "status": {
+        "en": "Status",
+        "sv": "Status"
+      },
+      "visibility": {
+        "en": "Visibility",
+        "sv": "Synlighet"
+      },
+      "createdAt": {
+        "en": "Created at",
+        "sv": "Skapad"
+      },
+      "updatedAt": {
+        "en": "Updated at",
+        "sv": "Uppdaterad"
+      }
+    },
+    "navigation": {
+      "backHome": {
+        "en": "Back home",
+        "sv": "Tillbaka hem"
+      },
+      "overview": {
+        "en": "Overview",
+        "sv": "Översikt"
+      },
+      "users": {
+        "en": "Users",
+        "sv": "Användare"
+      },
+      "websites": {
+        "en": "Websites",
+        "sv": "Webbplatser"
+      },
+      "convert": {
+        "en": "Convert",
+        "sv": "Konvertera"
+      }
+    }
+  }
+}

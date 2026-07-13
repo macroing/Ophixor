@@ -1,0 +1,80 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 8px;
+  padding: 0px;
+}
+
+.group {
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  padding: 4px 6px;
+}
+
+.group:hover {
+  background: #6366f1;
+}
+
+.caret {
+  color: #ffffff;
+  display: inline-block;
+  width: 14px;
+}
+
+.node {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #e5e7eb;
+  cursor: pointer;
+  display: flex;
+  padding: 4px 6px;
+}
+
+.node:hover {
+  background: #6366f1;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+.node_label {
+  font-weight: 500;
+}
+
+.leaf {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #e5e7eb;
+  cursor: pointer;
+  padding: 4px 6px 4px 20px;
+}
+
+.leaf.active {
+  background: #6366f1;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+.leaf:hover {
+  background: #6366f1;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+.children {
+  border-left: 1px solid #4b5563;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 10px;
+  padding-left: 8px;
+}

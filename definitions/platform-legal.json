@@ -1,0 +1,338 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "legal": {
+    "cookies": {
+      "metadata": {
+        "description": {
+          "en": "This page contains our cookie policy.",
+          "sv": "Denna sida innehåller vår cookiepolicy."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Cookie policy | Ophixor",
+          "sv": "Cookiepolicy | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Cookie policy",
+        "sv": "Cookiepolicy"
+      },
+      "lastUpdated": {
+        "en": "Last updated",
+        "sv": "Senast uppdaterad"
+      },
+      "whatAreCookiesTitle": {
+        "en": "What are cookies?",
+        "sv": "Vad är kakor (cookies)?"
+      },
+      "whatAreCookiesText": {
+        "en": "Cookies are small text files stored on your device when visiting a website. They help improve functionality, security and user experience.",
+        "sv": "Kakor (cookies) är små textfiler som sparas på din enhet när du besöker en webbplats. Dem hjälper till att förbättra funktionalitet, säkerhet och användarupplevelse."
+      },
+      "cookieTypesTitle": {
+        "en": "Types of cookies we use",
+        "sv": "Kaktyper vi använder"
+      },
+      "cookieTypesText": {
+        "en": "We use the following categories:",
+        "sv": "Vi använder följande kategorier:"
+      },
+      "cookieTypeNecessary": {
+        "en": "Necessary cookies: Required for core functionality.",
+        "sv": "Nödvändiga kakor: Krävs för grundläggande funktionalitet."
+      },
+      "cookieTypeAnalytics": {
+        "en": "Analytics cookies: Help us understand how users interact with the website.",
+        "sv": "Analyskakor: Hjälper oss förstå hur användare interagerar med webbplatsen."
+      },
+      "cookieTypeMarketing": {
+        "en": "Marketing cookies: Used for advertising and tracking.",
+        "sv": "Marknadsföringskakor: Används för annonser och spårning."
+      },
+      "legalBasisTitle": {
+        "en": "Legal basis",
+        "sv": "Rättslig grund"
+      },
+      "legalBasisText": {
+        "en": "We only use non-essential cookies with your consent in accordance with GDPR and ePrivacy Directive.",
+        "sv": "Vi använder enbart icke-nödvändiga kakor med ditt samtycke i enlighet med GDPR och ePrivacy Directive."
+      },
+      "preferencesTitle": {
+        "en": "Managing your preferences",
+        "sv": "Hantera dina preferenser"
+      },
+      "preferencesText": {
+        "en": "You can accept, reject or update your cookie preferences at any time using our cookie settings below.",
+        "sv": "Du kan acceptera, avvisa eller uppdatera dina kakpreferenser när som helst med våra kakinställningar nedan."
+      },
+      "showSettings": {
+        "en": "Show cookie settings",
+        "sv": "Visa kakinställningar"
+      },
+      "hideSettings": {
+        "en": "Hide cookie settings",
+        "sv": "Dölj kakinställningar"
+      },
+      "contactTitle": {
+        "en": "Contact",
+        "sv": "Kontakt"
+      },
+      "contactText": {
+        "en": "For questions, contact",
+        "sv": "Vid frågor, kontakta"
+      }
+    },
+    "privacy": {
+      "metadata": {
+        "description": {
+          "en": "This page contains our privacy policy.",
+          "sv": "Denna sida innehåller vår integritetspolicy."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Privacy policy | Ophixor",
+          "sv": "Integritetspolicy | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Privacy policy",
+        "sv": "Integritetspolicy"
+      },
+      "lastUpdated": {
+        "en": "Last updated",
+        "sv": "Senast uppdaterad"
+      },
+      "dataControllerTitle": {
+        "en": "Data controller",
+        "sv": "Personuppgiftsansvarig"
+      },
+      "dataControllerText": {
+        "en": "The data controller is",
+        "sv": "Den personuppgiftsansvariga är"
+      },
+      "dataControllerTextContact": {
+        "en": "contact",
+        "sv": "kontakt"
+      },
+      "personalDataTitle": {
+        "en": "Personal data we collect",
+        "sv": "Personlig data vi samlar in"
+      },
+      "personalDataText": {
+        "en": "We may collect:",
+        "sv": "Vi kan samla in:"
+      },
+      "personalDataAccountInformation": {
+        "en": "Account information (e-mail, name)",
+        "sv": "Kontoinformation (e-post, namn)"
+      },
+      "personalDataUsageData": {
+        "en": "Usage data (interactions, pages visited)",
+        "sv": "Användningsdata (interaktioner, besökta sidor)"
+      },
+      "personalDataTechnicalData": {
+        "en": "Technical data (IP-address, browser, device)",
+        "sv": "Teknisk data (IP-adress, webbläsare, enhet)"
+      },
+      "purposeTitle": {
+        "en": "Purpose of processing",
+        "sv": "Syfte till bearbetning"
+      },
+      "purposeText": {
+        "en": "We process data to provide services, improve the platform, ensure security and communicate with users.",
+        "sv": "Vi bearbetar data för att tillhandahålla tjänster, förbättra plattformen, säkerställa säkerheten och kommunicera med användare."
+      },
+      "legalBasisTitle": {
+        "en": "Legal basis (GDPR Art. 6)",
+        "sv": "Rättslig grund (GDPR Art. 6)"
+      },
+      "legalBasisText": {
+        "en": "Processing is based on:",
+        "sv": "Bearbetningen är baserad på:"
+      },
+      "legalBasisConsent": {
+        "en": "Consent (Art. 6(1)(a))",
+        "sv": "Samtycke (Art. 6(1)(a))"
+      },
+      "legalBasisContract": {
+        "en": "Contract (Art. 6(1)(b))",
+        "sv": "Avtal (Art. 6(1)(b))"
+      },
+      "legalBasisLegitimateInterest": {
+        "en": "Legitimate interest (Art. 6(1)(f))",
+        "sv": "Berättigat intresse (Art. 6(1)(f))"
+      },
+      "dataRetentionTitle": {
+        "en": "Data retention",
+        "sv": "Datalagring"
+      },
+      "dataRetentionText": {
+        "en": "We retain data only as long as necessary for the purposes stated.",
+        "sv": "Vi behåller data endast så länge som det är nödvändigt för de angivna syftena."
+      },
+      "yourRights": {
+        "en": "Your rights",
+        "sv": "Dina rättigheter"
+      },
+      "accessData": {
+        "en": "Access your data",
+        "sv": "Få tillgång till din data"
+      },
+      "request": {
+        "en": "Request correction or deletion",
+        "sv": "Begär korrigering eller borttagning"
+      },
+      "restrict": {
+        "en": "Restrict processing",
+        "sv": "Begränsa bearbetning"
+      },
+      "portability": {
+        "en": "Data portability",
+        "sv": "Dataportabilitet"
+      },
+      "withdraw": {
+        "en": "Withdraw consent at any time",
+        "sv": "Dra tillbaka samtycke när som helst"
+      },
+      "thirdPartiesTitle": {
+        "en": "Third parties",
+        "sv": "Tredjepart"
+      },
+      "thirdPartiesText": {
+        "en": "We may share data with service providers (e.g. hosting and analytics) under strict agreements.",
+        "sv": "Vi kan dela med oss av data till tjänsteleverantörer (t.ex. webbhotell och analys) under strikta avtal."
+      },
+      "internationalTransfersTitle": {
+        "en": "International transfers",
+        "sv": "Internationella överföringar"
+      },
+      "internationalTransfersText": {
+        "en": "If data is transferred outside the EU, appropriate safeguards (e.g. SCCs) are used.",
+        "sv": "Om data överförs utanför EU används lämpliga skyddsåtgärder (t.ex. SCCs)."
+      },
+      "contactAndComplaintsTitle": {
+        "en": "Contact & complaints",
+        "sv": "Kontakt & klagomål"
+      },
+      "contactAndComplaintsTextA": {
+        "en": "Contact us at",
+        "sv": "Kontakta oss på"
+      },
+      "contactAndComplaintsTextB": {
+        "en": "You also have the right to lodge a complaint with your local data protection authority.",
+        "sv": "Du har också rätt att lämna in ett klagomål till din lokala dataskyddsmyndighet."
+      }
+    },
+    "terms": {
+      "metadata": {
+        "description": {
+          "en": "This page contains our terms of service.",
+          "sv": "Denna sida innehåller våra tjänstevillkor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Terms of service | Ophixor",
+          "sv": "Tjänstevillkor | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Terms of service",
+        "sv": "Tjänstevillkor"
+      },
+      "lastUpdated": {
+        "en": "Last updated",
+        "sv": "Senast uppdaterad"
+      },
+      "acceptanceTitle": {
+        "en": "Acceptance of terms",
+        "sv": "Acceptering av villkoren"
+      },
+      "acceptanceText": {
+        "en": "By using this platform, you agree to these terms.",
+        "sv": "Genom att använda denna plattform godkänner du dessa villkor."
+      },
+      "useTitle": {
+        "en": "Use of service",
+        "sv": "Användning av tjänsten"
+      },
+      "useTextA": {
+        "en": "You must not use the service unlawfully",
+        "sv": "Du får inte använda tjänsten olagligt"
+      },
+      "useTextB": {
+        "en": "You are responsible for your content",
+        "sv": "Du är ansvarig för ditt innehåll"
+      },
+      "accountsTitle": {
+        "en": "Accounts",
+        "sv": "Konton"
+      },
+      "accountsText": {
+        "en": "You are responsible for maintaining account security and confidentiality.",
+        "sv": "Du är ansvarig för att upprätthålla kontots säkerhet och sekretess."
+      },
+      "intellectualPropertyTitle": {
+        "en": "Intellectual property",
+        "sv": "Immateriella rättigheter"
+      },
+      "intellectualPropertyText": {
+        "en": "All platform content and technology remain our property unless otherwise stated.",
+        "sv": "Allt plattformsinnehåll och all teknik förblir vår egendom om inget annat anges."
+      },
+      "terminationTitle": {
+        "en": "Termination",
+        "sv": "Avslutning"
+      },
+      "terminationText": {
+        "en": "We may suspend or terminate accounts for violations.",
+        "sv": "Vi kan stänga av eller avsluta konton vid överträdelser."
+      },
+      "limitationOfLiabilityTitle": {
+        "en": "Limitation of liability",
+        "sv": "Ansvarsbegränsning"
+      },
+      "limitationOfLiabilityText": {
+        "en": "We are not liable for indirect or consequential damages.",
+        "sv": "Vi ansvarar inte för indirekta eller följdskador."
+      },
+      "changesToTermsTitle": {
+        "en": "Changes to terms",
+        "sv": "Villkorsändringar"
+      },
+      "changesToTermsText": {
+        "en": "We may update these terms at any time.",
+        "sv": "Vi kan uppdatera dessa villkor när som helst."
+      },
+      "governingLawTitle": {
+        "en": "Governing law",
+        "sv": "Reglerande lag"
+      },
+      "governingLawText": {
+        "en": "These terms are governed by applicable laws in your jurisdiction.",
+        "sv": "Dessa villkor regleras av tillämpliga lagar i din jurisdiktion."
+      },
+      "contactTitle": {
+        "en": "Contact",
+        "sv": "Kontakt"
+      },
+      "contactText": {
+        "en": "Contact",
+        "sv": "Kontakt"
+      }
+    }
+  }
+}

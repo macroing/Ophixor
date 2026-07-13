@@ -1,0 +1,12 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.link {
+  color: var(--pc-foundation-color-primary-400);
+}
+
+.link:hover {
+  color: var(--pc-foundation-color-primary-300);
+}

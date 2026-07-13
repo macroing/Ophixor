@@ -1,0 +1,117 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.page {
+  --page-align-items: stretch;
+  --page-background: none;
+  --page-background-blend-mode: normal;
+  --page-background-color: var(--pc-semantic-surface-page);
+  --page-background-image: none;
+  --page-background-position: center;
+  --page-background-repeat: repeat;
+  --page-background-size: auto;
+  --page-flex-direction: row;
+  --page-gap: 2rem;
+  --page-height: auto;
+  --page-justify-content: stretch;
+  --page-padding: 2rem;
+  --page-width: auto;
+
+  background: var(--page-background);
+  background-blend-mode: var(--page-background-blend-mode);
+  background-color: var(--page-background-color);
+  background-image: var(--page-background-image);
+  background-position: var(--page-background-position);
+  background-repeat: var(--page-background-repeat);
+  background-size: var(--page-background-size);
+  height: var(--page-height);
+  overflow-y: auto;
+  padding: 0px;
+  width: var(--page-width);
+}
+
+.page > .page_content {
+  align-items: var(--page-align-items);
+  display: flex;
+  flex-direction: var(--page-flex-direction);
+  flex-wrap: wrap;
+  gap: var(--page-gap);
+  height: var(--page-height);
+  height: 100%;
+  justify-content: var(--page-justify-content);
+  padding: var(--page-padding);
+  position: relative;
+  width: var(--page-width);
+}
+
+.page > .page_content:hover {
+  outline: 4px dashed var(--pc-editor-outline-drag);
+  outline-offset: -2px;
+}
+
+.page > .page_content.page_content_drag_over {
+  outline: 4px dashed var(--pc-editor-outline-drag);
+  outline-offset: -2px;
+}
+
+.page > .page_content.page_content_drag_over.page_content_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.page > .page_content.page_content_drag_over.page_content_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.page > .page_content.page_content_drag_over.page_content_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.page > .page_content.page_content_selected {
+  outline: 4px solid var(--pc-editor-outline-selected);
+  outline-offset: -2px;
+}
+
+.page > .page_content > .page_content_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.page.page_content_only > .page_content:hover {
+  outline: none;
+}

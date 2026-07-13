@@ -1,0 +1,64 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.schema_tooltip_container {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  position: relative;
+  width: 100%;
+}
+
+.schema_tooltip {
+  background: linear-gradient(180deg, #111827, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  max-width: 90vw;
+  padding: 1rem;
+  pointer-events: all;
+  position: absolute;
+  width: 320px;
+  z-index: 10000;
+}
+
+.schema_tooltip > .description {
+  color: #cbd5e1;
+}
+
+.schema_tooltip > .group {
+  color: #94a3b8;
+  margin-top: 0.75rem;
+}
+
+.schema_tooltip > .label {
+  color: #f8fafc;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.schema_tooltip > .plan {
+  color: #60a5fa;
+  margin-top: 0.25rem;
+}
+
+.schema_tooltip > .return_type {
+  margin-top: 0.75rem;
+}
+
+.schema_tooltip > .return_type > .text {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.schema_tooltip > .return_type > .value {
+  color: #93c5fd;
+  margin: 0px;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,2720 @@
+{
+  "action": {
+    "condition": {
+      "en": "Condition",
+      "sv": "Villkor"
+    },
+    "groups": {
+      "Canvas": {
+        "en": "Canvas",
+        "sv": "Kanvas"
+      },
+      "Component": {
+        "en": "Component",
+        "sv": "Komponent"
+      },
+      "Debugging": {
+        "en": "Debugging",
+        "sv": "Felsökning"
+      },
+      "Flow Control": {
+        "en": "Flow Control",
+        "sv": "Flödeskontroll"
+      },
+      "Navigation": {
+        "en": "Navigation",
+        "sv": "Navigering"
+      },
+      "Socket": {
+        "en": "WebSocket",
+        "sv": "Websocket"
+      },
+      "State": {
+        "en": "State",
+        "sv": "Tillstånd"
+      },
+      "User": {
+        "en": "User",
+        "sv": "Användare"
+      }
+    },
+    "parameters": {
+      "align": {
+        "en": "Align",
+        "sv": "Justera"
+      },
+      "angle": {
+        "en": "Angle",
+        "sv": "Vinkel"
+      },
+      "code": {
+        "en": "Code",
+        "sv": "Kod"
+      },
+      "color": {
+        "en": "Color",
+        "sv": "Färg"
+      },
+      "componentId": {
+        "en": "Component ID",
+        "sv": "Komponent-ID"
+      },
+      "condition": {
+        "en": "Condition",
+        "sv": "Villkor"
+      },
+      "data": {
+        "en": "Data",
+        "sv": "Data"
+      },
+      "delay": {
+        "en": "Delay",
+        "sv": "Fördröjning"
+      },
+      "email": {
+        "en": "E-mail",
+        "sv": "E-post"
+      },
+      "fill": {
+        "en": "Fill",
+        "sv": "Fyll"
+      },
+      "fontFamily": {
+        "en": "Font family",
+        "sv": "Fontfamilj"
+      },
+      "fontSize": {
+        "en": "Font size",
+        "sv": "Fontstorlek"
+      },
+      "fontWeight": {
+        "en": "Font weight",
+        "sv": "Fontvikt"
+      },
+      "height": {
+        "en": "Height",
+        "sv": "Höjd"
+      },
+      "items": {
+        "en": "Items",
+        "sv": "Föremål"
+      },
+      "name": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "opacity": {
+        "en": "Opacity",
+        "sv": "Opacitet"
+      },
+      "password": {
+        "en": "Password",
+        "sv": "Lösenord"
+      },
+      "path": {
+        "en": "Path",
+        "sv": "Sökväg"
+      },
+      "points": {
+        "en": "Points",
+        "sv": "Punkter"
+      },
+      "radius": {
+        "en": "Radius",
+        "sv": "Radie"
+      },
+      "room": {
+        "en": "Room",
+        "sv": "Rum"
+      },
+      "src": {
+        "en": "Source",
+        "sv": "Källa"
+      },
+      "stroke": {
+        "en": "Stroke",
+        "sv": "Stryka"
+      },
+      "strokeWidth": {
+        "en": "Stroke width",
+        "sv": "Strykbredd"
+      },
+      "text": {
+        "en": "Text",
+        "sv": "Text"
+      },
+      "to": {
+        "en": "To",
+        "sv": "Till"
+      },
+      "value": {
+        "en": "Value",
+        "sv": "Värde"
+      },
+      "width": {
+        "en": "Width",
+        "sv": "Bredd"
+      },
+      "x": {
+        "en": "X",
+        "sv": "X"
+      },
+      "x1": {
+        "en": "X1",
+        "sv": "X1"
+      },
+      "x2": {
+        "en": "X2",
+        "sv": "X2"
+      },
+      "y": {
+        "en": "Y",
+        "sv": "Y"
+      },
+      "y1": {
+        "en": "Y1",
+        "sv": "Y1"
+      },
+      "y2": {
+        "en": "Y2",
+        "sv": "Y2"
+      }
+    },
+    "types": {
+      "addStateValue": {
+        "label": {
+          "en": "Add state value",
+          "sv": "Addera tillståndsvärde"
+        },
+        "labelShort": {
+          "en": "Add value",
+          "sv": "Addera värde"
+        }
+      },
+      "canvasCircle": {
+        "label": {
+          "en": "Canvas circle",
+          "sv": "Kanvas cirkel"
+        },
+        "labelShort": {
+          "en": "Circle",
+          "sv": "Cirkel"
+        }
+      },
+      "canvasClear": {
+        "label": {
+          "en": "Canvas clear",
+          "sv": "Kanvas rensa"
+        },
+        "labelShort": {
+          "en": "Clear",
+          "sv": "Rensa"
+        }
+      },
+      "canvasImage": {
+        "label": {
+          "en": "Canvas image",
+          "sv": "Kanvas bild"
+        },
+        "labelShort": {
+          "en": "Image",
+          "sv": "Bild"
+        }
+      },
+      "canvasLine": {
+        "label": {
+          "en": "Canvas line",
+          "sv": "Kanvas linje"
+        },
+        "labelShort": {
+          "en": "Line",
+          "sv": "Linje"
+        }
+      },
+      "canvasPolygon": {
+        "label": {
+          "en": "Canvas polygon",
+          "sv": "Kanvas polygon"
+        },
+        "labelShort": {
+          "en": "Polygon",
+          "sv": "Polygon"
+        }
+      },
+      "canvasRectangle": {
+        "label": {
+          "en": "Canvas rectangle",
+          "sv": "Kanvas rektangel"
+        },
+        "labelShort": {
+          "en": "Rectangle",
+          "sv": "Rektangel"
+        }
+      },
+      "canvasRestore": {
+        "label": {
+          "en": "Canvas restore",
+          "sv": "Kanvas återställ"
+        },
+        "labelShort": {
+          "en": "Restore",
+          "sv": "Återställ"
+        }
+      },
+      "canvasRotate": {
+        "label": {
+          "en": "Canvas rotate",
+          "sv": "Kanvas rotera"
+        },
+        "labelShort": {
+          "en": "Rotate",
+          "sv": "Rotera"
+        }
+      },
+      "canvasSave": {
+        "label": {
+          "en": "Canvas save",
+          "sv": "Kanvas spara"
+        },
+        "labelShort": {
+          "en": "Save",
+          "sv": "Spara"
+        }
+      },
+      "canvasScale": {
+        "label": {
+          "en": "Canvas scale",
+          "sv": "Kanvas skala"
+        },
+        "labelShort": {
+          "en": "Scale",
+          "sv": "Skala"
+        }
+      },
+      "canvasText": {
+        "label": {
+          "en": "Canvas text",
+          "sv": "Kanvas text"
+        },
+        "labelShort": {
+          "en": "Text",
+          "sv": "Text"
+        }
+      },
+      "canvasTranslate": {
+        "label": {
+          "en": "Canvas translate",
+          "sv": "Kanvas förflytta"
+        },
+        "labelShort": {
+          "en": "Translate",
+          "sv": "Förflytta"
+        }
+      },
+      "forEach": {
+        "label": {
+          "en": "For each",
+          "sv": "För varje"
+        }
+      },
+      "if": {
+        "label": {
+          "en": "If",
+          "sv": "Om"
+        }
+      },
+      "navigate": {
+        "label": {
+          "en": "Navigate",
+          "sv": "Navigera"
+        }
+      },
+      "print": {
+        "label": {
+          "en": "Print",
+          "sv": "Skriv ut"
+        }
+      },
+      "socketBroadcast": {
+        "label": {
+          "en": "WebSocket broadcast",
+          "sv": "Websocket sänd ut"
+        },
+        "labelShort": {
+          "en": "Broadcast",
+          "sv": "Sänd ut"
+        }
+      },
+      "socketConnect": {
+        "label": {
+          "en": "WebSocket connect",
+          "sv": "Websocket anslut"
+        },
+        "labelShort": {
+          "en": "Connect",
+          "sv": "Anslut"
+        }
+      },
+      "socketDataAdd": {
+        "label": {
+          "en": "WebSocket add data",
+          "sv": "Websocket addera data"
+        },
+        "labelShort": {
+          "en": "Add data",
+          "sv": "Addera data"
+        }
+      },
+      "socketDataClear": {
+        "label": {
+          "en": "WebSocket clear data",
+          "sv": "Websocket rensa data"
+        },
+        "labelShort": {
+          "en": "Clear data",
+          "sv": "Rensa data"
+        }
+      },
+      "socketDataRemove": {
+        "label": {
+          "en": "WebSocket remove data",
+          "sv": "Websocket ta bort data"
+        },
+        "labelShort": {
+          "en": "Remove data",
+          "sv": "Ta bort data"
+        }
+      },
+      "socketDisconnect": {
+        "label": {
+          "en": "WebSocket disconnect",
+          "sv": "Websocket stäng anslutning"
+        },
+        "labelShort": {
+          "en": "Disconnect",
+          "sv": "Stäng anslutning"
+        }
+      },
+      "socketEmit": {
+        "label": {
+          "en": "WebSocket emit",
+          "sv": "Websocket emittera"
+        },
+        "labelShort": {
+          "en": "Emit",
+          "sv": "Emittera"
+        }
+      },
+      "setStateValue": {
+        "label": {
+          "en": "Set state value",
+          "sv": "Sätt tillståndsvärde"
+        },
+        "labelShort": {
+          "en": "Set value",
+          "sv": "Sätt värde"
+        }
+      },
+      "updateComponent": {
+        "label": {
+          "en": "Update component",
+          "sv": "Uppdatera komponent"
+        },
+        "labelShort": {
+          "en": "Update",
+          "sv": "Uppdatera"
+        }
+      },
+      "userSignIn": {
+        "label": {
+          "en": "User sign in",
+          "sv": "Användare logga in"
+        },
+        "labelShort": {
+          "en": "Sign in",
+          "sv": "Logga in"
+        }
+      },
+      "userSignOut": {
+        "label": {
+          "en": "User sign out",
+          "sv": "Användare logga ut"
+        },
+        "labelShort": {
+          "en": "Sign out",
+          "sv": "Logga ut"
+        }
+      },
+      "userSignUp": {
+        "label": {
+          "en": "User sign up",
+          "sv": "Användare registrera"
+        },
+        "labelShort": {
+          "en": "Sign up",
+          "sv": "Registrera"
+        }
+      },
+      "wait": {
+        "label": {
+          "en": "Wait",
+          "sv": "Vänta"
+        }
+      }
+    }
+  },
+  "component": {
+    "groups": {
+      "Advanced": {
+        "en": "Advanced",
+        "sv": "Avancerat"
+      },
+      "Content": {
+        "en": "Content",
+        "sv": "Innehåll"
+      },
+      "Feedback and status": {
+        "en": "Feedback and status",
+        "sv": "Feedback och status"
+      },
+      "Forms": {
+        "en": "Forms",
+        "sv": "Formulär"
+      },
+      "Interaction": {
+        "en": "Interaction",
+        "sv": "Interaktion"
+      },
+      "Layout": {
+        "en": "Layout",
+        "sv": "Layout"
+      }
+    },
+    "types": {
+      "Alert": {
+        "label": {
+          "en": "Alert",
+          "sv": "Meddelande"
+        },
+        "description": {
+          "en": "A content container that alerts the user in a visual way using different themes.",
+          "sv": "En container som meddelar användaren att något har hänt på olika sätt med olika teman."
+        }
+      },
+      "Badge": {
+        "label": {
+          "en": "Badge",
+          "sv": "Märke"
+        },
+        "description": {
+          "en": "A badge can be used to display unread notifications, item counts or status indicators among other things.",
+          "sv": "Ett märke kan användas för att visa olästa notifikationer, antalet föremål i en lista eller som en statusindikator."
+        }
+      },
+      "Button": {
+        "label": {
+          "en": "Button",
+          "sv": "Knapp"
+        },
+        "description": {
+          "en": "A button or a link that looks like a button.",
+          "sv": "En knapp eller en länk som ser ut som en knapp."
+        }
+      },
+      "Canvas": {
+        "label": {
+          "en": "Canvas",
+          "sv": "Kanvas"
+        },
+        "description": {
+          "en": "A programmable canvas that can be used to create interactive experiences, tools or games.",
+          "sv": "En programmerbar kanvas som kan användas för att skapa interaktiva upplevelser, verktyg eller spel."
+        }
+      },
+      "Card": {
+        "label": {
+          "en": "Card",
+          "sv": "Kort"
+        },
+        "description": {
+          "en": "A card that contains three optional slots; a header, a body and a footer.",
+          "sv": "Ett kort som innehåller tre valfria luckor; ett huvud, en kropp och en fot."
+        }
+      },
+      "Checkbox": {
+        "label": {
+          "en": "Checkbox",
+          "sv": "Kryssruta"
+        },
+        "description": {
+          "en": "A checkbox that is useful in forms among other places.",
+          "sv": "En kryssruta som är användbar i ett formulär och på andra ställen."
+        }
+      },
+      "Dialog": {
+        "label": {
+          "en": "Dialog",
+          "sv": "Dialogruta"
+        },
+        "description": {
+          "en": "A dialog that contains three optional slots; a header, a body and a footer.",
+          "sv": "En dialogruta som innehåller tre valfria luckor; ett huvud, en kropp och en fot."
+        }
+      },
+      "Divider": {
+        "label": {
+          "en": "Divider",
+          "sv": "Avskiljare"
+        },
+        "description": {
+          "en": "A way to divide content vertically; the content above the divider and the content below it.",
+          "sv": "Ett sätt att dela upp innehåll vertikalt; innehållet ovanför avskiljaren och innehållet nedanför den."
+        }
+      },
+      "Element": {
+        "label": {
+          "en": "Element",
+          "sv": "Element"
+        },
+        "description": {
+          "en": "A useful component if you cannot do what you want with other existing ones.",
+          "sv": "En användbar komponent om du inte kan göra vad du vill med de andra som finns."
+        }
+      },
+      "Footer": {
+        "label": {
+          "en": "Footer",
+          "sv": "Sidfot"
+        },
+        "description": {
+          "en": "A simple customizable footer that can be used at the bottom of the page.",
+          "sv": "En simpel anpassningsbar sidfot som kan användas längst ned på sidan."
+        }
+      },
+      "Form": {
+        "label": {
+          "en": "Form",
+          "sv": "Formulär"
+        },
+        "description": {
+          "en": "A form that allows you to submit data.",
+          "sv": "Ett formulär som gör det möjligt att skicka in data."
+        }
+      },
+      "Grid": {
+        "label": {
+          "en": "Grid",
+          "sv": "Rutnät"
+        },
+        "description": {
+          "en": "A grid-based container that is useful for creating some layouts.",
+          "sv": "En container i form av ett rutnät som passar bra för att skapa vissa layouter."
+        }
+      },
+      "Heading": {
+        "label": {
+          "en": "Heading",
+          "sv": "Rubrik"
+        },
+        "description": {
+          "en": "A heading with six different levels that have been configured using a typography scale.",
+          "sv": "En rubrik med sex olika nivåer som har konfigurerats efter en typografisk skala."
+        }
+      },
+      "Image": {
+        "label": {
+          "en": "Image",
+          "sv": "Bild"
+        },
+        "description": {
+          "en": "An image with built-in optimization capabilities.",
+          "sv": "En bild med inbyggda optimeringsmöjligheter."
+        }
+      },
+      "Input": {
+        "label": {
+          "en": "Input",
+          "sv": "Inmatningsfält"
+        },
+        "description": {
+          "en": "An input that can be used in a form or other places and receive input.",
+          "sv": "Ett inmatningsfält som kan användas i ett formulär eller på andra ställen och få text inmatad."
+        }
+      },
+      "Label": {
+        "label": {
+          "en": "Label",
+          "sv": "Etikett"
+        },
+        "description": {
+          "en": "A label that mainly describes form controls like inputs and text areas.",
+          "sv": "En etikett som huvudsakligen beskriver formulärkontroller som inmatningsfält och textrutor."
+        }
+      },
+      "Link": {
+        "label": {
+          "en": "Link",
+          "sv": "Länk"
+        },
+        "description": {
+          "en": "A link that can be configured to open in the same window or a separate blank window.",
+          "sv": "En länk som kan bli konfigurerad att öppnas i samma fönster eller ett separat blankt fönster."
+        }
+      },
+      "List": {
+        "label": {
+          "en": "List",
+          "sv": "Lista"
+        },
+        "description": {
+          "en": "A list that can be either ordered or unordered.",
+          "sv": "En lista som kan vara ordnad eller oordnad."
+        }
+      },
+      "ListItem": {
+        "label": {
+          "en": "List item",
+          "sv": "Listföremål"
+        },
+        "description": {
+          "en": "An item in an ordered or unordered list.",
+          "sv": "Ett föremål i en ordnad eller oordnad lista."
+        }
+      },
+      "Map": {
+        "label": {
+          "en": "Map",
+          "sv": "Karta"
+        },
+        "description": {
+          "en": "A map that uses tiles from OpenStreetMap by default.",
+          "sv": "En karta som använder bilder från OpenStreetMap som standard."
+        }
+      },
+      "MenuBar": {
+        "label": {
+          "en": "Menu bar",
+          "sv": "Menyrad"
+        },
+        "description": {
+          "en": "A simple customizable menu bar that can be used at the top of the page.",
+          "sv": "En simpel anpassningsbar menyrad som kan användas längst upp på sidan."
+        }
+      },
+      "Page": {
+        "label": {
+          "en": "Page",
+          "sv": "Sida"
+        },
+        "description": {
+          "en": "A container of the whole page.",
+          "sv": "En container för hela sidan."
+        }
+      },
+      "RadioGroup": {
+        "label": {
+          "en": "Radio group",
+          "sv": "Radiogrupp"
+        },
+        "description": {
+          "en": "A radio group where only one radio button can be enabled at a time.",
+          "sv": "En radiogrupp där bara en radioknapp kan vara vald åt gången."
+        }
+      },
+      "RichText": {
+        "label": {
+          "en": "Rich text",
+          "sv": "Rik text"
+        },
+        "description": {
+          "en": "A rich text-editor and viewer with support for text styles and headings among other things.",
+          "sv": "En rik text-editor och läsare med stöd för formaterad text, rubriker och andra saker."
+        }
+      },
+      "Section": {
+        "label": {
+          "en": "Section",
+          "sv": "Sektion"
+        },
+        "description": {
+          "en": "A mostly flex-based general purpose layout container that can be used for more than that.",
+          "sv": "En generell container som passar för många olika typer av layouter. Den använder sig mestadels av Flexbox."
+        }
+      },
+      "Select": {
+        "label": {
+          "en": "Select",
+          "sv": "Rullista"
+        },
+        "description": {
+          "en": "A form control with a drop-down menu where you can select an option.",
+          "sv": "En formulärkontroll med en nedfällbar rullista där du kan göra ett val."
+        }
+      },
+      "SideBar": {
+        "label": {
+          "en": "Side bar",
+          "sv": "Sidrad"
+        },
+        "description": {
+          "en": "Coming soon...",
+          "sv": "Kommer inom kort..."
+        }
+      },
+      "Spacer": {
+        "label": {
+          "en": "Spacer",
+          "sv": "Tomrum"
+        },
+        "description": {
+          "en": "A component that adds space between other components.",
+          "sv": "En komponent som lägger till tomrum mellan andra komponenter."
+        }
+      },
+      "Spinner": {
+        "label": {
+          "en": "Spinner",
+          "sv": "Snurra"
+        },
+        "description": {
+          "en": "A component that spins around forever and is useful for when things are loading.",
+          "sv": "En komponent som spinner runt eller snurrar för evigt och är användbar när saker laddar."
+        }
+      },
+      "Switch": {
+        "label": {
+          "en": "Switch",
+          "sv": "Växel"
+        },
+        "description": {
+          "en": "A component that acts in a similar way to a checkbox but looks different.",
+          "sv": "En komponent som fungerar på ett liknande sätt som en kryssruta men ser annorlunda ut."
+        }
+      },
+      "Table": {
+        "label": {
+          "en": "Table",
+          "sv": "Tabell"
+        },
+        "description": {
+          "en": "A component that contains mainly tabular data.",
+          "sv": "En komponent som främst innehåller tabulär data."
+        }
+      },
+      "TableData": {
+        "label": {
+          "en": "Table data",
+          "sv": "Tabelldata"
+        },
+        "description": {
+          "en": "A component that contains the tabular data for a column in a row of a table.",
+          "sv": "En komponent som innehåller den tabulära datan för en kolumn i en rad i en tabell."
+        }
+      },
+      "TableHeader": {
+        "label": {
+          "en": "Table header",
+          "sv": "Tabellhuvud"
+        },
+        "description": {
+          "en": "A component that contains the header for a column in a table.",
+          "sv": "En komponent som innehåller huvudet för den tabulära datan för en kolumn i en tabell."
+        }
+      },
+      "TableRow": {
+        "label": {
+          "en": "Table row",
+          "sv": "Tabellrad"
+        },
+        "description": {
+          "en": "A component that contains a row in a table.",
+          "sv": "En komponent som innehåller en rad i en tabell."
+        }
+      },
+      "Text": {
+        "label": {
+          "en": "Text",
+          "sv": "Text"
+        },
+        "description": {
+          "en": "A component that contains text.",
+          "sv": "En komponent som innehåller text."
+        }
+      },
+      "TextArea": {
+        "label": {
+          "en": "Text area",
+          "sv": "Textruta"
+        },
+        "description": {
+          "en": "A text area that can be used in a form or other places and receive input.",
+          "sv": "En textruta som kan användas i ett formulär eller på andra ställen och få text inmatad."
+        }
+      }
+    }
+  },
+  "dataTypes": {
+    "any": {
+      "en": "any",
+      "sv": "någon"
+    },
+    "array": {
+      "en": "array",
+      "sv": "lista"
+    },
+    "array<any>": {
+      "en": "array<any>",
+      "sv": "lista<någon>"
+    },
+    "array<boolean>": {
+      "en": "array<boolean>",
+      "sv": "lista<boolesk>"
+    },
+    "array<number>": {
+      "en": "array<number>",
+      "sv": "lista<nummer>"
+    },
+    "array<object>": {
+      "en": "array<object>",
+      "sv": "lista<objekt>"
+    },
+    "array<string>": {
+      "en": "array<string>",
+      "sv": "lista<sträng>"
+    },
+    "boolean": {
+      "en": "boolean",
+      "sv": "boolesk"
+    },
+    "collection": {
+      "en": "collection",
+      "sv": "kollektion"
+    },
+    "enum<any>": {
+      "en": "enum<any>",
+      "sv": "uppräkning<någon>"
+    },
+    "enum<boolean>": {
+      "en": "enum<boolean>",
+      "sv": "uppräkning<boolesk>"
+    },
+    "enum<number>": {
+      "en": "enum<number>",
+      "sv": "uppräkning<nummer>"
+    },
+    "enum<object>": {
+      "en": "enum<object>",
+      "sv": "uppräkning<objekt>"
+    },
+    "enum<string>": {
+      "en": "enum<string>",
+      "sv": "uppräkning<sträng>"
+    },
+    "number": {
+      "en": "number",
+      "sv": "nummer"
+    },
+    "object": {
+      "en": "object",
+      "sv": "objekt"
+    },
+    "relation": {
+      "en": "relation",
+      "sv": "relation"
+    },
+    "string": {
+      "en": "string",
+      "sv": "sträng"
+    }
+  },
+  "expression": {
+    "groups": {
+      "Canvas": {
+        "en": "Canvas",
+        "sv": "Kanvas"
+      },
+      "Collections": {
+        "en": "Collections",
+        "sv": "Kollektioner"
+      },
+      "Component": {
+        "en": "Component",
+        "sv": "Komponent"
+      },
+      "Constants": {
+        "en": "Constants",
+        "sv": "Konstanter"
+      },
+      "Conversion": {
+        "en": "Conversion",
+        "sv": "Konversion"
+      },
+      "Date & Time": {
+        "en": "Date & Time",
+        "sv": "Datum & Tid"
+      },
+      "Logic": {
+        "en": "Logic",
+        "sv": "Logik"
+      },
+      "Math": {
+        "en": "Math",
+        "sv": "Matematik"
+      },
+      "Object": {
+        "en": "Object",
+        "sv": "Objekt"
+      },
+      "Platform User": {
+        "en": "Platform User",
+        "sv": "Plattformsanvändare"
+      },
+      "Socket": {
+        "en": "WebSocket",
+        "sv": "Websocket"
+      },
+      "Text": {
+        "en": "Text",
+        "sv": "Text"
+      },
+      "User": {
+        "en": "User",
+        "sv": "Användare"
+      },
+      "Viewport": {
+        "en": "Viewport",
+        "sv": "Vyport"
+      },
+      "Website": {
+        "en": "Website",
+        "sv": "Webbplats"
+      }
+    },
+    "parameters": {
+      "amount": {
+        "en": "Amount",
+        "sv": "Belopp"
+      },
+      "array": {
+        "en": "Array",
+        "sv": "Lista"
+      },
+      "as": {
+        "en": "As",
+        "sv": "Som"
+      },
+      "asc": {
+        "en": "Ascending",
+        "sv": "Stigande"
+      },
+      "base": {
+        "en": "Base",
+        "sv": "Bas"
+      },
+      "componentId": {
+        "en": "Component ID",
+        "sv": "Komponent-ID"
+      },
+      "condition": {
+        "en": "Condition",
+        "sv": "Villkor"
+      },
+      "count": {
+        "en": "Count",
+        "sv": "Antal"
+      },
+      "date": {
+        "en": "Date",
+        "sv": "Datum"
+      },
+      "day": {
+        "en": "Day",
+        "sv": "Dag"
+      },
+      "days": {
+        "en": "Days",
+        "sv": "Dagar"
+      },
+      "degrees": {
+        "en": "Degrees",
+        "sv": "Grader"
+      },
+      "desc": {
+        "en": "Descending",
+        "sv": "Fallande"
+      },
+      "direction": {
+        "en": "Direction",
+        "sv": "Riktning"
+      },
+      "else": {
+        "en": "Else",
+        "sv": "Annars"
+      },
+      "end": {
+        "en": "End",
+        "sv": "Slut"
+      },
+      "exponent": {
+        "en": "Exponent",
+        "sv": "Exponent"
+      },
+      "expression": {
+        "en": "Expression",
+        "sv": "Uttryck"
+      },
+      "fields": {
+        "en": "Fields",
+        "sv": "Fält"
+      },
+      "foreignField": {
+        "en": "Foreign field",
+        "sv": "Främmande fält"
+      },
+      "from": {
+        "en": "From",
+        "sv": "Från"
+      },
+      "hour": {
+        "en": "Hour",
+        "sv": "Timme"
+      },
+      "hours": {
+        "en": "Hours",
+        "sv": "Timmar"
+      },
+      "input": {
+        "en": "Input",
+        "sv": "Inmatning"
+      },
+      "key": {
+        "canvasKeyDown": {
+          "en": "Key",
+          "sv": "Tangent"
+        },
+        "getByKey": {
+          "en": "Key",
+          "sv": "Nyckel"
+        },
+        "groupBy": {
+          "en": "Key",
+          "sv": "Nyckel"
+        }
+      },
+      "left": {
+        "en": "Left",
+        "sv": "Vänster"
+      },
+      "length": {
+        "en": "Length",
+        "sv": "Längd"
+      },
+      "localField": {
+        "en": "Local field",
+        "sv": "Lokalt fält"
+      },
+      "max": {
+        "en": "Max",
+        "sv": "Max"
+      },
+      "milliseconds": {
+        "en": "Milliseconds",
+        "sv": "Millisekunder"
+      },
+      "min": {
+        "en": "Min",
+        "sv": "Min"
+      },
+      "minute": {
+        "en": "Minute",
+        "sv": "Minut"
+      },
+      "minutes": {
+        "en": "Minutes",
+        "sv": "Minuter"
+      },
+      "month": {
+        "en": "Month",
+        "sv": "Månad"
+      },
+      "months": {
+        "en": "Months",
+        "sv": "Månader"
+      },
+      "object": {
+        "en": "Object",
+        "sv": "Objekt"
+      },
+      "part": {
+        "en": "Part",
+        "sv": "Del"
+      },
+      "prop": {
+        "en": "Property",
+        "sv": "Egenskap"
+      },
+      "radians": {
+        "en": "Radians",
+        "sv": "Radianer"
+      },
+      "recursive": {
+        "en": "Recursive",
+        "sv": "Rekursiv"
+      },
+      "replace": {
+        "en": "Replace",
+        "sv": "Ersätt"
+      },
+      "right": {
+        "en": "Right",
+        "sv": "Höger"
+      },
+      "search": {
+        "en": "Search",
+        "sv": "Sökning"
+      },
+      "second": {
+        "en": "Second",
+        "sv": "Sekund"
+      },
+      "seconds": {
+        "en": "Seconds",
+        "sv": "Sekunder"
+      },
+      "separator": {
+        "en": "Separator",
+        "sv": "Separator"
+      },
+      "stages": {
+        "en": "Stages",
+        "sv": "Etapper"
+      },
+      "start": {
+        "en": "Start",
+        "sv": "Början"
+      },
+      "then": {
+        "en": "Then",
+        "sv": "Då"
+      },
+      "unit": {
+        "en": "Unit",
+        "sv": "Enhet"
+      },
+      "value": {
+        "en": "Value",
+        "sv": "Värde"
+      },
+      "values": {
+        "en": "Values",
+        "sv": "Värden"
+      },
+      "x": {
+        "en": "X",
+        "sv": "X"
+      },
+      "y": {
+        "en": "Y",
+        "sv": "Y"
+      },
+      "year": {
+        "en": "Year",
+        "sv": "År"
+      },
+      "years": {
+        "en": "Years",
+        "sv": "År"
+      }
+    },
+    "types": {
+      "abs": {
+        "label": {
+          "en": "Absolute",
+          "sv": "Absolut"
+        },
+        "description": {
+          "en": "Returns the absolute value of a number.",
+          "sv": "Returnerar det absoluta värdet av ett nummer."
+        }
+      },
+      "acos": {
+        "label": {
+          "en": "Inverse cosine",
+          "sv": "Invers cosinus"
+        },
+        "description": {
+          "en": "Returns the inverse cosine of a number in radians.",
+          "sv": "Returnerar den inversa cosinusen för ett tal i radianer."
+        }
+      },
+      "acosh": {
+        "label": {
+          "en": "Inverse hyperbolic cosine",
+          "sv": "Invers hyperbolisk cosinus"
+        },
+        "description": {
+          "en": "Returns the inverse hyperbolic cosine of a number.",
+          "sv": "Returnerar den inversa hyperboliska cosinusen för ett tal."
+        }
+      },
+      "add": {
+        "label": {
+          "en": "Add",
+          "sv": "Addera"
+        },
+        "description": {
+          "en": "Returns the sum of the addition.\nEach value supplied should preferably be a number or an array of numbers. But other types are supported and will be deeply reduced and coerced to numbers.",
+          "sv": "Returnerar summan av additionen.\nAlla värden förväntas vara nummer eller listor av nummer. Men andra datatyper stöds och kommer bli djupt reducerade och tvingade till nummer."
+        }
+      },
+      "all": {
+        "label": {
+          "en": "All",
+          "sv": "Alla"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "and": {
+        "label": {
+          "en": "And",
+          "sv": "Och"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "any": {
+        "label": {
+          "en": "Any",
+          "sv": "Någon"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "asin": {
+        "label": {
+          "en": "Inverse sine",
+          "sv": "Invers sinus"
+        },
+        "description": {
+          "en": "Returns the inverse sine of a number in radians.",
+          "sv": "Returnerar den inversa sinusen för ett tal i radianer."
+        }
+      },
+      "asinh": {
+        "label": {
+          "en": "Inverse hyperbolic sine",
+          "sv": "Invers hyperbolisk sinus"
+        },
+        "description": {
+          "en": "Returns the inverse hyperbolic sine of a number.",
+          "sv": "Returnerar den inversa hyperboliska sinusen för ett tal."
+        }
+      },
+      "atan": {
+        "label": {
+          "en": "Inverse tangent",
+          "sv": "Invers tangent"
+        },
+        "description": {
+          "en": "Returns the inverse tangent of a number in radians.",
+          "sv": "Returnerar den inversa tangenten för ett tal i radianer."
+        }
+      },
+      "atan2": {
+        "label": {
+          "en": "Angle between points",
+          "sv": "Vinkel mellan punkter"
+        },
+        "description": {
+          "en": "Returns the radian-based angle in the plane between the positive X-axis and the ray from (0, 0) to the point (x, y).",
+          "sv": "Returnerar den radianbaserade vinkeln i planet mellan den positiva X-axeln och strålen från (0, 0) till punkten (x, y)."
+        }
+      },
+      "atanh": {
+        "label": {
+          "en": "Inverse hyperbolic tangent",
+          "sv": "Invers hyperbolisk tangent"
+        },
+        "description": {
+          "en": "Returns the inverse hyperbolic tangent of a number.",
+          "sv": "Returnerar den inversa hyperboliska tangenten för ett tal."
+        }
+      },
+      "average": {
+        "label": {
+          "en": "Average",
+          "sv": "Genomsnitt"
+        },
+        "description": {
+          "en": "Returns the average number of the supplied array, or 0 if the array is empty.\nEach array item supplied should preferably be a number or an array of numbers. But other types are supported and will be deeply reduced and coerced to numbers.",
+          "sv": "Returnerar det genomsnittliga värdet från den angivna listan, eller 0 om listan är tom.\nVarje föremål i listan förväntas vara nummer eller listor av nummer. Men andra datatyper stöds och kommer bli djupt reducerade och tvingade till nummer."
+        }
+      },
+      "canvasDeltaTime": {
+        "label": {
+          "en": "Canvas delta time",
+          "sv": "Kanvas förfluten tid"
+        },
+        "labelShort": {
+          "en": "Delta time",
+          "sv": "Förfluten tid"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasFPS": {
+        "label": {
+          "en": "Canvas frames per second",
+          "sv": "Kanvas bilder per sekund"
+        },
+        "labelShort": {
+          "en": "Frames per second",
+          "sv": "Bilder per sekund"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasFrame": {
+        "label": {
+          "en": "Canvas frame",
+          "sv": "Kanvas bildruta"
+        },
+        "labelShort": {
+          "en": "Frame",
+          "sv": "Bildruta"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasHeight": {
+        "label": {
+          "en": "Canvas height",
+          "sv": "Kanvas höjd"
+        },
+        "labelShort": {
+          "en": "Height",
+          "sv": "Höjd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasKeyDown": {
+        "label": {
+          "en": "Canvas key down",
+          "sv": "Kanvas tangent nere"
+        },
+        "labelShort": {
+          "en": "Key down",
+          "sv": "Tangent nere"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseButton": {
+        "label": {
+          "en": "Canvas mouse button",
+          "sv": "Kanvas musknapp"
+        },
+        "labelShort": {
+          "en": "Mouse button",
+          "sv": "Musknapp"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseDown": {
+        "label": {
+          "en": "Canvas mouse down",
+          "sv": "Kanvas musknappen nere"
+        },
+        "labelShort": {
+          "en": "Mouse down",
+          "sv": "Musknappen nere"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseMoved": {
+        "label": {
+          "en": "Canvas mouse moved",
+          "sv": "Kanvas muspekaren förflyttad"
+        },
+        "labelShort": {
+          "en": "Mouse moved",
+          "sv": "Muspekaren förflyttad"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMousePressed": {
+        "label": {
+          "en": "Canvas mouse pressed",
+          "sv": "Kanvas musknappen nedtryckt"
+        },
+        "labelShort": {
+          "en": "Mouse pressed",
+          "sv": "Musknappen nedtryckt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseReleased": {
+        "label": {
+          "en": "Canvas mouse released",
+          "sv": "Kanvas musknappen släppt"
+        },
+        "labelShort": {
+          "en": "Mouse released",
+          "sv": "Musknappen släppt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseWheel": {
+        "label": {
+          "en": "Canvas mouse wheel",
+          "sv": "Kanvas mushjul"
+        },
+        "labelShort": {
+          "en": "Mouse wheel",
+          "sv": "Mushjul"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseX": {
+        "label": {
+          "en": "Canvas mouse X",
+          "sv": "Kanvas muspekarens X"
+        },
+        "labelShort": {
+          "en": "Mouse X",
+          "sv": "Muspekarens X"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasMouseY": {
+        "label": {
+          "en": "Canvas mouse Y",
+          "sv": "Kanvas muspekarens Y"
+        },
+        "labelShort": {
+          "en": "Mouse Y",
+          "sv": "Muspekarens Y"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasTime": {
+        "label": {
+          "en": "Canvas time",
+          "sv": "Kanvas tid"
+        },
+        "labelShort": {
+          "en": "Time",
+          "sv": "Tid"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "canvasWidth": {
+        "label": {
+          "en": "Canvas width",
+          "sv": "Kanvas bredd"
+        },
+        "labelShort": {
+          "en": "Width",
+          "sv": "Bredd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "ceil": {
+        "label": {
+          "en": "Ceiling",
+          "sv": "Tak"
+        },
+        "description": {
+          "en": "Returns the smallest integer greater than or equal to the given number.",
+          "sv": "Returnerar det minsta heltal som är större än eller lika med det angivna numret."
+        }
+      },
+      "clamp": {
+        "label": {
+          "en": "Clamp",
+          "sv": "Avgränsa"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "coalesce": {
+        "label": {
+          "en": "Coalesce",
+          "sv": "Första giltiga värde"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "concat": {
+        "label": {
+          "en": "Concatenate",
+          "sv": "Sammanfoga"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "contains": {
+        "label": {
+          "en": "Contains",
+          "sv": "Innehåller"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "cos": {
+        "label": {
+          "en": "Cosine",
+          "sv": "Cosinus"
+        },
+        "description": {
+          "en": "Returns the cosine of a number in radians.",
+          "sv": "Returnerar cosinusen för ett tal i radianer."
+        }
+      },
+      "cosh": {
+        "label": {
+          "en": "Hyperbolic cosine",
+          "sv": "Hyperbolisk cosinus"
+        },
+        "description": {
+          "en": "Returns the hyperbolic cosine of a number.",
+          "sv": "Returnerar den hyperboliska cosinusen för ett tal."
+        }
+      },
+      "count": {
+        "label": {
+          "en": "Count",
+          "sv": "Antal"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "dateAdd": {
+        "label": {
+          "en": "Date add",
+          "sv": "Datum addera"
+        },
+        "labelShort": {
+          "en": "Add",
+          "sv": "Addera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "dateDiff": {
+        "label": {
+          "en": "Date difference",
+          "sv": "Datum skillnad"
+        },
+        "labelShort": {
+          "en": "Difference",
+          "sv": "Skillnad"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "datePart": {
+        "label": {
+          "en": "Date part",
+          "sv": "Datum del"
+        },
+        "labelShort": {
+          "en": "Part",
+          "sv": "Del"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "degreesToRadians": {
+        "label": {
+          "en": "Degrees to radians",
+          "sv": "Grader till radianer"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "distinct": {
+        "label": {
+          "en": "Distinct",
+          "sv": "Distinkta"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "divide": {
+        "label": {
+          "en": "Divide",
+          "sv": "Dividera"
+        },
+        "description": {
+          "en": "Returns the quotient of the division.",
+          "sv": "Returnerar kvoten av divisionen."
+        }
+      },
+      "equals": {
+        "label": {
+          "en": "Equals",
+          "sv": "Är lika med"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "filter": {
+        "label": {
+          "en": "Filter",
+          "sv": "Filtrera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "first": {
+        "label": {
+          "en": "First",
+          "sv": "Första"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "floor": {
+        "label": {
+          "en": "Floor",
+          "sv": "Golv"
+        },
+        "description": {
+          "en": "Returns the largest integer less than or equal to the given number.",
+          "sv": "Returnerar det största heltal som är mindre än eller lika med det angivna numret."
+        }
+      },
+      "formatDate": {
+        "label": {
+          "en": "Date format",
+          "sv": "Datum formatera"
+        },
+        "labelShort": {
+          "en": "Format",
+          "sv": "Formatera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "getByKey": {
+        "label": {
+          "en": "Get by key",
+          "sv": "Hämta med nyckel"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "greaterThan": {
+        "label": {
+          "en": "Greater than",
+          "sv": "Större än"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "greaterThanOrEqualTo": {
+        "label": {
+          "en": "Greater than or equal to",
+          "sv": "Större än eller lika med"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "groupBy": {
+        "label": {
+          "en": "Group by",
+          "sv": "Gruppera med"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "hoursToMilliseconds": {
+        "label": {
+          "en": "Hours to milliseconds",
+          "sv": "Timmar till millisekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "hoursToMinutes": {
+        "label": {
+          "en": "Hours to minutes",
+          "sv": "Timmar till minuter"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "hoursToSeconds": {
+        "label": {
+          "en": "Hours to seconds",
+          "sv": "Timmar till sekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "if": {
+        "label": {
+          "en": "If",
+          "sv": "Om"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "includes": {
+        "label": {
+          "en": "Includes",
+          "sv": "Inkluderar"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isDesktop": {
+        "label": {
+          "en": "Is desktop",
+          "sv": "Är dator"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isEmail": {
+        "label": {
+          "en": "Is e-mail address",
+          "sv": "Är e-postadress"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isLandscape": {
+        "label": {
+          "en": "Is landscape",
+          "sv": "Är landskap"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isMobile": {
+        "label": {
+          "en": "Is mobile",
+          "sv": "Är mobiltelefon"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isPlatformUserAdmin": {
+        "label": {
+          "en": "Is platform user administrator",
+          "sv": "Är plattformsanvändare administratör"
+        },
+        "labelShort": {
+          "en": "Is administrator",
+          "sv": "Är administratör"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isPlatformUserAuthenticated": {
+        "label": {
+          "en": "Is platform user authenticated",
+          "sv": "Är plattformsanvändare autentiserad"
+        },
+        "labelShort": {
+          "en": "Is authenticated",
+          "sv": "Är autentiserad"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isPlatformUserWebsiteOwner": {
+        "label": {
+          "en": "Is platform user website owner",
+          "sv": "Är plattformsanvändare webplatsägare"
+        },
+        "labelShort": {
+          "en": "Is website owner",
+          "sv": "Är webplatsägare"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isPortrait": {
+        "label": {
+          "en": "Is portrait",
+          "sv": "Är porträtt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isSocketConnected": {
+        "label": {
+          "en": "Is WebSocket connected",
+          "sv": "Är Websocket ansluten"
+        },
+        "labelShort": {
+          "en": "Is connected",
+          "sv": "Är ansluten"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isSocketDisconnected": {
+        "label": {
+          "en": "Is WebSocket disconnected",
+          "sv": "Är Websocket frånkopplad"
+        },
+        "labelShort": {
+          "en": "Is connected",
+          "sv": "Är frånkopplad"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isSocketReconnecting": {
+        "label": {
+          "en": "Is WebSocket reconnecting",
+          "sv": "Är Websocket återanslutande"
+        },
+        "labelShort": {
+          "en": "Is reconnecting",
+          "sv": "Är återanslutande"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isTablet": {
+        "label": {
+          "en": "Is tablet",
+          "sv": "Är platta"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "isUserAuthenticated": {
+        "label": {
+          "en": "Is user authenticated",
+          "sv": "Är användare autentiserad"
+        },
+        "labelShort": {
+          "en": "Is authenticated",
+          "sv": "Är autentiserad"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "join": {
+        "label": {
+          "en": "Join",
+          "sv": "Sammanfoga"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "last": {
+        "label": {
+          "en": "Last",
+          "sv": "Sista"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "length": {
+        "label": {
+          "en": "Length",
+          "sv": "Längd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "lessThan": {
+        "label": {
+          "en": "Less than",
+          "sv": "Mindre än"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "lessThanOrEqualTo": {
+        "label": {
+          "en": "Less than or equal to",
+          "sv": "Mindre än eller lika med"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "literal": {
+        "label": {
+          "en": "Literal",
+          "sv": "Litteral"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "lookup": {
+        "label": {
+          "en": "Lookup",
+          "sv": "Sök upp"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "lowercase": {
+        "label": {
+          "en": "Lowercase",
+          "sv": "Till små bokstäver"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "map": {
+        "label": {
+          "en": "Map",
+          "sv": "Mappa"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "max": {
+        "label": {
+          "en": "Maximum",
+          "sv": "Maximum"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "millisecondsToHours": {
+        "label": {
+          "en": "Milliseconds to hours",
+          "sv": "Millisekunder till timmar"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "millisecondsToMinutes": {
+        "label": {
+          "en": "Milliseconds to minutes",
+          "sv": "Millisekunder till minuter"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "millisecondsToSeconds": {
+        "label": {
+          "en": "Milliseconds to seconds",
+          "sv": "Millisekunder till sekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "min": {
+        "label": {
+          "en": "Minimum",
+          "sv": "Minimum"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "minutesToHours": {
+        "label": {
+          "en": "Minutes to hours",
+          "sv": "Minuter till timmar"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "minutesToMilliseconds": {
+        "label": {
+          "en": "Minutes to milliseconds",
+          "sv": "Minuter till millisekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "minutesToSeconds": {
+        "label": {
+          "en": "Minutes to seconds",
+          "sv": "Minuter till sekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "multiply": {
+        "label": {
+          "en": "Multiply",
+          "sv": "Multiplicera"
+        },
+        "description": {
+          "en": "Returns the product of the multiplication.",
+          "sv": "Returnerar produkten av multiplikationen."
+        }
+      },
+      "not": {
+        "label": {
+          "en": "Not",
+          "sv": "Inte"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "now": {
+        "label": {
+          "en": "Now",
+          "sv": "Nu"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "object": {
+        "label": {
+          "en": "Object",
+          "sv": "Objekt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "or": {
+        "label": {
+          "en": "Or",
+          "sv": "Eller"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "PI": {
+        "label": {
+          "en": "PI",
+          "sv": "PI"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "path": {
+        "label": {
+          "en": "Path",
+          "sv": "Sökväg"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "pipeline": {
+        "label": {
+          "en": "Pipeline",
+          "sv": "Pipeline"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "platformUserEmail": {
+        "label": {
+          "en": "Platform user e-mail address",
+          "sv": "Plattformsanvändare e-postadress"
+        },
+        "labelShort": {
+          "en": "E-mail address",
+          "sv": "E-postadress"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "pow": {
+        "label": {
+          "en": "Power of",
+          "sv": "Upphöjt till"
+        },
+        "description": {
+          "en": "Returns the value of the provided base raised to the provided power.",
+          "sv": "Returnerar värdet av den angivna basen upphöjt till den angivna exponenten."
+        }
+      },
+      "prop": {
+        "label": {
+          "en": "Property",
+          "sv": "Egenskap"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "radiansToDegrees": {
+        "label": {
+          "en": "Radians to degrees",
+          "sv": "Radianer till grader"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "random": {
+        "label": {
+          "en": "Random",
+          "sv": "Slumpmässigt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "range": {
+        "label": {
+          "en": "Range",
+          "sv": "Intervall"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "replace": {
+        "label": {
+          "en": "Replace",
+          "sv": "Ersätt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "round": {
+        "label": {
+          "en": "Round",
+          "sv": "Avrunda"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "secondsToHours": {
+        "label": {
+          "en": "Seconds to hours",
+          "sv": "Sekunder till timmar"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "secondsToMilliseconds": {
+        "label": {
+          "en": "Seconds to milliseconds",
+          "sv": "Sekunder till millisekunder"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "secondsToMinutes": {
+        "label": {
+          "en": "Seconds to minutes",
+          "sv": "Sekunder till minuter"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "sin": {
+        "label": {
+          "en": "Sine",
+          "sv": "Sinus"
+        },
+        "description": {
+          "en": "Returns the sine of a number in radians.",
+          "sv": "Returnerar sinusen för ett tal i radianer."
+        }
+      },
+      "sinh": {
+        "label": {
+          "en": "Hyperbolic sine",
+          "sv": "Hyperbolisk sinus"
+        },
+        "description": {
+          "en": "Returns the hyperbolic sine of a number.",
+          "sv": "Returnerar den hyperboliska sinusen för ett tal."
+        }
+      },
+      "socketData": {
+        "label": {
+          "en": "WebSocket data",
+          "sv": "Websocket data"
+        },
+        "labelShort": {
+          "en": "Data",
+          "sv": "Data"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "socketDataArray": {
+        "label": {
+          "en": "WebSocket data array",
+          "sv": "Websocket datalista"
+        },
+        "labelShort": {
+          "en": "Data array",
+          "sv": "Datalista"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "sort": {
+        "label": {
+          "en": "Sort",
+          "sv": "Sortera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "split": {
+        "label": {
+          "en": "Split",
+          "sv": "Separera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "sqrt": {
+        "label": {
+          "en": "Square root",
+          "sv": "Kvadratrot"
+        },
+        "description": {
+          "en": "Returns the square root of a number.",
+          "sv": "Returnerar kvadratroten av ett nummer."
+        }
+      },
+      "state": {
+        "label": {
+          "en": "State",
+          "sv": "Tillstånd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "stringLength": {
+        "label": {
+          "en": "Length",
+          "sv": "Längd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "substring": {
+        "label": {
+          "en": "Substring",
+          "sv": "Delsträng"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "subtract": {
+        "label": {
+          "en": "Subtract",
+          "sv": "Subtrahera"
+        },
+        "description": {
+          "en": "Returns the difference of the subtraction.",
+          "sv": "Returnerar differensen av subtraktionen."
+        }
+      },
+      "sum": {
+        "label": {
+          "en": "Sum",
+          "sv": "Summera"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "tan": {
+        "label": {
+          "en": "Tangent",
+          "sv": "Tangent"
+        },
+        "description": {
+          "en": "Returns the tangent of a number in radians.",
+          "sv": "Returnerar tangenten för ett tal i radianer."
+        }
+      },
+      "tanh": {
+        "label": {
+          "en": "Hyperbolic tangent",
+          "sv": "Hyperbolisk tangent"
+        },
+        "description": {
+          "en": "Returns the hyperbolic tangent of a number.",
+          "sv": "Returnerar den hyperboliska tangenten för ett tal."
+        }
+      },
+      "toArray": {
+        "label": {
+          "en": "To array",
+          "sv": "Till lista"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "toBoolean": {
+        "label": {
+          "en": "To boolean",
+          "sv": "Till boolesk"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "toNumber": {
+        "label": {
+          "en": "To number",
+          "sv": "Till nummer"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "toObject": {
+        "label": {
+          "en": "To object",
+          "sv": "Till objekt"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "toString": {
+        "label": {
+          "en": "To string",
+          "sv": "Till sträng"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "trim": {
+        "label": {
+          "en": "Trim",
+          "sv": "Ta bort blanksteg"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "uppercase": {
+        "label": {
+          "en": "Uppercase",
+          "sv": "Till stora bokstäver"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "userEmail": {
+        "label": {
+          "en": "User e-mail address",
+          "sv": "Användare e-postadress"
+        },
+        "labelShort": {
+          "en": "E-mail address",
+          "sv": "E-postadress"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "userName": {
+        "label": {
+          "en": "User name",
+          "sv": "Användare namn"
+        },
+        "labelShort": {
+          "en": "Name",
+          "sv": "Namn"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "viewportHeight": {
+        "label": {
+          "en": "Viewport height",
+          "sv": "Vyport höjd"
+        },
+        "labelShort": {
+          "en": "Height",
+          "sv": "Höjd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "viewportOrientation": {
+        "label": {
+          "en": "Viewport orientation",
+          "sv": "Vyport orientering"
+        },
+        "labelShort": {
+          "en": "Orientation",
+          "sv": "Orientering"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "viewportWidth": {
+        "label": {
+          "en": "Viewport width",
+          "sv": "Vyport bredd"
+        },
+        "labelShort": {
+          "en": "Width",
+          "sv": "Bredd"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "websiteDescription": {
+        "label": {
+          "en": "Website description",
+          "sv": "Webplats beskrivning"
+        },
+        "labelShort": {
+          "en": "Description",
+          "sv": "Beskrivning"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "websiteLanguage": {
+        "label": {
+          "en": "Website language",
+          "sv": "Webplats språk"
+        },
+        "labelShort": {
+          "en": "Language",
+          "sv": "Språk"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      },
+      "websiteName": {
+        "label": {
+          "en": "Website name",
+          "sv": "Webplats namn"
+        },
+        "labelShort": {
+          "en": "Name",
+          "sv": "Namn"
+        },
+        "description": {
+          "en": "",
+          "sv": ""
+        }
+      }
+    }
+  }
+}

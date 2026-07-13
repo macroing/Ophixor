@@ -1,0 +1,49 @@
+{
+  "activate": {
+    "couldNotBeActivated": {
+      "en": "Your account could not be activated.",
+      "sv": "Ditt konto kunde inte aktiveras."
+    },
+    "hasAlreadyBeenActivated": {
+      "en": "Your account has already been activated.",
+      "sv": "Ditt konto har redan aktiverats."
+    },
+    "hasBeenActivated": {
+      "en": "Your account has been successfully activated.",
+      "sv": "Ditt konto har aktiverats med ett lyckat resultat."
+    },
+    "invalidLink": {
+      "en": "The activation link provided is invalid.",
+      "sv": "Den angivna aktiveringslänken är ogiltig."
+    }
+  },
+  "auth": {
+    "activateAccount": {
+      "en": "You need to activate your account.",
+      "sv": "Du måste aktivera ditt konto."
+    },
+    "invalidCredentials": {
+      "en": "Your e-mail address and password are invalid.",
+      "sv": "Du har angivit fel e-postadress och lösenord."
+    }
+  },
+  "convert": {
+    "missingUrl": {
+      "en": "An URL is required.",
+      "sv": "En URL krävs."
+    },
+    "failedToImport": {
+      "en": "Failed to import page.",
+      "sv": "Sidan kunde inte importeras."
+    }
+  },
+  "error": {
+    "en": "An unexpected error has occurred!",
+    "sv": "Ett oväntat fel har inträffat!"
+  },
+  "languages": ["en", "sv"],
+  "permissionDenied": {
+    "en": "You do not have permission to perform this operation.",
+    "sv": "Du saknar behörighet att utföra denna operation."
+  }
+}

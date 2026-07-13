@@ -1,0 +1,39 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.divider {
+  --divider-border-color: var(--pc-semantic-border-default);
+  --divider-border-width: 1px;
+  --divider-margin: 1rem 0px;
+
+  border: none;
+  border-top: var(--divider-border-width) solid var(--divider-border-color);
+  cursor: auto;
+  margin: var(--divider-margin);
+  position: relative;
+  width: 100%;
+}
+
+.divider:active {
+  cursor: grabbing;
+}
+
+.divider:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.divider.divider_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.divider.divider_content_only {
+  cursor: auto;
+}
+
+.divider.divider_content_only:hover {
+  outline: none;
+}

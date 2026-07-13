@@ -1,0 +1,103 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.image {
+  --image-align-self: auto;
+  --image-aspect-ratio: auto;
+  --image-background-color: var(--pc-semantic-surface-base-secondary);
+  --image-border-color: var(--pc-semantic-border-secondary);
+  --image-border-radius: 5px;
+  --image-border-width: 5px;
+  --image-bottom: auto;
+  --image-box-shadow: var(--pc-semantic-shadow-sm);
+  --image-cursor: auto;
+  --image-flex-grow: 1;
+  --image-height: auto;
+  --image-justify-self: auto;
+  --image-left: auto;
+  --image-max-height: 100%;
+  --image-max-width: 100%;
+  --image-object-fit: contain;
+  --image-object-position: center;
+  --image-opacity: 1;
+  --image-position: relative;
+  --image-right: auto;
+  --image-top: auto;
+  --image-width: auto;
+  --image-z-index: auto;
+
+  align-self: var(--image-align-self);
+  background-color: var(--image-background-color);
+  border: var(--image-border-width) solid var(--image-border-color);
+  border-radius: var(--image-border-radius);
+  bottom: var(--image-bottom);
+  box-shadow: var(--image-box-shadow);
+  cursor: var(--image-cursor);
+  display: flex;
+  flex-direction: row;
+  flex-grow: var(--image-flex-grow);
+  height: var(--image-height);
+  justify-self: var(--image-justify-self);
+  left: var(--image-left);
+  max-height: var(--image-max-height);
+  max-width: var(--image-max-width);
+  opacity: var(--image-opacity);
+  overflow: hidden;
+  position: var(--image-position);
+  right: var(--image-right);
+  top: var(--image-top);
+  width: var(--image-width);
+  z-index: var(--image-z-index);
+}
+
+.image.image_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.image:active {
+  cursor: grabbing;
+}
+
+.image:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.image.image_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.image > img,
+.image > span > img {
+  aspect-ratio: var(--image-aspect-ratio);
+  background-color: var(--image-background-color);
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  display: flex;
+  height: 100%;
+  max-height: none;
+  max-width: none;
+  object-fit: var(--image-object-fit);
+  object-position: var(--image-object-position);
+  width: 100%;
+}
+
+.image.image_content_only {
+  cursor: var(--image-cursor);
+}
+
+.image.image_content_only:hover {
+  outline: none;
+}

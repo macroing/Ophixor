@@ -1,0 +1,139 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.badge {
+  --badge-background: none;
+  --badge-background-color: var(--pc-semantic-status-primary-soft);
+  --badge-background-color-danger: var(--pc-semantic-status-danger-soft);
+  --badge-background-color-primary: var(--pc-semantic-status-primary-soft);
+  --badge-background-color-success: var(--pc-semantic-status-success-soft);
+  --badge-background-color-warning: var(--pc-semantic-status-warning-soft);
+  --badge-border-color: transparent;
+  --badge-border-color-danger: transparent;
+  --badge-border-color-primary: transparent;
+  --badge-border-color-success: transparent;
+  --badge-border-color-warning: transparent;
+  --badge-border-radius: 999px;
+  --badge-border-style: solid;
+  --badge-border-width: 0px;
+  --badge-bottom: auto;
+  --badge-box-shadow: none;
+  --badge-color: var(--pc-semantic-status-primary-text);
+  --badge-color-danger: var(--pc-semantic-status-danger-text);
+  --badge-color-primary: var(--pc-semantic-status-primary-text);
+  --badge-color-success: var(--pc-semantic-status-success-text);
+  --badge-color-warning: var(--pc-semantic-status-warning-text);
+  --badge-font-size: 0.75rem;
+  --badge-font-weight: 600;
+  --badge-height: auto;
+  --badge-left: auto;
+  --badge-letter-spacing: 0;
+  --badge-line-height: 1;
+  --badge-margin: 0px;
+  --badge-max-height: none;
+  --badge-max-width: none;
+  --badge-min-height: auto;
+  --badge-min-width: auto;
+  --badge-opacity: 1;
+  --badge-padding: 0.35rem 0.75rem;
+  --badge-position: relative;
+  --badge-right: auto;
+  --badge-text-shadow: none;
+  --badge-text-transform: none;
+  --badge-top: auto;
+  --badge-white-space: nowrap;
+  --badge-width: auto;
+  --badge-z-index: auto;
+
+  background: var(--badge-background);
+  background-color: var(--badge-background-color);
+  border: var(--badge-border-width) var(--badge-border-style) var(--badge-border-color);
+  border-radius: var(--badge-border-radius);
+  bottom: var(--badge-bottom);
+  box-shadow: var(--badge-box-shadow);
+  color: var(--badge-color);
+  cursor: auto;
+  display: inline-block;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  height: var(--badge-height);
+  left: var(--badge-left);
+  letter-spacing: var(--badge-letter-spacing);
+  line-height: var(--badge-line-height);
+  margin: var(--badge-margin);
+  max-height: var(--badge-max-height);
+  max-width: var(--badge-max-width);
+  min-height: var(--badge-min-height);
+  min-width: var(--badge-min-width);
+  opacity: var(--badge-opacity);
+  padding: var(--badge-padding);
+  position: var(--badge-position);
+  right: var(--badge-right);
+  text-align: center;
+  text-shadow: var(--badge-text-shadow);
+  text-transform: var(--badge-text-transform);
+  top: var(--badge-top);
+  white-space: var(--badge-white-space);
+  width: var(--badge-width);
+  z-index: var(--badge-z-index);
+}
+
+.badge.badge_danger {
+  background-color: var(--badge-background-color-danger);
+  border-color: var(--badge-border-color-danger);
+  color: var(--badge-color-danger);
+}
+
+.badge.badge_primary {
+  background-color: var(--badge-background-color-primary);
+  border-color: var(--badge-border-color-primary);
+  color: var(--badge-color-primary);
+}
+
+.badge.badge_success {
+  background-color: var(--badge-background-color-success);
+  border-color: var(--badge-border-color-success);
+  color: var(--badge-color-success);
+}
+
+.badge.badge_warning {
+  background-color: var(--badge-background-color-warning);
+  border-color: var(--badge-border-color-warning);
+  color: var(--badge-color-warning);
+}
+
+.badge.badge_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.badge:active {
+  cursor: grabbing;
+}
+
+.badge:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.badge.badge_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.badge.badge_content_only {
+  cursor: auto;
+}
+
+.badge.badge_content_only:hover {
+  outline: none;
+}

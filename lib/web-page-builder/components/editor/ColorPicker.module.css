@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.wrapper {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.wrapper > .control {
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+.wrapper > .control > .preview {
+  background: repeating-conic-gradient(var(--pc-transparency-dark) 0% 25%, var(--pc-transparency-light) 0% 50%) 50% / var(--pc-transparency-size) var(--pc-transparency-size);
+  border: 1px solid #374151;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper > .control > input:first-child {
+  height: 0px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 0px;
+}

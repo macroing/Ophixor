@@ -1,0 +1,270 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+/* =========================================================
+   Design System
+   Three-Layer Token Architecture
+   ========================================================= */
+
+/* =========================================================
+   LAYER 1 — PRIMITIVE TOKENS
+   Raw scales. Never used directly in components.
+   ========================================================= */
+
+:root {
+  /* ===== Typography Scale (1.125 modular scale) ===== */
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* ===== Spacing (8px system) ===== */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+
+  /* ===== Radius ===== */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* ===== Neutral Color Ramp ===== */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e5e7eb;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  /* ===== Primary Ramp ===== */
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+
+  /* ===== Danger Ramp ===== */
+  --danger-500: #dc2626;
+  --danger-600: #b91c1c;
+  --danger-700: #991b1b;
+
+  /* ===== Shadows ===== */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================================
+     LAYER 2 — SEMANTIC SYSTEM TOKENS
+     These preserve your existing names.
+     ========================================================= */
+
+:root {
+  /* ===== Surfaces ===== */
+  --background-color: var(--gray-50);
+  --surface-color: #ffffff;
+
+  /* ===== Borders ===== */
+  --border-color: var(--gray-200);
+
+  /* ===== Text ===== */
+  --color: var(--gray-900);
+  --muted-color: var(--gray-600);
+
+  /* ===== Primary ===== */
+  --primary-color: var(--primary-600);
+  --primary-contrast-color: #ffffff;
+
+  /* ===== Radius & Shadow ===== */
+  --radius: var(--radius-md);
+  --shadow: var(--shadow-md);
+
+  /* ===== Transition ===== */
+  --transition: 0.25s ease;
+
+  /* ===== Danger ===== */
+  --danger-bg: var(--danger-500);
+  --danger-bg-hover: var(--danger-600);
+  --danger-bg-active: var(--danger-700);
+  --danger-text: #ffffff;
+  --danger-border: transparent;
+  --danger-focus: rgba(220, 38, 38, 0.45);
+}
+
+/* =========================================================
+     LAYER 3 — EDITOR / BUILDER TOKENS
+     UI-specific tokens for the builder interface
+     ========================================================= */
+
+:root {
+  /* ===== Editor Surfaces ===== */
+  --pc-editor-bg: var(--gray-100);
+  --pc-surface-primary: #ffffff;
+  --pc-surface-hover: var(--gray-50);
+  --pc-surface-active: rgba(37, 99, 235, 0.06);
+
+  /* ===== Editor Borders ===== */
+  --pc-border-default: var(--gray-200);
+  --pc-border-muted: var(--gray-100);
+  --pc-border-strong: var(--gray-300);
+  --pc-border-focus: var(--primary-600);
+  --pc-border-active: rgba(37, 99, 235, 0.1);
+
+  /* ===== Editor Text ===== */
+  --pc-text-primary: var(--gray-900);
+  --pc-text-secondary: var(--gray-600);
+  --pc-text-muted: var(--gray-500);
+  --pc-text-disabled: rgba(16, 16, 16, 0.3);
+
+  /* ===== Accent ===== */
+  --pc-accent: var(--primary-600);
+  --pc-accent-strong: var(--primary-700);
+  --pc-accent-soft: rgba(37, 99, 235, 0.12);
+  --pc-accent-soft-strong: rgba(37, 99, 235, 0.18);
+  --pc-accent-hover: var(--pc-accent-strong);
+
+  /* ===== Danger ===== */
+  --pc-danger: var(--danger-500);
+  --pc-danger-bg: rgba(220, 38, 38, 0.08);
+
+  /* ===== Shadows ===== */
+  --pc-shadow-sm: var(--shadow-sm);
+  --pc-shadow-md: var(--shadow-md);
+  --pc-shadow-lg: var(--shadow-lg);
+  --pc-shadow-xl: 0 30px 90px rgba(0, 0, 0, 0.25);
+
+  /* ===== Focus Ring ===== */
+  --pc-focus-ring-color: var(--primary-600);
+  --pc-focus-ring-alpha-strong: 0.15;
+  --pc-focus-ring-alpha-soft: 0.12;
+
+  /* ===== Editor Interaction ===== */
+  --pc-editor-outline-selected: var(--primary-600);
+  --pc-editor-outline-drag: rgba(37, 99, 235, 0.3);
+
+  --pc-editor-drag-forbidden-bg: rgba(220, 38, 38, 0.06);
+  --pc-editor-drag-forbidden-border: rgba(220, 38, 38, 0.4);
+  --pc-editor-drag-forbidden-text: var(--danger-500);
+
+  --pc-editor-overlay-surface: #ffffff;
+  --pc-editor-overlay-shadow: var(--shadow-sm);
+
+  --pc-editor-dropzone-bg: var(--gray-600);
+  --pc-editor-dropzone-border: var(--gray-200);
+  --pc-editor-dropzone-text: #ffffff;
+
+  --pc-backdrop: rgba(15, 23, 42, 0.45);
+
+  --pc-transparency-light: #ffffff;
+  --pc-transparency-dark: var(--gray-300);
+  --pc-transparency-size: 10px;
+
+  --pc-control-text: var(--gray-700);
+  --pc-control-text-hover: var(--gray-800);
+  --pc-control-text-disabled: var(--gray-400);
+  --pc-control-border-hover: var(--primary-300);
+
+  /* =========================
+     Heading Font Sizes
+     ========================= */
+
+  --heading-font-size-level-1: clamp(2.25rem, 5vw, 3.5rem);
+  --heading-font-size-level-2: clamp(1.875rem, 4vw, 2.75rem);
+  --heading-font-size-level-3: clamp(1.5rem, 3vw, 2.125rem);
+  --heading-font-size-level-4: clamp(1.25rem, 2.2vw, 1.625rem);
+  --heading-font-size-level-5: clamp(1.125rem, 1.8vw, 1.375rem);
+  --heading-font-size-level-6: clamp(1rem, 1.4vw, 1.125rem);
+
+  /* =========================
+     Heading Weights
+     ========================= */
+
+  --heading-font-weight-level-1: 800;
+  --heading-font-weight-level-2: 700;
+  --heading-font-weight-level-3: 600;
+  --heading-font-weight-level-4: 600;
+  --heading-font-weight-level-5: 500;
+  --heading-font-weight-level-6: 500;
+
+  /* =========================
+     Letter Spacing
+     ========================= */
+
+  --heading-letter-spacing-level-1: -0.025em;
+  --heading-letter-spacing-level-2: -0.02em;
+  --heading-letter-spacing-level-3: -0.01em;
+  --heading-letter-spacing-level-4: 0em;
+  --heading-letter-spacing-level-5: 0em;
+  --heading-letter-spacing-level-6: 0.02em;
+
+  /* =========================
+     Line Heights
+     ========================= */
+
+  --heading-line-height-level-1: 1.1;
+  --heading-line-height-level-2: 1.15;
+  --heading-line-height-level-3: 1.2;
+  --heading-line-height-level-4: 1.3;
+  --heading-line-height-level-5: 1.35;
+  --heading-line-height-level-6: 1.4;
+
+  --heading-color: #0f172a;
+
+  /* =========================
+     Text Font Sizes
+     ========================= */
+
+  --text-font-size-large: clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-font-size-base: clamp(1rem, 1.2vw, 1.125rem);
+  --text-font-size-small: clamp(0.875rem, 1vw, 1rem);
+  --text-font-size-caption: clamp(0.75rem, 0.8vw, 0.875rem);
+  --text-font-size-micro: 0.75rem;
+
+  /* =========================
+     Text Line Heights
+     ========================= */
+
+  --text-line-height-large: 1.6;
+  --text-line-height-base: 1.65;
+  --text-line-height-small: 1.6;
+  --text-line-height-caption: 1.5;
+
+  /* =========================
+     Text Weights
+     ========================= */
+
+  --text-font-weight-regular: 400;
+  --text-font-weight-medium: 500;
+  --text-font-weight-semibold: 600;
+
+  --text-color-primary: #0f172a;
+  --text-color-secondary: #475569;
+  --text-color-muted: #64748b;
+}

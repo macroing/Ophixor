@@ -1,0 +1,458 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "marketing": {
+    "audience": {
+      "en": "Developers, designers and creators",
+      "sv": "Utvecklare, designers och kreatörer"
+    },
+    "features": {
+      "metadata": {
+        "description": {
+          "en": "Here you can read about the features in Ophixor.",
+          "sv": "Här kan du läsa om funktionaliteten i Ophixor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Features | Ophixor",
+          "sv": "Funktionalitet | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Features",
+        "sv": "Funktionalitet"
+      },
+      "description": {
+        "en": "On this page you will find basic information about the different features in Ophixor.",
+        "sv": "På denna sida hittar du grundläggande information om olika funktioner i Ophixor."
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Components",
+            "sv": "Komponenter"
+          },
+          "text": {
+            "en": "Components are the basic building blocks of the graphical user interface in Ophixor. You can think of them as Lego blocks. With Lego you have blocks with different colors and shapes. You then combine these into different structures. The same concept applies to components in Ophixor. However, you can also configure each individual component instance, which is not the case for static Lego blocks.\nAlmost all components have what's called properties. All properties are configurable for each component instance. Most properties represent values of some type. These can be configured with static values or dynamic expressions. Then there are some properties that represent action triggers. These can be configured with actions.\nAll properties that are used for CSS (Cascading Style Sheets) can be configured separately for mobile, tablet and desktop. But they don't have to be.\nSome components have what's called slots. These slots allow a component instance to have component instances as children. This allows for component composition.\nAll component instances can be configured with a data source. Then that component instance and its descendants get access to data from that data source. A data source can be a model and its data, an expression or an integration.\nMany components have variants that you can choose from. A variant is essentially a set of pre-configured properties for a specific component.\nYou can add your own CSS selectors and properties to any component instance. This allows you to alter CSS for a component instance and its descendants in many different ways.\nBoth a component and a component instance are defined using JSON. A component has a JSON-based schema that defines everything for it and a component instance is created from that schema. You can't create your own components.",
+            "sv": "Komponenter är de grundläggande byggklossarna för det grafiska användargränssnittet i Ophixor. Du kan se på dem som Legoklossar. Lego har klossar med olika färger och former. Du kombinerar dessa för att få olika strukturer. Samma koncept gäller för komponenter i Ophixor. Men du har även möjlighet att konfigurera varje enskild komponentinstans, till skillnad från de statiska klossarna inom Lego.\nNästan alla komponenter har något som kallas för egenskaper. Alla egenskaper för varje enskild komponentinstans är konfigurerbara. De flesta egenskaperna representerar värden av någon typ. Dessa kan bli konfigurerade med statiska värden eller dynamiska uttryck. Sedan finns det egenskaper som representerar händelseutlösare. Dessa kan bli konfigurerade med händelser.\nAlla egenskaper som används för CSS (Cascading Style Sheets) kan bli konfigurerade med separata konfigurationer för mobil, platta och dator. Men detta är inget krav.\nEn del komponenter har något som kallas luckor. Dessa luckor gör det möjligt för en komponentinstans att ha komponentinstanser som barn. Detta kan användas för komponentsammansättningar.\nAlla komponentinstanser kan bli konfigurerade med en datakälla. Då får komponentinstansen och dess ättlingar tillgång till data från datakällan. En datakälla kan vara en modell och dennes data, ett uttryck eller en integration.\nMånga komponenter har varianter som du kan välja från. En variant är i princip en mängd förkonfigurerade egenskaper för en specifik komponent.\nDu kan lägga till dina egna CSS-selektorer och egenskaper till vilken komponentinstans som helst. Detta gör det möjligt att ändra CSS för en komponentinstans och dennes ättlingar på många olika sätt.\nBåde en komponent och en komponentinstans är definierade med JSON. En komponent har ett JSON-baserat schema som definierar allt för den och en komponentinstans är skapad från detta schema. Du kan inte skapa dina egna komponenter."
+          }
+        },
+        {
+          "title": {
+            "en": "Templates",
+            "sv": "Mallar"
+          },
+          "text": {
+            "en": "A template (or component template) has a name and a component. The component can be a component composition or a single component. It can have data sources, expressions and actions. You use it in the same way you use a normal component, because it becomes a normal component (instance) when you use it.\nYou can create your own templates in the editor or use some of the existing ones.\nA template is defined using JSON.",
+            "sv": "En mall (eller komponentmall) har ett namn och en komponent. Komponenten kan vara en komponentsammansättning eller en enskild komponent. Den kan ha datakällor, uttryck och händelser. Du använder den på samma sätt som du använder en vanlig komponent, eftersom den blir till en vanlig komponent (instans) när du använder den.\nDu kan skapa dina egna mallar i editorn eller använda någon av de befintliga.\nEn mall är definierad med JSON."
+          }
+        },
+        {
+          "title": {
+            "en": "Models and data",
+            "sv": "Modeller och data"
+          },
+          "text": {
+            "en": "A model is a schema that describes the structure and rules that data created for that model must follow. Data is the content that you can read or view.\nThe structure of a model is for example its fields and the rules are the data types of those fields. The data types that exist currently are boolean, collection, number, relation and string.\nA boolean can have one of two values; true or false. A collection is like an array or list and contains sub-models with their own fields. A number can be either an integer or a floating-point number. A relation is a pointer to another model. A string is some text, but it has other properties associated with it that determines how you edit it. It has a text type that can be either \"plain-text\" or \"rich-text\". If the text type is \"plain-text\" it has a line type that can be either \"single-line\" or \"multi-line\".\nBoth models and data are defined using JSON.",
+            "sv": "En modell är ett schema som beskriver strukturen och reglerna som data skapad från modellen måste följa. Data är innehållet som du kan läsa eller se.\nStrukturen för en modell är t.ex. dess fält och reglerna är datatyperna för dessa fält. Datatyperna som finns just nu är boolesk, kollektion, nummer, relation och sträng.\nDatatypen boolesk kan ha ett av två värden; sant eller falskt. En kollektion är som en lista och innehåller interna modeller med deras egna fält. Ett nummer kan vara antingen ett heltal eller ett flyttal. En relation är en pekare till en annan modell. En sträng är som vanlig text, men den har andra egenskaper associerade med sig som avgör hur du redigerar det. Den har en texttyp som kan vara antingen \"plain-text\" eller \"rich-text\". Om texttypen är \"plain-text\" har den även en radtyp som kan vara antingen \"single-line\" eller \"multi-line\".\nBåde modeller och data är definierade med JSON."
+          }
+        },
+        {
+          "title": {
+            "en": "Expressions",
+            "sv": "Uttryck"
+          },
+          "text": {
+            "en": "An expression is a constant variable or a function with zero or more parameter arguments that returns a value.\nOphixor comes with many built-in expressions that are ready to be used. For example math-related expressions like \"add\", \"cos\", \"floor\" and \"max\", or logic-based expressions like \"and\", \"equals\", \"if\" and \"not\".\nMost parameter arguments of function expressions can be supplied other compatible expressions. However, the compatibility check isn't as strict as in other programming langages. For example, a parameter argument that requires a boolean is compatible with an expression that has a return type of any. The value returned will be coerced to a boolean automatically.\nAn expression is defined using JSON. It has a JSON-schema just like a component, so you can't create your own expressions.",
+            "sv": "Ett uttryck är en konstant variabel eller en funktion med noll eller fler parametrar som returnerar ett värde.\nOphixor kommer med många inbyggda uttryck som är redo att användas. T.ex. uttryck för matematik som \"add\", \"cos\", \"floor\" och \"max\", eller logiska uttryck som \"and\", \"equals\", \"if\" och \"not\".\nDe flesta parametrarna för funktionsuttryck kan kopplas till andra kompatibla uttryck. Kompatibilitetskontrollen är dock inte lika strikt som i vissa andra programmeringsspråk. En parameter som kräver datatypen boolesk kan t.ex. kopplas till ett uttryck som kan returnera vilket som helst. Värdet som returnerats kommer dock tvingas till datatypen boolesk automatiskt.\nEtt uttryck är definierat med JSON. Det har ett JSON-schema precis som en komponent, så du kan inte skapa dina egna uttryck."
+          }
+        },
+        {
+          "title": {
+            "en": "Data sources",
+            "sv": "Datakällor"
+          },
+          "text": {
+            "en": "Coming soon...",
+            "sv": "Kommer inom kort..."
+          }
+        },
+        {
+          "title": {
+            "en": "Actions",
+            "sv": "Händelser"
+          },
+          "text": {
+            "en": "Coming soon...",
+            "sv": "Kommer inom kort..."
+          }
+        },
+        {
+          "title": {
+            "en": "Integrations",
+            "sv": "Integrationer"
+          },
+          "text": {
+            "en": "Coming soon...",
+            "sv": "Kommer inom kort..."
+          }
+        },
+        {
+          "title": {
+            "en": "Export",
+            "sv": "Export"
+          },
+          "text": {
+            "en": "Coming soon...",
+            "sv": "Kommer inom kort..."
+          }
+        },
+        {
+          "title": {
+            "en": "Performance",
+            "sv": "Prestanda"
+          },
+          "text": {
+            "en": "Coming soon...",
+            "sv": "Kommer inom kort..."
+          }
+        }
+      ]
+    },
+    "home": {
+      "metadata": {
+        "description": {
+          "en": "A structured visual builder for creating dynamic websites and web applications using components, data models, integrations and built-in logic.",
+          "sv": "En strukturerad visuell hemsidebyggare för att skapa dynamiska hemsidor och applikationer med komponenter, datamodeller, integrationer och inbyggd logik."
+        },
+        "keywords": {
+          "en": ["structured website builder", "component based website builder", "visual builder with data models", "low code web app builder", "website builder with logic", "dynamic website builder without backend", "export html website builder", "schema driven frontend builder"],
+          "sv": ["strukturerad hemsidebyggare", "komponentbaserad hemsidebyggare", "visuell hemsidebyggare med datamodeller"]
+        },
+        "openGraph": {
+          "image": {
+            "alt": {
+              "en": "Ophixor",
+              "sv": "Ophixor"
+            },
+            "height": 694,
+            "src": "/images/logo.webp",
+            "width": 694
+          },
+          "siteName": {
+            "en": "Ophixor",
+            "sv": "Ophixor"
+          }
+        },
+        "title": {
+          "en": "Build dynamic websites visually | Ophixor",
+          "sv": "Bygg dynamiska hemsidor visuellt | Ophixor"
+        }
+      },
+      "hero": {
+        "title": {
+          "en": "Build dynamic websites visually",
+          "sv": "Bygg dynamiska hemsidor visuellt"
+        },
+        "text": {
+          "en": "Design your interface, define your data and control your logic. Ophixor lets you build structured and dynamic websites without writing code. The project is currently in beta. Earlier the project was called PageCraft, but the name has changed to Ophixor to be more unique and without any specific meaning.",
+          "sv": "Designa ditt gränssnitt, definiera din data och kontrollera din logik. Ophixor låter dig bygga strukturerade och dynamiska hemsidor utan att skriva kod. Projektet är för närvarande i beta. Tidigare hette projektet PageCraft, men namnet har bytts ut till Ophixor för att vara mer unikt och utan någon mening."
+        },
+        "callToAction": {
+          "signedIn": {
+            "en": "Start building",
+            "sv": "Börja bygg"
+          },
+          "signedInFree": {
+            "en": "Try it out for free",
+            "sv": "Prova på helt gratis"
+          },
+          "signedOut": {
+            "en": "Try it out for free",
+            "sv": "Prova på helt gratis"
+          }
+        },
+        "orSeeA": {
+          "en": "Or see a ",
+          "sv": "Eller se ett "
+        },
+        "demo": {
+          "en": "demo",
+          "sv": "demo"
+        },
+        "logo": {
+          "en": "The Ophixor logo",
+          "sv": "Ophixors logotyp"
+        }
+      },
+      "differentiation": {
+        "title": {
+          "en": "Why Ophixor?",
+          "sv": "Varför Ophixor?"
+        },
+        "items": {
+          "en": ["Build dynamic web applications and not just static websites", "Export clean HTML, CSS and JavaScript", "Build web applications that leverages WebSockets", "Define your own integrations to external sources", "Create interactive experiences with the programmable Canvas component", "Build your own community of users with our built-in authentication system", "The platform is open source, so you can run your own instance of it"],
+          "sv": ["Bygg dynamiska webbapplikationer och inte bara statiska webbplatser", "Exportera ren HTML, CSS och JavaScript", "Bygg webbapplikationer som använder WebSockets", "Definiera dina egna integrationer mot externa källor", "Skapa interaktiva upplevelser med den programmerbara Kanvas-komponenten", "Bygg din egen mötesplats med användare med hjälp av vårt inbyggda autentiseringssystem", "Plattformen har öppen källkod, så du kan köra din egen instans av den"]
+        }
+      },
+      "features": {
+        "title": {
+          "en": "Core features",
+          "sv": "Kärnfunktionalitet"
+        },
+        "text": {
+          "en": "Ophixor combines visual design with structured data and logic, giving you full control over how your application works.",
+          "sv": "Ophixor kombinerar visuell design med strukturerad data och logik, så du får full kontroll över hur applikationen fungerar."
+        },
+        "items": [
+          {
+            "icon": "cubes",
+            "title": {
+              "en": "Components",
+              "sv": "Komponenter"
+            },
+            "text": {
+              "en": "Build your UI from reusable components that control both structure and behavior. Compose them freely to create complex interfaces.",
+              "sv": "Bygg ditt gränssnitt från återanvändbara komponenter som hanterar struktur och beteende. Komponera dem fritt på olika sätt."
+            }
+          },
+          {
+            "icon": "layerGroup",
+            "title": {
+              "en": "Templates",
+              "sv": "Mallar"
+            },
+            "text": {
+              "en": "Create reusable templates from components and reuse them across pages to speed up development and ensure consistency.",
+              "sv": "Skapa återanvändbara mallar från komponenter och återanvänd dem på dina olika sidor. Detta underlättar utvecklingen och skapar enhetlighet."
+            }
+          },
+          {
+            "icon": "diagramProject",
+            "title": {
+              "en": "Models and data",
+              "sv": "Modeller och data"
+            },
+            "text": {
+              "en": "Define structured data models and use them directly in your UI. No backend setup required.",
+              "sv": "Definiera strukturerade datamodeller och använd dem i ditt gränssnitt. Ingen databashantering krävs."
+            }
+          },
+          {
+            "icon": "squareRootVariable",
+            "title": {
+              "en": "Expressions",
+              "sv": "Uttryck"
+            },
+            "text": {
+              "en": "Add dynamic behavior anywhere. Transform data, create conditions and compute values without writing JavaScript.",
+              "sv": "Lägg till dynamiskt beteende överallt. Transformera data, skapa villkor och beräkna värden utan att skriva JavaScript."
+            }
+          },
+          {
+            "icon": "database",
+            "title": {
+              "en": "Data sources",
+              "sv": "Datakällor"
+            },
+            "text": {
+              "en": "Connect components to data from models, expressions or integrations and keep everything in sync automatically.",
+              "sv": "Koppla ihop komponenter med data från datamodeller, uttryck eller integrationer och håll allt synkroniserat automatiskt."
+            }
+          },
+          {
+            "icon": "bolt",
+            "title": {
+              "en": "Actions",
+              "sv": "Händelser"
+            },
+            "text": {
+              "en": "Trigger logic visually. Handle user input, update data and control flows without writing code.",
+              "sv": "Utlös händelser visuellt. Hantera inmatning av data från användare, uppdatera data och kontrollera flöden utan att skriva kod."
+            }
+          },
+          {
+            "icon": "cloud",
+            "title": {
+              "en": "Integrations",
+              "sv": "Integrationer"
+            },
+            "text": {
+              "en": "Connect to external services through a flexible integration system. Build your own integrations when needed.",
+              "sv": "Koppla ihop din hemsida mot externa tjänster genom vårt flexibla integrationssystem. Bygg integrationerna när du behöver dem."
+            }
+          },
+          {
+            "icon": "fileExport",
+            "title": {
+              "en": "Export",
+              "sv": "Export"
+            },
+            "text": {
+              "en": "Export your pages as clean HTML, CSS and JavaScript. The export pipeline does not export everything.",
+              "sv": "Exportera dina sidor som ren HTML, CSS och JavaScript. Allting kommer dock inte exporteras."
+            }
+          },
+          {
+            "icon": "gaugeHigh",
+            "title": {
+              "en": "Performance",
+              "sv": "Prestanda"
+            },
+            "text": {
+              "en": "Optimized rendering and efficient data handling ensure fast load times and smooth interactions.",
+              "sv": "Optimerad rendering och effektiv datahantering ser till att din hemsida laddar snabbt och inte laggar."
+            }
+          }
+        ]
+      },
+      "showcase": {
+        "title": {
+          "en": "Editor showcase",
+          "sv": "Visning av editorn"
+        },
+        "editor": {
+          "en": "Editor",
+          "sv": "Editor"
+        },
+        "workflowEditor": {
+          "en": "Workflow editor",
+          "sv": "Arbetsflödeseditor"
+        }
+      },
+      "planTitle": {
+        "en": "Plans",
+        "sv": "Planer"
+      },
+      "planDescription": {
+        "en": "Our plans cover both personal and commercial use. You can't currently purchase a subscription, because that feature has not been implemented yet. If you're interested in a trial you can contact us via e-mail. Our e-mail address is in the footer down below.",
+        "sv": "Våra planer täcker både personligt och kommersiellt bruk. Du kan för tillfället inte köpa ett abonnemang, då denna funktion inte finns tillgänglig ännu. Om du är intresserad av att prova på kan du kontakta oss via e-post. Vår e-postadress finns i sidfoten längst ned på sidan."
+      },
+      "planIdealForTitle": {
+        "en": "Ideal for: ",
+        "sv": "Ideal för: "
+      },
+      "planIncludesTitle": {
+        "en": "Includes:",
+        "sv": "Inkluderar:"
+      },
+      "planPerMonth": {
+        "en": " / month",
+        "sv": " kr / månad"
+      },
+      "plans": {
+        "en": [
+          {
+            "badgeText": "Personal",
+            "buttonText": "Upgrade to Personal",
+            "description": "Learn the system and build websites with visual logic and creative control.",
+            "idealForText": "Creators, freelancers and smaller projects.",
+            "includes": ["1 website", "Up to 10 pages", "Up to 50 templates", "Basic components", "Basic expressions", "Hosted publishing", "Personal use", "E-mail support"],
+            "pricePerMonth": "$19",
+            "subtitle": "Learn and explore",
+            "theme": "default",
+            "title": "Personal"
+          },
+          {
+            "badgeText": "Professional",
+            "buttonText": "Upgrade to Pro",
+            "description": "Build dynamic websites and web applications powered by data and logic.",
+            "idealForText": "Professional builders, startups and dynamic web applications.",
+            "includes": ["Everything in Personal", "Up to 3 websites", "20 pages / website", "100 templates / website", "Most components", "Most expressions", "Most actions", "Most data sources", "Up to 5 models", "10K data / model", "Commercial use", "HTML export"],
+            "pricePerMonth": "$199",
+            "subtitle": "Build real web applications",
+            "theme": "blue",
+            "title": "Pro"
+          },
+          {
+            "badgeText": "Advanced",
+            "buttonText": "Upgrade to Pro Gold",
+            "description": "Build complex websites and web applications with integrations, collaboration and full system access.",
+            "idealForText": "Collaborative teams, agencies and complex web applications.",
+            "includes": ["Everything in Pro", "Up to 5 websites", "50 pages / website", "200 templates / website", "All components", "All expressions", "All actions", "All data sources", "Up to 50 models", "100K data / model", "Real-time WebSockets", "Users and authentication", "Up to 20 integrations", "Collaboration"],
+            "pricePerMonth": "$499",
+            "subtitle": "Scale and collaborate",
+            "theme": "gold",
+            "title": "Pro Gold"
+          }
+        ],
+        "sv": [
+          {
+            "badgeText": "Personlig",
+            "buttonText": "Uppgradera till Personal",
+            "description": "Lär dig systemet och bygg hemsidor med visuell logik och kreativitet.",
+            "idealForText": "Skapare, frilansare och mindre projekt.",
+            "includes": ["1 webbplats", "Upp till 10 sidor", "Upp till 50 mallar", "Grundläggande komponenter", "Grundläggande uttryck", "Publicerad på vår server", "Personligt bruk", "Kundtjänst via e-post"],
+            "pricePerMonth": "195",
+            "subtitle": "Lär och utforska",
+            "theme": "default",
+            "title": "Personal"
+          },
+          {
+            "badgeText": "Professionell",
+            "buttonText": "Uppgradera till Pro",
+            "description": "Bygg dynamiska hemsidor och applikationer med data och logik.",
+            "idealForText": "Professionella byggare, startups och dynamiska webbapplikationer.",
+            "includes": ["Allt i Personal", "Upp till 3 webbplatser", "20 sidor / webbplats", "100 mallar / webbplats", "De flesta komponenterna", "De flesta uttrycken", "De flesta händelserna", "De flesta datakällorna", "Upp till 5 modeller", "10 000 data / modell", "Kommersiellt bruk", "HTML-export"],
+            "pricePerMonth": "1 995",
+            "subtitle": "Bygg riktiga webbapplikationer",
+            "theme": "blue",
+            "title": "Pro"
+          },
+          {
+            "badgeText": "Avancerad",
+            "buttonText": "Uppgradera till Pro Gold",
+            "description": "Bygg komplexa hemsidor och webbapplikationer med integrationer, samarbete och full tillgång till systemet.",
+            "idealForText": "Samarbetande lag, agenturer och komplexa webbapplikationer.",
+            "includes": ["Allt i Pro", "Upp till 5 webbplatser", "50 sidor / webbplats", "200 mallar / webbplats", "Alla komponenter", "Alla uttryck", "Alla händelser", "Alla datakällor", "Upp till 50 modeller", "100 000 data / modell", "Realtid med Websockets", "Användarkonton", "Upp till 20 integrationer", "Samarbete"],
+            "pricePerMonth": "4 995",
+            "subtitle": "Skala upp och samarbeta",
+            "theme": "gold",
+            "title": "Pro Gold"
+          }
+        ]
+      }
+    },
+    "notFound": {
+      "title": {
+        "en": "404 - Page not found",
+        "sv": "404 - Sidan hittades inte"
+      },
+      "text": {
+        "en": "The requested page could not be found.",
+        "sv": "Sidan du försökte besöka kunde inte hittas."
+      }
+    },
+    "pricing": {
+      "metadata": {
+        "description": {
+          "en": "Here you can read about the plans and their pricing in Ophixor.",
+          "sv": "Här kan du läsa om planerna och deras kostnad i Ophixor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Pricing | Ophixor",
+          "sv": "Kostnad | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Pricing",
+        "sv": "Kostnad"
+      },
+      "description": {
+        "en": "Coming soon...",
+        "sv": "Kommer inom kort..."
+      }
+    }
+  }
+}

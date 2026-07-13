@@ -1,0 +1,102 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.table_header {
+  --table-header-background-color: var(--pc-semantic-surface-page);
+  --table-header-color: var(--pc-semantic-text-primary);
+  --table-header-padding: 0.5rem;
+  --table-header-text-align: center;
+
+  background-color: var(--table-header-background-color);
+  color: var(--table-header-color);
+  padding: var(--table-header-padding);
+  position: relative;
+  text-align: var(--table-header-text-align);
+  vertical-align: top;
+}
+
+.table_header.table_header_empty {
+  vertical-align: bottom;
+}
+
+.table_header:active {
+  cursor: grabbing;
+}
+
+.table_header:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_header.table_header_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_header.table_header_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.table_header.table_header_drag_over.table_header_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.table_header.table_header_drag_over.table_header_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.table_header.table_header_drag_over.table_header_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_header.table_header_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.table_header > .table_header_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  color: var(--pc-editor-dropzone-text);
+  display: block;
+  font-size: 0.85rem;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_header.table_header_content_only {
+  cursor: auto;
+}
+
+.table_header.table_header_content_only:hover {
+  outline: none;
+}

@@ -1,0 +1,84 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.text_area {
+  --text-area-background-color: var(--pc-semantic-surface-base);
+  --text-area-border-color: var(--pc-semantic-border-default);
+  --text-area-border-radius: 8px;
+  --text-area-border-width: 1px;
+  --text-area-box-shadow-focus: var(--pc-semantic-focus-ring);
+  --text-area-color: var(--pc-semantic-text-primary);
+  --text-area-height: auto;
+  --text-area-max-height: none;
+  --text-area-max-width: none;
+  --text-area-min-height: 44px;
+  --text-area-min-width: auto;
+  --text-area-padding: 0.6rem 0.75rem;
+  --text-area-width: 100%;
+
+  background-color: var(--text-area-background-color);
+  border: var(--text-area-border-width) solid var(--text-area-border-color);
+  border-radius: var(--text-area-border-radius);
+  color: var(--text-area-color);
+  cursor: auto;
+  height: var(--text-area-height);
+  max-height: var(--text-area-max-height);
+  max-width: var(--text-area-max-width);
+  min-height: var(--text-area-min-height);
+  min-width: var(--text-area-min-width);
+  padding: var(--text-area-padding);
+  position: relative;
+  width: var(--text-area-width);
+}
+
+.text_area:active {
+  cursor: grabbing;
+}
+
+.text_area:hover {
+  border-color: var(--text-area-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.text_area:focus {
+  border-color: var(--text-area-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.text_area:focus-visible {
+  border-color: var(--text-area-border-color);
+  box-shadow: var(--text-area-box-shadow-focus);
+}
+
+.text_area.text_area_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.text_area.text_area_content_only {
+  cursor: auto;
+}
+
+.text_area.text_area_content_only:hover {
+  outline: none;
+}
+
+.text_area.text_area_content_only:focus {
+  border-color: var(--text-area-border-color);
+  outline: none;
+}
+
+.text_area.text_area_content_only:focus-visible {
+  border-color: var(--text-area-border-color);
+  box-shadow: var(--text-area-box-shadow-focus);
+}
+
+.text_area.text_area_content_only:read-only {
+  border-color: var(--text-area-border-color);
+  box-shadow: none;
+  outline: none;
+}

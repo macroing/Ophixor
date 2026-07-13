@@ -1,0 +1,126 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.rich_text {
+  --rich-text-background-color: var(--pc-semantic-surface-page);
+  --rich-text-background-color-content: var(--pc-semantic-surface-base);
+  --rich-text-border-color: var(--pc-semantic-border-default);
+  --rich-text-border-radius: 8px;
+  --rich-text-border-width: 1px;
+  --rich-text-box-shadow: none;
+  --rich-text-box-shadow-focus: var(--pc-semantic-focus-ring);
+  --rich-text-margin-content: 1rem;
+  --rich-text-padding: 0.25rem;
+
+  background-color: var(--rich-text-background-color);
+  border: var(--rich-text-border-width) solid var(--rich-text-border-color);
+  border-radius: var(--rich-text-border-radius);
+  box-shadow: var(--rich-text-box-shadow);
+  display: flex;
+  flex-direction: column;
+  padding: var(--rich-text-padding);
+  position: relative;
+  width: 100%;
+}
+
+.rich_text > .rich_text_content {
+  background-color: var(--rich-text-background-color-content);
+  border: var(--rich-text-border-width) solid var(--rich-text-border-color);
+  border-bottom-left-radius: var(--rich-text-border-radius);
+  border-bottom-right-radius: var(--rich-text-border-radius);
+  cursor: auto;
+  outline: none;
+  width: 100%;
+}
+
+.rich_text > .rich_text_content > * > * {
+  margin: var(--rich-text-margin-content);
+}
+
+.rich_text > .rich_text_content ol {
+  margin: 0px 0px 0px 1rem;
+}
+
+.rich_text > .rich_text_content ul {
+  margin: 0px 0px 0px 1rem;
+}
+
+.rich_text > .rich_text_content:focus-within > * > * {
+  outline: none;
+}
+
+.rich_text:active {
+  cursor: grabbing;
+}
+
+.rich_text:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.rich_text:focus {
+  border-color: var(--rich-text-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.rich_text:focus-within {
+  border-color: var(--rich-text-border-color);
+  box-shadow: var(--rich-text-box-shadow-focus);
+}
+
+.rich_text.rich_text_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.rich_text.rich_text_content_only {
+  cursor: auto;
+}
+
+.rich_text.rich_text_content_only:hover {
+  outline: none;
+}
+
+.rich_text.rich_text_content_only:focus {
+  border-color: var(--rich-text-border-color);
+  outline: none;
+}
+
+.rich_text.rich_text_content_only:focus-within {
+  border-color: var(--rich-text-border-color);
+  box-shadow: var(--rich-text-box-shadow-focus);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0px 0px 0.25rem 0px;
+}
+
+.toolbar_button {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.toolbar_button:hover {
+  background: #f1f5f9;
+}
+
+.toolbar_button_active {
+  background: #2563eb;
+  color: white;
+}
+
+.toolbar_button_active:hover {
+  background: #2563eb;
+  color: white;
+}

@@ -1,0 +1,160 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.list_item {
+  --list-item-align-items: stretch;
+  --list-item-background: none;
+  --list-item-background-hover: none;
+  --list-item-background-color: transparent;
+  --list-item-background-color-hover: transparent;
+  --list-item-border-color: transparent;
+  --list-item-border-color-hover: transparent;
+  --list-item-border-radius: 0px;
+  --list-item-border-width: 0px;
+  --list-item-bottom: auto;
+  --list-item-box-shadow: none;
+  --list-item-box-shadow-hover: none;
+  --list-item-color: var(--pc-semantic-text-primary);
+  --list-item-color-hover: var(--pc-semantic-text-primary);
+  --list-item-cursor: auto;
+  --list-item-cursor-hover: auto;
+  --list-item-display: list-item;
+  --list-item-flex-direction: column;
+  --list-item-font-size: 1rem;
+  --list-item-font-weight: normal;
+  --list-item-gap: 0.5rem;
+  --list-item-height: auto;
+  --list-item-justify-content: stretch;
+  --list-item-left: auto;
+  --list-item-letter-spacing: normal;
+  --list-item-padding: 0px;
+  --list-item-position: relative;
+  --list-item-right: auto;
+  --list-item-text-decoration: none;
+  --list-item-text-decoration-hover: none;
+  --list-item-text-shadow: none;
+  --list-item-text-shadow-hover: none;
+  --list-item-top: auto;
+  --list-item-width: auto;
+  --list-item-z-index: auto;
+
+  align-items: var(--list-item-align-items);
+  background: var(--list-item-background);
+  background-color: var(--list-item-background-color);
+  border: var(--list-item-border-width) solid var(--list-item-border-color);
+  border-radius: var(--list-item-border-radius);
+  bottom: var(--list-item-bottom);
+  box-shadow: var(--list-item-box-shadow);
+  color: var(--list-item-color);
+  cursor: var(--list-item-cursor);
+  display: var(--list-item-display);
+  flex-direction: var(--list-item-flex-direction);
+  font-size: var(--list-item-font-size);
+  font-weight: var(--list-item-font-weight);
+  gap: var(--list-item-gap);
+  height: var(--list-item-height);
+  justify-content: var(--list-item-justify-content);
+  left: var(--list-item-left);
+  letter-spacing: var(--list-item-letter-spacing);
+  padding: var(--list-item-padding);
+  position: var(--list-item-position);
+  right: var(--list-item-right);
+  text-decoration: var(--link-text-decoration);
+  text-shadow: var(--list-item-text-shadow);
+  top: var(--list-item-top);
+  width: var(--list-item-width);
+  z-index: var(--list-item-z-index);
+}
+
+.list_item:active {
+  cursor: grabbing;
+}
+
+.list_item:hover {
+  background: var(--list-item-background-hover);
+  background-color: var(--list-item-background-color-hover);
+  border-color: var(--list-item-border-color-hover);
+  box-shadow: var(--list-item-box-shadow-hover);
+  color: var(--list-item-color-hover);
+  cursor: var(--list-item-cursor-hover);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+  text-decoration: var(--link-text-decoration-hover);
+  text-shadow: var(--list-item-text-shadow-hover);
+}
+
+.list_item.list_item_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.list_item.list_item_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.list_item.list_item_drag_over.list_item_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.list_item.list_item_drag_over.list_item_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.list_item.list_item_drag_over.list_item_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.list_item.list_item_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.list_item > .list_item_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.list_item.list_item_content_only {
+  cursor: var(--list-item-cursor);
+}
+
+.list_item.list_item_content_only:hover {
+  cursor: var(--list-item-cursor-hover);
+  outline: none;
+}

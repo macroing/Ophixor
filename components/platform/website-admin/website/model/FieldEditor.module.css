@@ -1,0 +1,78 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.field_editor_container {
+  background-color: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.field_editor_container > .field_editor {
+  border-top: 1px solid #e5e7eb;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  height: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.field_editor_container > .field_editor.field_editor_expanded {
+  display: flex;
+  height: auto;
+  padding: 1rem;
+}
+
+.field_editor_container > .field_editor > .actions {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.field_editor_container > .field_editor > .collection_fields {
+  background-color: var(--pc-semantic-surface-base);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.08) inset,
+    0 -1px 1px var(--pc-semantic-surface-base),
+    0 1px 0 var(--pc-semantic-surface-base);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.field_editor_container > .field_editor > .collection_fields > .add_field {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.field_editor_container > .field_editor > .collection_fields > .add_field > button {
+  white-space: nowrap;
+}
+
+.field_editor_container > .header {
+  background-color: #f1f5f9;
+  color: #475569;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.6rem 0.75rem;
+  width: 100%;
+}
+
+.field_editor_container > .header > .right {
+  justify-self: end;
+}

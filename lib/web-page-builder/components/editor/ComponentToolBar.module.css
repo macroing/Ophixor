@@ -1,0 +1,60 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.tool_bar {
+  align-items: center;
+  background-color: #111827;
+  border-left: 1px solid #2d3748;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  position: relative;
+  width: calc(3rem + 2px);
+  z-index: 30;
+}
+
+.tool_bar > ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.tool_bar > ul > li {
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+}
+
+.tool_bar > ul > li > svg {
+  color: #e5e7eb;
+}
+
+.tool_bar > ul > li:hover {
+  background: linear-gradient(180deg, #2d3748, #1f2937);
+  border-color: #2d3748;
+  cursor: pointer;
+}
+
+.tool_bar > ul > li:hover > svg {
+  color: #ffffff;
+}
+
+.tool_bar > ul > li.active {
+  background: linear-gradient(180deg, #6366f1, #4f46e5);
+  border-color: #4f46e5;
+}
+
+.tool_bar > ul > li.active > svg {
+  color: #ffffff;
+}

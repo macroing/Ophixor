@@ -1,0 +1,248 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "resources": {
+    "changelog": {
+      "metadata": {
+        "description": {
+          "en": "Follow the latest updates, improvements and fixes in Ophixor.",
+          "sv": "Följ de senaste uppdateringarna, förbättringarna och vad som fixats i Ophixor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Changelog | Ophixor",
+          "sv": "Loggboken | Ophixor"
+        }
+      },
+      "title": {
+        "en": "Changelog",
+        "sv": "Loggbok"
+      },
+      "description": {
+        "en": "Follow the latest updates, improvements and fixes in Ophixor.",
+        "sv": "Följ de senaste uppdateringarna, förbättringarna och fixarna i Ophixor."
+      },
+      "feature": {
+        "en": "Feature",
+        "sv": "Ny funktion"
+      },
+      "release": {
+        "en": "Release",
+        "sv": "Ny version"
+      },
+      "remove": {
+        "en": "Remove",
+        "sv": "Borttagning"
+      },
+      "fix": {
+        "en": "Fix",
+        "sv": "Fix"
+      },
+      "change": {
+        "en": "Change",
+        "sv": "Förändring"
+      }
+    },
+    "docs": {
+      "metadata": {
+        "description": {
+          "en": "This page contains documentation about components, expressions and actions in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om komponenter, uttryck och händelser i Ophixor."
+        },
+        "descriptionActions": {
+          "en": "This page contains documentation about actions in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om händelser i Ophixor."
+        },
+        "descriptionAction": {
+          "en": "This page contains documentation about the action $ACTION in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om händelsen $ACTION i Ophixor."
+        },
+        "descriptionComponents": {
+          "en": "This page contains documentation about components in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om komponenter i Ophixor."
+        },
+        "descriptionComponent": {
+          "en": "This page contains documentation about the component $COMPONENT in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om komponenten $COMPONENT i Ophixor."
+        },
+        "descriptionExpressions": {
+          "en": "This page contains documentation about expressions in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om uttryck i Ophixor."
+        },
+        "descriptionExpression": {
+          "en": "This page contains documentation about the expression $EXPRESSION in Ophixor.",
+          "sv": "Denna sida innehåller dokumentation om uttrycket $EXPRESSION i Ophixor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Documentation | Ophixor",
+          "sv": "Dokumentation | Ophixor"
+        },
+        "titleActions": {
+          "en": "Documentation > Action | Ophixor",
+          "sv": "Dokumentation > Händelse | Ophixor"
+        },
+        "titleAction": {
+          "en": "Documentation > Action > $ACTION | Ophixor",
+          "sv": "Dokumentation > Händelse > $ACTION | Ophixor"
+        },
+        "titleComponents": {
+          "en": "Documentation > Component | Ophixor",
+          "sv": "Dokumentation > Komponent | Ophixor"
+        },
+        "titleComponent": {
+          "en": "Documentation > Component > $COMPONENT | Ophixor",
+          "sv": "Dokumentation > Komponent > $COMPONENT | Ophixor"
+        },
+        "titleExpressions": {
+          "en": "Documentation > Expression | Ophixor",
+          "sv": "Dokumentation > Uttryck | Ophixor"
+        },
+        "titleExpression": {
+          "en": "Documentation > Expression > $EXPRESSION | Ophixor",
+          "sv": "Dokumentation > Uttryck > $EXPRESSION | Ophixor"
+        },
+        "titleNotFound": {
+          "en": "Documentation > Not found | Ophixor",
+          "sv": "Dokumentation > Hittades inte | Ophixor"
+        }
+      },
+      "documentation": {
+        "en": "Documentation",
+        "sv": "Dokumentation"
+      },
+      "components": {
+        "en": "Components",
+        "sv": "Komponenter"
+      },
+      "page": {
+        "en": "Page",
+        "sv": "Sida"
+      },
+      "component": {
+        "en": "Component",
+        "sv": "Komponent"
+      },
+      "description": {
+        "en": "Description",
+        "sv": "Beskrivning"
+      },
+      "plan": {
+        "en": "Plan",
+        "sv": "Plan"
+      },
+      "comingSoon": {
+        "en": "Coming soon...",
+        "sv": "Kommer inom kort..."
+      },
+      "expressions": {
+        "en": "Expressions",
+        "sv": "Uttryck"
+      },
+      "expression": {
+        "en": "Expression",
+        "sv": "Uttryck"
+      },
+      "actions": {
+        "en": "Actions",
+        "sv": "Händelser"
+      },
+      "action": {
+        "en": "Action",
+        "sv": "Händelse"
+      },
+      "backToDocumentation": {
+        "en": "Back to documentation",
+        "sv": "Tillbaka till dokumentationen"
+      },
+      "notFound": {
+        "en": "Not found",
+        "sv": "Hittades inte"
+      },
+      "information": {
+        "en": "Information",
+        "sv": "Information"
+      },
+      "componentType": {
+        "en": "Component",
+        "sv": "Komponent"
+      },
+      "group": {
+        "en": "Group",
+        "sv": "Grupp"
+      },
+      "returnType": {
+        "en": "Return type",
+        "sv": "Returtyp"
+      },
+      "parameters": {
+        "en": "Parameters",
+        "sv": "Parametrar"
+      },
+      "parameter": {
+        "en": "Parameter",
+        "sv": "Parameter"
+      },
+      "type": {
+        "en": "Type",
+        "sv": "Typ"
+      },
+      "default": {
+        "en": "Default",
+        "sv": "Standard"
+      },
+      "yes": {
+        "en": "Yes",
+        "sv": "Ja"
+      },
+      "no": {
+        "en": "No",
+        "sv": "Nej"
+      },
+      "properties": {
+        "en": "Properties",
+        "sv": "Egenskaper"
+      },
+      "property": {
+        "en": "Property",
+        "sv": "Egenskap"
+      },
+      "variants": {
+        "en": "Variants",
+        "sv": "Varianter"
+      },
+      "variant": {
+        "en": "Variant",
+        "sv": "Variant"
+      },
+      "relatedActions": {
+        "en": "Related actions",
+        "sv": "Relaterade händelser"
+      },
+      "relatedExpressions": {
+        "en": "Related expressions",
+        "sv": "Relaterade uttryck"
+      }
+    },
+    "notFound": {
+      "title": {
+        "en": "404 - Page not found",
+        "sv": "404 - Sidan hittades inte"
+      },
+      "text": {
+        "en": "The requested page could not be found.",
+        "sv": "Sidan du försökte besöka kunde inte hittas."
+      }
+    }
+  }
+}

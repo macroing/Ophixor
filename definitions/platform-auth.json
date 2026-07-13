@@ -1,0 +1,152 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "auth": {
+    "activate": {
+      "title": {
+        "en": "Account activation",
+        "sv": "Kontoaktivering"
+      },
+      "text": {
+        "en": "Activating your account...",
+        "sv": "Aktiverar ditt konto..."
+      },
+      "button": {
+        "en": "Sign in",
+        "sv": "Logga in"
+      },
+      "failureMessage": {
+        "en": "Activation failed.",
+        "sv": "Aktivering misslyckades."
+      }
+    },
+    "sign_in": {
+      "metadata": {
+        "description": {
+          "en": "Sign in to Ophixor.",
+          "sv": "Logga in till Ophixor."
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Sign in | Ophixor",
+          "sv": "Logga in | Ophixor"
+        }
+      },
+      "form": {
+        "title": {
+          "en": "Sign in",
+          "sv": "Logga in"
+        },
+        "email": {
+          "en": "E-mail",
+          "sv": "E-post"
+        },
+        "emailPlaceholder": {
+          "en": "For example john.doe@example.com",
+          "sv": "T.ex. sven.svensson@exempel.se"
+        },
+        "password": {
+          "en": "Password",
+          "sv": "Lösenord"
+        },
+        "signIn": {
+          "en": "Sign in",
+          "sv": "Logga in"
+        },
+        "signingIn": {
+          "en": "Signing in...",
+          "sv": "Loggar in..."
+        },
+        "noAccount": {
+          "en": "Don't have an account? ",
+          "sv": "Saknar du ett konto? "
+        },
+        "signUp": {
+          "en": "Sign up",
+          "sv": "Registrera"
+        }
+      }
+    },
+    "sign_up": {
+      "metadata": {
+        "description": {
+          "en": "Sign up to Ophixor.",
+          "sv": "Registrera dig hos Ophixor"
+        },
+        "keywords": {
+          "en": [],
+          "sv": []
+        },
+        "title": {
+          "en": "Sign up | Ophixor",
+          "sv": "Registrera dig | Ophixor"
+        }
+      },
+      "form": {
+        "successTitle": {
+          "en": "Check your e-mail",
+          "sv": "Kolla din e-post"
+        },
+        "successTextA": {
+          "en": "We've sent an activation link to ",
+          "sv": "Vi har skickat en aktiveringslänk till "
+        },
+        "successTextB": {
+          "en": "Open the e-mail and click on the activation link to activate your account.",
+          "sv": "Öppna e-postmeddelandet och klicka på aktiveringslänken för att aktivera ditt konto."
+        },
+        "successTextC": {
+          "en": "When you have activated your account you can ",
+          "sv": "När du har aktiverat ditt konto kan du "
+        },
+        "successTextD": {
+          "en": "sign in",
+          "sv": "logga in"
+        },
+        "title": {
+          "en": "Sign up",
+          "sv": "Registrera"
+        },
+        "email": {
+          "en": "E-mail",
+          "sv": "E-post"
+        },
+        "emailPlaceholder": {
+          "en": "For example john.doe@example.com",
+          "sv": "T.ex. sven.svensson@exempel.se"
+        },
+        "password": {
+          "en": "Password",
+          "sv": "Lösenord"
+        },
+        "passwordConfirmation": {
+          "en": "Password confirmation",
+          "sv": "Lösenord återupprepat"
+        },
+        "signUp": {
+          "en": "Sign up",
+          "sv": "Registrera"
+        },
+        "signingUp": {
+          "en": "Creating account...",
+          "sv": "Skapar konto..."
+        },
+        "haveAccount": {
+          "en": "Do you already have an account? ",
+          "sv": "Har du redan ett konto? "
+        },
+        "signIn": {
+          "en": "Sign in",
+          "sv": "Logga in"
+        }
+      }
+    }
+  }
+}

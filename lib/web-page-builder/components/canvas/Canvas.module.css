@@ -1,0 +1,59 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.canvas_wrapper {
+  --canvas-background-color: var(--pc-semantic-surface-base);
+  --canvas-border-color: var(--pc-semantic-border-default);
+  --canvas-border-radius: 8px;
+  --canvas-border-style: solid;
+  --canvas-border-width: 1px;
+  --canvas-box-shadow: var(--pc-semantic-shadow-sm);
+  --canvas-height: auto;
+  --canvas-width: auto;
+
+  background-color: var(--canvas-background-color);
+  border: var(--canvas-border-width) var(--canvas-border-style) var(--canvas-border-color);
+  border-radius: var(--canvas-border-radius);
+  box-shadow: var(--canvas-box-shadow);
+  height: var(--canvas-height);
+  overflow: hidden;
+  position: relative;
+  width: var(--canvas-width);
+}
+
+.canvas_wrapper.canvas_wrapper_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  display: flex;
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.canvas_wrapper:active {
+  cursor: grabbing;
+}
+
+.canvas_wrapper:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.canvas_wrapper.canvas_wrapper_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.canvas_wrapper.canvas_wrapper_content_only {
+  cursor: auto;
+}
+
+.canvas_wrapper.canvas_wrapper_content_only:hover {
+  outline: none;
+}

@@ -1,0 +1,2030 @@
+[
+  {
+    "date": "2026-07-12",
+    "entries": [
+      {
+        "id": "2026-07-12-change-open-source",
+        "type": "change",
+        "component": null,
+        "title": "Open source",
+        "description": "The platform has now become open source with the AGPL-3.0-only license."
+      },
+      {
+        "id": "2026-07-12-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "version": "0.25.0",
+    "date": "2026-07-11",
+    "entries": [
+      {
+        "id": "2026-07-11-release-0.25.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.25.0 released",
+        "description": "Beta version 25 of Ophixor has been released. The version is 0.25.0."
+      },
+      {
+        "id": "2026-07-11-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "entries": [
+      {
+        "id": "2026-07-09-fix-action-conditions",
+        "type": "fix",
+        "component": null,
+        "title": "Bug in action conditions",
+        "description": "A bug when running conditions in actions has been fixed."
+      },
+      {
+        "id": "2026-07-09-fix-reactive-renderer",
+        "type": "fix",
+        "component": null,
+        "title": "Bug in the reactive renderer",
+        "description": "A bug in the reactive renderer that caused no updates of components to occur has been fixed."
+      }
+    ]
+  },
+  {
+    "version": "0.24.0",
+    "date": "2026-07-08",
+    "entries": [
+      {
+        "id": "2026-07-08-release-0.24.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.24.0 released",
+        "description": "Beta version 24 of Ophixor has been released. The version is 0.24.0."
+      },
+      {
+        "id": "2026-07-08-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "entries": [
+      {
+        "id": "2026-07-07-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "entries": [
+      {
+        "id": "2026-07-06-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "entries": [
+      {
+        "id": "2026-07-05-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "entries": [
+      {
+        "id": "2026-07-04-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-03",
+    "entries": [
+      {
+        "id": "2026-07-03-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-02",
+    "entries": [
+      {
+        "id": "2026-07-02-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      },
+      {
+        "id": "2026-07-02-feature-reactive-renderer-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Reactive renderer enhancements",
+        "description": "Some enhancements have been made to the new reactive renderer."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "entries": [
+      {
+        "id": "2026-07-01-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "entries": [
+      {
+        "id": "2026-06-30-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-29",
+    "entries": [
+      {
+        "id": "2026-06-29-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "version": "0.23.0",
+    "date": "2026-06-28",
+    "entries": [
+      {
+        "id": "2026-06-28-release-0.23.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.23.0 released",
+        "description": "Beta version 23 of Ophixor has been released. The version is 0.23.0."
+      },
+      {
+        "id": "2026-06-28-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "entries": [
+      {
+        "id": "2026-06-27-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "entries": [
+      {
+        "id": "2026-06-26-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "entries": [
+      {
+        "id": "2026-06-25-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "entries": [
+      {
+        "id": "2026-06-23-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added. These make it possible to add models with different language translations and have text updated based on the language of the website. But the expression that returns the language only returns the language of the website itself. It does not take into account the language preferences that any specific visitor may have.",
+        "meta": {
+          "expressions": ["getByKey", "websiteLanguage"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "entries": [
+      {
+        "id": "2026-06-22-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-21",
+    "entries": [
+      {
+        "id": "2026-06-21-feature-collaboration",
+        "type": "feature",
+        "component": null,
+        "title": "Add and remove collaborators",
+        "description": "It is now possible to add collaborators to a website and remove them again."
+      }
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "entries": [
+      {
+        "id": "2026-06-18-feature-new-reactive-renderer",
+        "type": "feature",
+        "component": null,
+        "title": "A new reactive renderer",
+        "description": "A new reactive renderer has been created to improve performance when the page is large. The previous renderer was also reactive in the sense that it rerendered all components whenever something changed. In many cases something would frequently change, so all components would rerender frequently. The new reactive renderer should only rerender components that were affected by a change. It has been tested in many ways, but there may still be bugs left to be fixed."
+      }
+    ]
+  },
+  {
+    "version": "0.22.0",
+    "date": "2026-06-10",
+    "entries": [
+      {
+        "id": "2026-06-10-release-0.22.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.22.0 released",
+        "description": "Beta version 22 of Ophixor has been released. The version is 0.22.0."
+      },
+      {
+        "id": "2026-06-10-fix-cookie-banner",
+        "type": "fix",
+        "component": null,
+        "title": "Fix the cookie banner",
+        "description": "The cookie banner did not work as expected and has been fixed."
+      }
+    ]
+  },
+  {
+    "version": "0.21.0",
+    "date": "2026-06-09",
+    "entries": [
+      {
+        "id": "2026-06-09-release-0.21.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.21.0 released",
+        "description": "The 21:st beta version of Ophixor has been released. The version is 0.21.0."
+      },
+      {
+        "id": "2026-06-09-feature-heading-props",
+        "type": "feature",
+        "component": "Heading",
+        "title": "Add props to Heading",
+        "description": "Add missing props to the Heading component.",
+        "meta": {
+          "props": ["background", "backgroundColor", "borderColor", "borderRadius", "borderStyle", "borderWidth"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-06-08",
+    "entries": [
+      {
+        "id": "2026-06-08-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A new expression has been added.",
+        "meta": {
+          "expressions": ["socketDataArray"]
+        }
+      },
+      {
+        "id": "2026-06-08-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A few new actions have been added.",
+        "meta": {
+          "actions": ["socketDataAdd", "socketDataClear", "socketDataRemove"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.20.0",
+    "date": "2026-06-06",
+    "entries": [
+      {
+        "id": "2026-06-06-release-0.20.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.20.0 released",
+        "description": "The 20:th beta version of Ophixor has been released. The version is 0.20.0."
+      },
+      {
+        "id": "2026-06-06-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A new action has been added.",
+        "meta": {
+          "actions": ["userSignUp"]
+        }
+      },
+      {
+        "id": "2026-06-06-feature-component-templates",
+        "type": "feature",
+        "component": null,
+        "title": "New component templates",
+        "description": "Component templates for signing up, signing in and signing out has been added."
+      },
+      {
+        "id": "2026-06-06-feature-text-props",
+        "type": "feature",
+        "component": "Text",
+        "title": "Add one prop to Text",
+        "description": "Add one missing prop to the Text component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-06-06-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["isEmail", "isUserAuthenticated", "stringLength", "userEmail", "userName"]
+        }
+      },
+      {
+        "id": "2026-06-06-feature-page-props",
+        "type": "feature",
+        "component": "Page",
+        "title": "Add one prop to Page",
+        "description": "Add one missing prop to the Page component.",
+        "meta": {
+          "props": ["onEmit"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "entries": [
+      {
+        "id": "2026-06-04-feature-editor-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Editor enhancements",
+        "description": "The editor is now available for free to try out. It is now possible to choose how you want to view the page when editing. Either as mobile, tablet or desktop. A tooltip has also been added with some component documentation."
+      },
+      {
+        "id": "2026-06-04-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add one prop to Section",
+        "description": "Add one missing prop to the Section component.",
+        "meta": {
+          "props": ["containerType"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "entries": [
+      {
+        "id": "2026-06-02-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A few new actions have been added.",
+        "meta": {
+          "actions": ["userSignIn", "userSignOut"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "entries": [
+      {
+        "id": "2026-06-01-feature-menu-bar-variants",
+        "type": "feature",
+        "component": "MenuBar",
+        "title": "Add one variant to MenuBar",
+        "description": "Add one variant to the MenuBar component.",
+        "meta": {
+          "variants": ["Glass - Blue"]
+        }
+      },
+      {
+        "id": "2026-06-01-feature-menu-bar-props",
+        "type": "feature",
+        "component": "MenuBar",
+        "title": "Add props to MenuBar",
+        "description": "Add missing props to the MenuBar component.",
+        "meta": {
+          "props": ["backgroundImage", "backgroundImageMobileMenu"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.19.0",
+    "date": "2026-05-28",
+    "entries": [
+      {
+        "id": "2026-05-28-release-0.19.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.19.0 released",
+        "description": "The 19:th beta version of Ophixor has been released. The version is 0.19.0."
+      },
+      {
+        "id": "2026-05-28-feature-language-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Language enhancements",
+        "description": "The 'lang' attribute of the 'html' element is now taking the default language of the website into account. It's currently only possible to specify English and Swedish as default language."
+      }
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "entries": [
+      {
+        "id": "2026-05-27-feature-color-system-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Color system enhancements",
+        "description": "The CSS color variables for all components now refer to other variables and not to specific colors. This will allow for easier color palette overrides in the future. The reason it wasn't done earlier is because the color picker did not have support for variables. Now it does."
+      },
+      {
+        "id": "2026-05-27-feature-documentation-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Documentation enhancements",
+        "description": "The documentation page has been updated. It is now not just one page, but many. The documentation covers components, expressions and actions."
+      }
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "entries": [
+      {
+        "id": "2026-05-26-feature-table-data-props",
+        "type": "feature",
+        "component": "TableData",
+        "title": "Add one prop to TableData",
+        "description": "Add one missing prop to the TableData component.",
+        "meta": {
+          "props": ["verticalAlign"]
+        }
+      },
+      {
+        "id": "2026-05-26-feature-input-props",
+        "type": "feature",
+        "component": "Input",
+        "title": "Add one prop to Input",
+        "description": "Add one missing prop to the Input component.",
+        "meta": {
+          "props": ["type"]
+        }
+      },
+      {
+        "id": "2026-05-26-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["degreesToRadians", "hoursToMilliseconds", "hoursToMinutes", "hoursToSeconds", "millisecondsToHours", "millisecondsToMinutes", "millisecondsToSeconds", "minutesToHours", "minutesToMilliseconds", "minutesToSeconds", "radiansToDegrees", "secondsToHours", "secondsToMilliseconds", "secondsToMinutes"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "entries": [
+      {
+        "id": "2026-05-25-feature-canvas",
+        "type": "feature",
+        "component": "Canvas",
+        "title": "Add the Canvas component",
+        "description": "A new Canvas component has been added. It comes with its own set of actions and expressions, so it can be programmatically rendered."
+      },
+      {
+        "id": "2026-05-25-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["canvasDeltaTime", "canvasFPS", "canvasFrame", "canvasHeight", "canvasKeyDown", "canvasMouseButton", "canvasMouseDown", "canvasMouseMoved", "canvasMousePressed", "canvasMouseReleased", "canvasMouseWheel", "canvasMouseX", "canvasMouseY", "canvasTime", "canvasWidth", "socketData"]
+        }
+      },
+      {
+        "id": "2026-05-25-feature-card-props",
+        "type": "feature",
+        "component": "Card",
+        "title": "Add one prop to Card",
+        "description": "Add one missing prop to the Card component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-05-25-feature-button-props",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add one prop to Button",
+        "description": "Add one missing prop to the Button component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-05-25-feature-html-export-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "HTML export enhancements",
+        "description": "The isVisible prop for components that supports it are now taken into account when exporting."
+      },
+      {
+        "id": "2026-05-25-feature-badge-props",
+        "type": "feature",
+        "component": "Badge",
+        "title": "Add one prop to Badge",
+        "description": "Add one missing prop to the Badge component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-05-25-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A few new actions have been added.",
+        "meta": {
+          "actions": ["canvasCircle", "canvasClear", "canvasImage", "canvasLine", "canvasPolygon", "canvasRectangle", "canvasRestore", "canvasRotate", "canvasSave", "canvasScale", "canvasText", "canvasTranslate", "forEach", "if"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.18.0",
+    "date": "2026-05-24",
+    "entries": [
+      {
+        "id": "2026-05-24-release-0.18.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.18.0 released",
+        "description": "The 18:th beta version of Ophixor has been released. The version is 0.18.0."
+      }
+    ]
+  },
+  {
+    "date": "2026-05-22",
+    "entries": [
+      {
+        "id": "2026-05-22-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["isSocketConnected", "isSocketDisconnected", "isSocketReconnecting"]
+        }
+      },
+      {
+        "id": "2026-05-22-feature-workflow-editor-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Workflow editor enhancements",
+        "description": "Some enhancements have been made to the workflow editor. Nodes that will be discarded when saving are translucent. They will be discarded if they are not directly or indirectly connected to the main root. The first node of correct kind (or type) with no parent is considered the main root. Another improvement is that most nodes that are already connected will have to be disconnected before they can be reconnected. This is so that they can only have one connection at a time. The viewport has also been fixed so it centers based on the nodes."
+      },
+      {
+        "id": "2026-05-22-fix-template-id",
+        "type": "fix",
+        "component": null,
+        "title": "Template ID fix",
+        "description": "Templates previously discarded IDs so new IDs would be generated when importing. This would then cause problems when IDs were being referenced. The new approach is to create mappings from old IDs to new IDs and update all references to the old IDs with the new IDs within the template."
+      },
+      {
+        "id": "2026-05-22-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A few new actions have been added.",
+        "meta": {
+          "actions": ["addStateValue", "socketConnect", "socketDisconnect", "socketEmit"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "entries": [
+      {
+        "id": "2026-05-21-feature-web-socket",
+        "type": "feature",
+        "component": null,
+        "title": "WebSocket",
+        "description": "You can now enable the WebSocket feature for your pages. There is also a setting for automatically connecting it."
+      },
+      {
+        "id": "2026-05-21-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A few new actions have been added. One is for setting some arbitrary state and the other is for broadcasting messages over WebSocket.",
+        "meta": {
+          "actions": ["setStateValue", "socketBroadcast"]
+        }
+      },
+      {
+        "id": "2026-05-21-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A new expression has been added.",
+        "meta": {
+          "expressions": ["state"]
+        }
+      },
+      {
+        "id": "2026-05-21-feature-page-props",
+        "type": "feature",
+        "component": "Page",
+        "title": "Add one prop to Page",
+        "description": "Add one missing prop to the Page component.",
+        "meta": {
+          "props": ["onBroadcast"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.17.0",
+    "date": "2026-05-20",
+    "entries": [
+      {
+        "id": "2026-05-20-release-0.17.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.17.0 released",
+        "description": "The 17:th beta version of Ophixor has been released. The version is 0.17.0. This release mainly includes fixes and improvements for the platform itself."
+      }
+    ]
+  },
+  {
+    "version": "0.16.0",
+    "date": "2026-05-19",
+    "entries": [
+      {
+        "id": "2026-05-19-release-0.16.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.16.0 released",
+        "description": "The 16:th beta version of Ophixor has been released. The version is 0.16.0."
+      },
+      {
+        "id": "2026-05-19-feature-workflow-editor",
+        "type": "feature",
+        "component": null,
+        "title": "A workflow editor has been introduced",
+        "description": "Today we introduce our new workflow editor where you can build your action and expression workflows. It is a node-based editor with support for drag-and-drop, panning and zooming. This editor will make it much easier to build action and expression workflows than the previous form-based editor that also required multiple dialogs. Now you will see how everything is connected at once."
+      }
+    ]
+  },
+  {
+    "date": "2026-05-16",
+    "entries": [
+      {
+        "id": "2026-05-16-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["toObject"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "entries": [
+      {
+        "id": "2026-05-15-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["toArray"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "entries": [
+      {
+        "id": "2026-05-13-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["contains"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "entries": [
+      {
+        "id": "2026-05-12-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["abs", "acos", "acosh", "asin", "asinh", "atan", "atan2", "atanh", "cos", "cosh", "PI", "pow", "round", "sin", "sinh", "tan", "tanh"]
+        }
+      },
+      {
+        "id": "2026-05-12-change-dialog-props",
+        "type": "change",
+        "component": "Dialog",
+        "title": "Change the default value for backgroundColorHeader in Dialog",
+        "description": "Change the default value for the prop backgroundColorHeader from \"#2d3748\" to \"#1f2937\" in the dark version of the Dialog component.",
+        "meta": {
+          "props": ["backgroundColorHeader"]
+        }
+      },
+      {
+        "id": "2026-05-12-feature-dialog-props",
+        "type": "feature",
+        "component": "Dialog",
+        "title": "Add one prop to Dialog",
+        "description": "Add one missing prop to the Dialog component.",
+        "meta": {
+          "props": ["backgroundHeader"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "entries": [
+      {
+        "id": "2026-05-04-feature-switch-variants",
+        "type": "feature",
+        "component": "Switch",
+        "title": "Add one variant to Switch",
+        "description": "Add one variant to the Switch component.",
+        "meta": {
+          "variants": ["Dark"]
+        }
+      },
+      {
+        "id": "2026-05-04-feature-text-area-variants",
+        "type": "feature",
+        "component": "TextArea",
+        "title": "Add variants to TextArea",
+        "description": "Add variants to the TextArea component.",
+        "meta": {
+          "variants": ["Dark", "Error", "Success", "Warning"]
+        }
+      },
+      {
+        "id": "2026-05-04-feature-select-variants",
+        "type": "feature",
+        "component": "Select",
+        "title": "Add variants to Select",
+        "description": "Add variants to the Select component.",
+        "meta": {
+          "variants": ["Dark", "Error", "Success", "Warning"]
+        }
+      },
+      {
+        "id": "2026-05-04-feature-label-variants",
+        "type": "feature",
+        "component": "Label",
+        "title": "Add variants to Label",
+        "description": "Add variants to the Label component.",
+        "meta": {
+          "variants": ["Dark", "Error", "Success", "Warning"]
+        }
+      },
+      {
+        "id": "2026-05-04-feature-input-variants",
+        "type": "feature",
+        "component": "Input",
+        "title": "Add variants to Input",
+        "description": "Add variants to the Input component.",
+        "meta": {
+          "variants": ["Dark", "Error", "Success", "Warning"]
+        }
+      },
+      {
+        "id": "2026-05-04-feature-button-variants",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add one variant to Button",
+        "description": "Add one variant to the Button component.",
+        "meta": {
+          "variants": ["Dark - Themed"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "entries": [
+      {
+        "id": "2026-05-03-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "Two new actions have been added; one for printing data to the console and one for waiting a certain amount of time.",
+        "meta": {
+          "actions": ["print", "wait"]
+        }
+      },
+      {
+        "id": "2026-05-03-feature-button-props",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add one prop to Button",
+        "description": "Add one missing prop to the Button component.",
+        "meta": {
+          "props": ["type"]
+        }
+      },
+      {
+        "id": "2026-05-03-feature-form-props",
+        "type": "feature",
+        "component": "Form",
+        "title": "Add one prop to Form",
+        "description": "Add one missing prop to the Form component.",
+        "meta": {
+          "props": ["onSubmit"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.15.0",
+    "date": "2026-05-02",
+    "entries": [
+      {
+        "id": "2026-05-02-release-0.15.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.15.0 released",
+        "description": "The 15:th beta version of Ophixor has been released. The version is 0.15.0."
+      },
+      {
+        "id": "2026-05-02-feature-grid-props",
+        "type": "feature",
+        "component": "Grid",
+        "title": "Add one prop to Grid",
+        "description": "Add one missing prop to the Grid component.",
+        "meta": {
+          "props": ["overflow"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.14.0",
+    "date": "2026-05-01",
+    "entries": [
+      {
+        "id": "2026-05-01-release-0.14.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.14.0 released",
+        "description": "The 14:th beta version of Ophixor has been released. The version is 0.14.0."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "entries": [
+      {
+        "id": "2026-04-30-feature-text-area-props",
+        "type": "feature",
+        "component": "TextArea",
+        "title": "Add props to TextArea",
+        "description": "Add multiple missing props to the TextArea component.",
+        "meta": {
+          "props": ["disabled", "name", "readOnly"]
+        }
+      },
+      {
+        "id": "2026-04-30-feature-select-props",
+        "type": "feature",
+        "component": "Select",
+        "title": "Add props to Select",
+        "description": "Add multiple missing props to the Select component.",
+        "meta": {
+          "props": ["disabled", "name"]
+        }
+      },
+      {
+        "id": "2026-04-30-feature-input-props",
+        "type": "feature",
+        "component": "Input",
+        "title": "Add props to Input",
+        "description": "Add multiple missing props to the Input component.",
+        "meta": {
+          "props": ["disabled", "name", "readOnly", "spellCheck"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.13.0",
+    "date": "2026-04-29",
+    "entries": [
+      {
+        "id": "2026-04-29-release-0.13.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.13.0 released",
+        "description": "The 13:th beta version of Ophixor has been released. The version is 0.13.0."
+      },
+      {
+        "id": "2026-04-29-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "A few new expressions have been added.",
+        "meta": {
+          "expressions": ["ceil", "floor", "random", "sqrt"]
+        }
+      },
+      {
+        "id": "2026-04-29-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "A new action for updating component props has been added. These props are not saved, unless you run the action in the editor and save the page.",
+        "meta": {
+          "actions": ["updateComponent"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "entries": [
+      {
+        "id": "2026-04-28-fix-component-side-bar",
+        "type": "fix",
+        "component": "SideBar",
+        "title": "Fix the SideBar component",
+        "description": "The SideBar component is now responsive and shows a thinner bar with expand and collapse functionality when viewed on a mobile phone or tablet. This functionality has not been added to the HTML export pipeline yet."
+      },
+      {
+        "id": "2026-04-28-feature-html-export-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "HTML export enhancements",
+        "description": "CSS selectors are now included when exporting to HTML. This pipeline still has some limitations. For example it will only export code based on the viewport that was used when exporting. This means that if you have different values for mobile, tablet and desktop it will only export for one of those at a time. It also does not take into account the isVisible prop that can be used for some components. The components Map and RichText are not supported. Images are not exported."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-26",
+    "entries": [
+      {
+        "id": "2026-04-26-fix-component-element-export",
+        "type": "fix",
+        "component": "Element",
+        "title": "Fix export of Element",
+        "description": "The export pipeline was not exporting the Element component in a correct way. That has now been fixed."
+      }
+    ]
+  },
+  {
+    "version": "0.12.0",
+    "date": "2026-04-25",
+    "entries": [
+      {
+        "id": "2026-04-25-release-0.12.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.12.0 released",
+        "description": "The twelfth beta version of Ophixor has been released. The version is 0.12.0."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "entries": [
+      {
+        "id": "2026-04-24-change-grid-props",
+        "type": "change",
+        "component": "Grid",
+        "title": "Change the default value for borderColor and borderWidth in Grid",
+        "description": "Change the default value for the prop borderColor from \"#e5e7eb\" to \"transparent\" and the default value for the prop borderWidth from \"1px\" to \"0px\" in the Grid component. The previous default values will still be used in the editor when adding a new Grid. This is mainly so you can see where it is.",
+        "meta": {
+          "props": ["borderColor", "borderWidth"]
+        }
+      },
+      {
+        "id": "2026-04-24-change-section-props",
+        "type": "change",
+        "component": "Section",
+        "title": "Change the default value for borderColor and borderWidth in Section",
+        "description": "Change the default value for the prop borderColor from \"#e5e7eb\" to \"transparent\" and the default value for the prop borderWidth from \"1px\" to \"0px\" in the Section component. The previous default values will still be used in the editor when adding a new Section. This is mainly so you can see where it is.",
+        "meta": {
+          "props": ["borderColor", "borderWidth"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-04-23",
+    "entries": [
+      {
+        "id": "2026-04-23-fix-component-rendering-optimization",
+        "type": "fix",
+        "component": null,
+        "title": "Component rendering optimization",
+        "description": "A lot of optimization improvements have been made to the component rendering pipeline."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "entries": [
+      {
+        "id": "2026-04-22-feature-element",
+        "type": "feature",
+        "component": "Element",
+        "title": "Add the Element component",
+        "description": "A new Element component has been added. It supports a lot of CSS properties and many element or tag types. One use-case is when converting an existing page to the schema and you need CSS properties that are not used by the other components. This component does not have any style by default."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "entries": [
+      {
+        "id": "2026-04-21-feature-button-props",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add props to Button",
+        "description": "Add multiple missing props to the Button component. Some of these props are overrides and they are not set by default.",
+        "meta": {
+          "props": ["alignSelf", "backgroundBlendMode", "backgroundImage", "backgroundPosition", "backgroundRepeat", "backgroundSize", "borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "bottom", "justifySelf", "left", "margin", "marginBottom", "marginLeft", "marginRight", "marginTop", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "right", "textAlign", "textDecoration", "top", "transform", "transformOrigin"]
+        }
+      },
+      {
+        "id": "2026-04-21-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add props to Section",
+        "description": "Add multiple missing props to the Section component. Some of these props are overrides and they are not set by default.",
+        "meta": {
+          "props": ["marginBottom", "marginLeft", "marginRight", "marginTop", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "transform", "transformOrigin"]
+        }
+      },
+      {
+        "id": "2026-04-21-remove-grid-props",
+        "type": "remove",
+        "component": "Grid",
+        "title": "Remove props from Grid",
+        "description": "Remove multiple props from the Grid component.",
+        "meta": {
+          "props": ["gridTemplateColumnsDesktop", "gridTemplateColumnsTablet"]
+        }
+      },
+      {
+        "id": "2026-04-21-remove-section-props",
+        "type": "remove",
+        "component": "Section",
+        "title": "Remove props from Section",
+        "description": "Remove multiple props from the Section component.",
+        "meta": {
+          "props": ["alignContentDesktop", "alignContentTablet", "alignItemsDesktop", "alignItemsTablet", "flexDirectionDesktop", "flexDirectionTablet", "justifyContentDesktop", "justifyContentTablet", "justifyItemsDesktop", "justifyItemsTablet", "marginDesktop", "marginTablet"]
+        }
+      },
+      {
+        "id": "2026-04-21-feature-responsive-props",
+        "type": "feature",
+        "component": null,
+        "title": "Add support for responsive props",
+        "description": "All component props that are used for CSS can now be changed for different pre-determined viewport sizes. These are mobile up to and including 768px, tablet above 768px and up to and including 1024px and desktop above 1024px. This update will make the props that are used specifically for different viewport sizes redundant. So they will be removed."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-19",
+    "entries": [
+      {
+        "id": "2026-04-19-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add props to Section",
+        "description": "Add multiple missing props to the Section component.",
+        "meta": {
+          "props": ["alignContent", "alignContentDesktop", "alignContentTablet", "alignSelf", "color", "fontFamily", "fontSize", "fontStyle", "fontWeight", "gridTemplateAreas", "gridTemplateColumns", "gridTemplateRows", "justifyItems", "justifyItemsDesktop", "justifyItemsTablet", "justifySelf", "lineHeight", "textAlign", "textDecoration", "textShadow"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.11.0",
+    "date": "2026-04-17",
+    "entries": [
+      {
+        "id": "2026-04-17-release-0.11.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.11.0 released",
+        "description": "The eleventh beta version of Ophixor has been released. The version is 0.11.0."
+      },
+      {
+        "id": "2026-04-17-feature-image-props",
+        "type": "feature",
+        "component": "Image",
+        "title": "Add props to Image",
+        "description": "Add multiple missing props to the Image component.",
+        "meta": {
+          "props": ["flexGrow", "isVisible"]
+        }
+      },
+      {
+        "id": "2026-04-17-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add props to Section",
+        "description": "Add multiple missing props to the Section component.",
+        "meta": {
+          "props": ["alignItemsDesktop", "alignItemsTablet", "justifyContentDesktop", "justifyContentTablet", "marginDesktop", "marginTablet"]
+        }
+      },
+      {
+        "id": "2026-04-17-feature-page-props",
+        "type": "feature",
+        "component": "Page",
+        "title": "Add props to Page",
+        "description": "Add multiple missing props to the Page component.",
+        "meta": {
+          "props": ["backgroundBlendMode", "backgroundImage", "backgroundPosition", "backgroundRepeat", "backgroundSize"]
+        }
+      },
+      {
+        "id": "2026-04-17-feature-rich-text-props",
+        "type": "feature",
+        "component": "RichText",
+        "title": "Add props to RichText",
+        "description": "Add multiple missing props to the RichText component.",
+        "meta": {
+          "props": ["backgroundColor", "backgroundColorContent", "borderColor", "borderRadius", "borderWidth", "boxShadow", "boxShadowFocus", "marginContent", "padding"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.10.0",
+    "date": "2026-04-16",
+    "entries": [
+      {
+        "id": "2026-04-16-release-0.10.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.10.0 released",
+        "description": "The tenth beta version of Ophixor has been released. The version is 0.10.0."
+      },
+      {
+        "id": "2026-04-16-feature-html-export-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "HTML export enhancements",
+        "description": "When exporting HTML it now exports JavaScript in a script in head. But only if necessary. It also only exports default CSS for a given component type if it is used on the page. So it should result in less code in most cases."
+      },
+      {
+        "id": "2026-04-16-feature-menu-bar-props",
+        "type": "feature",
+        "component": "MenuBar",
+        "title": "Add props to MenuBar",
+        "description": "Add multiple missing props to the MenuBar component.",
+        "meta": {
+          "props": ["iconImageAlt", "iconImageSrc"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.9.0",
+    "date": "2026-04-14",
+    "entries": [
+      {
+        "id": "2026-04-14-release-0.9.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.9.0 released",
+        "description": "The ninth beta version of Ophixor has been released. The version is 0.9.0."
+      },
+      {
+        "id": "2026-04-14-feature-platform",
+        "type": "feature",
+        "component": null,
+        "title": "Platform updates",
+        "description": "A cookie banner and the legal pages for cookies, privacy and terms have been added. Some changes have also been made to the landing page. A new logo has been created."
+      },
+      {
+        "id": "2026-04-14-feature-map-props",
+        "type": "feature",
+        "component": "Map",
+        "title": "Add one prop to Map",
+        "description": "Add one missing prop to the Map component. This allows you to provide a way to manage consent for cookies.",
+        "meta": {
+          "props": ["consent"]
+        }
+      },
+      {
+        "id": "2026-04-14-feature-heading-props",
+        "type": "feature",
+        "component": "Heading",
+        "title": "Add one prop to Heading",
+        "description": "Add one missing prop to the Heading component.",
+        "meta": {
+          "props": ["textShadow"]
+        }
+      },
+      {
+        "id": "2026-04-14-feature-text-props",
+        "type": "feature",
+        "component": "Text",
+        "title": "Add one prop to Text",
+        "description": "Add one missing prop to the Text component.",
+        "meta": {
+          "props": ["textShadow"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13",
+    "entries": [
+      {
+        "id": "2026-04-13-feature-component-selectors",
+        "type": "feature",
+        "component": null,
+        "title": "Component selectors",
+        "description": "A new feature called selectors has been added. All components supports it. It's possible to override any CSS property in various states using this feature."
+      },
+      {
+        "id": "2026-04-13-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add one prop to Section",
+        "description": "Add one missing prop to the Section component.",
+        "meta": {
+          "props": ["display"]
+        }
+      },
+      {
+        "id": "2026-04-13-feature-link-props",
+        "type": "feature",
+        "component": "Link",
+        "title": "Add props to Link",
+        "description": "Add multiple missing props to the Link component.",
+        "meta": {
+          "props": ["cursor", "cursorHover"]
+        }
+      },
+      {
+        "id": "2026-04-13-feature-list-props",
+        "type": "feature",
+        "component": "List",
+        "title": "Add props to List",
+        "description": "Add multiple missing props to the List component.",
+        "meta": {
+          "props": ["bottom", "left", "paddingInlineStart", "position", "right", "top", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-04-13-feature-list-item-props",
+        "type": "feature",
+        "component": "ListItem",
+        "title": "Add props to ListItem",
+        "description": "Add multiple missing props to the ListItem component.",
+        "meta": {
+          "props": ["backgroundColorHover", "backgroundHover", "borderColorHover", "bottom", "boxShadowHover", "colorHover", "cursor", "cursorHover", "left", "position", "right", "textDecoration", "textDecorationHover", "textShadowHover", "top", "zIndex"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.8.0",
+    "date": "2026-04-12",
+    "entries": [
+      {
+        "id": "2026-04-12-release-0.8.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.8.0 released",
+        "description": "The eigth beta version of Ophixor has been released. The version is 0.8.0."
+      },
+      {
+        "id": "2026-04-12-feature-user-account",
+        "type": "feature",
+        "component": null,
+        "title": "User account",
+        "description": "It's now possible to change your password and delete your account."
+      },
+      {
+        "id": "2026-04-12-feature-text-props",
+        "type": "feature",
+        "component": "Text",
+        "title": "Add props to Text",
+        "description": "Add multiple missing props to the Text component.",
+        "meta": {
+          "props": ["overflowWrap", "wordBreak"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.7.0",
+    "date": "2026-04-11",
+    "entries": [
+      {
+        "id": "2026-04-11-release-0.7.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.7.0 released",
+        "description": "The seventh beta version of Ophixor has been released. The version is 0.7.0."
+      },
+      {
+        "id": "2026-04-11-feature-html-export-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "HTML export enhancements",
+        "description": "The HTML export system has been updated to support data sources, expressions, prop bindings and integrations. The exported HTML will still be static, but it results in a snapshot of the page rendered when exporting. Images are not exported so you may have to change the URL in the src attribute manually. At least for relative URLs."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-10",
+    "entries": [
+      {
+        "id": "2026-04-10-feature-model-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Model enhancements",
+        "description": "Models can now specify plain-text or rich-text for the string type."
+      },
+      {
+        "id": "2026-04-10-feature-documentation-page",
+        "type": "feature",
+        "component": null,
+        "title": "Add content to the documentation page",
+        "description": "Content has been added to the documentation page. It is built from the component schemas."
+      },
+      {
+        "id": "2026-04-10-feature-section-element-enhancements",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add new elements to Section",
+        "description": "The Section component can now be used to create more element types; header, nav, main, footer, aside, details, summary, figure and figcaption.",
+        "meta": {
+          "props": ["element"]
+        }
+      },
+      {
+        "id": "2026-04-10-feature-form-props",
+        "type": "feature",
+        "component": "Form",
+        "title": "Add one prop to Form",
+        "description": "Add one missing prop to the Form component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-04-10-feature-grid-props",
+        "type": "feature",
+        "component": "Grid",
+        "title": "Add one prop to Grid",
+        "description": "Add one missing prop to the Grid component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-04-10-feature-alert-props",
+        "type": "feature",
+        "component": "Alert",
+        "title": "Add one prop to Alert",
+        "description": "Add one missing prop to the Alert component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      },
+      {
+        "id": "2026-04-10-feature-expression-engine-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression engine enhancements",
+        "description": "Some new expressions have been added. These are suitable for the isVisible prop that was just added to the Section component.",
+        "meta": {
+          "expressions": ["isDesktop", "isLandscape", "isMobile", "isPlatformUserAdmin", "isPlatformUserAuthenticated", "isPlatformUserWebsiteOwner", "isPortrait", "isTablet", "platformUserEmail", "viewportHeight", "viewportOrientation", "viewportWidth", "websiteDescription", "websiteName"]
+        }
+      },
+      {
+        "id": "2026-04-10-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add one prop to Section",
+        "description": "Add one missing prop to the Section component.",
+        "meta": {
+          "props": ["isVisible"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.6.0",
+    "date": "2026-04-09",
+    "entries": [
+      {
+        "id": "2026-04-09-release-0.6.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.6.0 released",
+        "description": "The sixth beta version of Ophixor has been released. The version is 0.6.0."
+      },
+      {
+        "id": "2026-04-09-feature-image-props",
+        "type": "feature",
+        "component": "Image",
+        "title": "Add props to Image",
+        "description": "Add multiple missing props to the Image component.",
+        "meta": {
+          "props": ["bottom", "left", "opacity", "position", "right", "top", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-04-09-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add props to Section",
+        "description": "Add multiple missing props to the Section component.",
+        "meta": {
+          "props": ["aspectRatio", "backdropFilter", "backgroundBlendMode", "backgroundImage", "backgroundPosition", "backgroundRepeat", "backgroundSize", "borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "bottom", "boxShadow", "left", "opacity", "position", "right", "top", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-04-09-change-alert-props",
+        "type": "change",
+        "component": "Alert",
+        "title": "Change the default value for flexShrink in Alert",
+        "description": "Change the default value for the prop flexShrink from \"0\" to \"1\" in the Alert component.",
+        "meta": {
+          "props": ["flexShrink"]
+        }
+      },
+      {
+        "id": "2026-04-09-change-section-props",
+        "type": "change",
+        "component": "Section",
+        "title": "Change the default value for flexShrink in Section",
+        "description": "Change the default value for the prop flexShrink from \"0\" to \"1\" in the Section component.",
+        "meta": {
+          "props": ["flexShrink"]
+        }
+      },
+      {
+        "id": "2026-04-09-feature-rich-text",
+        "type": "feature",
+        "component": "RichText",
+        "title": "Add the RichText component",
+        "description": "A new RichText component has been added."
+      },
+      {
+        "id": "2026-04-09-feature-map",
+        "type": "feature",
+        "component": "Map",
+        "title": "Add the Map component",
+        "description": "A new Map component has been added."
+      },
+      {
+        "id": "2026-04-09-feature-spinner",
+        "type": "feature",
+        "component": "Spinner",
+        "title": "Add the Spinner component",
+        "description": "A new Spinner component has been added."
+      }
+    ]
+  },
+  {
+    "version": "0.5.0",
+    "date": "2026-04-08",
+    "entries": [
+      {
+        "id": "2026-04-08-release-0.5.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.5.0 released",
+        "description": "The fifth beta version of Ophixor has been released. The version is 0.5.0."
+      },
+      {
+        "id": "2026-04-08-feature-action-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Action enhancements",
+        "description": "The action system has been updated to use a dialog and it also uses internal expression dialogs for configuration."
+      },
+      {
+        "id": "2026-04-08-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "Enhancements has been made to the expression system."
+      },
+      {
+        "id": "2026-04-08-feature-integration-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Integration enhancements",
+        "description": "Integrations can now be used as a data source for components. Similar to how expressions and models can be."
+      },
+      {
+        "id": "2026-04-08-fix-component-prop-sanitization",
+        "type": "fix",
+        "component": null,
+        "title": "Component prop sanitization fix",
+        "description": "In a previous update the prop sanitization would remove all default prop values. It should only remove all default CSS-based prop values. Not default content. This has been fixed."
+      }
+    ]
+  },
+  {
+    "version": "0.4.0",
+    "date": "2026-04-07",
+    "entries": [
+      {
+        "id": "2026-04-07-release-0.4.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.4.0 released",
+        "description": "The fourth beta version of Ophixor has been released. The version is 0.4.0."
+      },
+      {
+        "id": "2026-04-07-feature-integrations",
+        "type": "feature",
+        "component": null,
+        "title": "Integrations",
+        "description": "The first version of the integration feature is now available. You can create, update and delete integrations. They can also be tested."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "entries": [
+      {
+        "id": "2026-04-06-feature-switch-props",
+        "type": "feature",
+        "component": "Switch",
+        "title": "Add props to Switch",
+        "description": "Add multiple missing props to the Switch component.",
+        "meta": {
+          "props": ["height", "maxHeight", "maxWidth", "minHeight", "minWidth", "width"]
+        }
+      },
+      {
+        "id": "2026-04-06-feature-section-props",
+        "type": "feature",
+        "component": "Section",
+        "title": "Add one prop to Section",
+        "description": "Add one missing prop to the Section component.",
+        "meta": {
+          "props": ["overflow"]
+        }
+      },
+      {
+        "id": "2026-04-06-feature-data-source-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Data source enhancements",
+        "description": "The expression editor for data sources has been moved to a dialog that makes it easier to build expressions."
+      },
+      {
+        "id": "2026-04-06-fix-component-prop-optimization",
+        "type": "fix",
+        "component": null,
+        "title": "Component prop optimization",
+        "description": "Component props are now discarded when set to their default values. This reduces memory storage in the database and increases runtime performance when rendering."
+      },
+      {
+        "id": "2026-04-06-feature-expression-engine-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression engine enhancements",
+        "description": "Some new expressions have been added.",
+        "meta": {
+          "expressions": ["coalesce", "dateDiff", "datePart", "formatDate", "groupBy", "includes", "lookup", "pipeline", "replace", "split", "sort", "trim"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-04-05",
+    "entries": [
+      {
+        "id": "2026-04-05-feature-page-code-dialog",
+        "type": "feature",
+        "component": null,
+        "title": "Page code dialog",
+        "description": "A dialog where you can view the page code has been added. It can be opened from the context menu."
+      },
+      {
+        "id": "2026-04-05-feature-property-editor-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Property editor enhancements",
+        "description": "The property editor has been updated with some icons and better CSS property handling."
+      },
+      {
+        "id": "2026-04-05-feature-expression-editor-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression editor enhancements",
+        "description": "The expression editor has been moved to a dialog that makes it easier to build expressions."
+      }
+    ]
+  },
+  {
+    "date": "2026-04-04",
+    "entries": [
+      {
+        "id": "2026-04-04-fix-page-loading",
+        "type": "fix",
+        "component": null,
+        "title": "Page loading fix",
+        "description": "Page loading did not work as expected when navigating between pages. This has been fixed."
+      },
+      {
+        "id": "2026-04-04-feature-menu-bar-enhancements",
+        "type": "feature",
+        "component": "MenuBar",
+        "title": "MenuBar enhancements",
+        "description": "The MenuBar component now shows what page it is on. A more customizable solution will be needed in the future."
+      },
+      {
+        "id": "2026-04-04-feature-expression-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Expression enhancements",
+        "description": "Expressions can now be used on props that are items and on their internal props. This allows items to be constructed from models and their data."
+      }
+    ]
+  },
+  {
+    "version": "0.3.0",
+    "date": "2026-04-02",
+    "entries": [
+      {
+        "id": "2026-04-02-release-0.3.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.3.0 released",
+        "description": "The third beta version of Ophixor has been released. The version is 0.3.0."
+      },
+      {
+        "id": "2026-04-02-feature-integrations",
+        "type": "feature",
+        "component": null,
+        "title": "Integrations page",
+        "description": "An integrations page has been added. It is currently empty. The goal with this feature is to allow for integrations with any other service. Maybe you need to retrieve data from somewhere or perform an action to some other website. That's where this feature will be used."
+      },
+      {
+        "id": "2026-04-02-feature-model-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Model enhancements",
+        "description": "Models can now specify single-line or multi-line for the string type."
+      },
+      {
+        "id": "2026-04-02-change-badge-props",
+        "type": "change",
+        "component": "Badge",
+        "title": "Change the default values for minHeight and minWidth in Badge",
+        "description": "Change the default values for the props minHeight and minWidth from \"0px\" to \"auto\" in the Badge component.",
+        "meta": {
+          "props": ["minHeight", "minWidth"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-04-01",
+    "entries": [
+      {
+        "id": "2026-04-01-feature-model-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Model enhancements",
+        "description": "This update makes it possible to view and update models as well as create, view, update and delete data for the models. Before this update some models and data were hard-coded. This is no longer the case. All models and data for a given website are loaded right now. But this will change in the future in order to optimize loading so it scales with a lot of data."
+      },
+      {
+        "id": "2026-04-01-feature-table-data-props",
+        "type": "feature",
+        "component": "TableData",
+        "title": "Add one prop to TableData",
+        "description": "Add one missing prop to the TableData component.",
+        "meta": {
+          "props": ["backgroundColor"]
+        }
+      },
+      {
+        "id": "2026-04-01-feature-table-header-props",
+        "type": "feature",
+        "component": "TableHeader",
+        "title": "Add one prop to TableHeader",
+        "description": "Add one missing prop to the TableHeader component.",
+        "meta": {
+          "props": ["backgroundColor"]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.2.0",
+    "date": "2026-03-31",
+    "entries": [
+      {
+        "id": "2026-03-31-release-0.2.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.2.0 released",
+        "description": "The second beta version of Ophixor has been released. The version is 0.2.0."
+      },
+      {
+        "id": "2026-03-31-feature-table-data-props",
+        "type": "feature",
+        "component": "TableData",
+        "title": "Add one prop to TableData",
+        "description": "Add one missing prop to the TableData component.",
+        "meta": {
+          "props": ["textAlign"]
+        }
+      },
+      {
+        "id": "2026-03-31-feature-table-header-props",
+        "type": "feature",
+        "component": "TableHeader",
+        "title": "Add one prop to TableHeader",
+        "description": "Add one missing prop to the TableHeader component.",
+        "meta": {
+          "props": ["textAlign"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-03-30",
+    "entries": [
+      {
+        "id": "2026-03-30-feature-button-props",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add props to Button",
+        "description": "Add multiple missing props to the Button component.",
+        "meta": {
+          "props": ["backdropFilter", "borderStyle", "borderWidth", "cursor", "cursorDisabled", "disabled", "display", "flexDirection", "flexGrow", "flexShrink", "flexWrap", "lineHeight", "maxHeight", "maxWidth", "minHeight", "minWidth", "opacity", "opacityDisabled", "outline", "outlineFocus", "overflow", "position", "rel", "target", "textTransform", "whiteSpace", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-03-30-feature-button-variants",
+        "type": "feature",
+        "component": "Button",
+        "title": "Add variants to Button",
+        "description": "Add multiple new useful variants to the Button component.",
+        "meta": {
+          "variants": ["Primary CTA", "Secondary", "Ghost", "Outline", "Danger", "Link", "Soft", "Glass", "Full Width CTA", "Compact", "Icon Button", "Elevated"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-03-29",
+    "entries": [
+      {
+        "id": "2026-03-29-feature-badge-props",
+        "type": "feature",
+        "component": "Badge",
+        "title": "Add props to Badge",
+        "description": "Add multiple missing props to the Badge component.",
+        "meta": {
+          "props": ["backgroundColorDanger", "backgroundColorPrimary", "backgroundColorSuccess", "backgroundColorWarning", "borderColor", "borderColorDanger", "borderColorPrimary", "borderColorSuccess", "borderColorWarning", "borderStyle", "borderWidth", "bottom", "colorDanger", "colorPrimary", "colorSuccess", "colorWarning", "height", "letterSpacing", "lineHeight", "margin", "maxHeight", "maxWidth", "minHeight", "minWidth", "opacity", "right", "textTransform", "theme", "whiteSpace", "width", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-03-29-feature-badge-variants",
+        "type": "feature",
+        "component": "Badge",
+        "title": "Add variants to Badge",
+        "description": "Add multiple new useful variants to the Badge component.",
+        "meta": {
+          "variants": ["Primary (Soft)", "Success (Soft)", "Warning (Soft)", "Danger (Soft)", "Primary (Solid)", "Success (Solid)", "Warning (Solid)", "Danger (Solid)", "Primary (Outline)", "Success (Outline)", "Warning (Outline)", "Danger (Outline)", "Muted", "Large Pill", "Small", "Dot", "Notification"]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2026-03-28",
+    "entries": [
+      {
+        "id": "2026-03-28-fix-alert",
+        "type": "fix",
+        "component": "Alert",
+        "title": "Fix some CSS for Alert",
+        "description": "Fix some CSS that did not work as expected for the Alert component."
+      },
+      {
+        "id": "2026-03-28-fix-card",
+        "type": "fix",
+        "component": "Card",
+        "title": "Fix some CSS for Card",
+        "description": "Fix some CSS that did not work as expected for the Card component."
+      }
+    ]
+  },
+  {
+    "date": "2026-03-27",
+    "entries": [
+      {
+        "id": "2026-03-27-feature-alert-props",
+        "type": "feature",
+        "component": "Alert",
+        "title": "Add props to Alert",
+        "description": "Add multiple missing props to the Alert component.",
+        "meta": {
+          "props": ["backdropFilter", "borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "bottom", "boxShadow", "left", "minHeight", "minWidth", "opacity", "overflow", "position", "right", "top", "transform", "transition", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-03-27-feature-alert-variants",
+        "type": "feature",
+        "component": "Alert",
+        "title": "Add variants to Alert",
+        "description": "Add multiple new useful variants to the Alert component.",
+        "meta": {
+          "variants": ["Soft", "Outlined", "Solid", "Elevated", "Glass", "Left Accent", "Compact Row", "Banner", "Toast", "Floating Center"]
+        }
+      },
+      {
+        "id": "2026-03-27-feature-card-props",
+        "type": "feature",
+        "component": "Card",
+        "title": "Add props to Card",
+        "description": "Add multiple missing props to the Card component.",
+        "meta": {
+          "props": ["aspectRatio", "backdropFilter", "backgroundBlendMode", "backgroundImage", "backgroundPosition", "backgroundRepeat", "backgroundSize", "borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "bottom", "filter", "left", "opacity", "outline", "outlineOffset", "overflow", "overflowX", "overflowY", "position", "right", "textAlign", "top", "transform", "transformOrigin", "zIndex"]
+        }
+      },
+      {
+        "id": "2026-03-27-feature-card-variants",
+        "type": "feature",
+        "component": "Card",
+        "title": "Add variants to Card",
+        "description": "Add multiple new useful variants to the Card component.",
+        "meta": {
+          "variants": ["Flat", "Outlined", "Elevated", "Soft", "Glass", "Dark", "Compact", "Spacious", "Horizontal", "Centered", "Image Card", "Dashboard Tile", "Clickable", "Accent Left", "Accent Top", "Modal", "Floating Panel", "Scrollable", "Media Overlay"]
+        }
+      },
+      {
+        "id": "2026-03-27-change-heading",
+        "type": "change",
+        "component": "Heading",
+        "title": "Change the default value for color in Heading",
+        "description": "Change the default value for the prop color from \"#0f172a\" to \"currentColor\" in the Heading component.",
+        "meta": {
+          "props": ["color"]
+        }
+      },
+      {
+        "id": "2026-03-27-fix-variant-selection",
+        "type": "fix",
+        "component": null,
+        "title": {
+          "en": "Variant selection bug fixed",
+          "sv": "En bugg med variantval fixad"
+        },
+        "description": {
+          "en": "Fix a bug in variant selection. It now overrides all props with the default ones before applying the variant props. Earlier only the default variant would do that.",
+          "sv": "En bugg med variantval har blivit fixad. Nu skriver den över alla egenskaper med de ursprungliga innan den applicerar variantens egenskaper. Tidigare gjordes detta enbart på standardvarianten."
+        }
+      },
+      {
+        "id": "2026-03-27-fix-alert",
+        "type": "fix",
+        "component": {
+          "en": "Alert",
+          "sv": "Meddelande"
+        },
+        "title": {
+          "en": "Fix labels from Swedish to English",
+          "sv": "Fixat etiketter på svenska till engelska"
+        },
+        "description": {
+          "en": "Fix labels for the theme prop. They were in Swedish and are now in English.",
+          "sv": "Fixat etiketter för temaegenskapen. De var på svenska och är nu på engelska."
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "date": "2026-03-26",
+    "entries": [
+      {
+        "id": "2026-03-26-release-0.1.0",
+        "type": "release",
+        "component": null,
+        "title": {
+          "en": "Version 0.1.0 released",
+          "sv": "Version 0.1.0 släppt"
+        },
+        "description": {
+          "en": "The first beta version of Ophixor has been released. The version is 0.1.0.",
+          "sv": "Den första betaversionen av Ophixor har släppts. Versionen är 0.1.0."
+        }
+      }
+    ]
+  }
+]

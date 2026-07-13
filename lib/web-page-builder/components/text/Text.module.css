@@ -1,0 +1,162 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.text {
+  --text-background-color: transparent;
+  --text-border-color: transparent;
+  --text-border-radius: 0px;
+  --text-border-width: 0px;
+  --text-color: inherit;
+  --text-cursor: auto;
+  --text-font-family: inherit;
+  --text-font-size: clamp(1rem, 1.2vw, 1.125rem);
+  --text-font-style: normal;
+  --text-font-weight: 400;
+  --text-height: auto;
+  --text-line-height: 1.65;
+  --text-margin: 0px;
+  --text-max-height: none;
+  --text-max-width: none;
+  --text-min-height: 0px;
+  --text-min-width: 0px;
+  --text-overflow: visible;
+  --text-overflow-wrap: normal;
+  --text-padding: 0px;
+  --text-text-align: left;
+  --text-text-decoration: none;
+  --text-text-overflow: clip;
+  --text-text-shadow: none;
+  --text-white-space: normal;
+  --text-width: auto;
+  --text-word-break: normal;
+
+  background-color: var(--text-background-color);
+  border: var(--text-border-width) solid var(--text-border-color);
+  border-radius: var(--text-border-radius);
+  color: var(--text-color);
+  cursor: var(--text-cursor);
+  display: var(--text-display, revert);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  height: var(--text-height);
+  line-height: var(--text-line-height);
+  margin: var(--text-margin);
+  max-height: var(--text-max-height);
+  max-width: var(--text-max-width);
+  min-height: var(--text-min-height);
+  min-width: var(--text-min-width);
+  overflow: var(--text-overflow);
+  overflow-wrap: var(--text-overflow-wrap);
+  padding: var(--text-padding);
+  position: relative;
+  text-align: var(--text-text-align);
+  text-decoration: var(--text-text-decoration);
+  text-overflow: var(--text-text-overflow);
+  text-shadow: var(--text-text-shadow);
+  white-space: var(--text-white-space);
+  width: var(--text-width);
+  word-break: var(--text-word-break);
+}
+
+.text.text_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.text:active {
+  cursor: grabbing;
+}
+
+.text:empty {
+  padding: 1rem;
+}
+
+.text:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.text.text_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.text.text_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.text.text_drag_over.text_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.text.text_drag_over.text_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.text.text_drag_over.text_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.text.text_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.text > .text_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.text.text_content_only {
+  cursor: var(--text-cursor);
+  padding: var(--text-padding);
+}
+
+.text.text_content_only:hover {
+  outline: none;
+}

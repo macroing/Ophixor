@@ -1,0 +1,63 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.checkbox {
+  --checkbox-align-self: flex-start;
+  --checkbox-background-color: var(--pc-semantic-surface-base);
+  --checkbox-border-color: var(--pc-semantic-border-default);
+  --checkbox-border-radius: 8px;
+  --checkbox-border-width: 1px;
+  --checkbox-color: var(--pc-semantic-text-primary);
+  --checkbox-height: auto;
+  --checkbox-justify-self: center;
+  --checkbox-max-height: none;
+  --checkbox-max-width: none;
+  --checkbox-min-height: 22px;
+  --checkbox-min-width: 22px;
+  --checkbox-padding: 0.6rem 0.75rem;
+  --checkbox-width: auto;
+
+  align-self: var(--checkbox-align-self);
+  background-color: var(--checkbox-background-color);
+  border: var(--checkbox-border-width) solid var(--checkbox-border-color);
+  border-radius: var(--checkbox-border-radius);
+  color: var(--checkbox-color);
+  cursor: auto;
+  height: var(--checkbox-height);
+  justify-self: var(--checkbox-justify-self);
+  max-height: var(--checkbox-max-height);
+  max-width: var(--checkbox-max-width);
+  min-height: var(--checkbox-min-height);
+  min-width: var(--checkbox-min-width);
+  padding: var(--checkbox-padding);
+  position: relative;
+  width: var(--checkbox-width);
+}
+
+.checkbox:active {
+  cursor: grabbing;
+}
+
+.checkbox:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.checkbox:disabled {
+  opacity: 0.75;
+}
+
+.checkbox.checkbox_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.checkbox.checkbox_content_only {
+  cursor: auto;
+}
+
+.checkbox.checkbox_content_only:hover {
+  outline: none;
+}

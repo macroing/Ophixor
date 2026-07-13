@@ -1,0 +1,97 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.table_row {
+  --table-row-color: var(--pc-semantic-text-primary);
+  --table-row-padding: 0px;
+
+  color: var(--table-row-color);
+  padding: var(--table-row-padding);
+  position: relative;
+}
+
+.table_row:active {
+  cursor: grabbing;
+}
+
+.table_row:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_row.table_row_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_row.table_row_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.table_row.table_row_drag_over.table_row_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.table_row.table_row_drag_over.table_row_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.table_row.table_row_drag_over.table_row_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_row.table_row_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.table_row > .table_row_drop_zone {
+  vertical-align: bottom;
+}
+
+.table_row > .table_row_drop_zone > div {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  color: var(--pc-editor-dropzone-text);
+  display: block;
+  font-size: 0.85rem;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_row.table_row_content_only {
+  cursor: auto;
+}
+
+.table_row.table_row_content_only:hover {
+  outline: none;
+}

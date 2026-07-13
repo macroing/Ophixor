@@ -1,0 +1,112 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.footer {
+  --footer-background-color: var(--pc-semantic-surface-base-secondary);
+  --footer-border-color-bottom: var(--pc-semantic-border-tertiary);
+  --footer-color: var(--pc-semantic-text-tertiary);
+  --footer-color-brand-text: var(--pc-semantic-text-muted);
+  --footer-color-bottom: var(--pc-semantic-text-muted);
+  --footer-color-hover: var(--pc-semantic-interactive-link-hover);
+  --footer-color-title: var(--pc-semantic-text-muted);
+
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
+  cursor: auto;
+  position: relative;
+  width: 100%;
+}
+
+.footer:active {
+  cursor: grabbing;
+}
+
+.footer:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.footer.footer_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.footer > .footer_inner {
+  margin: auto;
+  max-width: 1100px;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.footer > .footer_inner > .footer_bottom {
+  align-items: center;
+  border-top: 1px solid var(--footer-border-color-bottom);
+  color: var(--footer-color-bottom);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.footer > .footer_inner > .footer_bottom > span {
+  white-space: nowrap;
+}
+
+.footer > .footer_inner > .footer_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2.5rem;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_brand > h3 {
+  color: var(--footer-color);
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_brand > p {
+  color: var(--footer-color-brand-text);
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: 320px;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_links > h4 {
+  color: var(--footer-color-title);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_links > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_links > ul > li {
+  margin: 0.4rem 0;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_links > ul > li > a {
+  color: var(--footer-color);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer > .footer_inner > .footer_grid > .footer_links > ul > li > a:hover {
+  color: var(--footer-color-hover);
+}
+
+.footer.footer_content_only {
+  cursor: auto;
+}
+
+.footer.footer_content_only:hover {
+  outline: none;
+}

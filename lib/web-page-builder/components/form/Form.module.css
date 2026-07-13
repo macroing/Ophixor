@@ -1,0 +1,132 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.form {
+  --form-align-items: stretch;
+  --form-background-color: var(--pc-semantic-surface-base);
+  --form-border-color: var(--pc-semantic-border-default);
+  --form-border-radius: 14px;
+  --form-border-width: 1px;
+  --form-box-shadow: var(--pc-semantic-shadow-sm);
+  --form-flex-direction: column;
+  --form-gap: 1rem;
+  --form-height: auto;
+  --form-justify-content: stretch;
+  --form-max-height: none;
+  --form-max-width: none;
+  --form-padding: 2rem;
+  --form-width: 100%;
+
+  align-items: var(--form-align-items);
+  background-color: var(--form-background-color);
+  border: var(--form-border-width) solid var(--form-border-color);
+  border-radius: var(--form-border-radius);
+  box-shadow: var(--form-box-shadow);
+  cursor: auto;
+  display: flex;
+  flex-direction: var(--form-flex-direction);
+  gap: var(--form-gap);
+  height: var(--form-height);
+  justify-content: var(--form-justify-content);
+  max-height: var(--form-max-height);
+  max-width: var(--form-max-width);
+  padding: var(--form-padding);
+  position: relative;
+  width: var(--form-width);
+}
+
+.form.form_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px #0f172a;
+}
+
+.form:active {
+  cursor: grabbing;
+}
+
+.form:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.form.form_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.form.form_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.form.form_drag_over.form_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.form.form_drag_over.form_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.form.form_drag_over.form_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.form.form_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.form > .form_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.form.form_content_only {
+  cursor: auto;
+}
+
+.form.form_content_only:hover {
+  outline: none;
+}

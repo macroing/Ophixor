@@ -1,0 +1,103 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.table_data {
+  --table-data-background-color: var(--pc-semantic-surface-base);
+  --table-data-color: var(--pc-semantic-text-primary);
+  --table-data-padding: 0.5rem;
+  --table-data-text-align: center;
+  --table-data-vertical-align: top;
+
+  background-color: var(--table-data-background-color);
+  color: var(--table-data-color);
+  padding: var(--table-data-padding);
+  position: relative;
+  text-align: var(--table-data-text-align);
+  vertical-align: var(--table-data-vertical-align);
+}
+
+.table_data.table_data_empty {
+  vertical-align: bottom;
+}
+
+.table_data:active {
+  cursor: grabbing;
+}
+
+.table_data:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_data.table_data_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.table_data.table_data_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.table_data.table_data_drag_over.table_data_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.table_data.table_data_drag_over.table_data_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.table_data.table_data_drag_over.table_data_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_data.table_data_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.table_data > .table_data_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  color: var(--pc-editor-dropzone-text);
+  display: block;
+  font-size: 0.85rem;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.table_data.table_data_content_only {
+  cursor: auto;
+}
+
+.table_data.table_data_content_only:hover {
+  outline: none;
+}

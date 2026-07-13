@@ -1,0 +1,46 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.label {
+  --label-color: var(--pc-semantic-text-primary);
+  --label-font-family: inherit;
+  --label-font-size: 1rem;
+  --label-font-style: normal;
+  --label-font-weight: 600;
+  --label-line-height: normal;
+  --label-text-align: left;
+
+  color: var(--label-color);
+  cursor: auto;
+  font-family: var(--label-font-family);
+  font-size: var(--label-font-size);
+  font-style: var(--label-font-style);
+  font-weight: var(--label-font-weight);
+  line-height: var(--label-line-height);
+  position: relative;
+  text-align: var(--label-text-align);
+}
+
+.label:active {
+  cursor: grabbing;
+}
+
+.label:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.label.label_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.label.label_content_only {
+  cursor: auto;
+}
+
+.label.label_content_only:hover {
+  outline: none;
+}

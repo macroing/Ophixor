@@ -1,0 +1,84 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.input {
+  --input-background-color: var(--pc-semantic-surface-base);
+  --input-border-color: var(--pc-semantic-border-default);
+  --input-border-radius: 8px;
+  --input-border-width: 1px;
+  --input-box-shadow-focus: var(--pc-semantic-focus-ring);
+  --input-color: var(--pc-semantic-text-primary);
+  --input-height: auto;
+  --input-max-height: none;
+  --input-max-width: none;
+  --input-min-height: 44px;
+  --input-min-width: auto;
+  --input-padding: 0.6rem 0.75rem;
+  --input-width: 100%;
+
+  background-color: var(--input-background-color);
+  border: var(--input-border-width) solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  color: var(--input-color);
+  cursor: auto;
+  height: var(--input-height);
+  max-height: var(--input-max-height);
+  max-width: var(--input-max-width);
+  min-height: var(--input-min-height);
+  min-width: var(--input-min-width);
+  padding: var(--input-padding);
+  position: relative;
+  width: var(--input-width);
+}
+
+.input:active {
+  cursor: grabbing;
+}
+
+.input:hover {
+  border-color: var(--input-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.input:focus {
+  border-color: var(--input-border-color);
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.input:focus-visible {
+  border-color: var(--input-border-color);
+  box-shadow: var(--input-box-shadow-focus);
+}
+
+.input.input_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.input.input_content_only {
+  cursor: auto;
+}
+
+.input.input_content_only:hover {
+  outline: none;
+}
+
+.input.input_content_only:focus {
+  border-color: var(--input-border-color);
+  outline: none;
+}
+
+.input.input_content_only:focus-visible {
+  border-color: var(--input-border-color);
+  box-shadow: var(--input-box-shadow-focus);
+}
+
+.input.input_content_only:read-only {
+  border-color: var(--input-border-color);
+  box-shadow: none;
+  outline: none;
+}

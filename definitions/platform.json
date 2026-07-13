@@ -1,0 +1,147 @@
+{
+  "name": "Ophixor",
+  "email": "info@ophixor.com",
+  "logo": "https://ophixor.com/images/logo.webp",
+  "logoHeight": 694,
+  "logoWidth": 694,
+  "url": "https://ophixor.com",
+  "cookieBanner": {
+    "text": {
+      "en": "We use cookies to improve your experience, analyze traffic and personalize content.",
+      "sv": "Vi använder kakor (cookies) för att förbättra din upplevelse, analysera trafik och personifiera innehållet."
+    },
+    "reject": {
+      "en": "Reject",
+      "sv": "Avvisa"
+    },
+    "acceptAll": {
+      "en": "Accept all",
+      "sv": "Acceptera alla"
+    },
+    "preferences": {
+      "en": "Preferences",
+      "sv": "Preferenser"
+    },
+    "preferencesTitle": {
+      "en": "Cookie preferences",
+      "sv": "Kakpreferenser"
+    },
+    "necessary": {
+      "en": "Necessary (always enabled)",
+      "sv": "Nödvändiga (alltid använda)"
+    },
+    "analytics": {
+      "en": "Analytics",
+      "sv": "Analys"
+    },
+    "marketing": {
+      "en": "Marketing",
+      "sv": "Marknadsföring"
+    },
+    "save": {
+      "en": "Save",
+      "sv": "Spara"
+    },
+    "cancel": {
+      "en": "Cancel",
+      "sv": "Avbryt"
+    }
+  },
+  "footer": {
+    "description": {
+      "en": "Create dynamic websites with structured data, expressions and actions.",
+      "sv": "Skapa dynamiska hemsidor med strukturerad data, uttryck och händelser."
+    },
+    "textBottomLeft": {
+      "en": "© 2026 Ophixor",
+      "sv": "© 2026 Ophixor"
+    },
+    "textBottomRight": {
+      "en": "info@ophixor.com",
+      "sv": "info@ophixor.com"
+    },
+    "title": {
+      "en": "Ophixor",
+      "sv": "Ophixor"
+    },
+    "features": {
+      "en": "Features",
+      "sv": "Funktionalitet"
+    },
+    "pricing": {
+      "en": "Pricing",
+      "sv": "Kostnad"
+    },
+    "product": {
+      "en": "Product",
+      "sv": "Produkt"
+    },
+    "documentation": {
+      "en": "Documentation",
+      "sv": "Dokumentation"
+    },
+    "changelog": {
+      "en": "Changelog",
+      "sv": "Loggbok"
+    },
+    "resources": {
+      "en": "Resources",
+      "sv": "Resurser"
+    },
+    "privacy": {
+      "en": "Privacy policy",
+      "sv": "Integritetspolicy"
+    },
+    "terms": {
+      "en": "Terms of service",
+      "sv": "Tjänstevillkor"
+    },
+    "cookies": {
+      "en": "Cookie policy",
+      "sv": "Cookiepolicy"
+    },
+    "legal": {
+      "en": "Legal",
+      "sv": "Juridiskt"
+    }
+  },
+  "menuBar": {
+    "features": {
+      "en": "Features",
+      "sv": "Funktionalitet"
+    },
+    "pricing": {
+      "en": "Pricing",
+      "sv": "Kostnad"
+    },
+    "documentation": {
+      "en": "Documentation",
+      "sv": "Dokumentation"
+    },
+    "newWebsite": {
+      "en": "New website",
+      "sv": "Ny webbplats"
+    },
+    "websites": {
+      "en": "Websites",
+      "sv": "Webbplatser"
+    },
+    "admin": {
+      "en": "Admin",
+      "sv": "Admin"
+    },
+    "account": {
+      "en": "Account",
+      "sv": "Konto"
+    },
+    "signOut": {
+      "en": "Sign out",
+      "sv": "Logga ut"
+    },
+    "signIn": {
+      "en": "Sign in",
+      "sv": "Logga in"
+    }
+  },
+  "languages": ["en", "sv"]
+}

@@ -1,0 +1,222 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.section {
+  --section-align-content: normal;
+  --section-align-items: stretch;
+  --section-align-self: auto;
+  --section-aspect-ratio: auto;
+  --section-backdrop-filter: none;
+  --section-background: none;
+  --section-background-blend-mode: initial;
+  --section-background-color: initial;
+  --section-background-image: initial;
+  --section-background-position: initial;
+  --section-background-repeat: initial;
+  --section-background-size: initial;
+  --section-border-bottom-width: initial;
+  --section-border-color: transparent;
+  --section-border-left-width: initial;
+  --section-border-radius: 0px;
+  --section-border-right-width: initial;
+  --section-border-top-width: initial;
+  --section-border-width: 0px;
+  --section-bottom: auto;
+  --section-box-shadow: none;
+  --section-color: inherit;
+  --section-container-type: normal;
+  --section-display: flex;
+  --section-flex-direction: column;
+  --section-flex-grow: 0;
+  --section-flex-shrink: 1;
+  --section-flex-wrap: nowrap;
+  --section-font-family: inherit;
+  --section-font-size: inherit;
+  --section-font-style: inherit;
+  --section-font-weight: inherit;
+  --section-gap: 1rem;
+  --section-grid-template-areas: none;
+  --section-grid-template-columns: none;
+  --section-grid-template-rows: none;
+  --section-height: auto;
+  --section-justify-content: stretch;
+  --section-justify-items: legacy;
+  --section-justify-self: auto;
+  --section-left: auto;
+  --section-line-height: inherit;
+  --section-margin: 0px;
+  --section-max-height: none;
+  --section-max-width: none;
+  --section-min-height: auto;
+  --section-min-width: auto;
+  --section-opacity: 1;
+  --section-overflow: visible;
+  --section-padding: clamp(1rem, 3vw, 4rem);
+  --section-position: relative;
+  --section-right: auto;
+  --section-text-align: inherit;
+  --section-text-decoration: none;
+  --section-text-shadow: none;
+  --section-top: auto;
+  --section-transform: none;
+  --section-transform-origin: 50% 50% 0;
+  --section-width: 100%;
+  --section-z-index: auto;
+
+  align-content: var(--section-align-content);
+  align-items: var(--section-align-items);
+  align-self: var(--section-align-self);
+  aspect-ratio: var(--section-aspect-ratio);
+  backdrop-filter: var(--section-backdrop-filter);
+  background: var(--section-background);
+  background-blend-mode: var(--section-background-blend-mode, initial);
+  background-color: var(--section-background-color, initial);
+  background-image: var(--section-background-image, initial);
+  background-position: var(--section-background-position, initial);
+  background-repeat: var(--section-background-repeat, initial);
+  background-size: var(--section-background-size, initial);
+  border: var(--section-border-width) solid var(--section-border-color);
+  border-bottom-width: var(--section-border-bottom-width, var(--section-border-width));
+  border-left-width: var(--section-border-left-width, var(--section-border-width));
+  border-radius: var(--section-border-radius);
+  border-right-width: var(--section-border-right-width, var(--section-border-width));
+  border-top-width: var(--section-border-top-width, var(--section-border-width));
+  bottom: var(--section-bottom);
+  box-shadow: var(--section-box-shadow);
+  color: var(--section-color);
+  container-type: var(--section-container-type);
+  cursor: auto;
+  display: var(--section-display);
+  flex-direction: var(--section-flex-direction);
+  flex-grow: var(--section-flex-grow);
+  flex-shrink: var(--section-flex-shrink);
+  flex-wrap: var(--section-flex-wrap);
+  font-family: var(--section-font-family);
+  font-size: var(--section-font-size);
+  font-style: var(--section-font-style);
+  font-weight: var(--section-font-weight);
+  gap: var(--section-gap);
+  grid-template-areas: var(--section-grid-template-areas);
+  grid-template-columns: var(--section-grid-template-columns);
+  grid-template-rows: var(--section-grid-template-rows);
+  height: var(--section-height);
+  justify-content: var(--section-justify-content);
+  justify-items: var(--section-justify-items);
+  justify-self: var(--section-justify-self);
+  left: var(--section-left);
+  line-height: var(--section-line-height);
+  margin: var(--section-margin);
+  max-height: var(--section-max-height);
+  max-width: var(--section-max-width);
+  min-height: var(--section-min-height);
+  min-width: var(--section-min-width);
+  opacity: var(--section-opacity);
+  overflow: var(--section-overflow);
+  padding: var(--section-padding);
+  position: var(--section-position);
+  right: var(--section-right);
+  text-align: var(--section-text-align);
+  text-decoration: var(--section-text-decoration);
+  text-shadow: var(--section-text-shadow);
+  top: var(--section-top);
+  transform: var(--section-transform);
+  transform-origin: var(--section-transform-origin);
+  width: var(--section-width);
+  z-index: var(--section-z-index);
+}
+
+.section.section_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: #ffffff;
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px #0f172a;
+}
+
+.section:active {
+  cursor: grabbing;
+}
+
+.section:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.section.section_drag_over {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.section.section_drag_over:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+}
+
+.section.section_drag_over.section_drag_over_not_allowed {
+  cursor: not-allowed;
+  outline: none;
+  position: relative;
+}
+
+.section.section_drag_over.section_drag_over_not_allowed::after {
+  background-color: var(--pc-editor-drag-forbidden-bg);
+  border: 1px dashed var(--pc-editor-drag-forbidden-border);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.section.section_drag_over.section_drag_over_not_allowed::before {
+  background: var(--pc-editor-overlay-surface);
+  border-radius: 999px;
+  box-shadow: var(--pc-editor-overlay-shadow);
+  color: var(--pc-editor-drag-forbidden-text);
+  content: "⛔ Not allowed";
+  font-size: 0.75rem;
+  left: 50%;
+  padding: 0.35rem 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.section.section_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.section > .section_drop_zone {
+  background-color: var(--pc-editor-dropzone-bg);
+  border: 2px dashed var(--pc-editor-dropzone-border);
+  border-radius: 10px;
+  bottom: 50%;
+  color: var(--pc-editor-dropzone-text);
+  font-size: 0.85rem;
+  left: 50%;
+  margin: 0px;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.section.section_content_only {
+  cursor: auto;
+}
+
+.section.section_content_only:hover {
+  outline: none;
+}

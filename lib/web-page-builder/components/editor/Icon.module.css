@@ -1,0 +1,26 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.icon {
+  color: #e5e7eb;
+  display: inline-block;
+}
+
+.icon.icon_clickable:hover {
+  color: #6366f1;
+  cursor: pointer;
+}
+
+.icon.icon_clickable.icon_danger:hover {
+  color: #ef4444;
+}
+
+.icon.icon_responsive {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}

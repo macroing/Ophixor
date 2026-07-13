@@ -1,0 +1,248 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+:root {
+  --background-color: #f8fafc;
+  --border-color: #e5e7eb;
+  --color: #0f172a;
+  --muted-color: #475569;
+  --primary-color: #2563eb;
+  --primary-contrast-color: #ffffff;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --surface-color: #ffffff;
+  --transition: 0.25s ease;
+
+  --danger-bg: #dc2626;
+  --danger-bg-hover: #b91c1c;
+  --danger-bg-active: #991b1b;
+  --danger-text: #ffffff;
+  --danger-border: transparent;
+  --danger-focus: rgba(220, 38, 38, 0.45);
+
+  --pc-foundation-color-white: #ffffff;
+  --pc-foundation-color-black: #000000;
+
+  --pc-foundation-color-gray-50: #f9fafb;
+  --pc-foundation-color-gray-100: #f3f4f6;
+  --pc-foundation-color-gray-200: #e5e7eb;
+  --pc-foundation-color-gray-300: #d1d5db;
+  --pc-foundation-color-gray-400: #9ca3af;
+  --pc-foundation-color-gray-500: #6b7280;
+  --pc-foundation-color-gray-600: #4b5563;
+  --pc-foundation-color-gray-700: #374151;
+  --pc-foundation-color-gray-800: #1f2937;
+  --pc-foundation-color-gray-900: #111827;
+  --pc-foundation-color-gray-950: #030712;
+
+  --pc-foundation-color-slate-50: #f8fafc;
+  --pc-foundation-color-slate-100: #f1f5f9;
+  --pc-foundation-color-slate-200: #e2e8f0;
+  --pc-foundation-color-slate-300: #cbd5e1;
+  --pc-foundation-color-slate-400: #94a3b8;
+  --pc-foundation-color-slate-500: #64748b;
+  --pc-foundation-color-slate-600: #475569;
+  --pc-foundation-color-slate-700: #334155;
+  --pc-foundation-color-slate-800: #1e293b;
+  --pc-foundation-color-slate-900: #0f172a;
+  --pc-foundation-color-slate-950: #020617;
+
+  --pc-foundation-color-primary-50: #eff6ff;
+  --pc-foundation-color-primary-100: #dbeafe;
+  --pc-foundation-color-primary-200: #bfdbfe;
+  --pc-foundation-color-primary-300: #93c5fd;
+  --pc-foundation-color-primary-400: #60a5fa;
+  --pc-foundation-color-primary-500: #3b82f6;
+  --pc-foundation-color-primary-600: #2563eb;
+  --pc-foundation-color-primary-700: #1d4ed8;
+  --pc-foundation-color-primary-800: #1e40af;
+  --pc-foundation-color-primary-900: #1e3a8a;
+  --pc-foundation-color-primary-950: #172554;
+
+  --pc-foundation-color-primary-bg: color-mix(in srgb, var(--pc-foundation-color-primary-500) 10%, transparent);
+  --pc-foundation-color-primary-bg-2: color-mix(in srgb, var(--pc-foundation-color-primary-600) 5%, transparent);
+
+  --pc-foundation-color-success-50: #f0fdf4;
+  --pc-foundation-color-success-100: #dcfce7;
+  --pc-foundation-color-success-200: #bbf7d0;
+  --pc-foundation-color-success-300: #86efac;
+  --pc-foundation-color-success-400: #4ade80;
+  --pc-foundation-color-success-500: #22c55e;
+  --pc-foundation-color-success-600: #16a34a;
+  --pc-foundation-color-success-700: #15803d;
+  --pc-foundation-color-success-800: #166534;
+  --pc-foundation-color-success-900: #14532d;
+  --pc-foundation-color-success-950: #052e16;
+
+  --pc-foundation-color-success-bg: color-mix(in srgb, var(--pc-foundation-color-success-500) 10%, transparent);
+
+  --pc-foundation-color-warning-50: #fefce8;
+  --pc-foundation-color-warning-100: #fef9c3;
+  --pc-foundation-color-warning-200: #fef08a;
+  --pc-foundation-color-warning-300: #fde047;
+  --pc-foundation-color-warning-400: #facc15;
+  --pc-foundation-color-warning-500: #eab308;
+  --pc-foundation-color-warning-600: #ca8a04;
+  --pc-foundation-color-warning-700: #a16207;
+  --pc-foundation-color-warning-800: #854d0e;
+  --pc-foundation-color-warning-900: #713f12;
+  --pc-foundation-color-warning-950: #422006;
+
+  --pc-foundation-color-warning-bg: color-mix(in srgb, var(--pc-foundation-color-warning-500) 10%, transparent);
+
+  --pc-foundation-color-danger-50: #fef2f2;
+  --pc-foundation-color-danger-100: #fee2e2;
+  --pc-foundation-color-danger-200: #fecaca;
+  --pc-foundation-color-danger-300: #fca5a5;
+  --pc-foundation-color-danger-400: #f87171;
+  --pc-foundation-color-danger-500: #ef4444;
+  --pc-foundation-color-danger-600: #dc2626;
+  --pc-foundation-color-danger-700: #b91c1c;
+  --pc-foundation-color-danger-800: #991b1b;
+  --pc-foundation-color-danger-900: #7f1d1d;
+  --pc-foundation-color-danger-950: #450a0a;
+
+  --pc-foundation-color-danger-bg: color-mix(in srgb, var(--pc-foundation-color-danger-500) 10%, transparent);
+
+  --pc-semantic-surface-page: var(--pc-foundation-color-slate-50);
+  --pc-semantic-surface-base: var(--pc-foundation-color-white);
+  --pc-semantic-surface-base-secondary: var(--pc-foundation-color-slate-900);
+  --pc-semantic-surface-overlay: rgba(255, 255, 255, 0.9);
+  --pc-semantic-surface-overlay-2: rgba(255, 255, 255, 0.6);
+  --pc-semantic-surface-primary: var(--pc-foundation-color-primary-bg-2);
+
+  --pc-semantic-text-primary: var(--pc-foundation-color-slate-900);
+  --pc-semantic-text-secondary: var(--pc-foundation-color-slate-600);
+  --pc-semantic-text-tertiary: var(--pc-foundation-color-gray-200);
+  --pc-semantic-text-muted: var(--pc-foundation-color-slate-400);
+  --pc-semantic-text-inverse: var(--pc-foundation-color-white);
+
+  --pc-semantic-border-default: var(--pc-foundation-color-gray-200);
+  --pc-semantic-border-secondary: var(--pc-foundation-color-white);
+  --pc-semantic-border-tertiary: rgba(255, 255, 255, 0.1);
+  --pc-semantic-border-transparent: transparent;
+
+  --pc-semantic-interactive-link-hover: var(--pc-foundation-color-primary-400);
+  --pc-semantic-interactive-primary: var(--pc-foundation-color-primary-600);
+  --pc-semantic-interactive-primary-hover: var(--pc-foundation-color-primary-700);
+
+  --pc-semantic-status-primary: var(--pc-foundation-color-primary-500);
+  --pc-semantic-status-primary-bg: var(--pc-foundation-color-primary-bg);
+  --pc-semantic-status-primary-soft: var(--pc-foundation-color-primary-100);
+  --pc-semantic-status-primary-text: var(--pc-foundation-color-primary-800);
+
+  --pc-semantic-status-success: var(--pc-foundation-color-success-500);
+  --pc-semantic-status-success-bg: var(--pc-foundation-color-success-bg);
+  --pc-semantic-status-success-soft: var(--pc-foundation-color-success-100);
+  --pc-semantic-status-success-text: var(--pc-foundation-color-success-800);
+
+  --pc-semantic-status-warning: var(--pc-foundation-color-warning-500);
+  --pc-semantic-status-warning-bg: var(--pc-foundation-color-warning-bg);
+  --pc-semantic-status-warning-soft: var(--pc-foundation-color-warning-100);
+  --pc-semantic-status-warning-text: var(--pc-foundation-color-warning-800);
+
+  --pc-semantic-status-danger: var(--pc-foundation-color-danger-600);
+  --pc-semantic-status-danger-bg: var(--pc-foundation-color-danger-bg);
+  --pc-semantic-status-danger-soft: var(--pc-foundation-color-danger-100);
+  --pc-semantic-status-danger-text: var(--pc-foundation-color-danger-800);
+
+  --pc-semantic-focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.25);
+
+  --pc-semantic-shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --pc-semantic-shadow-lg: 0 30px 90px rgba(0, 0, 0, 0.25);
+
+  --pc-semantic-backdrop: rgb(var(--pc-foundation-color-slate-900) / 45%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  height: 100%;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  min-height: 44px;
+}
+
+h1 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 3.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h2 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+h3 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+}
+
+h4 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 1.3;
+}
+
+h5 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 1.35;
+}
+
+h6 {
+  color: var(--color);
+  font-family: var(--font-inter);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}

@@ -1,0 +1,85 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.context_menu {
+  background: #111827;
+  border: 1px solid #2d3748;
+  border-radius: 10px;
+  box-shadow: var(--pc-shadow-lg);
+  padding: 0.4rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.context_menu.context_menu_hidden {
+  visibility: hidden;
+}
+
+.context_menu > .button {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.context_menu > .button > svg {
+  color: #e5e7eb;
+}
+
+.context_menu > .button:hover {
+  background: #6366f1;
+}
+
+.context_menu > .button.button_danger {
+  color: #ef4444;
+}
+
+.context_menu > .button.button_danger > svg {
+  color: #ef4444;
+}
+
+.context_menu > .button.button_danger:hover {
+  background: #ef4444;
+  color: #e5e7eb;
+}
+
+.context_menu > .button.button_danger:hover > svg {
+  color: #e5e7eb;
+}
+
+.context_menu > .button:disabled {
+  background: none;
+  color: #9ca3af;
+  cursor: default;
+}
+
+.context_menu > .button:disabled > svg {
+  color: #9ca3af;
+}
+
+.context_menu > .button:disabled:hover {
+  background: none;
+  color: #9ca3af;
+  cursor: default;
+}
+
+.context_menu > .button:disabled:hover > svg {
+  color: #9ca3af;
+}
+
+.context_menu > .separator {
+  border-top: 1px solid #2d3748;
+  margin: 0.4rem 0px 0.4rem 0px;
+}
