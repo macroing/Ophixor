@@ -8,7 +8,7 @@
   border: 0px solid transparent;
   border-radius: 0px;
   display: grid;
-  gap: 8px;
+  gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   padding: 0px;
   width: 100%;
@@ -29,8 +29,8 @@
   color: #e5e7eb;
   cursor: pointer;
   flex: 1;
-  font-size: 0.75rem;
-  padding: 0px;
+  font-size: 0.6rem;
+  padding: 0.25rem;
   transition: 0.15s ease;
 }
 
