@@ -802,6 +802,10 @@
           "en": "Components",
           "sv": "Komponenter"
         },
+        "configureAction": {
+          "en": "Configure action",
+          "sv": "Konfigurera händelse"
+        },
         "contextMenu": {
           "backward": {
             "en": "backward",
@@ -937,6 +941,10 @@
         "undo": {
           "en": "Undo",
           "sv": "Ångra"
+        },
+        "useExpression": {
+          "en": "Use expression",
+          "sv": "Använd uttryck"
         }
       },
       "accessibilitySettingsForm": {
