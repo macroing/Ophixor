@@ -3,6 +3,13 @@
     "date": "2026-07-20",
     "entries": [
       {
+        "id": "2026-07-20-feature-reactive-renderer-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Reactive renderer enhancements",
+        "description": "Some enhancements have been made to the new reactive renderer. Mostly when in editor mode."
+      },
+      {
         "id": "2026-07-20-feature-translation-to-swedish",
         "type": "feature",
         "component": null,
