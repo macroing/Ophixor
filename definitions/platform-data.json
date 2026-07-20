@@ -491,6 +491,10 @@
       }
     },
     "props": {
+      "": {
+        "en": "Default",
+        "sv": "Standard"
+      },
       "absolute": {
         "en": "Absolute",
         "sv": "Absolut"
@@ -498,6 +502,10 @@
       "alignItems": {
         "en": "Align items along the cross axis",
         "sv": "Justera element längs tväraxeln"
+      },
+      "alignSelf": {
+        "en": "Align self along the cross axis",
+        "sv": "Justera sig själv längs tväraxeln"
       },
       "auto": {
         "en": "Automatic",
@@ -511,6 +519,10 @@
         "en": "Background",
         "sv": "Bakgrund"
       },
+      "backgroundBlendMode": {
+        "en": "Background blend mode",
+        "sv": "Bakgrundsblandningsläge"
+      },
       "backgroundColor": {
         "en": "Background color",
         "sv": "Bakgrundsfärg"
@@ -519,13 +531,25 @@
         "en": "Background color - Danger",
         "sv": "Bakgrundsfärg - Fara"
       },
+      "backgroundColorDangerHover": {
+        "en": "Background color - Danger - Hover",
+        "sv": "Bakgrundsfärg - Fara - Mus över"
+      },
       "backgroundColorError": {
         "en": "Background color - Error",
         "sv": "Bakgrundsfärg - Fel"
       },
+      "backgroundColorHover": {
+        "en": "Background color - Hover",
+        "sv": "Bakgrundsfärg - Mus över"
+      },
       "backgroundColorPrimary": {
         "en": "Background color - Primary",
         "sv": "Bakgrundsfärg - Primär"
+      },
+      "backgroundColorPrimaryHover": {
+        "en": "Background color - Primary - Hover",
+        "sv": "Bakgrundsfärg - Primär - Mus över"
       },
       "backgroundColorSuccess": {
         "en": "Background color - Success",
@@ -534,6 +558,42 @@
       "backgroundColorWarning": {
         "en": "Background color - Warning",
         "sv": "Bakgrundsfärg - Varning"
+      },
+      "backgroundDanger": {
+        "en": "Background - Danger",
+        "sv": "Bakgrund - Fara"
+      },
+      "backgroundDangerHover": {
+        "en": "Background - Danger - Hover",
+        "sv": "Bakgrund - Fara - Mus över"
+      },
+      "backgroundHover": {
+        "en": "Background - Hover",
+        "sv": "Bakgrund - Mus över"
+      },
+      "backgroundImage": {
+        "en": "Background image",
+        "sv": "Bakgrundsbild"
+      },
+      "backgroundPosition": {
+        "en": "Background position",
+        "sv": "Bakgrundsposition"
+      },
+      "backgroundPrimary": {
+        "en": "Background - Primary",
+        "sv": "Bakgrund - Primär"
+      },
+      "backgroundPrimaryHover": {
+        "en": "Background - Primary - Hover",
+        "sv": "Bakgrund - Primär - Mus över"
+      },
+      "backgroundRepeat": {
+        "en": "Background repeat",
+        "sv": "Bakgrundsrepetering"
+      },
+      "backgroundSize": {
+        "en": "Background size",
+        "sv": "Bakgrundsstorlek"
       },
       "borderBottomWidth": {
         "en": "Border bottom width",
@@ -547,13 +607,25 @@
         "en": "Border color - Danger",
         "sv": "Bårdfärg - Fara"
       },
+      "borderColorDangerHover": {
+        "en": "Border color - Danger - Hover",
+        "sv": "Bårdfärg - Fara - Mus över"
+      },
       "borderColorError": {
         "en": "Border color - Error",
         "sv": "Bårdfärg - Fel"
       },
+      "borderColorHover": {
+        "en": "Border color - Hover",
+        "sv": "Bårdfärg - Mus över"
+      },
       "borderColorPrimary": {
         "en": "Border color - Primary",
         "sv": "Bårdfärg - Primär"
+      },
+      "borderColorPrimaryHover": {
+        "en": "Border color - Primary - Hover",
+        "sv": "Bårdfärg - Primär - Mus över"
       },
       "borderColorSuccess": {
         "en": "Border color - Success",
@@ -595,6 +667,18 @@
         "en": "Box shadow",
         "sv": "Boxskugga"
       },
+      "boxShadowActive": {
+        "en": "Box shadow - Active",
+        "sv": "Boxskugga - Aktiv"
+      },
+      "boxShadowHover": {
+        "en": "Box shadow - Hover",
+        "sv": "Boxskugga - Mus över"
+      },
+      "button": {
+        "en": "Button",
+        "sv": "Knapp"
+      },
       "capitalize": {
         "en": "Capitalize",
         "sv": "Kapitalisera"
@@ -611,13 +695,25 @@
         "en": "Color - Danger",
         "sv": "Färg - Fara"
       },
+      "colorDangerHover": {
+        "en": "Color - Danger - Hover",
+        "sv": "Färg - Fara - Mus över"
+      },
       "colorError": {
         "en": "Color - Error",
         "sv": "Färg - Fel"
       },
+      "colorHover": {
+        "en": "Color - Hover",
+        "sv": "Färg - Mus över"
+      },
       "colorPrimary": {
         "en": "Color - Primary",
         "sv": "Färg - Primär"
+      },
+      "colorPrimaryHover": {
+        "en": "Color - Primary - Hover",
+        "sv": "Färg - Primär - Mus över"
       },
       "colorSuccess": {
         "en": "Color - Success",
@@ -631,9 +727,25 @@
         "en": "Column",
         "sv": "Kolumn"
       },
+      "cursor": {
+        "en": "Cursor",
+        "sv": "Markör"
+      },
+      "cursorDisabled": {
+        "en": "Cursor - Disabled",
+        "sv": "Markör - Inaktiverad"
+      },
       "danger": {
         "en": "Danger",
         "sv": "Fara"
+      },
+      "disabled": {
+        "en": "Disabled",
+        "sv": "Inaktiverad"
+      },
+      "display": {
+        "en": "Display",
+        "sv": "Visningsläge"
       },
       "error": {
         "en": "Error",
@@ -687,13 +799,29 @@
         "en": "Hidden",
         "sv": "Dold"
       },
+      "href": {
+        "en": "Link",
+        "sv": "Länk"
+      },
+      "id": {
+        "en": "ID",
+        "sv": "ID"
+      },
       "isVisible": {
         "en": "Is visible",
         "sv": "Är synlig"
       },
+      "justify": {
+        "en": "Justify",
+        "sv": "Justera"
+      },
       "justifyContent": {
         "en": "Justify content along the main axis",
         "sv": "Justera element längs huvudaxeln"
+      },
+      "justifySelf": {
+        "en": "Justify self along the main axis",
+        "sv": "Justera sig själv längs huvudaxeln"
       },
       "left": {
         "en": "Left",
@@ -714,6 +842,22 @@
       "margin": {
         "en": "Margin",
         "sv": "Marginal"
+      },
+      "marginBottom": {
+        "en": "Margin bottom",
+        "sv": "Marginal botten"
+      },
+      "marginLeft": {
+        "en": "Margin left",
+        "sv": "Marginal vänster"
+      },
+      "marginRight": {
+        "en": "Margin right",
+        "sv": "Marginal höger"
+      },
+      "marginTop": {
+        "en": "Margin top",
+        "sv": "Marginal topp"
       },
       "maxHeight": {
         "en": "Maximum height",
@@ -743,9 +887,25 @@
         "en": "No wrap",
         "sv": "Inget svep"
       },
+      "onClick": {
+        "en": "On click",
+        "sv": "Vid klick"
+      },
       "opacity": {
         "en": "Opacity",
         "sv": "Opacitet"
+      },
+      "opacityDisabled": {
+        "en": "Opacity - Disabled",
+        "sv": "Opacitet - Inaktiverad"
+      },
+      "outline": {
+        "en": "Outline",
+        "sv": "Kontur"
+      },
+      "outlineFocus": {
+        "en": "Outline - Focus",
+        "sv": "Kontur - Fokus"
       },
       "overflow": {
         "en": "Overflow",
@@ -755,6 +915,22 @@
         "en": "Padding",
         "sv": "Vaddering"
       },
+      "paddingBottom": {
+        "en": "Padding bottom",
+        "sv": "Vaddering botten"
+      },
+      "paddingLeft": {
+        "en": "Padding left",
+        "sv": "Vaddering vänster"
+      },
+      "paddingRight": {
+        "en": "Padding right",
+        "sv": "Vaddering höger"
+      },
+      "paddingTop": {
+        "en": "Padding top",
+        "sv": "Vaddering topp"
+      },
       "position": {
         "en": "Position",
         "sv": "Position"
@@ -763,9 +939,17 @@
         "en": "Primary",
         "sv": "Primär"
       },
+      "rel": {
+        "en": "Relationship",
+        "sv": "Relation"
+      },
       "relative": {
         "en": "Relative",
         "sv": "Relativ"
+      },
+      "reset": {
+        "en": "Reset",
+        "sv": "Återställ"
       },
       "right": {
         "en": "Right",
@@ -807,17 +991,37 @@
         "en": "Stretch",
         "sv": "Dra ut"
       },
+      "submit": {
+        "en": "Submit",
+        "sv": "Skicka"
+      },
       "success": {
         "en": "Success",
         "sv": "Framgång"
+      },
+      "target": {
+        "en": "Target",
+        "sv": "Mål"
       },
       "text": {
         "en": "Text",
         "sv": "Text"
       },
+      "textAlign": {
+        "en": "Text align",
+        "sv": "Textjustering"
+      },
+      "textDecoration": {
+        "en": "Text decoration",
+        "sv": "Textdekoration"
+      },
       "textShadow": {
         "en": "Text shadow",
         "sv": "Textskugga"
+      },
+      "textShadowHover": {
+        "en": "Text shadow - Hover",
+        "sv": "Textskugga - Mus över"
       },
       "textTransform": {
         "en": "Text transform",
@@ -833,11 +1037,27 @@
       },
       "transform": {
         "en": "Transform",
-        "sv": "Transformera"
+        "sv": "Transformation"
+      },
+      "transformActive": {
+        "en": "Transform - Active",
+        "sv": "Transformation - Aktiv"
+      },
+      "transformHover": {
+        "en": "Transform - Hover",
+        "sv": "Transformation - Mus över"
+      },
+      "transformOrigin": {
+        "en": "Transform origin",
+        "sv": "Transformationsursprung"
       },
       "transition": {
         "en": "Transition",
         "sv": "Transition"
+      },
+      "type": {
+        "en": "Type",
+        "sv": "Typ"
       },
       "uppercase": {
         "en": "Uppercase",
@@ -1235,9 +1455,29 @@
         "en": "Banner",
         "sv": "Banner"
       },
+      "Brushed Metal - Blue": {
+        "en": "Brushed Metal - Blue",
+        "sv": "Borstad metall - Blå"
+      },
+      "Brushed Metal - Default": {
+        "en": "Brushed Metal - Default",
+        "sv": "Borstad metall - Standard"
+      },
+      "Brushed Metal - Gold": {
+        "en": "Brushed Metal - Gold",
+        "sv": "Borstad metall - Guld"
+      },
+      "Compact": {
+        "en": "Compact",
+        "sv": "Kompakt"
+      },
       "Compact Row": {
         "en": "Compact Row",
         "sv": "Kompakt rad"
+      },
+      "Danger": {
+        "en": "Danger",
+        "sv": "Fara"
       },
       "Danger (Outline)": {
         "en": "Danger (Outline)",
@@ -1251,6 +1491,10 @@
         "en": "Danger (Solid)",
         "sv": "Fara (Solid)"
       },
+      "Dark - Themed": {
+        "en": "Dark - Themed",
+        "sv": "Mörk - Temabaserad"
+      },
       "Dot": {
         "en": "Dot",
         "sv": "Prick"
@@ -1263,9 +1507,25 @@
         "en": "Floating Center",
         "sv": "Flytande & Centrerad"
       },
+      "Full Width CTA": {
+        "en": "Full Width CTA",
+        "sv": "Fullbredds CTA"
+      },
+      "Ghost": {
+        "en": "Ghost",
+        "sv": "Spöke"
+      },
       "Glass": {
         "en": "Glass",
         "sv": "Glas"
+      },
+      "Gradient - Themed": {
+        "en": "Gradient - Themed",
+        "sv": "Gradient - Temabaserad"
+      },
+      "Icon Button": {
+        "en": "Icon Button",
+        "sv": "Ikonknapp"
       },
       "Large Pill": {
         "en": "Large Pill",
@@ -1275,6 +1535,10 @@
         "en": "Left Accent",
         "sv": "Vänsteraccent"
       },
+      "Link": {
+        "en": "Link",
+        "sv": "Länk"
+      },
       "Muted": {
         "en": "Muted",
         "sv": "Dämpad"
@@ -1283,9 +1547,17 @@
         "en": "Notification",
         "sv": "Notifikation"
       },
+      "Outline": {
+        "en": "Outline",
+        "sv": "Kontur"
+      },
       "Outlined": {
         "en": "Outlined",
         "sv": "Konturerad"
+      },
+      "Primary CTA": {
+        "en": "Primary CTA",
+        "sv": "Primär CTA"
       },
       "Primary (Outline)": {
         "en": "Primary (Outline)",
@@ -1298,6 +1570,10 @@
       "Primary (Solid)": {
         "en": "Primary (Solid)",
         "sv": "Primär (Solid)"
+      },
+      "Secondary": {
+        "en": "Secondary",
+        "sv": "Sekundär"
       },
       "Small": {
         "en": "Small",
