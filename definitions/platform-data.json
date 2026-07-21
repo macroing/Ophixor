@@ -465,21 +465,57 @@
   },
   "component": {
     "groups": {
+      "Action": {
+        "en": "Action",
+        "sv": "Händelser"
+      },
       "Advanced": {
         "en": "Advanced",
         "sv": "Avancerat"
+      },
+      "Alignment": {
+        "en": "Alignment",
+        "sv": "Justering"
+      },
+      "Background": {
+        "en": "Background",
+        "sv": "Bakgrund"
+      },
+      "Border": {
+        "en": "Border",
+        "sv": "Bård"
       },
       "Content": {
         "en": "Content",
         "sv": "Innehåll"
       },
+      "Effects": {
+        "en": "Effects",
+        "sv": "Effekter"
+      },
+      "Element": {
+        "en": "Element",
+        "sv": "Element"
+      },
       "Feedback and status": {
         "en": "Feedback and status",
         "sv": "Feedback och status"
       },
+      "Flexbox": {
+        "en": "Flexbox",
+        "sv": "Flexbox"
+      },
       "Forms": {
         "en": "Forms",
         "sv": "Formulär"
+      },
+      "General": {
+        "en": "General",
+        "sv": "Generellt"
+      },
+      "Grid": {
+        "en": "Grid",
+        "sv": "Rutnät"
       },
       "Interaction": {
         "en": "Interaction",
@@ -488,6 +524,58 @@
       "Layout": {
         "en": "Layout",
         "sv": "Layout"
+      },
+      "Letter Spacing": {
+        "en": "Letter spacing",
+        "sv": "Teckenavstånd"
+      },
+      "Line Height": {
+        "en": "Line height",
+        "sv": "Radhöjd"
+      },
+      "SEO": {
+        "en": "SEO",
+        "sv": "SEO"
+      },
+      "Selectors": {
+        "en": "Selectors",
+        "sv": "Selektorer"
+      },
+      "Size": {
+        "en": "Size",
+        "sv": "Storlek"
+      },
+      "Source": {
+        "en": "Data source",
+        "sv": "Datakälla"
+      },
+      "Spacing": {
+        "en": "Spacing",
+        "sv": "Mellanrum"
+      },
+      "Structure": {
+        "en": "Structure",
+        "sv": "Struktur"
+      },
+      "Surface": {
+        "en": "Surface",
+        "sv": "Yta"
+      },
+      "Typography": {
+        "en": "Typography",
+        "sv": "Typografi"
+      },
+      "Variant": {
+        "en": "Variant",
+        "sv": "Variant"
+      },
+      "Visibility": {
+        "en": "Visibility",
+        "sv": "Synlighet"
+      },
+      "Weight": {
+        "en": "Weight",
+        "sv": "Vikt"
       }
     },
     "props": {

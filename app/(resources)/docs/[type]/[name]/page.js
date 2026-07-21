@@ -255,10 +255,10 @@ function SchemaPage({ actionSchemas, expressionSchemas, language, name, pageSche
                 body: propEntries.map(([key, prop]) => (
                   <TableRow key={key}>
                     <TableData textAlign="left" verticalAlign="middle">
-                      <Text color="#475569" element="span" text={prop.label || key} whiteSpace="nowrap" />
+                      <Text color="#475569" element="span" text={platformData.component.props[key]?.[language] ?? (prop.label || key)} whiteSpace="nowrap" />
                     </TableData>
                     <TableData textAlign="left">
-                      <pre className={styles.pre}>{typeof prop.schemaType === "string" ? prop.schemaType : JSON.stringify(prop.schemaType, null, 2)}</pre>
+                      <pre className={styles.pre}>{translateType(prop.schemaType)}</pre>
                     </TableData>
                     <TableData textAlign="left">
                       <pre className={styles.pre}>{JSON.stringify(prop.defaultValue, null, 2)}</pre>
@@ -285,7 +285,7 @@ function SchemaPage({ actionSchemas, expressionSchemas, language, name, pageSche
                 body: variantEntries.map(([key, variant]) => (
                   <TableRow key={key}>
                     <TableData textAlign="left" verticalAlign="middle">
-                      <Text color="#475569" element="span" text={variant.label || key} />
+                      <Text color="#475569" element="span" text={platformData.component.variants[variant.label]?.[language] ?? (variant.label || key)} />
                     </TableData>
                     <TableData textAlign="left">
                       <Text color="#475569" element="span" text={getFirstParagraph(variant.description || platform.resources.docs.comingSoon[language])} />

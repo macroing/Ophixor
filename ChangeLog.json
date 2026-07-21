@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-07-21",
+    "entries": [
+      {
+        "id": "2026-07-21-fix-reactive-renderer",
+        "type": "fix",
+        "component": null,
+        "title": "Bug in the reactive renderer",
+        "description": "A bug in the reactive renderer that caused dragging components not to work has been fixed."
+      },
+      {
+        "id": "2026-07-21-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
     "version": "0.26.0",
     "date": "2026-07-20",
     "entries": [
