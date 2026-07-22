@@ -156,6 +156,8 @@ function SchemaPage({ actionSchemas, expressionSchemas, language, name, pageSche
         .map((currentType) => translateType(currentType))
         .filter(Boolean)
         .join(" | ");
+    } else if (typeof type === "object" && type !== null) {
+      return JSON.stringify(type, null, 2);
     } else {
       return "";
     }
