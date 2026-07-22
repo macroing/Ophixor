@@ -19,6 +19,7 @@ export default function NavigationSideBar(props) {
   const pathnameDecoded = useMemo(() => decodeURI(pathname), [pathname]);
 
   const isInConvert = pathnameDecoded.startsWith("/admin/convert");
+  const isInPlatform = pathnameDecoded.startsWith("/admin/platform");
   const isInUsers = pathnameDecoded.startsWith("/admin/users");
   const isInWebsites = pathnameDecoded.startsWith("/admin/websites");
 
@@ -26,6 +27,8 @@ export default function NavigationSideBar(props) {
 
   if (isInConvert) {
     page = "convert";
+  } else if (isInPlatform) {
+    page = "platform";
   } else if (isInUsers) {
     page = "users";
   } else if (isInWebsites) {
@@ -51,6 +54,11 @@ function createItems(page, language) {
       href: "/admin",
       isActive: page === "overview",
       label: platform.admin.navigation.overview[language],
+    },
+    {
+      href: "/admin/platform",
+      isActive: page === "platform",
+      label: platform.admin.navigation.platform[language],
     },
     {
       href: "/admin/users",

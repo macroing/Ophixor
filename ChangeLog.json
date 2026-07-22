@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-22",
+    "entries": [
+      {
+        "id": "2026-07-22-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
     "version": "0.27.0",
     "date": "2026-07-21",
     "entries": [

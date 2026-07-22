@@ -9,7 +9,9 @@ import jwt from "jsonwebtoken";
 
 import connect from "@/lib/database";
 import { generateHtmlActivateAccount, generateSubjectActivateAccount, sendEmail } from "@/lib/email";
+import Platform from "@/models/Platform";
 import PlatformUser from "@/models/PlatformUser";
+import { PLAN_FREE } from "@/definitions/plan-definitions";
 
 export const runtime = "nodejs";
 
@@ -101,13 +103,17 @@ export async function POST(req) {
       return NextResponse.json({ message: "A user with that e-mail address already exists." }, { status: 400 });
     }
 
+    const platform = await Platform.findOne({}).select("defaultPlan").lean(true).exec();
+
+    const plan = platform?.defaultPlan || PLAN_FREE;
+
     const platformUserCount = await PlatformUser.countDocuments({}).exec();
 
     const isPlatformAdmin = platformUserCount === 0 ? true : false;
 
     const passwordHash = await hash(passwordTrimmed, 12);
 
-    const platformUser = await PlatformUser.create({ email: emailTrimmed, emailNormalized, isPlatformAdmin, passwordHash });
+    const platformUser = await PlatformUser.create({ email: emailTrimmed, emailNormalized, isPlatformAdmin, passwordHash, plan });
 
     if (platformUser) {
       if (IS_ACTIVATION_REQUIRED) {

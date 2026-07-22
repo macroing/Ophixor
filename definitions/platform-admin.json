@@ -52,6 +52,30 @@
         "sv": "Webbplatser"
       }
     },
+    "platform": {
+      "title": {
+        "en": "Platform",
+        "sv": "Plattform"
+      },
+      "generalSettingsForm": {
+        "title": {
+          "en": "General information",
+          "sv": "Generell information"
+        },
+        "defaultPlan": {
+          "en": "Default plan",
+          "sv": "Standardplan"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        },
+        "saving": {
+          "en": "Saving...",
+          "sv": "Sparar..."
+        }
+      }
+    },
     "users": {
       "title": {
         "en": "Users",
@@ -262,6 +286,10 @@
       "overview": {
         "en": "Overview",
         "sv": "Översikt"
+      },
+      "platform": {
+        "en": "Platform",
+        "sv": "Plattform"
       },
       "users": {
         "en": "Users",
