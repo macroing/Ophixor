@@ -273,7 +273,7 @@ npm run start
 
 - Add JSON-LD-support for a Website.
 - Add JSON-LD-support for a WebsitePage.
-- Add a JSON-schema to WebsitePage that specifies which WebsiteModel instances and WebsiteModelData instances to load.
+- Add a JSON-schema to WebsitePage that specifies which WebsiteModel instances and WebsiteModelData instances to load initially.
 - Add some Actions and Expressions for the WebsiteModel and WebsiteModelData loading of a WebsitePage.
 - Add some Actions and Expressions for adding or removing components.
 - Add an Action for WebsiteIntegration instances.
@@ -296,10 +296,18 @@ npm run start
 - Add a Breadcrumb component.
 - Add a Calendar component.
 - Add a Carousel component.
-- Add an Icon component.
+- Add a Chat component.
+- Add a DateOfBirth component.
+- Add an Icon component. It should probably also support Font Awesome icons.
+- Add a Menu component.
 - Add a Pagination component.
+- Add a ProgressBar component.
 - Add a Rating component.
 - Add a TabPane component.
 - Add a Toast component.
 - Add a Tooltip component.
 - Add a Video component.
+- Make some improvements to the MenuBar component. It does not work well with the hamburger menu. It should probably also support large menus and icons.
+- Add more functionality to the Canvas component so it can be used to create games and other interactive experiences.
+- Add support for uploading video.
+- Add new size properties to the Page component, such as minWidth, maxWidth, minHeight and maxHeight.
