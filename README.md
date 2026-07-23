@@ -311,3 +311,4 @@ npm run start
 - Add more functionality to the Canvas component so it can be used to create games and other interactive experiences.
 - Add support for uploading video.
 - Add new size properties to the Page component, such as minWidth, maxWidth, minHeight and maxHeight.
+- Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
