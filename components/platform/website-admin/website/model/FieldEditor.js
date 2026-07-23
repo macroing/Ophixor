@@ -34,6 +34,10 @@ export default function FieldEditor(props) {
       newField.model = oldField.model || "";
     }
 
+    if (type === "single") {
+      newField.fields = oldField.fields || {};
+    }
+
     if (type === "string") {
       newField.lineType = oldField.lineType || "single-line";
       newField.textType = oldField.textType || "plain-text";
@@ -59,11 +63,12 @@ export default function FieldEditor(props) {
             { label: "Collection", value: "collection" },
             { label: "Number", value: "number" },
             { label: "Relation", value: "relation" },
+            { label: "Single", value: "single" },
             { label: "String", value: "string" },
           ]}
           value={field.type}
         />
-        {field.type === "collection" && (
+        {(field.type === "collection" || field.type === "single") && (
           <div className={styles.collection_fields}>
             <Heading color="#0f172a" level="5" text="Fields" />
             {Object.entries(field.fields || {}).map(([key, subField]) => (

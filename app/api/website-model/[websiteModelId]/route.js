@@ -146,10 +146,14 @@ export async function PUT(req, { params }) {
 
     const data = await req.json();
 
-    const { fields, name } = data;
+    const { fields, name, type } = data;
 
     if (typeof fields !== "object" || !fields) {
       return NextResponse.json({ message: "Valid fields are required." }, { status: 400 });
+    }
+
+    if (typeof type !== "string" || (type !== "collection" && type !== "single")) {
+      return NextResponse.json({ message: "A valid type is required." }, { status: 400 });
     }
 
     if (typeof name !== "string") {
@@ -180,6 +184,7 @@ export async function PUT(req, { params }) {
 
     websiteModel.fields = fields;
     websiteModel.name = name;
+    websiteModel.type = type;
 
     await websiteModel.save();
 

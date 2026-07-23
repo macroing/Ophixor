@@ -24,18 +24,25 @@ export default function FieldValueEditor(props) {
   }
 
   switch (field.type) {
-    case "number":
-      return (
-        <div className={styles.field_container}>
-          <h6 className={styles.name}>{name}</h6>
-          <Input isDebounceDisabled={true} onChange={(e) => update(e.target.value === "" ? "" : Number(e.target.value))} placeholder={name} type="number" value={value ?? ""} />
-        </div>
-      );
     case "boolean":
       return (
         <div className={styles.field_container}>
           <h6 className={styles.name}>{name}</h6>
           <Switch checked={!!value} onChange={(e) => update(e.target.checked)} text={name} />
+        </div>
+      );
+    case "collection":
+      return (
+        <div className={styles.field_container}>
+          <h6 className={styles.name}>{name}</h6>
+          <CollectionEditor field={field} name={name} onChange={onChange} styles={styles} value={value} />
+        </div>
+      );
+    case "number":
+      return (
+        <div className={styles.field_container}>
+          <h6 className={styles.name}>{name}</h6>
+          <Input isDebounceDisabled={true} onChange={(e) => update(e.target.value === "" ? "" : Number(e.target.value))} placeholder={name} type="number" value={value ?? ""} />
         </div>
       );
     case "relation":
@@ -45,11 +52,11 @@ export default function FieldValueEditor(props) {
           <Input isDebounceDisabled={true} onChange={(e) => update(e.target.value)} placeholder={`Relation (${field.model})`} value={value ?? ""} />
         </div>
       );
-    case "collection":
+    case "single":
       return (
         <div className={styles.field_container}>
           <h6 className={styles.name}>{name}</h6>
-          <CollectionEditor field={field} name={name} onChange={onChange} styles={styles} value={value} />
+          <SingleEditor field={field} name={name} onChange={onChange} styles={styles} value={value} />
         </div>
       );
     case "string":
@@ -149,6 +156,33 @@ function CollectionEditor(props) {
         <Button onClick={addItem} type="button">
           Add Item
         </Button>
+      </div>
+    </div>
+  );
+}
+
+function SingleEditor(props) {
+  const field = props.field;
+  const name = props.name;
+  const onChange = props.onChange;
+  const styles = props.styles || importedStyles;
+  const value = props.value || [];
+
+  function updateItem(key, updatedItem) {
+    const newValue = { ...value };
+
+    newValue[key] = updatedItem;
+
+    onChange(newValue);
+  }
+
+  return (
+    <div className={styles.single}>
+      <Heading level="5" text={name} />
+      <div className={styles.field}>
+        {Object.entries(field.fields || {}).map(([key, subField]) => (
+          <FieldValueEditor field={subField} key={key} name={key} onChange={(val) => updateItem(key, val)} styles={styles} value={item?.[key]} />
+        ))}
       </div>
     </div>
   );

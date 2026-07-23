@@ -90,7 +90,7 @@ export async function POST(req) {
 
     const data = await req.json();
 
-    const { fields, name, websiteId } = data;
+    const { fields, name, type, websiteId } = data;
 
     if (typeof fields !== "object" || !fields) {
       return NextResponse.json({ message: "Valid fields are required." }, { status: 400 });
@@ -98,6 +98,10 @@ export async function POST(req) {
 
     if (typeof name !== "string") {
       return NextResponse.json({ message: "A valid name is required." }, { status: 400 });
+    }
+
+    if (typeof type !== "string" || (type !== "collection" && type !== "single")) {
+      return NextResponse.json({ message: "A valid type is required." }, { status: 400 });
     }
 
     if (!mongoose.Types.ObjectId.isValid(websiteId)) {
@@ -124,7 +128,7 @@ export async function POST(req) {
       return NextResponse.json({ message: "You have already exceeded your model limit for this website." }, { status: 400 });
     }
 
-    const websiteModel = await WebsiteModel.create({ createdBy: currentPlatformUser._id, fields, name, type: "collection", website: website._id });
+    const websiteModel = await WebsiteModel.create({ createdBy: currentPlatformUser._id, fields, name, type, website: website._id });
 
     if (websiteModel) {
       return NextResponse.json({ message: "Your model was successfully created!", websiteModel }, { status: 201 });

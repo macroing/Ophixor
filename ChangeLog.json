@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-23",
+    "entries": [
+      {
+        "id": "2026-07-23-feature-model-enhancements",
+        "type": "feature",
+        "component": null,
+        "title": "Model enhancements",
+        "description": "A new model type called single has been added. It is like a single model instance in a collection."
+      }
+    ]
+  },
+  {
     "date": "2026-07-22",
     "entries": [
       {

@@ -11,6 +11,7 @@ import FieldEditor from "./FieldEditor";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
 import Input from "@/lib/web-page-builder/components/input/Input";
 import Section from "@/lib/web-page-builder/components/section/Section";
+import Switch from "@/lib/web-page-builder/components/switch/Switch";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { equals } from "@/lib/web-page-builder/transform/core/equals";
 import { useWebsite } from "@/context/website";
@@ -24,14 +25,14 @@ export default function ModelEditor(props) {
 
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
-  const [model, setModel] = useState({ name: websiteModel?.name || "", fields: websiteModel?.fields || [] });
+  const [model, setModel] = useState({ name: websiteModel?.name || "", fields: websiteModel?.fields || [], type: websiteModel?.type || "collection" });
   const [newFieldName, setNewFieldName] = useState("");
 
   const { website } = useWebsite();
 
   const isCreating = websiteModel === null || websiteModel === undefined;
 
-  const hasChanged = !isCreating && (!equals(model?.name, websiteModel?.name) || !equals(model?.fields, websiteModel?.fields));
+  const hasChanged = !isCreating && (!equals(model?.name, websiteModel?.name) || !equals(model?.fields, websiteModel?.fields) || !equals(model?.type, websiteModel?.type));
 
   function addField() {
     updateField("fields", {
@@ -54,6 +55,7 @@ export default function ModelEditor(props) {
       const config = {
         fields: model?.fields,
         name: model?.name,
+        type: model?.type,
       };
 
       if (isCreating) {
@@ -66,7 +68,7 @@ export default function ModelEditor(props) {
         if (setWebsiteModel) {
           setWebsiteModel(data.websiteModel);
         } else if (!websiteModel) {
-          setModel({ name: "", fields: {} });
+          setModel({ name: "", fields: {}, type: "collection" });
         }
       }
 
@@ -103,6 +105,7 @@ export default function ModelEditor(props) {
     <form className={styles.model_editor} onSubmit={onSubmit}>
       <Heading color="#0f172a" level="2" text="Model" />
       <Input isDebounceDisabled={true} onChange={(e) => updateField("name", e.target.value)} placeholder="Name" value={model.name || ""} />
+      <Switch checked={model.type === "collection"} disabled={websiteModel !== null && websiteModel !== undefined} id="collection" onChange={(e) => updateField("type", e.target.checked ? "collection" : "single")} text="Collection" />
       <Heading color="#0f172a" level="4" text="Fields" />
       {Object.entries(model.fields || {}).map(([key, field]) => (
         <FieldEditor
