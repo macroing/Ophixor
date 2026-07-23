@@ -271,23 +271,35 @@ npm run start
 
 ## TODO
 
-- It should be possible to specify JSON-LD data for a Website.
-- It should be possible to specify JSON-LD data for a WebsitePage.
-- It should be possible to specify some JSON schema for Data Model and Data loading for a WebsitePage.
-- When the point above works, a few Actions and Expressions are required. These have to do with Data fetching for a specific page.
-- A few Actions and Expressions for adding or removing components.
-- An Action for Integrations.
-- The transformation pipeline for Integrations has not been implemented yet.
-- A user of the platform should have support for requesting to change the password.
-- A user of a website should have support for requesting to change the password.
-- A user of a website should be able to update the profile. So a general Action should support that functionality.
-- Someone running a Website should be able to manage their WebsiteUsers.
-- The collaborator feature needs to be finished. It is mainly updating existing collaborators left.
-- Subscription management needs to be added. This includes being able to subscribe to a plan, canceling the subscription and admin management.
-- All components need support for visibility checks.
-- Everything should support the Swedish language. Preferably in a way that makes support for other languages easy.
-- Data should support expressions for most types. The Workflow Editor should be used to configure it on the Data-part of the Models page.
-- Actions for loading one or more WebsiteUsers should be added. Pagination should be supported.
-- The slug for a WebsitePage should support Regex so that many pages can refer to the same WebsitePage instance.
-- Some Expressions for retrieving the path parts of the slugs should be added.
-- A WebsiteUserModel should be added where the developers of the Website can specify custom fields that WebsiteUsers should have. Added on creation.
+- Add JSON-LD-support for a Website.
+- Add JSON-LD-support for a WebsitePage.
+- Add a JSON-schema to WebsitePage that specifies which WebsiteModel instances and WebsiteModelData instances to load.
+- Add some Actions and Expressions for the WebsiteModel and WebsiteModelData loading of a WebsitePage.
+- Add some Actions and Expressions for adding or removing components.
+- Add an Action for WebsiteIntegration instances.
+- Add the transformation pipeline to the WebsiteIntegration.
+- Add support for password change requests to PlatformUsers.
+- Add support for password change requests to WebsiteUsers.
+- Add support for profile updating to WebsiteUsers with an Action.
+- Add WebsiteUser management to a Website.
+- Finish the collaborator feature. What's left is mainly to update existing collaborators.
+- Add subscription management. This includes being able to subscribe to a plan, cancel a subscription and management for administrators.
+- Add the isVisible property to all components so they can be hidden or shown dynamically.
+- Add translations to Swedish. Many have already been added. When all exists it is possible to add new languages easily.
+- Add support for Expressions using the Workflow Editor to WebsiteModelData fields.
+- Add Actions for loading one or more WebsiteUsers. It should include support for pagination.
+- Add regex support for the slug of a WebsitePage. This allows for multiple pages that refer to the same WebsitePage instance.
+- Add Expressions for retrieving parts of the current path that refers to the current WebsitePage.
+- Add a WebsiteUserModel model where custom fields for a WebsiteUser can be specified. These custom fields are then added on creation.
+- Add theme settings to Website. These consists of CSS variables that override the default ones. Mainly colors.
+- Add an Accordion component.
+- Add a Breadcrumb component.
+- Add a Calendar component.
+- Add a Carousel component.
+- Add an Icon component.
+- Add a Pagination component.
+- Add a Rating component.
+- Add a TabPane component.
+- Add a Toast component.
+- Add a Tooltip component.
+- Add a Video component.
