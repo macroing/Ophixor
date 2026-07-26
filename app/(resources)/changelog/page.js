@@ -3,10 +3,11 @@
 
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { faRocketLaunch, faSparkles, faTrash, faTriangleExclamation, faWrench } from "@fortawesome/pro-solid-svg-icons";
 
 import Badge from "@/lib/web-page-builder/components/badge/Badge";
+import Button from "@/lib/web-page-builder/components/button/Button";
 import Card from "@/lib/web-page-builder/components/card/Card";
 import Grid from "@/lib/web-page-builder/components/grid/Grid";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
@@ -40,6 +41,18 @@ export default function ChangeLogPage(props) {
     [language],
   );
 
+  const [index, setIndex] = useState(20);
+  const [loadedChangeLog, setLoadedChangeLog] = useState(changeLog.slice(0, 20));
+
+  function onClick(e) {
+    const newIndex = index + 20;
+
+    const newLoadedChangeLog = changeLog.slice(0, newIndex);
+
+    setIndex(newIndex);
+    setLoadedChangeLog(newLoadedChangeLog);
+  }
+
   return (
     <>
       <script
@@ -52,7 +65,7 @@ export default function ChangeLogPage(props) {
         <Heading color="#0f172a" level="1" margin="0 0 0.5rem 0" text={platform.resources.changelog.title[language]} />
         <Text color="#475569" margin="0 0 3rem 0" text={platform.resources.changelog.description[language]} />
         <Section flexDirection="column" gap="2rem" padding="0px">
-          {changeLog.map((day, dayIndex) => (
+          {loadedChangeLog.map((day, dayIndex) => (
             <Section flexDirection="column" gap="1rem" key={day.date} margin={dayIndex > 0 ? "2rem 0px 0px 0px" : "0px"} padding="0px">
               <Heading color="#0f172a" level="3" margin="0" text={formatDate(day.date, day.version, language)} />
               <Grid gap="1rem" gridTemplateColumns="1fr" padding="0px">
@@ -107,6 +120,11 @@ export default function ChangeLogPage(props) {
               </Grid>
             </Section>
           ))}
+          <Section flexDirection="row" gap="2rem" padding="0px">
+            <Button disabled={index >= changeLog.length} onClick={onClick} theme="primary">
+              {platform.resources.changelog.loadMore[language]}
+            </Button>
+          </Section>
         </Section>
       </Section>
     </>

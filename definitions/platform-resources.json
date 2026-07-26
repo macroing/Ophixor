@@ -48,6 +48,10 @@
       "change": {
         "en": "Change",
         "sv": "Förändring"
+      },
+      "loadMore": {
+        "en": "Load more...",
+        "sv": "Ladda mer..."
       }
     },
     "docs": {
