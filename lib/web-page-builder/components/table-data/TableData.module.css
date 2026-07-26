@@ -4,7 +4,7 @@
  */
 
 .table_data {
-  --table-data-background-color: var(--pc-semantic-surface-base);
+  --table-data-background-color: transparent;
   --table-data-color: var(--pc-semantic-text-primary);
   --table-data-padding: 0.5rem;
   --table-data-text-align: center;
@@ -20,6 +20,21 @@
 
 .table_data.table_data_empty {
   vertical-align: bottom;
+}
+
+.table_data.table_data_danger {
+  background-color: var(--pc-semantic-status-danger-bg);
+  color: var(--pc-semantic-status-danger-text);
+}
+
+.table_data.table_data_success {
+  background-color: var(--pc-semantic-status-success-bg);
+  color: var(--pc-semantic-status-success-text);
+}
+
+.table_data.table_data_warning {
+  background-color: var(--pc-semantic-status-warning-bg);
+  color: var(--pc-semantic-status-warning-text);
 }
 
 .table_data:active {

@@ -7,9 +7,25 @@
   --table-row-color: var(--pc-semantic-text-primary);
   --table-row-padding: 0px;
 
+  background-color: var(--pc-semantic-surface-base);
   color: var(--table-row-color);
   padding: var(--table-row-padding);
   position: relative;
+}
+
+.table_row.table_row_danger {
+  background-color: var(--pc-semantic-status-danger-bg);
+  color: var(--pc-semantic-status-danger-text);
+}
+
+.table_row.table_row_success {
+  background-color: var(--pc-semantic-status-success-bg);
+  color: var(--pc-semantic-status-success-text);
+}
+
+.table_row.table_row_warning {
+  background-color: var(--pc-semantic-status-warning-bg);
+  color: var(--pc-semantic-status-warning-text);
 }
 
 .table_row:active {

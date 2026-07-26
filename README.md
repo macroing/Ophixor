@@ -314,7 +314,4 @@ npm run start
 - Add theme properties to the Checkbox component.
 - Add theme properties to the Input component.
 - Add theme properties to the Select component.
-- Add theme properties to the TableData component.
-- Add theme properties to the TableHeader component.
-- Add theme properties to the TableRow component.
 - Add theme properties to the TextArea component.

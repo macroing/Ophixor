@@ -3,6 +3,36 @@
     "date": "2026-07-26",
     "entries": [
       {
+        "id": "2026-07-26-feature-table-row-props",
+        "type": "feature",
+        "component": "TableRow",
+        "title": "Add one prop to TableRow",
+        "description": "Add one missing prop to the TableRow component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
+        "id": "2026-07-26-feature-table-header-props",
+        "type": "feature",
+        "component": "TableHeader",
+        "title": "Add one prop to TableHeader",
+        "description": "Add one missing prop to the TableHeader component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
+        "id": "2026-07-26-feature-table-data-props",
+        "type": "feature",
+        "component": "TableData",
+        "title": "Add one prop to TableData",
+        "description": "Add one missing prop to the TableData component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
         "id": "2026-07-26-feature-page-props",
         "type": "feature",
         "component": "Page",

@@ -21,6 +21,21 @@
   vertical-align: bottom;
 }
 
+.table_header.table_header_danger {
+  background-color: var(--pc-semantic-status-danger-bg);
+  color: var(--pc-semantic-status-danger-text);
+}
+
+.table_header.table_header_success {
+  background-color: var(--pc-semantic-status-success-bg);
+  color: var(--pc-semantic-status-success-text);
+}
+
+.table_header.table_header_warning {
+  background-color: var(--pc-semantic-status-warning-bg);
+  color: var(--pc-semantic-status-warning-text);
+}
+
 .table_header:active {
   cursor: grabbing;
 }
