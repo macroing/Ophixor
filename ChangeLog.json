@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-26",
+    "entries": [
+      {
+        "id": "2026-07-26-feature-page-props",
+        "type": "feature",
+        "component": "Page",
+        "title": "Add props to Page",
+        "description": "Add missing props to the Page component.",
+        "meta": {
+          "props": ["maxHeight", "maxWidth", "minHeight", "minWidth"]
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "entries": [
       {

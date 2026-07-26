@@ -16,6 +16,10 @@
   --page-gap: 2rem;
   --page-height: auto;
   --page-justify-content: stretch;
+  --page-max-height: none;
+  --page-max-width: none;
+  --page-min-height: auto;
+  --page-min-width: auto;
   --page-padding: 2rem;
   --page-width: auto;
 
@@ -27,6 +31,10 @@
   background-repeat: var(--page-background-repeat);
   background-size: var(--page-background-size);
   height: var(--page-height);
+  max-height: var(--page-max-height);
+  max-width: var(--page-max-width);
+  min-height: var(--page-min-height);
+  min-width: var(--page-min-width);
   overflow-y: auto;
   padding: 0px;
   width: var(--page-width);

@@ -310,5 +310,11 @@ npm run start
 - Make some improvements to the MenuBar component. It does not work well with the hamburger menu. It should probably also support large menus and icons.
 - Add more functionality to the Canvas component so it can be used to create games and other interactive experiences.
 - Add support for uploading video.
-- Add new size properties to the Page component, such as minWidth, maxWidth, minHeight and maxHeight.
 - Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
+- Add theme properties to the Checkbox component.
+- Add theme properties to the Input component.
+- Add theme properties to the Select component.
+- Add theme properties to the TableData component.
+- Add theme properties to the TableHeader component.
+- Add theme properties to the TableRow component.
+- Add theme properties to the TextArea component.
