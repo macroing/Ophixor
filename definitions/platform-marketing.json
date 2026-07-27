@@ -162,8 +162,8 @@
           "sv": "Bygg dynamiska hemsidor visuellt"
         },
         "text": {
-          "en": "Design your interface, define your data and control your logic. Ophixor lets you build structured and dynamic websites without writing code. The project is currently in beta. Earlier the project was called PageCraft, but the name has changed to Ophixor to be more unique and without any specific meaning.",
-          "sv": "Designa ditt gränssnitt, definiera din data och kontrollera din logik. Ophixor låter dig bygga strukturerade och dynamiska hemsidor utan att skriva kod. Projektet är för närvarande i beta. Tidigare hette projektet PageCraft, men namnet har bytts ut till Ophixor för att vara mer unikt och utan någon mening."
+          "en": "Design your interface, define your data and control your logic. Ophixor lets you build structured and dynamic websites without writing code. The project is currently in beta.",
+          "sv": "Designa ditt gränssnitt, definiera din data och kontrollera din logik. Ophixor låter dig bygga strukturerade och dynamiska hemsidor utan att skriva kod. Projektet är för närvarande i beta."
         },
         "callToAction": {
           "signedIn": {

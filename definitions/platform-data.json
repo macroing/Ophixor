@@ -481,9 +481,17 @@
         "en": "Background",
         "sv": "Bakgrund"
       },
+      "Body": {
+        "en": "Body",
+        "sv": "Innehåll"
+      },
       "Border": {
         "en": "Border",
         "sv": "Bård"
+      },
+      "Container": {
+        "en": "Container",
+        "sv": "Behållare"
       },
       "Content": {
         "en": "Content",
@@ -505,6 +513,10 @@
         "en": "Flexbox",
         "sv": "Flexbox"
       },
+      "Footer": {
+        "en": "Footer",
+        "sv": "Fot"
+      },
       "Forms": {
         "en": "Forms",
         "sv": "Formulär"
@@ -516,6 +528,10 @@
       "Grid": {
         "en": "Grid",
         "sv": "Rutnät"
+      },
+      "Header": {
+        "en": "Header",
+        "sv": "Huvud"
       },
       "Interaction": {
         "en": "Interaction",
@@ -533,6 +549,14 @@
         "en": "Line height",
         "sv": "Radhöjd"
       },
+      "Overlay": {
+        "en": "Overlay",
+        "sv": "Överlägg"
+      },
+      "Positioning": {
+        "en": "Positioning",
+        "sv": "Positionering"
+      },
       "SEO": {
         "en": "SEO",
         "sv": "SEO"
@@ -540,6 +564,10 @@
       "Selectors": {
         "en": "Selectors",
         "sv": "Selektorer"
+      },
+      "Shape": {
+        "en": "Shape",
+        "sv": "Form"
       },
       "Size": {
         "en": "Size",
@@ -560,6 +588,10 @@
       "Surface": {
         "en": "Surface",
         "sv": "Yta"
+      },
+      "Text": {
+        "en": "Text",
+        "sv": "Text"
       },
       "Typography": {
         "en": "Typography",
@@ -591,9 +623,29 @@
         "en": "Align items along the cross axis",
         "sv": "Justera element längs tväraxeln"
       },
+      "alignItemsBody": {
+        "en": "Align items along the cross axis - Body",
+        "sv": "Justera element längs tväraxeln - Innehåll"
+      },
+      "alignItemsFooter": {
+        "en": "Align items along the cross axis - Footer",
+        "sv": "Justera element längs tväraxeln - Fot"
+      },
+      "alignItemsHeader": {
+        "en": "Align items along the cross axis - Header",
+        "sv": "Justera element längs tväraxeln - Huvud"
+      },
       "alignSelf": {
         "en": "Align self along the cross axis",
         "sv": "Justera sig själv längs tväraxeln"
+      },
+      "article": {
+        "en": "Article",
+        "sv": "Artikel"
+      },
+      "aspectRatio": {
+        "en": "Aspect ratio",
+        "sv": "Bildförhållande"
       },
       "auto": {
         "en": "Automatic",
@@ -607,6 +659,10 @@
         "en": "Background",
         "sv": "Bakgrund"
       },
+      "backgroundBefore": {
+        "en": "Background - Before",
+        "sv": "Bakgrund - Före"
+      },
       "backgroundBlendMode": {
         "en": "Background blend mode",
         "sv": "Bakgrundsblandningsläge"
@@ -614,6 +670,14 @@
       "backgroundColor": {
         "en": "Background color",
         "sv": "Bakgrundsfärg"
+      },
+      "backgroundColorBody": {
+        "en": "Background color - Body",
+        "sv": "Bakgrundsfärg - Innehåll"
+      },
+      "backgroundColorBodyHover": {
+        "en": "Background color - Body - Hover",
+        "sv": "Bakgrundsfärg - Innehåll - Mus över"
       },
       "backgroundColorDanger": {
         "en": "Background color - Danger",
@@ -626,6 +690,22 @@
       "backgroundColorError": {
         "en": "Background color - Error",
         "sv": "Bakgrundsfärg - Fel"
+      },
+      "backgroundColorFooter": {
+        "en": "Background color - Footer",
+        "sv": "Bakgrundsfärg - Fot"
+      },
+      "backgroundColorFooterHover": {
+        "en": "Background color - Footer - Hover",
+        "sv": "Bakgrundsfärg - Fot - Mus över"
+      },
+      "backgroundColorHeader": {
+        "en": "Background color - Header",
+        "sv": "Bakgrundsfärg - Huvud"
+      },
+      "backgroundColorHeaderHover": {
+        "en": "Background color - Header - Hover",
+        "sv": "Bakgrundsfärg - Huvud - Mus över"
       },
       "backgroundColorHover": {
         "en": "Background color - Hover",
@@ -835,9 +915,21 @@
         "en": "Display",
         "sv": "Visningsläge"
       },
+      "div": {
+        "en": "Division",
+        "sv": "Division"
+      },
+      "element": {
+        "en": "Element",
+        "sv": "Element"
+      },
       "error": {
         "en": "Error",
         "sv": "Fel"
+      },
+      "filter": {
+        "en": "Filter",
+        "sv": "Filter"
       },
       "fixed": {
         "en": "Fixed",
@@ -845,27 +937,51 @@
       },
       "flexDirection": {
         "en": "Flexbox direction",
-        "sv": "Flexbox riktning"
+        "sv": "Flexbox-riktning"
+      },
+      "flexDirectionBody": {
+        "en": "Flexbox direction - Body",
+        "sv": "Flexbox-riktning - Innehåll"
+      },
+      "flexDirectionFooter": {
+        "en": "Flexbox direction - Footer",
+        "sv": "Flexbox-riktning - Fot"
+      },
+      "flexDirectionHeader": {
+        "en": "Flexbox direction - Header",
+        "sv": "Flexbox-riktning - Huvud"
       },
       "flexGrow": {
         "en": "Flexbox grow",
-        "sv": "Flexbox växbarhet"
+        "sv": "Flexbox-växbarhet"
+      },
+      "flexGrowBody": {
+        "en": "Flexbox grow - Body",
+        "sv": "Flexbox-växbarhet - Innehåll"
+      },
+      "flexGrowFooter": {
+        "en": "Flexbox grow - Footer",
+        "sv": "Flexbox-växbarhet - Fot"
+      },
+      "flexGrowHeader": {
+        "en": "Flexbox grow - Header",
+        "sv": "Flexbox-växbarhet - Huvud"
       },
       "flexShrink": {
         "en": "Flexbox shrink",
-        "sv": "Flexbox krympbarhet"
+        "sv": "Flexbox-krympbarhet"
       },
       "flexWrap": {
         "en": "Flexbox wrap",
-        "sv": "Flexbox svep"
+        "sv": "Flexbox-svep"
       },
       "flex-end": {
         "en": "Flexbox end",
-        "sv": "Flexbox slutet"
+        "sv": "Flexbox-slutet"
       },
       "flex-start": {
         "en": "Flexbox start",
-        "sv": "Flexbox början"
+        "sv": "Flexbox-början"
       },
       "fontSize": {
         "en": "Font size",
@@ -875,13 +991,41 @@
         "en": "Font weight",
         "sv": "Fontvikt"
       },
+      "form": {
+        "en": "Form",
+        "sv": "Formulär"
+      },
       "gap": {
         "en": "Gap",
         "sv": "Mellanrum"
       },
+      "gapBody": {
+        "en": "Gap - Body",
+        "sv": "Mellanrum - Innehåll"
+      },
+      "gapFooter": {
+        "en": "Gap - Footer",
+        "sv": "Mellanrum - Fot"
+      },
+      "gapHeader": {
+        "en": "Gap - Header",
+        "sv": "Mellanrum - Huvud"
+      },
       "height": {
         "en": "Height",
         "sv": "Höjd"
+      },
+      "heightBody": {
+        "en": "Height - Body",
+        "sv": "Höjd - Innehåll"
+      },
+      "heightFooter": {
+        "en": "Height - Footer",
+        "sv": "Höjd - Fot"
+      },
+      "heightHeader": {
+        "en": "Height - Header",
+        "sv": "Höjd - Huvud"
       },
       "hidden": {
         "en": "Hidden",
@@ -895,6 +1039,10 @@
         "en": "ID",
         "sv": "ID"
       },
+      "insetBefore": {
+        "en": "Inset - Before",
+        "sv": "Infällning - Före"
+      },
       "isVisible": {
         "en": "Is visible",
         "sv": "Är synlig"
@@ -906,6 +1054,18 @@
       "justifyContent": {
         "en": "Justify content along the main axis",
         "sv": "Justera element längs huvudaxeln"
+      },
+      "justifyContentBody": {
+        "en": "Justify content along the main axis - Body",
+        "sv": "Justera element längs huvudaxeln - Innehåll"
+      },
+      "justifyContentFooter": {
+        "en": "Justify content along the main axis - Footer",
+        "sv": "Justera element längs huvudaxeln - Fot"
+      },
+      "justifyContentHeader": {
+        "en": "Justify content along the main axis - Header",
+        "sv": "Justera element längs huvudaxeln - Huvud"
       },
       "justifySelf": {
         "en": "Justify self along the main axis",
@@ -947,6 +1107,14 @@
         "en": "Margin top",
         "sv": "Marginal topp"
       },
+      "maskBefore": {
+        "en": "Mask - Before",
+        "sv": "Maskering - Före"
+      },
+      "maskCompositeBefore": {
+        "en": "Mask composite - Before",
+        "sv": "Maskeringskombinering - Före"
+      },
       "maxHeight": {
         "en": "Maximum height",
         "sv": "Största höjd"
@@ -979,6 +1147,26 @@
         "en": "On click",
         "sv": "Vid klick"
       },
+      "onMouseDown": {
+        "en": "On mouse down",
+        "sv": "Vid nedtryckt musknapp"
+      },
+      "onMouseMove": {
+        "en": "On mouse move",
+        "sv": "Vid musrörelse"
+      },
+      "onMouseUp": {
+        "en": "On mouse up",
+        "sv": "Vid uppsläppning av musknapp"
+      },
+      "onRender": {
+        "en": "On render",
+        "sv": "Vid rendering"
+      },
+      "onUpdate": {
+        "en": "On update",
+        "sv": "Vid uppdatering"
+      },
       "opacity": {
         "en": "Opacity",
         "sv": "Opacitet"
@@ -995,17 +1183,45 @@
         "en": "Outline - Focus",
         "sv": "Kontur - Fokus"
       },
+      "outlineOffset": {
+        "en": "Outline offset",
+        "sv": "Konturavstånd"
+      },
       "overflow": {
         "en": "Overflow",
         "sv": "Överflöd"
+      },
+      "overflowX": {
+        "en": "Overflow X",
+        "sv": "Överflöd X"
+      },
+      "overflowY": {
+        "en": "Overflow Y",
+        "sv": "Överflöd Y"
       },
       "padding": {
         "en": "Padding",
         "sv": "Vaddering"
       },
+      "paddingBefore": {
+        "en": "Padding - Before",
+        "sv": "Vaddering - Före"
+      },
+      "paddingBody": {
+        "en": "Padding - Body",
+        "sv": "Vaddering - Innehåll"
+      },
       "paddingBottom": {
         "en": "Padding bottom",
         "sv": "Vaddering botten"
+      },
+      "paddingFooter": {
+        "en": "Padding - Footer",
+        "sv": "Vaddering - Fot"
+      },
+      "paddingHeader": {
+        "en": "Padding - Header",
+        "sv": "Vaddering - Huvud"
       },
       "paddingLeft": {
         "en": "Padding left",
@@ -1050,6 +1266,10 @@
       "scroll": {
         "en": "Scroll",
         "sv": "Rulla"
+      },
+      "section": {
+        "en": "Section",
+        "sv": "Sektion"
       },
       "selectors": {
         "en": "Selectors",
@@ -1166,6 +1386,18 @@
       "width": {
         "en": "Width",
         "sv": "Bredd"
+      },
+      "widthBody": {
+        "en": "Width - Body",
+        "sv": "Bredd - Innehåll"
+      },
+      "widthFooter": {
+        "en": "Width - Footer",
+        "sv": "Bredd - Fot"
+      },
+      "widthHeader": {
+        "en": "Width - Header",
+        "sv": "Bredd - Huvud"
       },
       "wrap": {
         "en": "Wrap",
@@ -1539,6 +1771,14 @@
       }
     },
     "variants": {
+      "Accent Left": {
+        "en": "Accent Left",
+        "sv": "Vänsteraccent"
+      },
+      "Accent Top": {
+        "en": "Accent Top",
+        "sv": "Toppaccent"
+      },
       "Banner": {
         "en": "Banner",
         "sv": "Banner"
@@ -1554,6 +1794,14 @@
       "Brushed Metal - Gold": {
         "en": "Brushed Metal - Gold",
         "sv": "Borstad metall - Guld"
+      },
+      "Centered": {
+        "en": "Centered",
+        "sv": "Centrerad"
+      },
+      "Clickable": {
+        "en": "Clickable",
+        "sv": "Klickbar"
       },
       "Compact": {
         "en": "Compact",
@@ -1579,9 +1827,17 @@
         "en": "Danger (Solid)",
         "sv": "Fara (Solid)"
       },
+      "Dark": {
+        "en": "Dark",
+        "sv": "Mörk"
+      },
       "Dark - Themed": {
         "en": "Dark - Themed",
         "sv": "Mörk - Temabaserad"
+      },
+      "Dashboard Tile": {
+        "en": "Dashboard Tile",
+        "sv": "Instrumentpanelsruta"
       },
       "Dot": {
         "en": "Dot",
@@ -1591,9 +1847,17 @@
         "en": "Elevated",
         "sv": "Upphöjd"
       },
+      "Flat": {
+        "en": "Flat",
+        "sv": "Platt"
+      },
       "Floating Center": {
         "en": "Floating Center",
         "sv": "Flytande & Centrerad"
+      },
+      "Floating Panel": {
+        "en": "Floating Panel",
+        "sv": "Flytande panel"
       },
       "Full Width CTA": {
         "en": "Full Width CTA",
@@ -1611,9 +1875,17 @@
         "en": "Gradient - Themed",
         "sv": "Gradient - Temabaserad"
       },
+      "Horizontal": {
+        "en": "Horizontal",
+        "sv": "Horisontell"
+      },
       "Icon Button": {
         "en": "Icon Button",
         "sv": "Ikonknapp"
+      },
+      "Image Card": {
+        "en": "Image Card",
+        "sv": "Bildkort"
       },
       "Large Pill": {
         "en": "Large Pill",
@@ -1626,6 +1898,14 @@
       "Link": {
         "en": "Link",
         "sv": "Länk"
+      },
+      "Media Overlay": {
+        "en": "Media Overlay",
+        "sv": "Mediaöverlägg"
+      },
+      "Modal": {
+        "en": "Modal",
+        "sv": "Modalt"
       },
       "Muted": {
         "en": "Muted",
@@ -1659,6 +1939,10 @@
         "en": "Primary (Solid)",
         "sv": "Primär (Solid)"
       },
+      "Scrollable": {
+        "en": "Scrollable",
+        "sv": "Skrollbar"
+      },
       "Secondary": {
         "en": "Secondary",
         "sv": "Sekundär"
@@ -1674,6 +1958,10 @@
       "Solid": {
         "en": "Solid",
         "sv": "Solid"
+      },
+      "Spacious": {
+        "en": "Spacious",
+        "sv": "Rymlig"
       },
       "Success (Outline)": {
         "en": "Success (Outline)",

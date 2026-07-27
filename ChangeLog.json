@@ -1,7 +1,27 @@
 [
   {
+    "date": "2026-07-27",
+    "entries": [
+      {
+        "id": "2026-07-27-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      }
+    ]
+  },
+  {
+    "version": "0.28.0",
     "date": "2026-07-26",
     "entries": [
+      {
+        "id": "2026-07-26-release-0.28.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.28.0 released",
+        "description": "Beta version 28 of Ophixor has been released. The version is 0.28.0."
+      },
       {
         "id": "2026-07-26-feature-table-row-props",
         "type": "feature",
