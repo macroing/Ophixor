@@ -533,6 +533,10 @@
         "en": "Header",
         "sv": "Huvud"
       },
+      "Icon / Text Color": {
+        "en": "Icon / Text Color",
+        "sv": "Ikon- / Textfärg"
+      },
       "Interaction": {
         "en": "Interaction",
         "sv": "Interaktion"
@@ -580,6 +584,10 @@
       "Spacing": {
         "en": "Spacing",
         "sv": "Mellanrum"
+      },
+      "State": {
+        "en": "State",
+        "sv": "Tillstånd"
       },
       "Structure": {
         "en": "Structure",
@@ -671,6 +679,10 @@
         "en": "Background color",
         "sv": "Bakgrundsfärg"
       },
+      "backgroundColorBackdrop": {
+        "en": "Background color - Backdrop",
+        "sv": "Bakgrundsfärg - Bakgrund"
+      },
       "backgroundColorBody": {
         "en": "Background color - Body",
         "sv": "Bakgrundsfärg - Innehåll"
@@ -734,6 +746,10 @@
       "backgroundDangerHover": {
         "en": "Background - Danger - Hover",
         "sv": "Bakgrund - Fara - Mus över"
+      },
+      "backgroundHeader": {
+        "en": "Background - Header",
+        "sv": "Bakgrund - Huvud"
       },
       "backgroundHover": {
         "en": "Background - Hover",
@@ -855,6 +871,10 @@
         "en": "Center",
         "sv": "Center"
       },
+      "checked": {
+        "en": "Checked",
+        "sv": "Ikryssad"
+      },
       "color": {
         "en": "Color",
         "sv": "Färg"
@@ -922,6 +942,10 @@
       "element": {
         "en": "Element",
         "sv": "Element"
+      },
+      "end": {
+        "en": "End",
+        "sv": "Slutet"
       },
       "error": {
         "en": "Error",
@@ -1119,17 +1143,33 @@
         "en": "Maximum height",
         "sv": "Största höjd"
       },
+      "maxHeightBody": {
+        "en": "Maximum height - Body",
+        "sv": "Största höjd - Innehåll"
+      },
       "maxWidth": {
         "en": "Maximum width",
         "sv": "Största bredd"
+      },
+      "maxWidthBody": {
+        "en": "Maximum width - Body",
+        "sv": "Största bredd - Innehåll"
       },
       "minHeight": {
         "en": "Minimum height",
         "sv": "Minsta höjd"
       },
+      "minHeightBody": {
+        "en": "Minimum height - Body",
+        "sv": "Minsta höjd - Innehåll"
+      },
       "minWidth": {
         "en": "Minimum width",
         "sv": "Minsta bredd"
+      },
+      "minWidthBody": {
+        "en": "Minimum width - Body",
+        "sv": "Minsta bredd - Innehåll"
       },
       "none": {
         "en": "None",
@@ -1275,6 +1315,14 @@
         "en": "Selectors",
         "sv": "Selektorer"
       },
+      "self-end": {
+        "en": "End of self",
+        "sv": "Slutet på sig själv"
+      },
+      "self-start": {
+        "en": "Start of self",
+        "sv": "Början på sig själv"
+      },
       "space-around": {
         "en": "Space around",
         "sv": "Mellanrum runtom"
@@ -1286,6 +1334,10 @@
       "space-evenly": {
         "en": "Space evenly",
         "sv": "Mellanrum jämnt fördelat"
+      },
+      "start": {
+        "en": "Start",
+        "sv": "Början"
       },
       "static": {
         "en": "Static",
