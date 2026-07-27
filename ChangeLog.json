@@ -27,7 +27,7 @@
         "type": "change",
         "component": "Table",
         "title": "Change the default value for borderRadius in Table",
-        "description": "Change the default value for the prop borderRadius from \"14px\" to \"4px\" in the Table component.",
+        "description": "Change the default value for the prop borderRadius from \"14px\" to \"8px\" in the Table component.",
         "meta": {
           "props": ["borderRadius"]
         }
