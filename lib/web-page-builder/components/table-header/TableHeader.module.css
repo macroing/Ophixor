@@ -6,7 +6,7 @@
 .table_header {
   --table-header-background-color: var(--pc-semantic-surface-page);
   --table-header-color: var(--pc-semantic-text-primary);
-  --table-header-padding: 0.5rem;
+  --table-header-padding: 0.5rem 1rem;
   --table-header-text-align: center;
 
   background-color: var(--table-header-background-color);

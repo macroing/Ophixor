@@ -3,6 +3,36 @@
     "date": "2026-07-27",
     "entries": [
       {
+        "id": "2026-07-27-change-table-header",
+        "type": "change",
+        "component": "TableHeader",
+        "title": "Change the default value for padding in TableHeader",
+        "description": "Change the default value for the prop padding from \"0.5rem\" to \"0.5rem 1rem\" in the TableHeader component.",
+        "meta": {
+          "props": ["padding"]
+        }
+      },
+      {
+        "id": "2026-07-27-change-table-data",
+        "type": "change",
+        "component": "TableData",
+        "title": "Change the default value for padding in TableData",
+        "description": "Change the default value for the prop padding from \"0.5rem\" to \"0.5rem 1rem\" in the TableData component.",
+        "meta": {
+          "props": ["padding"]
+        }
+      },
+      {
+        "id": "2026-07-27-change-table",
+        "type": "change",
+        "component": "Table",
+        "title": "Change the default value for borderRadius in Table",
+        "description": "Change the default value for the prop borderRadius from \"14px\" to \"4px\" in the Table component.",
+        "meta": {
+          "props": ["borderRadius"]
+        }
+      },
+      {
         "id": "2026-07-27-feature-translation-to-swedish",
         "type": "feature",
         "component": null,

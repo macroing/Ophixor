@@ -8,7 +8,7 @@
   --table-background-color: transparent;
   --table-border-collapse: separate;
   --table-border-color: var(--pc-semantic-border-default);
-  --table-border-radius: 14px;
+  --table-border-radius: 4px;
   --table-border-spacing: 0.5rem;
   --table-border-width: 1px;
   --table-box-shadow: var(--pc-semantic-shadow-sm);

@@ -6,7 +6,7 @@
 .table_data {
   --table-data-background-color: transparent;
   --table-data-color: var(--pc-semantic-text-primary);
-  --table-data-padding: 0.5rem;
+  --table-data-padding: 0.5rem 1rem;
   --table-data-text-align: center;
   --table-data-vertical-align: top;
 
