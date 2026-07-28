@@ -103,7 +103,7 @@ function createItems(isCustomDomain, language, platformUser, page, styles, websi
     items.push({
       href: "/website-admin/",
       isActive: false,
-      label: <Item icon={faChevronCircleLeft} isActive={false} styles={styles} text={platform.websiteAdmin.backToWebsites[language]} />,
+      label: <Item icon={faChevronCircleLeft} isActive={false} styles={styles} text={platform.websiteAdmin.navigation.backToWebsites[language]} />,
     });
 
     items.push({

@@ -23,6 +23,18 @@
   text-align: var(--label-text-align);
 }
 
+.label.label_danger {
+  color: var(--pc-semantic-status-danger-text);
+}
+
+.label.label_success {
+  color: var(--pc-semantic-status-success-text);
+}
+
+.label.label_warning {
+  color: var(--pc-semantic-status-warning-text);
+}
+
 .label:active {
   cursor: grabbing;
 }

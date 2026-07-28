@@ -1,5 +1,50 @@
 [
   {
+    "date": "2026-07-28",
+    "entries": [
+      {
+        "id": "2026-07-28-feature-select-props",
+        "type": "feature",
+        "component": "Select",
+        "title": "Add one prop to Select",
+        "description": "Add one missing prop to the Select component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
+        "id": "2026-07-28-feature-label-props",
+        "type": "feature",
+        "component": "Label",
+        "title": "Add one prop to Label",
+        "description": "Add one missing prop to the Label component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
+        "id": "2026-07-28-feature-text-area-props",
+        "type": "feature",
+        "component": "TextArea",
+        "title": "Add one prop to TextArea",
+        "description": "Add one missing prop to the TextArea component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      },
+      {
+        "id": "2026-07-28-feature-input-props",
+        "type": "feature",
+        "component": "Input",
+        "title": "Add one prop to Input",
+        "description": "Add one missing prop to the Input component.",
+        "meta": {
+          "props": ["theme"]
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-07-27",
     "entries": [
       {

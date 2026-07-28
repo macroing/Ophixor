@@ -26,12 +26,15 @@ export default function GeneralSettingsForm(props) {
   const { saveWebsite, website } = useWebsite();
 
   const [defaultLanguage, setDefaultLanguage] = useState(website?.defaultLanguage || "en");
+  const [defaultLanguageTheme, setDefaultLanguageTheme] = useState("");
   const [description, setDescription] = useState(website?.description || "");
+  const [descriptionTheme, setDescriptionTheme] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
   const [name, setName] = useState(website?.name || "");
+  const [nameTheme, setNameTheme] = useState("");
 
   async function onSubmit(e) {
     try {
@@ -59,8 +62,11 @@ export default function GeneralSettingsForm(props) {
   useEffect(() => {
     if (website) {
       setDefaultLanguage(website.defaultLanguage || "en");
+      setDefaultLanguageTheme("");
       setDescription(website.description || "");
+      setDescriptionTheme("");
       setName(website.name || "");
+      setNameTheme("");
     }
   }, [website]);
 
@@ -73,9 +79,17 @@ export default function GeneralSettingsForm(props) {
     const hasDescriptionChanged = description.trim() !== website?.description;
     const hasNameChanged = name.trim() !== website?.name;
 
+    const newDefaultLanguageTheme = hasValidDefaultLanguage ? (hasDefaultLanguageChanged ? "success" : "") : "danger";
+    const newDescriptionTheme = hasValidDescription ? (hasDescriptionChanged ? "success" : "") : "danger";
+    const newNameTheme = hasValidName ? (hasNameChanged ? "success" : "") : "danger";
+
     const enabled = hasValidDefaultLanguage && hasValidDescription && hasValidName && (hasDefaultLanguageChanged || hasDescriptionChanged || hasNameChanged);
 
     setDisabled(!enabled);
+
+    setDefaultLanguageTheme(newDefaultLanguageTheme);
+    setDescriptionTheme(newDescriptionTheme);
+    setNameTheme(newNameTheme);
   }, [defaultLanguage, description, messageStatus, name, website]);
 
   useEffect(() => {
@@ -92,15 +106,15 @@ export default function GeneralSettingsForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-name" text={platform.websiteAdmin.generalSettingsForm.name[language]} />
-        <Input id="website-name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.generalSettingsForm.namePlaceholder[language]} type="text" value={name} />
+        <Label htmlFor="website-name" text={platform.websiteAdmin.generalSettingsForm.name[language]} theme={nameTheme} />
+        <Input id="website-name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.generalSettingsForm.namePlaceholder[language]} theme={nameTheme} type="text" value={name} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-description" text={platform.websiteAdmin.generalSettingsForm.description[language]} />
-        <TextArea id="website-description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.generalSettingsForm.descriptionPlaceholder[language]} rows={5} value={description} />
+        <Label htmlFor="website-description" text={platform.websiteAdmin.generalSettingsForm.description[language]} theme={descriptionTheme} />
+        <TextArea id="website-description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.generalSettingsForm.descriptionPlaceholder[language]} rows={5} theme={descriptionTheme} value={description} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-default-language" text={platform.websiteAdmin.generalSettingsForm.defaultLanguage[language]} />
+        <Label htmlFor="website-default-language" text={platform.websiteAdmin.generalSettingsForm.defaultLanguage[language]} theme={defaultLanguageTheme} />
         <Select
           id="website-default-language"
           onChange={(e) => setDefaultLanguage(e.target.value)}
@@ -108,6 +122,7 @@ export default function GeneralSettingsForm(props) {
             { label: platform.websiteAdmin.generalSettingsForm.english[language], value: "en" },
             { label: platform.websiteAdmin.generalSettingsForm.swedish[language], value: "sv" },
           ]}
+          theme={defaultLanguageTheme}
           value={defaultLanguage}
         />
       </Section>

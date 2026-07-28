@@ -28,7 +28,9 @@ export default function AccessibilitySettingsForm(props) {
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
   const [status, setStatus] = useState(website?.status || "draft");
+  const [statusTheme, setStatusTheme] = useState("");
   const [visibility, setVisibility] = useState(website?.visibility || "private");
+  const [visibilityTheme, setVisibilityTheme] = useState("");
 
   async function onSubmit(e) {
     try {
@@ -56,7 +58,9 @@ export default function AccessibilitySettingsForm(props) {
   useEffect(() => {
     if (website) {
       setStatus(website.status || "draft");
+      setStatusTheme("");
       setVisibility(website.visibility || "private");
+      setVisibilityTheme("");
     }
   }, [website]);
 
@@ -67,14 +71,15 @@ export default function AccessibilitySettingsForm(props) {
     const hasStatusChanged = status !== website?.status;
     const hasVisibilityChanged = visibility !== website?.visibility;
 
+    const newStatusTheme = hasValidStatus ? (hasStatusChanged ? "success" : "") : "danger";
+    const newVisibilityTheme = hasValidVisibility ? (hasVisibilityChanged ? "success" : "") : "danger";
+
     const enabled = hasValidStatus && hasValidVisibility && (hasStatusChanged || hasVisibilityChanged);
 
     setDisabled(!enabled);
 
-    if (messageStatus !== "success") {
-      setMessage("");
-      setMessageStatus("");
-    }
+    setStatusTheme(newStatusTheme);
+    setVisibilityTheme(newVisibilityTheme);
   }, [messageStatus, status, visibility, website]);
 
   useEffect(() => {
@@ -91,7 +96,7 @@ export default function AccessibilitySettingsForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-status" text={platform.websiteAdmin.accessibilitySettingsForm.status[language]} />
+        <Label htmlFor="website-status" text={platform.websiteAdmin.accessibilitySettingsForm.status[language]} theme={statusTheme} />
         <Select
           id="website-status"
           onChange={(e) => setStatus(e.target.value)}
@@ -100,11 +105,12 @@ export default function AccessibilitySettingsForm(props) {
             { label: platform.websiteAdmin.accessibilitySettingsForm.disabled[language], value: "disabled" },
             { label: platform.websiteAdmin.accessibilitySettingsForm.draft[language], value: "draft" },
           ]}
+          theme={statusTheme}
           value={status}
         />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-visibility" text={platform.websiteAdmin.accessibilitySettingsForm.visibility[language]} />
+        <Label htmlFor="website-visibility" text={platform.websiteAdmin.accessibilitySettingsForm.visibility[language]} theme={visibilityTheme} />
         <Select
           id="website-visibility"
           onChange={(e) => setVisibility(e.target.value)}
@@ -113,6 +119,7 @@ export default function AccessibilitySettingsForm(props) {
             { label: platform.websiteAdmin.accessibilitySettingsForm.public[language], value: "public" },
             { label: platform.websiteAdmin.accessibilitySettingsForm.unlisted[language], value: "unlisted" },
           ]}
+          theme={visibilityTheme}
           value={visibility}
         />
       </Section>

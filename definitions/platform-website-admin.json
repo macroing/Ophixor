@@ -7,10 +7,14 @@
   "url": "https://ophixor.com",
   "websiteAdmin": {
     "backToWebsites": {
-      "en": "To websites",
-      "sv": "Till webbplatser"
+      "en": "Back to websites",
+      "sv": "Tillbaka till webbplatser"
     },
     "navigation": {
+      "backToWebsites": {
+        "en": "To websites",
+        "sv": "Till webbplatser"
+      },
       "overview": {
         "en": "Overview",
         "sv": "Översikt"

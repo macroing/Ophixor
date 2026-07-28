@@ -513,6 +513,10 @@
         "en": "Flexbox",
         "sv": "Flexbox"
       },
+      "Focus State": {
+        "en": "Focus state",
+        "sv": "Fokustillstånd"
+      },
       "Footer": {
         "en": "Footer",
         "sv": "Fot"
@@ -600,6 +604,10 @@
       "Text": {
         "en": "Text",
         "sv": "Text"
+      },
+      "Theme": {
+        "en": "Theme",
+        "sv": "Tema"
       },
       "Typography": {
         "en": "Typography",

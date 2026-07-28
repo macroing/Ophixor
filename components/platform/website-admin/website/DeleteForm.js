@@ -70,18 +70,18 @@ export default function DeleteForm(props) {
 
   return (
     <>
-      <Card alignItemsBody="flex-start" backgroundColor="rgba(220, 38, 38, 0.03)" backgroundColorBody="transparent" backgroundColorBodyHover="transparent" backgroundColorHover="rgba(220, 38, 38, 0.03)" borderColor="rgba(220, 38, 38, 0.2)" borderColorHover="rgba(220, 38, 38, 0.2)" element="form" flexGrow="0" gapBody="2rem" justifyContentBody="flex-start" onSubmit={onSubmit}>
+      <Card alignItemsBody="flex-start" backgroundColor="var(--pc-semantic-status-danger-bg)" backgroundColorBody="transparent" backgroundColorBodyHover="transparent" backgroundColorHover="var(--pc-semantic-status-danger-bg)" borderColor="var(--pc-semantic-status-danger)" borderColorHover="var(--pc-semantic-status-danger)" element="form" flexGrow="0" gapBody="2rem" justifyContentBody="flex-start" onSubmit={onSubmit}>
         {{
           slots: {
             header: [],
             body: [
-              <Heading color="#0f172a" key="1" level="3" text={platform.websiteAdmin.deleteForm.title[language]} />,
+              <Heading color="var(--pc-semantic-status-danger-text)" key="1" level="3" text={platform.websiteAdmin.deleteForm.title[language]} />,
               message && (
                 <Alert key="2" theme="error">
                   <Text text={message} />
                 </Alert>
               ),
-              <Text color="#64748b" key="3" text={platform.websiteAdmin.deleteForm.text[language]} />,
+              <Text color="var(--pc-semantic-status-danger-text)" key="3" text={platform.websiteAdmin.deleteForm.text[language]} />,
               <Button borderRadius="8px" disabled={isShowingDialog} key="4" theme="danger">
                 {platform.websiteAdmin.deleteForm.button[language]}
               </Button>,

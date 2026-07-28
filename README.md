@@ -312,6 +312,3 @@ npm run start
 - Add support for uploading video.
 - Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
 - Add theme properties to the Checkbox component.
-- Add theme properties to the Input component.
-- Add theme properties to the Select component.
-- Add theme properties to the TextArea component.

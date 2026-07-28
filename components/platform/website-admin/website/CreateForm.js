@@ -25,13 +25,17 @@ export default function CreateForm(props) {
   const router = useRouter();
 
   const [code, setCode] = useState("");
+  const [codeTheme, setCodeTheme] = useState("");
   const [description, setDescription] = useState("");
+  const [descriptionTheme, setDescriptionTheme] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [hasCreatedWebsite, setHasCreatedWebsite] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
+  const [nameTheme, setNameTheme] = useState("");
   const [url, setUrl] = useState("");
+  const [urlTheme, setUrlTheme] = useState("");
 
   async function onSubmit(e) {
     try {
@@ -73,11 +77,22 @@ export default function CreateForm(props) {
 
     const hasValidName = nameTrimmed !== "";
 
+    const newCodeTheme = code.length > 0 ? "success" : nameTrimmed === "" ? "" : "danger";
+    const newDescriptionTheme = code.length > 0 && nameTrimmed !== "" ? "success" : "";
+    const newNameTheme = nameTrimmed !== "" ? "success" : "";
+    const newUrlTheme = url !== "" ? "success" : "";
+
     const enabled = hasValidName;
 
     setCode(code);
+    setCodeTheme(newCodeTheme);
+
+    setDescriptionTheme(newDescriptionTheme);
+
+    setNameTheme(newNameTheme);
 
     setUrl(url);
+    setUrlTheme(newUrlTheme);
 
     setDisabled(!enabled);
 
@@ -96,20 +111,20 @@ export default function CreateForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="name" text={platform.websiteAdmin.createForm.name[language]} />
-        <Input id="name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.createForm.namePlaceholder[language]} type="text" value={name} />
+        <Label htmlFor="name" text={platform.websiteAdmin.createForm.name[language]} theme={nameTheme} />
+        <Input id="name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.createForm.namePlaceholder[language]} theme={nameTheme} type="text" value={name} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="description" text={platform.websiteAdmin.createForm.description[language]} />
-        <Input id="description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.createForm.descriptionPlaceholder[language]} type="text" value={description} />
+        <Label htmlFor="description" text={platform.websiteAdmin.createForm.description[language]} theme={descriptionTheme} />
+        <Input id="description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.createForm.descriptionPlaceholder[language]} theme={descriptionTheme} type="text" value={description} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="code" text={platform.websiteAdmin.createForm.code[language]} />
-        <Input id="code" isDebounceDisabled={true} onChange={(e) => setCode(e.target.value)} placeholder={platform.websiteAdmin.createForm.codePlaceholder[language]} readOnly={true} type="text" value={code} />
+        <Label htmlFor="code" text={platform.websiteAdmin.createForm.code[language]} theme={codeTheme} />
+        <Input id="code" isDebounceDisabled={true} onChange={(e) => setCode(e.target.value)} placeholder={platform.websiteAdmin.createForm.codePlaceholder[language]} readOnly={true} theme={codeTheme} type="text" value={code} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="url" text={platform.websiteAdmin.createForm.url[language]} />
-        <Input id="url" isDebounceDisabled={true} onChange={(e) => setUrl(e.target.value)} placeholder={platform.websiteAdmin.createForm.urlPlaceholder[language]} readOnly={true} type="text" value={url} />
+        <Label htmlFor="url" text={platform.websiteAdmin.createForm.url[language]} theme={urlTheme} />
+        <Input id="url" isDebounceDisabled={true} onChange={(e) => setUrl(e.target.value)} placeholder={platform.websiteAdmin.createForm.urlPlaceholder[language]} readOnly={true} theme={urlTheme} type="text" value={url} />
       </Section>
       <Section alignItems="flex-start" flexDirection="row" gap="0.5rem" justifyContent="flex-end" padding="0px">
         <Button disabled={disabled || isSubmitting} text={isSubmitting ? platform.websiteAdmin.createForm.creating[language] : platform.websiteAdmin.createForm.create[language]} theme="primary" />
