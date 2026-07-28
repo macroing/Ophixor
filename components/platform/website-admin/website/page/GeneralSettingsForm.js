@@ -24,11 +24,13 @@ export default function GeneralSettingsForm(props) {
   const { saveWebsitePage, websitePage } = useWebsitePage();
 
   const [description, setDescription] = useState(websitePage?.description || "");
+  const [descriptionTheme, setDescriptionTheme] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
   const [name, setName] = useState(websitePage?.name || "");
+  const [nameTheme, setNameTheme] = useState("");
 
   async function onSubmit(e) {
     try {
@@ -56,7 +58,9 @@ export default function GeneralSettingsForm(props) {
   useEffect(() => {
     if (websitePage) {
       setDescription(websitePage.description || "");
+      setDescriptionTheme("");
       setName(websitePage.name || "");
+      setNameTheme("");
     }
   }, [websitePage]);
 
@@ -67,9 +71,15 @@ export default function GeneralSettingsForm(props) {
     const hasDescriptionChanged = description.trim() !== websitePage?.description;
     const hasNameChanged = name.trim() !== websitePage?.name;
 
+    const newDescriptionTheme = hasValidDescription ? (hasDescriptionChanged ? "success" : "") : "danger";
+    const newNameTheme = hasValidName ? (hasNameChanged ? "success" : "") : "danger";
+
     const enabled = hasValidDescription && hasValidName && (hasDescriptionChanged || hasNameChanged);
 
     setDisabled(!enabled);
+
+    setDescriptionTheme(newDescriptionTheme);
+    setNameTheme(newNameTheme);
   }, [description, messageStatus, name, websitePage]);
 
   useEffect(() => {
@@ -86,12 +96,12 @@ export default function GeneralSettingsForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-page-name" text={platform.websiteAdmin.pages.generalSettingsForm.name[language]} />
-        <Input id="website-page-name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.pages.generalSettingsForm.namePlaceholder[language]} type="text" value={name} />
+        <Label htmlFor="website-page-name" text={platform.websiteAdmin.pages.generalSettingsForm.name[language]} theme={nameTheme} />
+        <Input id="website-page-name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.pages.generalSettingsForm.namePlaceholder[language]} theme={nameTheme} type="text" value={name} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-page-description" text={platform.websiteAdmin.pages.generalSettingsForm.description[language]} />
-        <Input id="website-page-description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.pages.generalSettingsForm.descriptionPlaceholder[language]} value={description} />
+        <Label htmlFor="website-page-description" text={platform.websiteAdmin.pages.generalSettingsForm.description[language]} theme={descriptionTheme} />
+        <Input id="website-page-description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.pages.generalSettingsForm.descriptionPlaceholder[language]} theme={descriptionTheme} value={description} />
       </Section>
       <Section alignItems="flex-start" flexDirection="row" gap="0.5rem" justifyContent="flex-start" padding="0px">
         <Button borderRadius="8px" disabled={disabled || isSubmitting} text={isSubmitting ? platform.websiteAdmin.pages.generalSettingsForm.saving[language] : platform.websiteAdmin.pages.generalSettingsForm.save[language]} theme="primary" />

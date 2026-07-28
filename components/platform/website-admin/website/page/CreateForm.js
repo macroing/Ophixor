@@ -27,16 +27,22 @@ export default function CreateForm(props) {
   const { language } = useLanguage();
 
   const [description, setDescription] = useState("");
+  const [descriptionTheme, setDescriptionTheme] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [hasCreatedWebsitePage, setHasCreatedWebsitePage] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
+  const [nameTheme, setNameTheme] = useState("");
   const [parentWebsitePage, setParentWebsitePage] = useState("/");
   const [parentWebsitePageOptions, setParentWebsitePageOptions] = useState([]);
+  const [parentWebsitePageTheme, setParentWebsitePageTheme] = useState("");
   const [path, setPath] = useState("");
+  const [pathTheme, setPathTheme] = useState("");
   const [slug, setSlug] = useState("");
+  const [slugTheme, setSlugTheme] = useState("");
   const [url, setUrl] = useState("");
+  const [urlTheme, setUrlTheme] = useState("");
   const [websitePages, setWebsitePages] = useState([]);
 
   const { isCustomDomain, website } = useWebsite();
@@ -73,10 +79,15 @@ export default function CreateForm(props) {
       const { data } = await axios.post("/api/website-page", { description, name, parentWebsitePageId, slug, websiteId: website._id.toString() });
 
       setDescription("");
+      setDescriptionTheme("");
       setName("");
+      setNameTheme("");
       setParentWebsitePage("");
+      setParentWebsitePageTheme("");
       setPath("");
+      setPathTheme("");
       setSlug("");
+      setSlugTheme("");
 
       setHasCreatedWebsitePage(true);
 
@@ -111,9 +122,23 @@ export default function CreateForm(props) {
 
     const enabled = hasValidName && hasValidPath && hasValidSlug;
 
+    const newDescriptionTheme = hasValidName || hasValidPath || hasValidSlug ? "success" : "";
+    const newNameTheme = hasValidName ? "success" : "";
+    const newParentWebsitePageTheme = hasValidName || hasValidPath || hasValidSlug ? "success" : "";
+    const newPathTheme = hasValidPath ? "success" : "";
+    const newSlugTheme = hasValidSlug ? "success" : "";
+    const newUrlTheme = url !== "" ? "success" : "";
+
     setUrl(url);
+    setUrlTheme(newUrlTheme);
 
     setDisabled(!enabled);
+
+    setDescriptionTheme(newDescriptionTheme);
+    setNameTheme(newNameTheme);
+    setParentWebsitePageTheme(newParentWebsitePageTheme);
+    setPathTheme(newPathTheme);
+    setSlugTheme(newSlugTheme);
 
     if (!hasCreatedWebsitePage) {
       setMessage("");
@@ -155,28 +180,28 @@ export default function CreateForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="name" text={platform.websiteAdmin.pages.createForm.name[language]} />
-        <Input id="name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.namePlaceholder[language]} type="text" value={name} />
+        <Label htmlFor="name" text={platform.websiteAdmin.pages.createForm.name[language]} theme={nameTheme} />
+        <Input id="name" isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.namePlaceholder[language]} theme={nameTheme} type="text" value={name} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="description" text={platform.websiteAdmin.pages.createForm.description[language]} />
-        <Input id="description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.descriptionPlaceholder[language]} type="text" value={description} />
+        <Label htmlFor="description" text={platform.websiteAdmin.pages.createForm.description[language]} theme={descriptionTheme} />
+        <Input id="description" isDebounceDisabled={true} onChange={(e) => setDescription(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.descriptionPlaceholder[language]} theme={descriptionTheme} type="text" value={description} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="parent-website-page" text={platform.websiteAdmin.pages.createForm.parentPage[language]} />
-        <Select id="parent-website-page" onChange={(e) => setParentWebsitePage(e.target.value)} options={parentWebsitePageOptions} value={parentWebsitePage} />
+        <Label htmlFor="parent-website-page" text={platform.websiteAdmin.pages.createForm.parentPage[language]} theme={parentWebsitePageTheme} />
+        <Select id="parent-website-page" onChange={(e) => setParentWebsitePage(e.target.value)} options={parentWebsitePageOptions} theme={parentWebsitePageTheme} value={parentWebsitePage} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="slug" text={platform.websiteAdmin.pages.createForm.slug[language]} />
-        <Input id="slug" isDebounceDisabled={true} onChange={(e) => setSlug(formatSlug(e.target.value))} placeholder={platform.websiteAdmin.pages.createForm.slugPlaceholder[language]} type="text" value={slug} />
+        <Label htmlFor="slug" text={platform.websiteAdmin.pages.createForm.slug[language]} theme={slugTheme} />
+        <Input id="slug" isDebounceDisabled={true} onChange={(e) => setSlug(formatSlug(e.target.value))} placeholder={platform.websiteAdmin.pages.createForm.slugPlaceholder[language]} theme={slugTheme} type="text" value={slug} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="path" text={platform.websiteAdmin.pages.createForm.path[language]} />
-        <Input id="path" isDebounceDisabled={true} onChange={(e) => setPath(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.pathPlaceholder[language]} readOnly={true} type="text" value={path} />
+        <Label htmlFor="path" text={platform.websiteAdmin.pages.createForm.path[language]} theme={pathTheme} />
+        <Input id="path" isDebounceDisabled={true} onChange={(e) => setPath(e.target.value)} placeholder={platform.websiteAdmin.pages.createForm.pathPlaceholder[language]} readOnly={true} theme={pathTheme} type="text" value={path} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="url" text={platform.websiteAdmin.pages.createForm.url[language]} />
-        <Input id="url" isDebounceDisabled={true} onChange={(e) => setUrl(e.target.value)} placeholder={(isCustomDomain ? "/admin" : process.env.NEXT_PUBLIC_PLATFORM_URL + "/website-admin/" + website.code) + platform.websiteAdmin.pages.createForm.urlPlaceholder[language]} readOnly={true} type="text" value={url} />
+        <Label htmlFor="url" text={platform.websiteAdmin.pages.createForm.url[language]} theme={urlTheme} />
+        <Input id="url" isDebounceDisabled={true} onChange={(e) => setUrl(e.target.value)} placeholder={(isCustomDomain ? "/admin" : process.env.NEXT_PUBLIC_PLATFORM_URL + "/website-admin/" + website.code) + platform.websiteAdmin.pages.createForm.urlPlaceholder[language]} readOnly={true} theme={urlTheme} type="text" value={url} />
       </Section>
       <Section alignItems="flex-end" gap="0.5rem" justifyContent="flex-end" padding="0px">
         <Button disabled={disabled || isSubmitting} text={isSubmitting ? platform.websiteAdmin.pages.createForm.creating[language] : platform.websiteAdmin.pages.createForm.create[language]} theme="primary" />

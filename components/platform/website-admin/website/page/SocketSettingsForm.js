@@ -33,7 +33,9 @@ export default function SocketSettingsForm(props) {
 
   const [disabled, setDisabled] = useState(true);
   const [isSocketConnectingAutomatically, setIsSocketConnectingAutomatically] = useState(websitePage?.isSocketConnectingAutomatically || false);
+  const [isSocketConnectingAutomaticallyTheme, setIsSocketConnectingAutomaticallyTheme] = useState("");
   const [isSocketEnabled, setIsSocketEnabled] = useState(websitePage?.isSocketEnabled || false);
+  const [isSocketEnabledTheme, setIsSocketEnabledTheme] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
@@ -75,7 +77,9 @@ export default function SocketSettingsForm(props) {
   useEffect(() => {
     if (websitePage) {
       setIsSocketConnectingAutomatically(websitePage?.isSocketConnectingAutomatically || false);
+      setIsSocketConnectingAutomaticallyTheme("");
       setIsSocketEnabled(websitePage?.isSocketEnabled || false);
+      setIsSocketEnabledTheme("");
     }
   }, [websitePage]);
 
@@ -83,9 +87,15 @@ export default function SocketSettingsForm(props) {
     const hasIsSocketConnectingAutomaticallyChanged = isSocketConnectingAutomatically !== websitePage?.isSocketConnectingAutomatically;
     const hasIsSocketEnabledChanged = isSocketEnabled !== websitePage?.isSocketEnabled;
 
+    const newIsSocketConnectingAutomaticallyTheme = hasIsSocketConnectingAutomaticallyChanged ? "success" : "";
+    const newIsSocketEnabledTheme = hasIsSocketEnabledChanged ? "success" : "";
+
     const enabled = hasIsSocketConnectingAutomaticallyChanged || hasIsSocketEnabledChanged;
 
     setDisabled(!enabled);
+
+    setIsSocketConnectingAutomaticallyTheme(newIsSocketConnectingAutomaticallyTheme);
+    setIsSocketEnabledTheme(newIsSocketEnabledTheme);
   }, [isSocketConnectingAutomatically, isSocketEnabled, websitePage]);
 
   useEffect(() => {
@@ -106,11 +116,11 @@ export default function SocketSettingsForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-page-socket-enabled" text={platform.websiteAdmin.pages.socketSettingsForm.enabled[language]} />
+        <Label htmlFor="website-page-socket-enabled" text={platform.websiteAdmin.pages.socketSettingsForm.enabled[language]} theme={isSocketEnabledTheme} />
         <Switch checked={isSocketEnabled} id="website-page-socket-enabled" onChange={(e) => setIsSocketEnabled(e.target.checked)} />
       </Section>
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label htmlFor="website-page-socket-connecting-automatically" text={platform.websiteAdmin.pages.socketSettingsForm.connectingAutomatically[language]} />
+        <Label htmlFor="website-page-socket-connecting-automatically" text={platform.websiteAdmin.pages.socketSettingsForm.connectingAutomatically[language]} theme={isSocketConnectingAutomaticallyTheme} />
         <Switch checked={isSocketConnectingAutomatically} id="website-page-socket-connecting-automatically" onChange={(e) => setIsSocketConnectingAutomatically(e.target.checked)} />
       </Section>
       <Section alignItems="flex-start" flexDirection="row" gap="0.5rem" justifyContent="flex-start" padding="0px">

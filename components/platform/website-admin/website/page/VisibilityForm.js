@@ -27,13 +27,23 @@ export default function VisibilityForm(props) {
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
   const [visibility, setVisibility] = useState("private");
+  const [visibilityTheme, setVisibilityTheme] = useState("");
 
   const status = websitePage?.status || "draft";
   const isPublished = status === "published";
 
   useEffect(() => {
+    const hasVisibilityChanged = visibility !== websitePage?.visibility;
+
+    const newVisibilityTheme = hasVisibilityChanged ? "success" : "";
+
+    setVisibilityTheme(newVisibilityTheme);
+  }, [visibility, websitePage]);
+
+  useEffect(() => {
     if (websitePage) {
       setVisibility(websitePage.visibility || "private");
+      setVisibilityTheme("");
     }
   }, [websitePage]);
 
@@ -72,13 +82,14 @@ export default function VisibilityForm(props) {
         </Alert>
       )}
       <Section flexDirection="column" gap="0.5rem" padding="0px">
-        <Label text={platform.websiteAdmin.pages.visibilityForm.visibility[language]} />
+        <Label text={platform.websiteAdmin.pages.visibilityForm.visibility[language]} theme={visibilityTheme} />
         <Select
           onChange={(e) => setVisibility(e.target.value)}
           options={[
             { label: platform.websiteAdmin.pages.visibilityForm.private[language], value: "private" },
             { label: platform.websiteAdmin.pages.visibilityForm.public[language], value: "public" },
           ]}
+          theme={visibilityTheme}
           value={visibility}
         />
       </Section>
