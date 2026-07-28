@@ -5,7 +5,9 @@
 
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
+import { faChartLine, faChevronCircleLeft, faCog, faFileLines, faGauge, faHandshake, faImages, faPuzzlePiece, faShapes, faTable } from "@fortawesome/pro-solid-svg-icons";
 
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import SideBar from "@/lib/web-page-builder/components/side-bar/SideBar";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
@@ -14,7 +16,11 @@ import { useWebsite } from "@/context/website";
 
 import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
+import importedStyles from "./NavigationSideBar.module.css";
+
 export default function NavigationSideBar(props) {
+  const styles = props.styles || importedStyles;
+
   const { platformUser } = useCurrentPlatformUser();
 
   const { language } = useLanguage();
@@ -56,12 +62,25 @@ export default function NavigationSideBar(props) {
     page = "templates";
   }
 
-  const items = useMemo(() => createItems(isCustomDomain, language, platformUser, page, website), [isCustomDomain, language, page, pathname, platformUser, website]);
+  const items = useMemo(() => createItems(isCustomDomain, language, platformUser, page, styles, website), [isCustomDomain, language, page, pathname, platformUser, styles, website]);
 
   return <SideBar backdropFilter="blur(20px)" backgroundColor="rgba(255, 255, 255, 0.6)" borderColor="rgba(15, 23, 42, 0.06)" items={items} />;
 }
 
-function createItems(isCustomDomain, language, platformUser, page, website) {
+function Item(props) {
+  const icon = props.icon;
+  const isActive = props.isActive;
+  const styles = props.styles || importedStyles;
+  const text = props.text;
+
+  return (
+    <div className={styles.item + (isActive ? " " + styles.item_active : "")}>
+      <Icon icon={icon} size={16} /> {text}
+    </div>
+  );
+}
+
+function createItems(isCustomDomain, language, platformUser, page, styles, website) {
   const prefix = isCustomDomain ? "/admin" : "/website-admin/" + website.code;
 
   const permissions = getPermissions(platformUser, website);
@@ -84,7 +103,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: "/website-admin/",
       isActive: false,
-      label: platform.websiteAdmin.backToWebsites[language],
+      label: <Item icon={faChevronCircleLeft} isActive={false} styles={styles} text={platform.websiteAdmin.backToWebsites[language]} />,
     });
 
     items.push({
@@ -95,14 +114,14 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
   items.push({
     href: prefix,
     isActive: page === "overview",
-    label: platform.websiteAdmin.navigation.overview[language],
+    label: <Item icon={faGauge} isActive={page === "overview"} styles={styles} text={platform.websiteAdmin.navigation.overview[language]} />,
   });
 
   if (canReadPage) {
     items.push({
       href: prefix + "/pages",
       isActive: page === "pages",
-      label: platform.websiteAdmin.navigation.pages[language],
+      label: <Item icon={faFileLines} isActive={page === "pages"} styles={styles} text={platform.websiteAdmin.navigation.pages[language]} />,
     });
   }
 
@@ -110,7 +129,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/media",
       isActive: page === "media",
-      label: platform.websiteAdmin.navigation.media[language],
+      label: <Item icon={faImages} isActive={page === "media"} styles={styles} text={platform.websiteAdmin.navigation.media[language]} />,
     });
   }
 
@@ -118,7 +137,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/templates",
       isActive: page === "templates",
-      label: platform.websiteAdmin.navigation.templates[language],
+      label: <Item icon={faTable} isActive={page === "templates"} styles={styles} text={platform.websiteAdmin.navigation.templates[language]} />,
     });
   }
 
@@ -126,7 +145,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/models",
       isActive: page === "models",
-      label: platform.websiteAdmin.navigation.models[language],
+      label: <Item icon={faShapes} isActive={page === "models"} styles={styles} text={platform.websiteAdmin.navigation.models[language]} />,
     });
   }
 
@@ -134,7 +153,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/integrations",
       isActive: page === "integrations",
-      label: platform.websiteAdmin.navigation.integrations[language],
+      label: <Item icon={faPuzzlePiece} isActive={page === "integrations"} styles={styles} text={platform.websiteAdmin.navigation.integrations[language]} />,
     });
   }
 
@@ -142,7 +161,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/collaborators",
       isActive: page === "collaborators",
-      label: platform.websiteAdmin.navigation.collaborators[language],
+      label: <Item icon={faHandshake} isActive={page === "collaborators"} styles={styles} text={platform.websiteAdmin.navigation.collaborators[language]} />,
     });
   }
 
@@ -151,7 +170,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/analytics",
       isActive: page === "analytics",
-      label: platform.websiteAdmin.navigation.analytics[language],
+      label: <Item icon={faChartLine} isActive={page === "analytics"} styles={styles} text={platform.websiteAdmin.navigation.analytics[language]} />,
     });
   }
   */
@@ -160,7 +179,7 @@ function createItems(isCustomDomain, language, platformUser, page, website) {
     items.push({
       href: prefix + "/settings",
       isActive: page === "settings",
-      label: platform.websiteAdmin.navigation.settings[language],
+      label: <Item icon={faCog} isActive={page === "settings"} styles={styles} text={platform.websiteAdmin.navigation.settings[language]} />,
     });
   }
 
