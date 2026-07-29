@@ -1075,6 +1075,10 @@
         "en": "Inset - Before",
         "sv": "Infällning - Före"
       },
+      "isExpanded": {
+        "en": "Is expanded",
+        "sv": "Är expanderad"
+      },
       "isVisible": {
         "en": "Is visible",
         "sv": "Är synlig"
@@ -1399,6 +1403,10 @@
         "en": "Theme",
         "sv": "Tema"
       },
+      "title": {
+        "en": "Title",
+        "sv": "Titel"
+      },
       "top": {
         "en": "Top",
         "sv": "Topp"
@@ -1469,6 +1477,26 @@
       }
     },
     "types": {
+      "Accordion": {
+        "label": {
+          "en": "Accordion",
+          "sv": "Dragspel"
+        },
+        "description": {
+          "en": "A content container with titled and expandable content containers (items).",
+          "sv": "En innehållsbehållare med betitlade och expanderbara innehållsbehållare (föremål)."
+        }
+      },
+      "AccordionItem": {
+        "label": {
+          "en": "Accordion item",
+          "sv": "Dragspelsföremål"
+        },
+        "description": {
+          "en": "A titled and expandable content container (item) of an Accordion component.",
+          "sv": "En betitlad och expanderbar innehållsbehållare (föremål) för en Dragspelskomponent."
+        }
+      },
       "Alert": {
         "label": {
           "en": "Alert",

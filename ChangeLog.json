@@ -9,6 +9,20 @@
         "component": null,
         "title": "Version 0.29.0 released",
         "description": "Beta version 29 of Ophixor has been released. The version is 0.29.0."
+      },
+      {
+        "id": "2026-07-29-feature-accordion-item",
+        "type": "feature",
+        "component": "AccordionItem",
+        "title": "Add the AccordionItem component",
+        "description": "A new AccordionItem component has been added."
+      },
+      {
+        "id": "2026-07-29-feature-accordion",
+        "type": "feature",
+        "component": "Accordion",
+        "title": "Add the Accordion component",
+        "description": "A new Accordion component has been added."
       }
     ]
   },

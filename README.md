@@ -63,6 +63,8 @@ npm run start
 
 ### Components
 
+- `Accordion`
+- `AccordionItem`
 - `Alert`
 - `Badge`
 - `Button`
@@ -292,7 +294,6 @@ npm run start
 - Add Expressions for retrieving parts of the current path that refers to the current WebsitePage.
 - Add a WebsiteUserModel model where custom fields for a WebsiteUser can be specified. These custom fields are then added on creation.
 - Add theme settings to Website. These consists of CSS variables that override the default ones. Mainly colors.
-- Add an Accordion component.
 - Add a Breadcrumb component.
 - Add a Calendar component.
 - Add a Carousel component.
