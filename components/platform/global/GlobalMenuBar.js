@@ -6,16 +6,21 @@
 import { useEffect, useMemo, useState } from "react";
 import { signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
+import { faDashboard, faFileLines, faGlobe, faPlus, faTableCellsLarge, faSignIn, faSignOut, faUser } from "@fortawesome/pro-solid-svg-icons";
 
 import Avatar from "../common/Avatar";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import MenuBar from "@/lib/web-page-builder/components/menu-bar/MenuBar";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
 import { useLanguage } from "@/context/language";
 
 import platform from "@/definitions/platform.json" with { type: "json" };
 
+import importedStyles from "./GlobalMenuBar.module.css";
+
 export default function GlobalMenuBar(props) {
   const isCustomDomain = props.isCustomDomain || false;
+  const styles = props.styles || importedStyles;
 
   const defaultUrl = isCustomDomain ? process.env.NEXT_PUBLIC_PLATFORM_URL : "/";
 
@@ -35,7 +40,7 @@ export default function GlobalMenuBar(props) {
 
   const isDark = pathnameDecoded === "/";
 
-  const items = useMemo(() => createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, platformUser), [isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, pathname, platformUser]);
+  const items = useMemo(() => createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, platformUser, styles), [isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, pathname, platformUser, styles]);
 
   useEffect(() => {
     const isInWebsiteAdmin = isCustomDomain ? pathnameDecoded === "/admin" || pathnameDecoded.startsWith("/admin") : pathnameDecoded === "/website-admin" || pathnameDecoded.startsWith("/website-admin/");
@@ -54,22 +59,58 @@ export default function GlobalMenuBar(props) {
   return <MenuBar backdropFilter="blur(20px)" backgroundColor="var(--pc-semantic-surface-overlay-2)" backgroundColorIconLetter="var(--pc-semantic-status-primary)" backgroundColorLineHover="var(--pc-semantic-interactive-primary)" borderColor="rgba(15, 23, 42, 0.06)" color="var(--pc-foundation-color-slate-800)" colorHover="var(--pc-semantic-text-primary)" colorItem="var(--pc-foundation-color-slate-800)" colorItemHover="var(--pc-semantic-text-primary)" defaultUrl={defaultUrl} iconImageAlt={platform.name} iconImageSrc="/images/logo.webp" items={items} position="fixed" title={platform.name} top="0px" />;
 }
 
-function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, platformUser) {
+function Item(props) {
+  const icon = props.icon;
+  const isDark = props.isDark;
+  const isPrimary = props.isPrimary;
+  const styles = props.styles || importedStyles;
+  const text = props.text;
+
+  return (
+    <div className={styles.item + (isDark ? " " + styles.item_dark : "") + (isPrimary ? " " + styles.item_primary : "")}>
+      <Icon icon={icon} size={16} /> {text}
+    </div>
+  );
+}
+
+function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminNew, isInWebsiteAdminWebsite, language, platformUser, styles) {
   const items = [];
 
   if (!isInWebsiteAdmin && !isCustomDomain) {
-    items.push({ href: "/features", label: platform.menuBar.features[language], type: "link" });
-    //items.push({ href: "/pricing", label: platform.menuBar.pricing[language], type: "link" });
-    items.push({ href: "/docs", label: platform.menuBar.documentation[language], type: "link" });
+    items.push({
+      href: "/features",
+      label: <Item icon={faTableCellsLarge} isDark={isDark} styles={styles} text={platform.menuBar.features[language]} />,
+      type: "link",
+    });
+    //items.push({
+    //  href: "/pricing",
+    //  label: platform.menuBar.pricing[language],
+    //  type: "link",
+    //});
+    items.push({
+      href: "/docs",
+      label: <Item icon={faFileLines} isDark={isDark} styles={styles} text={platform.menuBar.documentation[language]} />,
+      type: "link",
+    });
   }
 
   if (platformUser) {
     if (isInWebsiteAdmin) {
       if (!isInWebsiteAdminNew && !isInWebsiteAdminWebsite && !isCustomDomain) {
-        items.push({ href: "/website-admin-new", label: platform.menuBar.newWebsite[language], theme: "primary", type: "link" });
+        items.push({
+          href: "/website-admin-new",
+          label: <Item icon={faPlus} isDark={isDark} isPrimary={true} styles={styles} text={platform.menuBar.newWebsite[language]} />,
+          theme: "primary",
+          type: "link",
+        });
       }
     } else if (!isCustomDomain) {
-      items.push({ href: "/website-admin", label: platform.menuBar.websites[language], theme: "primary", type: "link" });
+      items.push({
+        href: "/website-admin",
+        label: <Item icon={faGlobe} isDark={isDark} isPrimary={true} styles={styles} text={platform.menuBar.websites[language]} />,
+        theme: "primary",
+        type: "link",
+      });
     }
 
     const platformUserItems = [];
@@ -77,7 +118,7 @@ function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminN
     if (platformUser.isPlatformAdmin && !isCustomDomain) {
       platformUserItems.push({
         href: "/admin",
-        label: platform.menuBar.admin[language],
+        label: <Item icon={faDashboard} isDark={isDark} styles={styles} text={platform.menuBar.admin[language]} />,
         type: "link",
       });
 
@@ -89,7 +130,7 @@ function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminN
     if (!isCustomDomain) {
       platformUserItems.push({
         href: "/account",
-        label: platform.menuBar.account[language],
+        label: <Item icon={faUser} isDark={isDark} styles={styles} text={platform.menuBar.account[language]} />,
         type: "link",
       });
 
@@ -99,7 +140,7 @@ function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminN
     }
 
     platformUserItems.push({
-      label: platform.menuBar.signOut[language],
+      label: <Item icon={faSignOut} isDark={isDark} styles={styles} text={platform.menuBar.signOut[language]} />,
       onClick: (e) => signOut({ callbackUrl: "/" }),
       type: "button",
     });
@@ -111,7 +152,11 @@ function createItems(isCustomDomain, isDark, isInWebsiteAdmin, isInWebsiteAdminN
       });
     }
   } else if (!isCustomDomain) {
-    items.push({ href: "/sign-in", label: platform.menuBar.signIn[language], type: "link" });
+    items.push({
+      href: "/sign-in",
+      label: <Item icon={faSignIn} isDark={isDark} styles={styles} text={platform.menuBar.signIn[language]} />,
+      type: "link",
+    });
   }
 
   return items;

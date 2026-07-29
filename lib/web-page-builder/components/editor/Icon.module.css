@@ -4,17 +4,28 @@
  */
 
 .icon {
-  color: #e5e7eb;
+  --icon-color: #e5e7eb;
+  --icon-color-hover: #6366f1;
+
+  color: var(--icon-color);
   display: inline-block;
 }
 
 .icon.icon_clickable:hover {
-  color: #6366f1;
+  color: var(--icon-color-hover);
   cursor: pointer;
 }
 
 .icon.icon_clickable.icon_danger:hover {
   color: #ef4444;
+}
+
+.icon.icon_pointer {
+  cursor: pointer;
+}
+
+.icon.icon_pointer:hover {
+  cursor: pointer;
 }
 
 .icon.icon_responsive {

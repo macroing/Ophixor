@@ -512,8 +512,8 @@
         "sv": "Du saknar behörighet att visa denna sida."
       },
       "createNewIntegration": {
-        "en": "+ Create new integration",
-        "sv": "+ Skapa ny integration"
+        "en": "Create new integration",
+        "sv": "Skapa ny integration"
       },
       "integrationInformationCard": {
         "active": {
@@ -654,8 +654,8 @@
         }
       },
       "uploadImage": {
-        "en": "+ Upload image",
-        "sv": "+ Ladda upp bild"
+        "en": "Upload image",
+        "sv": "Ladda upp bild"
       },
       "copyLink": {
         "en": "Copy link",
@@ -696,8 +696,8 @@
         "sv": "Hantera dina webbplatser."
       },
       "create": {
-        "en": "+ Create new website",
-        "sv": "+ Skapa ny webbplats"
+        "en": "Create new website",
+        "sv": "Skapa ny webbplats"
       },
       "informationCard": {
         "active": {
@@ -744,8 +744,8 @@
         "sv": "Du saknar behörighet att visa denna sida."
       },
       "createNewPage": {
-        "en": "+ Create new page",
-        "sv": "+ Skapa ny sida"
+        "en": "Create new page",
+        "sv": "Skapa ny sida"
       },
       "editor": {
         "all": {

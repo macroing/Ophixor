@@ -51,7 +51,7 @@ export default function WebsitesPage(props) {
       <Heading color="#0f172a" fontSizeLevel1="1.75rem" level="1" text={platform.websiteAdmin.overview.title[language]} />
       <Text color="#64748b" element="p" text={platform.websiteAdmin.overview.text[language]} />
       <Grid gap="1.5rem" gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" padding="1rem 0px 0px 0px" width="100%">
-        <ClickableCard onClick={onClickCreateNewWebsite} text={platform.websiteAdmin.overview.create[language]} />
+        <ClickableCard hasPlusIcon={true} onClick={onClickCreateNewWebsite} text={platform.websiteAdmin.overview.create[language]} />
         {websites.map((website) => (
           <InformationCard key={website._id} website={website} />
         ))}

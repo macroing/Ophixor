@@ -75,7 +75,7 @@ export default function IntegrationsPage(props) {
       <Heading color="#0f172a" level="1" text={platform.websiteAdmin.integrations.title[language]} />
       <Text color="#64748b" element="p" text={platform.websiteAdmin.integrations.text[language]} />
       <Grid gap="1.5rem" gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" padding="1rem 0px 0px 0px">
-        {canCreate && <ClickableCard onClick={onClickCreateNewWebsiteIntegration} text={platform.websiteAdmin.integrations.createNewIntegration[language]} />}
+        {canCreate && <ClickableCard hasPlusIcon={true} onClick={onClickCreateNewWebsiteIntegration} text={platform.websiteAdmin.integrations.createNewIntegration[language]} />}
         {websiteIntegrations.map((websiteIntegration) => (
           <IntegrationInformationCard canDelete={canDelete} isCustomDomain={isCustomDomain} key={websiteIntegration._id} onDelete={onDelete} website={website} websiteIntegration={websiteIntegration} />
         ))}

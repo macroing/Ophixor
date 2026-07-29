@@ -121,7 +121,7 @@ export default function MediaPage(props) {
       <Heading color="#0f172a" level="1" text={platform.websiteAdmin.media.title[language]} />
       <Text color="#64748b" element="p" text={platform.websiteAdmin.media.text[language]} />
       <Grid gridTemplateColumns={isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(3, 1fr)"} padding="0px">
-        {canCreate && <ClickableCard onClick={onClickUploadImage} text={platform.websiteAdmin.media.uploadImage[language]} />}
+        {canCreate && <ClickableCard hasPlusIcon={true} onClick={onClickUploadImage} text={platform.websiteAdmin.media.uploadImage[language]} />}
         {websiteMedias.map((websiteMedia) => {
           if (websiteMedia.type === "image") {
             return (

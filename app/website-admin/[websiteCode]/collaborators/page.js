@@ -49,7 +49,7 @@ export default function CollaboratorsPage(props) {
       <Heading color="#0f172a" level="1" text="Collaborators" />
       <Text color="#64748b" element="p" text="Manage your collaborators." />
       <Grid gap="1.5rem" gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" padding="1rem 0px 0px 0px">
-        <ClickableCard onClick={onClickAddNewCollaborator} text="+ Add New Collaborator" />
+        <ClickableCard hasPlusIcon={true} onClick={onClickAddNewCollaborator} text="Add New Collaborator" />
         {(website?.collaborators || []).map((collaborator) => (
           <InformationCard collaborator={collaborator} isCustomDomain={isCustomDomain} key={collaborator._id.toString()} onRemove={onRemove} website={website} />
         ))}

@@ -70,7 +70,7 @@ export default function WebsitesWebsitePagesPage(props) {
       <Heading color="#0f172a" level="1" text={platform.websiteAdmin.pages.title[language]} />
       <Text color="#64748b" element="p" text={platform.websiteAdmin.pages.text[language]} />
       <Grid gap="1.5rem" gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" padding="1rem 0px 0px 0px">
-        {canCreate && <ClickableCard onClick={onClickCreateNewWebsitePage} text={platform.websiteAdmin.pages.createNewPage[language]} />}
+        {canCreate && <ClickableCard hasPlusIcon={true} onClick={onClickCreateNewWebsitePage} text={platform.websiteAdmin.pages.createNewPage[language]} />}
         {websitePages.map((websitePage) => (
           <InformationCard isCustomDomain={isCustomDomain} key={websitePage._id} website={website} websitePage={websitePage} />
         ))}
