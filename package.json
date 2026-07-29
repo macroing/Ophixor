@@ -45,7 +45,7 @@
   },
   "overrides": {
     "next-auth": {
-      "nodemailer": "^8"
+      "nodemailer": "^9"
     }
   }
 }
