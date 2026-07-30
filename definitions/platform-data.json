@@ -1797,6 +1797,26 @@
           "sv": "En komponent som fungerar på ett liknande sätt som en kryssruta men ser annorlunda ut."
         }
       },
+      "TabPane": {
+        "label": {
+          "en": "Tab pane",
+          "sv": "Flikruta"
+        },
+        "description": {
+          "en": "A content container with titled tabs that contains content containers (items).",
+          "sv": "En innehållsbehållare med betitlade flikar som innehåller innehållsbehållare (föremål)."
+        }
+      },
+      "TabPaneItem": {
+        "label": {
+          "en": "Tab pane item",
+          "sv": "Flikrutsföremål"
+        },
+        "description": {
+          "en": "A titled content container (item) that is represented as a tab in a TabPane component.",
+          "sv": "En betitlad innehållsbehållare (föremål) som är representerad som en flik i en Flikruta-komponent."
+        }
+      },
       "Table": {
         "label": {
           "en": "Table",

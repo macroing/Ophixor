@@ -94,6 +94,8 @@ npm run start
 - `Spacer`
 - `Spinner`
 - `Switch`
+- `TabPane`
+- `TabPaneItem`
 - `Table`
 - `TableData`
 - `TableHeader`
@@ -294,22 +296,35 @@ npm run start
 - Add Expressions for retrieving parts of the current path that refers to the current WebsitePage.
 - Add a WebsiteUserModel model where custom fields for a WebsiteUser can be specified. These custom fields are then added on creation.
 - Add theme settings to Website. These consists of CSS variables that override the default ones. Mainly colors.
+- Add an AreaChart component.
+- Add a BarChart component.
 - Add a Breadcrumb component.
 - Add a Calendar component.
 - Add a Carousel component.
 - Add a Chat component.
+- Add a ColorPicker component.
 - Add a DateOfBirth component.
+- Add a Drawer component.
+- Add a FileUpload component.
 - Add an Icon component. It should probably also support Font Awesome icons.
 - Add a Menu component.
 - Add a Pagination component.
+- Add a PieChart component.
 - Add a ProgressBar component.
 - Add a Rating component.
-- Add a TabPane component.
+- Add a ScrollPane component.
+- Add a SearchInput component.
+- Add a Skeleton component.
+- Add a Slider component.
+- Add a TagInput component.
 - Add a Toast component.
 - Add a Tooltip component.
+- Add a TreeView component.
 - Add a Video component.
 - Make some improvements to the MenuBar component. It does not work well with the hamburger menu. It should probably also support large menus and icons.
 - Add more functionality to the Canvas component so it can be used to create games and other interactive experiences.
 - Add support for uploading video.
 - Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
 - Add theme properties to the Checkbox component.
+- Add support for invisible AccordionItems to the Accordion component.
+- A TabPaneItem can currently only use static values for isVisible and title in order for the TabPane component to work correctly. This needs a fix.

@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-07-30",
+    "entries": [
+      {
+        "id": "2026-07-30-feature-tab-pane-item",
+        "type": "feature",
+        "component": "TabPaneItem",
+        "title": "Add the TabPaneItem component",
+        "description": "A new TabPaneItem component has been added."
+      },
+      {
+        "id": "2026-07-30-feature-tab-pane",
+        "type": "feature",
+        "component": "TabPane",
+        "title": "Add the TabPane component",
+        "description": "A new TabPane component has been added."
+      }
+    ]
+  },
+  {
     "version": "0.29.0",
     "date": "2026-07-29",
     "entries": [
