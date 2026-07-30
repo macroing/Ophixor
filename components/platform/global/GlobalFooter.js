@@ -4,7 +4,7 @@
 "use client";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faClockRotateLeft, faCookie, faFileLines, faFileContract, faShield, faTableCellsLarge } from "@fortawesome/pro-solid-svg-icons";
+import { faClockRotateLeft, faCookie, faFileContract, faFileLines, faShield, faTableCellsLarge } from "@fortawesome/pro-solid-svg-icons";
 
 import Footer from "@/lib/web-page-builder/components/footer/Footer";
 import Icon from "@/lib/web-page-builder/components/editor/Icon";

@@ -77,6 +77,7 @@ npm run start
 - `Form`
 - `Grid`
 - `Heading`
+- `Icon`
 - `Image`
 - `Input`
 - `Label`
@@ -306,7 +307,6 @@ npm run start
 - Add a DateOfBirth component.
 - Add a Drawer component.
 - Add a FileUpload component.
-- Add an Icon component. It should probably also support Font Awesome icons.
 - Add a Menu component.
 - Add a Pagination component.
 - Add a PieChart component.

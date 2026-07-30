@@ -3,6 +3,13 @@
     "date": "2026-07-30",
     "entries": [
       {
+        "id": "2026-07-30-feature-icon",
+        "type": "feature",
+        "component": "Icon",
+        "title": "Add the Icon component",
+        "description": "A new Icon component has been added."
+      },
+      {
         "id": "2026-07-30-feature-tab-pane-item",
         "type": "feature",
         "component": "TabPaneItem",

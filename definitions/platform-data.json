@@ -959,6 +959,38 @@
         "en": "Error",
         "sv": "Fel"
       },
+      "fa-clock-rotate-left": {
+        "en": "Clock - Rotate left",
+        "sv": "Klocka - Rotera vänster"
+      },
+      "fa-cookie": {
+        "en": "Cookie",
+        "sv": "Kaka"
+      },
+      "fa-file-contract": {
+        "en": "File - Contract",
+        "sv": "Fil - Kontrakt"
+      },
+      "fa-file-lines": {
+        "en": "File - Lines",
+        "sv": "Fil - Rader"
+      },
+      "fa-question": {
+        "en": "Question",
+        "sv": "Fråga"
+      },
+      "fa-shield": {
+        "en": "Shield",
+        "sv": "Sköld"
+      },
+      "fa-table-cells-large": {
+        "en": "Table cells - Large",
+        "sv": "Tabellceller - Stora"
+      },
+      "fa-user": {
+        "en": "User",
+        "sv": "Användare"
+      },
       "filter": {
         "en": "Filter",
         "sv": "Filter"
@@ -1066,6 +1098,10 @@
       "href": {
         "en": "Link",
         "sv": "Länk"
+      },
+      "icon": {
+        "en": "Icon",
+        "sv": "Ikon"
       },
       "id": {
         "en": "ID",
@@ -1625,6 +1661,16 @@
         "description": {
           "en": "A heading with six different levels that have been configured using a typography scale.",
           "sv": "En rubrik med sex olika nivåer som har konfigurerats efter en typografisk skala."
+        }
+      },
+      "Icon": {
+        "label": {
+          "en": "Icon",
+          "sv": "Ikon"
+        },
+        "description": {
+          "en": "An icon that supports Font Awesome icons.",
+          "sv": "En ikon med stöd för Font Awesome-ikoner."
         }
       },
       "Image": {
