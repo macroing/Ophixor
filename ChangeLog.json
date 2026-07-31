@@ -1,7 +1,15 @@
 [
   {
+    "version": "0.30.0",
     "date": "2026-07-31",
     "entries": [
+      {
+        "id": "2026-07-31-release-0.30.0",
+        "type": "release",
+        "component": null,
+        "title": "Version 0.30.0 released",
+        "description": "Beta version 30 of Ophixor has been released. The version is 0.30.0."
+      },
       {
         "id": "2026-07-31-feature-icon-props",
         "type": "feature",
