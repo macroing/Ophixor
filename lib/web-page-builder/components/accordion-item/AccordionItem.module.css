@@ -6,8 +6,10 @@
 .accordion_item {
   --accordion-item-background-color: var(--pc-semantic-surface-base);
   --accordion-item-background-color-title: var(--pc-semantic-surface-page);
+  --accordion-item-background-color-title-hover: var(--pc-semantic-surface-page);
   --accordion-item-border-color: var(--pc-semantic-border-default);
   --accordion-item-color-title: var(--pc-semantic-text-primary);
+  --accordion-item-color-title-hover: var(--pc-semantic-interactive-primary);
 
   align-items: stretch;
   background-color: var(--accordion-item-background-color);
@@ -158,6 +160,15 @@
 
 .accordion_item > .title > svg {
   color: var(--accordion-item-color-title);
+}
+
+.accordion_item > .title:hover {
+  background-color: var(--accordion-item-background-color-title-hover);
+  color: var(--accordion-item-color-title-hover);
+}
+
+.accordion_item > .title:hover > svg {
+  color: var(--accordion-item-color-title-hover);
 }
 
 .accordion_item.accordion_item_content_only {

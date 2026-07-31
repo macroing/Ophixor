@@ -5,11 +5,17 @@
 
 .icon {
   --icon-color: inherit;
+  --icon-color-hover: inherit;
+  --icon-cursor: auto;
 
   color: var(--icon-color);
-  cursor: auto;
+  cursor: var(--icon-cursor);
   display: inline-block;
   position: relative;
+}
+
+.icon:hover {
+  color: var(--icon-color-hover);
 }
 
 .icon.icon_invisible {
@@ -23,6 +29,10 @@
   justify-content: center;
   padding: 1rem;
   text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.icon.icon_invisible:hover {
+  color: var(--pc-semantic-text-inverse);
 }
 
 .icon:active {
@@ -40,7 +50,7 @@
 }
 
 .icon.icon_content_only {
-  cursor: auto;
+  cursor: var(--icon-cursor);
 }
 
 .icon.icon_content_only:hover {

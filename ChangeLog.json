@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-31",
+    "entries": [
+      {
+        "id": "2026-07-31-feature-icon-props",
+        "type": "feature",
+        "component": "Icon",
+        "title": "Add props to Icon",
+        "description": "Add missing props to the Icon component.",
+        "meta": {
+          "props": ["colorHover", "cursor"]
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "entries": [
       {
