@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-03",
+    "entries": [
+      {
+        "id": "2026-08-03-feature-tab-pane-dynamic-values",
+        "type": "feature",
+        "component": "TabPane",
+        "title": "Dynamic values for TabPaneItems in a TabPane",
+        "description": "A TabPane can now support dynamic values provided by a TabPaneItem."
+      }
+    ]
+  },
+  {
     "version": "0.30.0",
     "date": "2026-07-31",
     "entries": [

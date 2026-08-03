@@ -328,4 +328,3 @@ npm run start
 - Add theme properties to the Checkbox component.
 - Add support for invisible AccordionItems to the Accordion component.
 - An AccordionItem can currently only use static values for isVisible in order for the Accordion component to work correctly. This needs a fix.
-- A TabPaneItem can currently only use static values for isVisible and title in order for the TabPane component to work correctly. This needs a fix.
