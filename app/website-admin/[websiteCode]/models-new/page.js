@@ -11,10 +11,15 @@ import ModelEditor from "@/components/platform/website-admin/website/model/Model
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 export default function ModelsNewPage(props) {
   const { platformUser } = useCurrentPlatformUser();
+
+  const { language } = useLanguage();
 
   const { website } = useWebsite();
 
@@ -26,8 +31,8 @@ export default function ModelsNewPage(props) {
   if (!canCreate || !canRead) {
     return (
       <Alert theme="error">
-        <Heading level="3" text="Create New Model" />
-        <Text text="You do not have permission to view this page." />
+        <Heading level="3" text={platform.websiteAdmin.modelsNew.title[language]} />
+        <Text text={platform.websiteAdmin.modelsNew.notAllowed[language]} />
       </Alert>
     );
   }

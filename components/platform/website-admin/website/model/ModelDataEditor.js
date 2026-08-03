@@ -11,6 +11,9 @@ import FieldValueEditor from "./FieldValueEditor";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
 import Section from "@/lib/web-page-builder/components/section/Section";
 import Text from "@/lib/web-page-builder/components/text/Text";
+import { useLanguage } from "@/context/language";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 import importedStyles from "./ModelDataEditor.module.css";
 
@@ -21,6 +24,8 @@ export default function ModelDataEditor(props) {
   const websiteModelData = props.websiteModelData;
 
   const isCreating = !websiteModelData;
+
+  const { language } = useLanguage();
 
   const [data, setData] = useState(websiteModelData?.data || {});
   const [message, setMessage] = useState("");
@@ -85,7 +90,7 @@ export default function ModelDataEditor(props) {
             <Text color="#166534" element="p" text={message} />
           </Section>
         )}
-        <Button theme="primary">Save</Button>
+        <Button theme="primary">{platform.websiteAdmin.models.modelDataEditor.save[language]}</Button>
       </div>
     </form>
   );

@@ -12,11 +12,16 @@ import ModelDataEditor from "@/components/platform/website-admin/website/model/M
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
 import { useWebsiteModel } from "@/context/website-model";
 
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
+
 export default function ModelsModelDataNewPage(props) {
   const { platformUser } = useCurrentPlatformUser();
+
+  const { language } = useLanguage();
 
   const { isCustomDomain, website } = useWebsite();
 
@@ -32,11 +37,11 @@ export default function ModelsModelDataNewPage(props) {
     return (
       <>
         <div>
-          <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text="← Back to Model" />
+          <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text={platform.websiteAdmin.models.model.dataNew.backToModel[language]} />
         </div>
         <Alert theme="error">
-          <Heading level="3" text="Create Data" />
-          <Text text="You do not have permission to view this page." />
+          <Heading level="3" text={platform.websiteAdmin.models.model.dataNew.title[language]} />
+          <Text text={platform.websiteAdmin.models.model.dataNew.notAllowed[language]} />
         </Alert>
       </>
     );
@@ -45,7 +50,7 @@ export default function ModelsModelDataNewPage(props) {
   return (
     <>
       <div>
-        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text="← Back to Model" />
+        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text={platform.websiteAdmin.models.model.dataNew.backToModel[language]} />
       </div>
       <ModelDataEditor websiteModel={websiteModel} />
     </>

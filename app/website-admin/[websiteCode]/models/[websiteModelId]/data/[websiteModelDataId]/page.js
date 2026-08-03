@@ -18,12 +18,17 @@ import ModelDataEditor from "@/components/platform/website-admin/website/model/M
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
 import { useWebsiteModel } from "@/context/website-model";
 import { useWebsiteModelData } from "@/context/website-model-data";
 
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
+
 export default function ModelsModelDataPage(props) {
   const { platformUser } = useCurrentPlatformUser();
+
+  const { language } = useLanguage();
 
   const router = useRouter();
 
@@ -63,11 +68,11 @@ export default function ModelsModelDataPage(props) {
     return (
       <>
         <div>
-          <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text="← Back to Model" />
+          <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text={platform.websiteAdmin.models.model.data.backToModel[language]} />
         </div>
         <Alert theme="error">
-          <Heading level="3" text="Manage Data" />
-          <Text text="You do not have permission to view this page." />
+          <Heading level="3" text={platform.websiteAdmin.models.model.data.title[language]} />
+          <Text text={platform.websiteAdmin.models.model.data.notAllowed[language]} />
         </Alert>
       </>
     );
@@ -76,26 +81,26 @@ export default function ModelsModelDataPage(props) {
   return (
     <>
       <div>
-        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text="← Back to Model" />
+        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models/" + websiteModel._id.toString()} text={platform.websiteAdmin.models.model.data.backToModel[language]} />
       </div>
       {canUpdateData && <ModelDataEditor setWebsiteModelData={setWebsiteModelData} websiteModel={websiteModel} websiteModelData={websiteModelData} />}
       {canDeleteData && (
         <div>
-          <Button onClick={(e) => setIsDialogVisible(true)} text="Delete" theme="danger" />
+          <Button onClick={(e) => setIsDialogVisible(true)} text={platform.websiteAdmin.models.model.data.delete[language]} theme="danger" />
         </div>
       )}
       {isDialogVisible && (
         <Dialog dialogRef={dialogRef}>
           {{
             slots: {
-              header: [<Heading color="#0f172a" key="1" level="6" text="Delete Data" />],
-              body: [<Text key="1" text="Are you sure you want to delete the data?" />],
+              header: [<Heading color="#0f172a" key="1" level="6" text={platform.websiteAdmin.models.model.data.deleteTitle[language]} />],
+              body: [<Text key="1" text={platform.websiteAdmin.models.model.data.deleteText[language]} />],
               footer: [
                 <Button key="1" onClick={onClickCancel}>
-                  <Icon icon={faCancel} size={16} style={{ color: "inherit" }} /> Cancel
+                  <Icon icon={faCancel} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.model.data.deleteCancel[language]}
                 </Button>,
                 <Button key="2" onClick={onClickDelete} theme="danger">
-                  <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> Delete
+                  <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.model.data.deleteDelete[language]}
                 </Button>,
               ],
             },

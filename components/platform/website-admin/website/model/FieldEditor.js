@@ -11,6 +11,9 @@ import Heading from "@/lib/web-page-builder/components/heading/Heading";
 import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Input from "@/lib/web-page-builder/components/input/Input";
 import Select from "@/lib/web-page-builder/components/select/Select";
+import { useLanguage } from "@/context/language";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 import importedStyles from "./FieldEditor.module.css";
 
@@ -20,6 +23,8 @@ export default function FieldEditor(props) {
   const onChange = props.onChange;
   const removeField = props.removeField;
   const styles = props.styles || importedStyles;
+
+  const { language } = useLanguage();
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -50,7 +55,7 @@ export default function FieldEditor(props) {
     <div className={styles.field_editor_container}>
       <div className={styles.header}>
         <div>{name}</div>
-        <div>{field.type}</div>
+        <div>{platform.websiteAdmin.models.fieldEditor[field.type][language]}</div>
         <div className={styles.right}>
           <Icon icon={isExpanded ? faChevronUp : faChevronDown} onClick={(e) => setIsExpanded((currentIsExpanded) => !currentIsExpanded)} size={16} style={{ color: "#475569" }} />
         </div>
@@ -59,18 +64,18 @@ export default function FieldEditor(props) {
         <Select
           onChange={(e) => onChange(normalizeFieldType(field, e.target.value))}
           options={[
-            { label: "Boolean", value: "boolean" },
-            { label: "Collection", value: "collection" },
-            { label: "Number", value: "number" },
-            { label: "Relation", value: "relation" },
-            { label: "Single", value: "single" },
-            { label: "String", value: "string" },
+            { label: platform.websiteAdmin.models.fieldEditor.boolean[language], value: "boolean" },
+            { label: platform.websiteAdmin.models.fieldEditor.collection[language], value: "collection" },
+            { label: platform.websiteAdmin.models.fieldEditor.number[language], value: "number" },
+            { label: platform.websiteAdmin.models.fieldEditor.relation[language], value: "relation" },
+            { label: platform.websiteAdmin.models.fieldEditor.single[language], value: "single" },
+            { label: platform.websiteAdmin.models.fieldEditor.string[language], value: "string" },
           ]}
           value={field.type}
         />
         {(field.type === "collection" || field.type === "single") && (
           <div className={styles.collection_fields}>
-            <Heading color="#0f172a" level="5" text="Fields" />
+            <Heading color="#0f172a" level="5" text={platform.websiteAdmin.models.fieldEditor.fields[language]} />
             {Object.entries(field.fields || {}).map(([key, subField]) => (
               <FieldEditor
                 field={subField}
@@ -109,7 +114,7 @@ export default function FieldEditor(props) {
                 model: e.target.value,
               })
             }
-            placeholder="Model"
+            placeholder={platform.websiteAdmin.models.fieldEditor.modelPlaceholder[language]}
             value={field.model || ""}
           />
         )}
@@ -117,8 +122,8 @@ export default function FieldEditor(props) {
           <Select
             onChange={(e) => onChange({ ...field, textType: e.target.value })}
             options={[
-              { label: "Plain-text", value: "plain-text" },
-              { label: "Rich-text", value: "rich-text" },
+              { label: platform.websiteAdmin.models.fieldEditor["plain-text"][language], value: "plain-text" },
+              { label: platform.websiteAdmin.models.fieldEditor["rich-text"][language], value: "rich-text" },
             ]}
             value={field.textType || "plain-text"}
           />
@@ -127,8 +132,8 @@ export default function FieldEditor(props) {
           <Select
             onChange={(e) => onChange({ ...field, lineType: e.target.value })}
             options={[
-              { label: "Multi-line", value: "multi-line" },
-              { label: "Single-line", value: "single-line" },
+              { label: platform.websiteAdmin.models.fieldEditor["multi-line"][language], value: "multi-line" },
+              { label: platform.websiteAdmin.models.fieldEditor["single-line"][language], value: "single-line" },
             ]}
             value={field.lineType || "single-line"}
           />
@@ -147,6 +152,8 @@ function AddNestedField(props) {
   const field = props.field;
   const onChange = props.onChange;
   const styles = props.styles || importedStyles;
+
+  const { language } = useLanguage();
 
   const [name, setName] = useState("");
 
@@ -168,9 +175,9 @@ function AddNestedField(props) {
 
   return (
     <div className={styles.add_field}>
-      <Input isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder="FieldName" value={name} />
+      <Input isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.models.fieldEditor.fieldPlaceholder[language]} value={name} />
       <Button disabled={!name.trim()} onClick={addField} type="button">
-        Add Field
+        {platform.websiteAdmin.models.fieldEditor.addField[language]}
       </Button>
     </div>
   );

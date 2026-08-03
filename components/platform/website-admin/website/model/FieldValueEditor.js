@@ -9,6 +9,9 @@ import Input from "@/lib/web-page-builder/components/input/Input";
 import RichText from "@/lib/web-page-builder/components/rich-text/RichText";
 import Switch from "@/lib/web-page-builder/components/switch/Switch";
 import TextArea from "@/lib/web-page-builder/components/text-area/TextArea";
+import { useLanguage } from "@/context/language";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 import importedStyles from "./FieldValueEditor.module.css";
 
@@ -18,6 +21,8 @@ export default function FieldValueEditor(props) {
   const onChange = props.onChange;
   const styles = props.styles || importedStyles;
   const value = props.value;
+
+  const { language } = useLanguage();
 
   function update(val) {
     onChange(val);
@@ -49,7 +54,7 @@ export default function FieldValueEditor(props) {
       return (
         <div className={styles.field_container}>
           <h6 className={styles.name}>{name}</h6>
-          <Input isDebounceDisabled={true} onChange={(e) => update(e.target.value)} placeholder={`Relation (${field.model})`} value={value ?? ""} />
+          <Input isDebounceDisabled={true} onChange={(e) => update(e.target.value)} placeholder={`${platform.websiteAdmin.models.fieldValueEditor.relation[language]} (${field.model})`} value={value ?? ""} />
         </div>
       );
     case "single":
@@ -99,6 +104,8 @@ function CollectionEditor(props) {
   const styles = props.styles || importedStyles;
   const value = props.value || [];
 
+  const { language } = useLanguage();
+
   function addItem() {
     const emptyItem = {};
 
@@ -147,14 +154,14 @@ function CollectionEditor(props) {
           ))}
           <div className={styles.actions}>
             <Button onClick={() => removeItem(index)} type="button">
-              Remove
+              {platform.websiteAdmin.models.fieldValueEditor.remove[language]}
             </Button>
           </div>
         </div>
       ))}
       <div className={styles.actions}>
         <Button onClick={addItem} type="button">
-          Add Item
+          {platform.websiteAdmin.models.fieldValueEditor.add[language]}
         </Button>
       </div>
     </div>

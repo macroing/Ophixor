@@ -14,7 +14,10 @@ import Section from "@/lib/web-page-builder/components/section/Section";
 import Switch from "@/lib/web-page-builder/components/switch/Switch";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { equals } from "@/lib/web-page-builder/transform/core/equals";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 import importedStyles from "./ModelEditor.module.css";
 
@@ -22,6 +25,8 @@ export default function ModelEditor(props) {
   const setWebsiteModel = props.setWebsiteModel;
   const styles = props.styles || importedStyles;
   const websiteModel = props.websiteModel;
+
+  const { language } = useLanguage();
 
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
@@ -103,10 +108,10 @@ export default function ModelEditor(props) {
 
   return (
     <form className={styles.model_editor} onSubmit={onSubmit}>
-      <Heading color="#0f172a" level="2" text="Model" />
+      <Heading color="#0f172a" level="2" text={platform.websiteAdmin.models.modelEditor.model[language]} />
       <Input isDebounceDisabled={true} onChange={(e) => updateField("name", e.target.value)} placeholder="Name" value={model.name || ""} />
-      <Switch checked={model.type === "collection"} disabled={websiteModel !== null && websiteModel !== undefined} id="collection" onChange={(e) => updateField("type", e.target.checked ? "collection" : "single")} text="Collection" />
-      <Heading color="#0f172a" level="4" text="Fields" />
+      <Switch checked={model.type === "collection"} disabled={websiteModel !== null && websiteModel !== undefined} id="collection" onChange={(e) => updateField("type", e.target.checked ? "collection" : "single")} text={platform.websiteAdmin.models.modelEditor.collection[language]} />
+      <Heading color="#0f172a" level="4" text={platform.websiteAdmin.models.modelEditor.fields[language]} />
       {Object.entries(model.fields || {}).map(([key, field]) => (
         <FieldEditor
           field={field}
@@ -122,9 +127,9 @@ export default function ModelEditor(props) {
         />
       ))}
       <div className={styles.add_field}>
-        <Input isDebounceDisabled={true} onChange={(e) => setNewFieldName(e.target.value)} placeholder="FieldName" value={newFieldName} />
+        <Input isDebounceDisabled={true} onChange={(e) => setNewFieldName(e.target.value)} placeholder={platform.websiteAdmin.models.modelEditor.fieldPlaceholder[language]} value={newFieldName} />
         <Button disabled={newFieldName.trim() === ""} onClick={addField} type="button">
-          Add Field
+          {platform.websiteAdmin.models.modelEditor.add[language]}
         </Button>
       </div>
       <div className={styles.actions}>
@@ -139,7 +144,7 @@ export default function ModelEditor(props) {
           </Section>
         )}
         <Button disabled={model?.name?.trim() === "" || Object.keys(model?.fields || {}).length === 0 || (!isCreating && !hasChanged)} theme="primary">
-          Save
+          {platform.websiteAdmin.models.modelEditor.save[language]}
         </Button>
       </div>
     </form>

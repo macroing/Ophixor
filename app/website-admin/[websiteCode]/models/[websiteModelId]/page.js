@@ -20,11 +20,16 @@ import TableRow from "@/lib/web-page-builder/components/table-row/TableRow";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
 import { useWebsiteModel } from "@/context/website-model";
 
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
+
 export default function ModelsModelPage(props) {
   const { platformUser } = useCurrentPlatformUser();
+
+  const { language } = useLanguage();
 
   const { isCustomDomain, website } = useWebsite();
 
@@ -68,8 +73,8 @@ export default function ModelsModelPage(props) {
           <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models"} text="← Back to Models" />
         </div>
         <Alert theme="error">
-          <Heading level="3" text="Model" />
-          <Text text="You do not have permission to view this page." />
+          <Heading level="3" text={platform.websiteAdmin.models.model.title[language]} />
+          <Text text={platform.websiteAdmin.models.model.notAllowed[language]} />
         </Alert>
       </>
     );
@@ -78,12 +83,12 @@ export default function ModelsModelPage(props) {
   return (
     <>
       <div>
-        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models"} text="← Back to Models" />
+        <Link color="#64748b" colorHover="#2563eb" fontSize="0.9rem" href={(isCustomDomain ? "/admin" : "/website-admin/" + website.code) + "/models"} text={platform.websiteAdmin.models.model.backToModels[language]} />
       </div>
       {canUpdate && <ModelEditor setWebsiteModel={setWebsiteModel} websiteModel={websiteModel} />}
       {canCreateData && canReadData && (
         <div>
-          <Button onClick={onClick}>Create Data</Button>
+          <Button onClick={onClick}>{platform.websiteAdmin.models.model.createData[language]}</Button>
         </div>
       )}
       {canReadData && (
@@ -92,19 +97,19 @@ export default function ModelsModelPage(props) {
             slots: {
               header: [
                 <TableRow key="1">
-                  <TableHeader>View</TableHeader>
-                  <TableHeader>Created at</TableHeader>
-                  <TableHeader>Updated at</TableHeader>
+                  <TableHeader>{platform.websiteAdmin.models.model.view[language]}</TableHeader>
+                  <TableHeader>{platform.websiteAdmin.models.model.createdAt[language]}</TableHeader>
+                  <TableHeader>{platform.websiteAdmin.models.model.updatedAt[language]}</TableHeader>
                 </TableRow>,
               ],
               body: [
                 ...websiteModelDatas.map((currentWebsiteModelData) => (
                   <TableRow key={currentWebsiteModelData._id}>
                     <TableData>
-                      <NextLink href={(isCustomDomain ? "/admin" : "/website-admin/" + website?.code) + "/models/" + websiteModel._id.toString() + "/data/" + currentWebsiteModelData._id.toString()}>View</NextLink>
+                      <NextLink href={(isCustomDomain ? "/admin" : "/website-admin/" + website?.code) + "/models/" + websiteModel._id.toString() + "/data/" + currentWebsiteModelData._id.toString()}>{platform.websiteAdmin.models.model.view[language]}</NextLink>
                     </TableData>
-                    <TableData>{new Date(currentWebsiteModelData.createdAt).toLocaleString()}</TableData>
-                    <TableData>{new Date(currentWebsiteModelData.updatedAt).toLocaleString()}</TableData>
+                    <TableData>{new Date(currentWebsiteModelData.createdAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
+                    <TableData>{new Date(currentWebsiteModelData.updatedAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
                   </TableRow>
                 )),
               ],

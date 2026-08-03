@@ -15,10 +15,15 @@ import ModelInformationCard from "@/components/platform/website-admin/website/mo
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
 import { useCurrentPlatformUser } from "@/context/current-platform-user";
+import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
+
+import platform from "@/definitions/platform-website-admin.json" with { type: "json" };
 
 export default function ModelsPage(props) {
   const { platformUser } = useCurrentPlatformUser();
+
+  const { language } = useLanguage();
 
   const router = useRouter();
 
@@ -59,18 +64,18 @@ export default function ModelsPage(props) {
   if (!canRead) {
     return (
       <Alert theme="error">
-        <Heading level="3" text="Models" />
-        <Text text="You do not have permission to view this page." />
+        <Heading level="3" text={platform.websiteAdmin.models.title[language]} />
+        <Text text={platform.websiteAdmin.models.notAllowed[language]} />
       </Alert>
     );
   }
 
   return (
     <>
-      <Heading color="#0f172a" level="1" text="Models" />
-      <Text color="#64748b" element="p" text="Manage your models." />
+      <Heading color="#0f172a" level="1" text={platform.websiteAdmin.models.title[language]} />
+      <Text color="#64748b" element="p" text={platform.websiteAdmin.models.text[language]} />
       <Grid gap="1.5rem" gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" padding="1rem 0px 0px 0px">
-        {canCreate && <ClickableCard hasPlusIcon={true} onClick={onClickCreateNewWebsiteModel} text="Create New Model" />}
+        {canCreate && <ClickableCard hasPlusIcon={true} onClick={onClickCreateNewWebsiteModel} text={platform.websiteAdmin.models.createNewModel[language]} />}
         {websiteModels.map((websiteModel) => (
           <ModelInformationCard canDelete={canDelete} isCustomDomain={isCustomDomain} key={websiteModel._id} onDelete={onDelete} website={website} websiteModel={websiteModel} />
         ))}

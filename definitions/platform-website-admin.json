@@ -686,6 +686,250 @@
         "sv": "Radera"
       }
     },
+    "models": {
+      "title": {
+        "en": "Models",
+        "sv": "Modeller"
+      },
+      "text": {
+        "en": "Manage your models.",
+        "sv": "Hantera dina modeller."
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "createNewModel": {
+        "en": "Create new model",
+        "sv": "Skapa ny modell"
+      },
+      "informationCard": {
+        "active": {
+          "en": "Active",
+          "sv": "Aktiv"
+        },
+        "delete": {
+          "en": "Delete",
+          "sv": "Radera"
+        },
+        "deleteCancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "deleteDelete": {
+          "en": "Delete",
+          "sv": "Radera"
+        },
+        "deleteText": {
+          "en": "Are you sure you want to delete the model?",
+          "sv": "Är du säker på att du vill radera modellen?"
+        },
+        "deleteTitle": {
+          "en": "Delete model",
+          "sv": "Radera modell"
+        },
+        "lastUpdated": {
+          "en": "Last updated",
+          "sv": "Senast uppdaterad"
+        },
+        "open": {
+          "en": "Open",
+          "sv": "Öppna"
+        }
+      },
+      "model": {
+        "title": {
+          "en": "Model",
+          "sv": "Modell"
+        },
+        "notAllowed": {
+          "en": "You do not have permission to view this page.",
+          "sv": "Du saknar behörighet att visa denna sida."
+        },
+        "backToModels": {
+          "en": "Back to models",
+          "sv": "Tillbaka till modeller"
+        },
+        "createData": {
+          "en": "Create data",
+          "sv": "Skapa data"
+        },
+        "view": {
+          "en": "View",
+          "sv": "Visa"
+        },
+        "createdAt": {
+          "en": "Created at",
+          "sv": "Skapad"
+        },
+        "updatedAt": {
+          "en": "Updated at",
+          "sv": "Uppdaterad"
+        },
+        "data": {
+          "title": {
+            "en": "Manage data",
+            "sv": "Hantera data"
+          },
+          "notAllowed": {
+            "en": "You do not have permission to view this page.",
+            "sv": "Du saknar behörighet att visa denna sida."
+          },
+          "backToModel": {
+            "en": "Back to model",
+            "sv": "Tillbaka till modell"
+          },
+          "delete": {
+            "en": "Delete",
+            "sv": "Radera"
+          },
+          "deleteCancel": {
+            "en": "Cancel",
+            "sv": "Avbryt"
+          },
+          "deleteDelete": {
+            "en": "Delete",
+            "sv": "Radera"
+          },
+          "deleteText": {
+            "en": "Are you sure you want to delete the data?",
+            "sv": "Är du säker på att du vill radera datan?"
+          },
+          "deleteTitle": {
+            "en": "Delete data",
+            "sv": "Radera data"
+          }
+        },
+        "dataNew": {
+          "title": {
+            "en": "Create data",
+            "sv": "Skapa data"
+          },
+          "notAllowed": {
+            "en": "You do not have permission to view this page.",
+            "sv": "Du saknar behörighet att visa denna sida."
+          },
+          "backToModel": {
+            "en": "Back to model",
+            "sv": "Tillbaka till modell"
+          }
+        }
+      },
+      "fieldEditor": {
+        "boolean": {
+          "en": "Boolean",
+          "sv": "Boolesk"
+        },
+        "collection": {
+          "en": "Collection",
+          "sv": "Kollektion"
+        },
+        "multi-line": {
+          "en": "Multiple lines",
+          "sv": "Flera rader"
+        },
+        "number": {
+          "en": "Number",
+          "sv": "Nummer"
+        },
+        "plain-text": {
+          "en": "Plain text",
+          "sv": "Fattig text"
+        },
+        "relation": {
+          "en": "Relation",
+          "sv": "Relation"
+        },
+        "rich-text": {
+          "en": "Rich text",
+          "sv": "Rik text"
+        },
+        "single": {
+          "en": "Single",
+          "sv": "Singel"
+        },
+        "single-line": {
+          "en": "Single line",
+          "sv": "En rad"
+        },
+        "string": {
+          "en": "String",
+          "sv": "Sträng"
+        },
+        "addField": {
+          "en": "Add field",
+          "sv": "Lägg till fält"
+        },
+        "fieldPlaceholder": {
+          "en": "FieldName",
+          "sv": "Fältnamn"
+        },
+        "fields": {
+          "en": "Fields",
+          "sv": "Fält"
+        },
+        "modelPlaceholder": {
+          "en": "Model",
+          "sv": "Modell"
+        }
+      },
+      "fieldValueEditor": {
+        "relation": {
+          "en": "Relation",
+          "sv": "Relation"
+        },
+        "remove": {
+          "en": "Remove",
+          "sv": "Ta bort"
+        },
+        "add": {
+          "en": "Add",
+          "sv": "Lägg till"
+        }
+      },
+      "modelDataEditor": {
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        }
+      },
+      "modelEditor": {
+        "add": {
+          "en": "Add",
+          "sv": "Lägg till"
+        },
+        "collection": {
+          "en": "Collection",
+          "sv": "Kollektion"
+        },
+        "fieldPlaceholder": {
+          "en": "FieldName",
+          "sv": "Fältnamn"
+        },
+        "fields": {
+          "en": "Fields",
+          "sv": "Fält"
+        },
+        "model": {
+          "en": "Model",
+          "sv": "Modell"
+        },
+        "save": {
+          "en": "Save",
+          "sv": "Spara"
+        }
+      }
+    },
+    "modelsNew": {
+      "title": {
+        "en": "Create new model",
+        "sv": "Skapa ny modell"
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      }
+    },
     "overview": {
       "title": {
         "en": "Websites",
