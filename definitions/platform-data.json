@@ -959,6 +959,42 @@
         "en": "Error",
         "sv": "Fel"
       },
+      "fa-add": {
+        "en": "Add",
+        "sv": "Addera"
+      },
+      "fa-align-center": {
+        "en": "Align - Center",
+        "sv": "Justera - Center"
+      },
+      "fa-align-justify": {
+        "en": "Align - Justify",
+        "sv": "Justera - Justerat"
+      },
+      "fa-align-left": {
+        "en": "Align - Left",
+        "sv": "Justera - Vänster"
+      },
+      "fa-align-right": {
+        "en": "Align - Right",
+        "sv": "Justera - Höger"
+      },
+      "fa-arrow-right": {
+        "en": "Arrow - Right",
+        "sv": "Pil - Höger"
+      },
+      "fa-backward": {
+        "en": "Backward",
+        "sv": "Bakåt"
+      },
+      "fa-bolt": {
+        "en": "Bolt",
+        "sv": "Blixt"
+      },
+      "fa-clock": {
+        "en": "Clock",
+        "sv": "Klocka"
+      },
       "fa-clock-rotate-left": {
         "en": "Clock - Rotate left",
         "sv": "Klocka - Rotera vänster"
@@ -990,6 +1026,10 @@
       "fa-user": {
         "en": "User",
         "sv": "Användare"
+      },
+      "fa-users": {
+        "en": "Users",
+        "sv": "Användare (plural)"
       },
       "filter": {
         "en": "Filter",

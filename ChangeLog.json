@@ -3,6 +3,13 @@
     "date": "2026-08-03",
     "entries": [
       {
+        "id": "2026-08-03-feature-icon-more-icons",
+        "type": "feature",
+        "component": "Icon",
+        "title": "More icons to the Icon component",
+        "description": "More icons have been added to the Icon component."
+      },
+      {
         "id": "2026-08-03-feature-tab-pane-dynamic-values",
         "type": "feature",
         "component": "TabPane",

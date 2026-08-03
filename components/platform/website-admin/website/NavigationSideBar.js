@@ -5,7 +5,7 @@
 
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { faChartLine, faChevronCircleLeft, faCog, faFileLines, faGauge, faHandshake, faImages, faPuzzlePiece, faShapes, faTable } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronCircleLeft, faCog, faFileLines, faGauge, faHandshake, faImages, faPuzzlePiece, faShapes, faTable } from "@fortawesome/pro-solid-svg-icons";
 
 import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import SideBar from "@/lib/web-page-builder/components/side-bar/SideBar";
