@@ -1,0 +1,77 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.rating {
+  --rating-color: var(--pc-foundation-color-slate-300);
+  --rating-color-hover: var(--pc-foundation-color-slate-300);
+  --rating-color-selected: var(--pc-semantic-interactive-primary);
+  --rating-color-selected-hover: var(--pc-semantic-interactive-primary);
+  --rating-cursor: pointer;
+
+  cursor: var(--rating-cursor);
+  display: inline-block;
+  position: relative;
+}
+
+.rating > .star {
+  color: var(--rating-color);
+  cursor: var(--rating-cursor);
+  font-size: 1rem;
+}
+
+.rating > .star:hover {
+  color: var(--rating-color-hover);
+}
+
+.rating > .star.star_selected {
+  color: var(--rating-color-selected);
+}
+
+.rating > .star.star_selected:hover {
+  color: var(--rating-color-selected-hover);
+}
+
+.rating.rating_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  display: flex;
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.rating.rating_invisible:hover {
+  color: var(--pc-semantic-text-inverse);
+}
+
+.rating:active {
+  cursor: grabbing;
+}
+
+.rating:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.rating.rating_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.rating.rating_content_only {
+  cursor: var(--rating-cursor);
+}
+
+.rating.rating_content_only > .star {
+  cursor: var(--rating-cursor);
+}
+
+.rating.rating_content_only:hover {
+  outline: none;
+}

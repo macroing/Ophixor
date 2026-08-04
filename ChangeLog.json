@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-04",
+    "entries": [
+      {
+        "id": "2026-08-04-feature-rating",
+        "type": "feature",
+        "component": "Rating",
+        "title": "Add the Rating component",
+        "description": "A new Rating component has been added."
+      }
+    ]
+  },
+  {
     "date": "2026-08-03",
     "entries": [
       {

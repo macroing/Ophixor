@@ -88,6 +88,7 @@ npm run start
 - `MenuBar`
 - `Page`
 - `RadioGroup`
+- `Rating`
 - `RichText`
 - `Section`
 - `Select`
@@ -311,7 +312,6 @@ npm run start
 - Add a Pagination component.
 - Add a PieChart component.
 - Add a ProgressBar component.
-- Add a Rating component.
 - Add a ScrollPane component.
 - Add a SearchInput component.
 - Add a Skeleton component.

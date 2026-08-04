@@ -911,6 +911,14 @@
         "en": "Color - Primary - Hover",
         "sv": "Färg - Primär - Mus över"
       },
+      "colorSelected": {
+        "en": "Color - Selected",
+        "sv": "Färg - Vald"
+      },
+      "colorSelectedHover": {
+        "en": "Color - Selected - Hover",
+        "sv": "Färg - Vald - Mus över"
+      },
       "colorSuccess": {
         "en": "Color - Success",
         "sv": "Färg - Framgång"
@@ -1811,6 +1819,16 @@
         "description": {
           "en": "A radio group where only one radio button can be enabled at a time.",
           "sv": "En radiogrupp där bara en radioknapp kan vara vald åt gången."
+        }
+      },
+      "Rating": {
+        "label": {
+          "en": "Rating",
+          "sv": "Betyg"
+        },
+        "description": {
+          "en": "A component that allows you to rate something by selecting how many stars it should have.",
+          "sv": "En komponent som tillåter dig att betygsätta någonting genom att välja hur många stjärnor det ska ha."
         }
       },
       "RichText": {
