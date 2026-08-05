@@ -975,6 +975,10 @@
         "en": "Division",
         "sv": "Division"
       },
+      "duration": {
+        "en": "Duration",
+        "sv": "Varaktighet"
+      },
       "element": {
         "en": "Element",
         "sv": "Element"
@@ -1182,6 +1186,10 @@
       "isExpanded": {
         "en": "Is expanded",
         "sv": "Är expanderad"
+      },
+      "isPausingOnHover": {
+        "en": "Is pausing on hover",
+        "sv": "Är pausad vid mus över"
       },
       "isVisible": {
         "en": "Is visible",
@@ -1612,7 +1620,7 @@
         },
         "description": {
           "en": "A content container that alerts the user in a visual way using different themes.",
-          "sv": "En container som meddelar användaren att något har hänt på olika sätt med olika teman."
+          "sv": "En behållare som meddelar användaren att något har hänt på olika sätt med olika teman."
         }
       },
       "Badge": {
@@ -1722,7 +1730,7 @@
         },
         "description": {
           "en": "A grid-based container that is useful for creating some layouts.",
-          "sv": "En container i form av ett rutnät som passar bra för att skapa vissa layouter."
+          "sv": "En behållare i form av ett rutnät som passar bra för att skapa vissa layouter."
         }
       },
       "Heading": {
@@ -1815,6 +1823,16 @@
           "sv": "En karta som använder bilder från OpenStreetMap som standard."
         }
       },
+      "Marquee": {
+        "label": {
+          "en": "Marquee",
+          "sv": "Rullande band"
+        },
+        "description": {
+          "en": "A container component that rolls in one direction.",
+          "sv": "En behållare som rullar i en riktning."
+        }
+      },
       "MenuBar": {
         "label": {
           "en": "Menu bar",
@@ -1832,7 +1850,7 @@
         },
         "description": {
           "en": "A container of the whole page.",
-          "sv": "En container för hela sidan."
+          "sv": "En behållare för hela sidan."
         }
       },
       "ProgressBar": {
@@ -1882,7 +1900,7 @@
         },
         "description": {
           "en": "A mostly flex-based general purpose layout container that can be used for more than that.",
-          "sv": "En generell container som passar för många olika typer av layouter. Den använder sig mestadels av Flexbox."
+          "sv": "En generell behållare som passar för många olika typer av layouter. Den använder sig mestadels av Flexbox."
         }
       },
       "Select": {

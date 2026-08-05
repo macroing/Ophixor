@@ -85,6 +85,7 @@ npm run start
 - `List`
 - `ListItem`
 - `Map`
+- `Marquee`
 - `MenuBar`
 - `Page`
 - `ProgressBar`
@@ -327,5 +328,4 @@ npm run start
 - Add support for uploading video.
 - Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
 - Add theme properties to the Checkbox component.
-- Add support for invisible AccordionItems to the Accordion component.
 - An AccordionItem can currently only use static values for isVisible in order for the Accordion component to work correctly. This needs a fix.

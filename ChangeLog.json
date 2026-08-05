@@ -3,6 +3,13 @@
     "date": "2026-08-05",
     "entries": [
       {
+        "id": "2026-08-05-feature-marquee-bar",
+        "type": "feature",
+        "component": "Marquee",
+        "title": "Add the Marquee component",
+        "description": "A new Marquee component has been added."
+      },
+      {
         "id": "2026-08-05-feature-progress-bar",
         "type": "feature",
         "component": "ProgressBar",
