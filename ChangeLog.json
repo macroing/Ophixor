@@ -3,6 +3,13 @@
     "date": "2026-08-05",
     "entries": [
       {
+        "id": "2026-08-05-feature-pixabay",
+        "type": "feature",
+        "component": null,
+        "title": "Add support for Pixabay",
+        "description": "Support for Pixabay has been added to the editor media selection tool. Due to some outages at Pixabay some more fixes will be needed."
+      },
+      {
         "id": "2026-08-05-feature-marquee-bar",
         "type": "feature",
         "component": "Marquee",
