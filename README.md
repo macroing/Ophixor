@@ -63,49 +63,50 @@ npm run start
 
 ### Components
 
-- `Accordion`
-- `AccordionItem`
-- `Alert`
-- `Badge`
-- `Button`
-- `Card`
-- `Checkbox`
-- `Dialog`
-- `Divider`
-- `Element`
-- `Footer`
-- `Form`
-- `Grid`
-- `Heading`
-- `Icon`
-- `Image`
-- `Input`
-- `Label`
-- `Link`
-- `List`
-- `ListItem`
-- `Map`
-- `Marquee`
-- `MenuBar`
-- `Page`
-- `ProgressBar`
-- `RadioGroup`
-- `Rating`
-- `RichText`
-- `Section`
-- `Select`
+- `Accordion` - A content container with titled and expandable content containers (items).
+- `AccordionItem` - A titled and expandable content container (item) of an Accordion component.
+- `Alert` - A content container that alerts the user in a visual way using different themes.
+- `Badge` - A badge can be used to display unread notifications, item counts or status indicators among other things.
+- `Button` - A button or a link that looks like a button.
+- `Canvas` - A programmable canvas that can be used to create interactive experiences, tools or games.
+- `Card` - A card that contains three optional slots; a header, a body and a footer.
+- `Checkbox` - A checkbox that is useful in forms among other places.
+- `Dialog` - A dialog that contains three optional slots; a header, a body and a footer.
+- `Divider` - A way to divide content vertically; the content above the divider and the content below it.
+- `Element` - A useful component if you cannot do what you want with other existing ones.
+- `Footer` - A simple customizable footer that can be used at the bottom of the page.
+- `Form` - A form that allows you to submit data.
+- `Grid` - A grid-based container that is useful for creating some layouts.
+- `Heading` - A heading with six different levels that have been configured using a typography scale.
+- `Icon` - An icon that supports Font Awesome icons.
+- `Image` - An image with built-in optimization capabilities.
+- `Input` - An input that can be used in a form or other places and receive input.
+- `Label` - A label that mainly describes form controls like inputs and text areas.
+- `Link` - A link that can be configured to open in the same window or a separate blank window.
+- `List` - A list that can be either ordered or unordered.
+- `ListItem` - An item in an ordered or unordered list.
+- `Map` - A map that uses tiles from OpenStreetMap by default.
+- `Marquee` - A container component that rolls in one direction.
+- `MenuBar` - A simple customizable menu bar that can be used at the top of the page.
+- `Page` - A container of the whole page.
+- `ProgressBar` - A progress bar shows the progress of some process or task.
+- `RadioGroup` - A radio group where only one radio button can be enabled at a time.
+- `Rating` - A component that allows you to rate something by selecting how many stars it should have.
+- `RichText` - A rich text-editor and viewer with support for text styles and headings among other things.
+- `Section` - A mostly flex-based general purpose layout container that can be used for more than that.
+- `Select` - A form control with a drop-down menu where you can select an option.
 - `SideBar`
-- `Spacer`
-- `Spinner`
-- `Switch`
-- `TabPane`
-- `TabPaneItem`
-- `Table`
-- `TableData`
-- `TableHeader`
-- `TableRow`
-- `Text`
-- `TextArea`
+- `Spacer` - A component that adds space between other components.
+- `Spinner` - A component that spins around forever and is useful for when things are loading.
+- `Switch` - A component that acts in a similar way to a checkbox but looks different.
+- `TabPane` - A content container with titled tabs that contains content containers (items).
+- `TabPaneItem` - A titled content container (item) that is represented as a tab in a TabPane component.
+- `Table` - A component that contains mainly tabular data.
+- `TableData` - A component that contains the tabular data for a column in a row of a table.
+- `TableHeader` - A component that contains the header for a column in a table.
+- `TableRow` - A component that contains a row in a table.
+- `Text` - A component that contains text.
+- `TextArea` - A text area that can be used in a form or other places and receive input.
 
 ### Expressions
 
