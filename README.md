@@ -27,6 +27,7 @@ NEXT_PUBLIC_PLATFORM_E_MAIL=info@example.com
 NEXT_PUBLIC_PLATFORM_NAME=Ophixor
 NEXT_PUBLIC_PLATFORM_URL=https://example.com
 NEXT_PUBLIC_PLATFORM_URL_SHORT=example.com
+PIXABAY_API_KEY=YourProvidedAPIKey
 ```
 
 Before you install you need to add your Font Awesome auth token to `.npmrc`. This project is using Font Awesome Pro icons.
