@@ -9,6 +9,7 @@
   --rating-color-selected: var(--pc-semantic-interactive-primary);
   --rating-color-selected-hover: var(--pc-semantic-interactive-primary);
   --rating-cursor: pointer;
+  --rating-font-size: 1rem;
 
   cursor: var(--rating-cursor);
   display: inline-block;
@@ -18,7 +19,7 @@
 .rating > .star {
   color: var(--rating-color);
   cursor: var(--rating-cursor);
-  font-size: 1rem;
+  font-size: var(--rating-font-size);
 }
 
 .rating > .star:hover {

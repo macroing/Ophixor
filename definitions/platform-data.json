@@ -739,6 +739,10 @@
         "en": "Background color - Primary - Hover",
         "sv": "Bakgrundsfärg - Primär - Mus över"
       },
+      "backgroundColorProgress": {
+        "en": "Background color - Progress",
+        "sv": "Bakgrundsfärg - Förlopp"
+      },
       "backgroundColorSuccess": {
         "en": "Background color - Success",
         "sv": "Bakgrundsfärg - Framgång"
@@ -778,6 +782,10 @@
       "backgroundPrimaryHover": {
         "en": "Background - Primary - Hover",
         "sv": "Bakgrund - Primär - Mus över"
+      },
+      "backgroundProgress": {
+        "en": "Background - Progress",
+        "sv": "Bakgrund - Förlopp"
       },
       "backgroundRepeat": {
         "en": "Background repeat",
@@ -819,6 +827,10 @@
         "en": "Border color - Primary - Hover",
         "sv": "Bårdfärg - Primär - Mus över"
       },
+      "borderColorProgress": {
+        "en": "Border color - Progress",
+        "sv": "Bårdfärg - Förlopp"
+      },
       "borderColorSuccess": {
         "en": "Border color - Success",
         "sv": "Bårdfärg - Framgång"
@@ -835,6 +847,10 @@
         "en": "Border radius",
         "sv": "Bårdradie"
       },
+      "borderRadiusProgress": {
+        "en": "Border radius - Progress",
+        "sv": "Bårdradie - Förlopp"
+      },
       "borderRightWidth": {
         "en": "Border right width",
         "sv": "Bårdbredd - Höger"
@@ -850,6 +866,10 @@
       "borderWidth": {
         "en": "Border width",
         "sv": "Bårdbredd"
+      },
+      "borderWidthProgress": {
+        "en": "Border width - Progress",
+        "sv": "Bårdbredd - Förlopp"
       },
       "bottom": {
         "en": "Bottom",
@@ -1379,6 +1399,10 @@
         "en": "Primary",
         "sv": "Primär"
       },
+      "readOnly": {
+        "en": "Read-only",
+        "sv": "Endast läsbar"
+      },
       "rel": {
         "en": "Relationship",
         "sv": "Relation"
@@ -1809,6 +1833,16 @@
         "description": {
           "en": "A container of the whole page.",
           "sv": "En container för hela sidan."
+        }
+      },
+      "ProgressBar": {
+        "label": {
+          "en": "Progress bar",
+          "sv": "Förloppsindikator"
+        },
+        "description": {
+          "en": "A progress bar shows the progress of some process or task.",
+          "sv": "En förloppsindikator visar hur långt en process eller uppgift har kommit."
         }
       },
       "RadioGroup": {

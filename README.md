@@ -87,6 +87,7 @@ npm run start
 - `Map`
 - `MenuBar`
 - `Page`
+- `ProgressBar`
 - `RadioGroup`
 - `Rating`
 - `RichText`
@@ -304,6 +305,7 @@ npm run start
 - Add a Calendar component.
 - Add a Carousel component.
 - Add a Chat component.
+- Add a Code component.
 - Add a ColorPicker component.
 - Add a DateOfBirth component.
 - Add a Drawer component.
@@ -311,7 +313,6 @@ npm run start
 - Add a Menu component.
 - Add a Pagination component.
 - Add a PieChart component.
-- Add a ProgressBar component.
 - Add a ScrollPane component.
 - Add a SearchInput component.
 - Add a Skeleton component.

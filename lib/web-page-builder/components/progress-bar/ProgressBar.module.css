@@ -1,0 +1,88 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.progress_bar {
+  --progress-bar-background: none;
+  --progress-bar-background-color: var(--pc-foundation-color-slate-300);
+  --progress-bar-background-color-progress: var(--pc-semantic-status-primary);
+  --progress-bar-background-progress: none;
+  --progress-bar-border-color: var(--pc-semantic-status-primary);
+  --progress-bar-border-color-progress: var(--pc-semantic-status-primary);
+  --progress-bar-border-radius: 8px;
+  --progress-bar-border-radius-progress: 0px;
+  --progress-bar-border-width: 1px;
+  --progress-bar-border-width-progress: 1px;
+  --progress-bar-color: var(--pc-semantic-text-inverse);
+  --progress-bar-font-size: 1rem;
+  --progress-bar-height: 25px;
+  --progress-bar-width: 100%;
+
+  align-items: stretch;
+  background: var(--progress-bar-background);
+  background-color: var(--progress-bar-background-color);
+  border: var(--progress-bar-border-width) solid var(--progress-bar-border-color);
+  border-radius: var(--progress-bar-border-radius);
+  cursor: auto;
+  display: flex;
+  flex-direction: row;
+  height: var(--progress-bar-height);
+  justify-content: stretch;
+  overflow: hidden;
+  position: relative;
+  width: var(--progress-bar-width);
+}
+
+.progress_bar > .progress {
+  align-items: center;
+  background: var(--progress-bar-background-progress);
+  background-color: var(--progress-bar-background-color-progress);
+  border: var(--progress-bar-border-width-progress) solid var(--progress-bar-border-color-progress);
+  border-radius: var(--progress-bar-border-radius-progress);
+  color: var(--progress-bar-color);
+  display: flex;
+  flex-direction: row;
+  font-size: var(--progress-bar-font-size);
+  justify-content: center;
+  overflow: hidden;
+}
+
+.progress_bar.progress_bar_invisible {
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px dashed rgba(100, 100, 100, 0.5);
+  color: var(--pc-semantic-text-inverse);
+  display: flex;
+  font-size: 20;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: 0px 1px 2px var(--pc-semantic-text-primary);
+}
+
+.progress_bar.progress_bar_invisible:hover {
+  color: var(--pc-semantic-text-inverse);
+}
+
+.progress_bar:active {
+  cursor: grabbing;
+}
+
+.progress_bar:hover {
+  outline: 2px dashed var(--pc-editor-outline-drag);
+  outline-offset: 4px;
+}
+
+.progress_bar.progress_bar_selected {
+  outline: 2px solid var(--pc-editor-outline-selected);
+  outline-offset: 4px;
+}
+
+.progress_bar.progress_bar_content_only {
+  cursor: auto;
+}
+
+.progress_bar.progress_bar_content_only:hover {
+  outline: none;
+}

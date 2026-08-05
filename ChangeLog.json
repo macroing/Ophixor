@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-08-05",
+    "entries": [
+      {
+        "id": "2026-08-05-feature-progress-bar",
+        "type": "feature",
+        "component": "ProgressBar",
+        "title": "Add the ProgressBar component",
+        "description": "A new ProgressBar component has been added."
+      },
+      {
+        "id": "2026-08-05-feature-rating-props",
+        "type": "feature",
+        "component": "Rating",
+        "title": "Add props to Rating",
+        "description": "Add missing props to the Rating component.",
+        "meta": {
+          "props": ["fontSize", "readOnly"]
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-08-04",
     "entries": [
       {
