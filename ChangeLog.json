@@ -7,7 +7,7 @@
         "type": "feature",
         "component": null,
         "title": "Add support for Pixabay",
-        "description": "Support for Pixabay has been added to the editor media selection tool. Due to some outages at Pixabay some more fixes will be needed."
+        "description": "Support for Pixabay has been added to the editor media selection tool."
       },
       {
         "id": "2026-08-05-feature-marquee-bar",
