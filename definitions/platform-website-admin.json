@@ -50,6 +50,10 @@
       "settings": {
         "en": "Settings",
         "sv": "Inställningar"
+      },
+      "users": {
+        "en": "Users",
+        "sv": "Användare"
       }
     },
     "notFound": {
@@ -1744,6 +1748,40 @@
           "en": "Delete",
           "sv": "Radera"
         }
+      }
+    },
+    "users": {
+      "title": {
+        "en": "Users",
+        "sv": "Användare"
+      },
+      "titleUser": {
+        "en": "User",
+        "sv": "Användare"
+      },
+      "notAllowed": {
+        "en": "You do not have permission to view this page.",
+        "sv": "Du saknar behörighet att visa denna sida."
+      },
+      "email": {
+        "en": "E-mail",
+        "sv": "E-post"
+      },
+      "name": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "createdAt": {
+        "en": "Created at",
+        "sv": "Skapad"
+      },
+      "updatedAt": {
+        "en": "Updated at",
+        "sv": "Uppdaterad"
+      },
+      "backToUsers": {
+        "en": "Back to users",
+        "sv": "Tillbaka till användare"
       }
     }
   }

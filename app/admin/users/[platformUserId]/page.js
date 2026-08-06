@@ -215,13 +215,13 @@ export default function PlatformUserPage(props) {
                   <Text color="#64748b" text={platform.admin.user.plan[language]} />
                   <Text color="#1e293b" text={visitedPlatformUser?.plan || ""} />
                   <Text color="#64748b" text={platform.admin.user.createdAt[language]} />
-                  <Text color="#1e293b" text={new Date(visitedPlatformUser.createdAt).toLocaleString("sv-SE")} />
+                  <Text color="#1e293b" text={new Date(visitedPlatformUser.createdAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")} />
                   <Text color="#64748b" text={platform.admin.user.updatedAt[language]} />
-                  <Text color="#1e293b" text={new Date(visitedPlatformUser.updatedAt).toLocaleString("sv-SE")} />
+                  <Text color="#1e293b" text={new Date(visitedPlatformUser.updatedAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")} />
                   {visitedPlatformUser?.activatedAt && (
                     <>
                       <Text color="#64748b" text={platform.admin.user.activatedAt[language]} />
-                      <Text color="#1e293b" text={new Date(visitedPlatformUser.activatedAt).toLocaleString("sv-SE")} />
+                      <Text color="#1e293b" text={new Date(visitedPlatformUser.activatedAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")} />
                     </>
                   )}
                   {activateMessage && (

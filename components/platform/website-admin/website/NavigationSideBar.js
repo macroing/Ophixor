@@ -5,7 +5,7 @@
 
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { faChevronCircleLeft, faCog, faFileLines, faGauge, faHandshake, faImages, faPuzzlePiece, faShapes, faTable } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronCircleLeft, faCog, faFileLines, faGauge, faHandshake, faImages, faPuzzlePiece, faShapes, faTable, faUsers } from "@fortawesome/pro-solid-svg-icons";
 
 import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import SideBar from "@/lib/web-page-builder/components/side-bar/SideBar";
@@ -41,6 +41,7 @@ export default function NavigationSideBar(props) {
   const isInPages = pathnameDecoded.startsWith(prefix + "/pages");
   const isInSettings = pathnameDecoded.startsWith(prefix + "/settings");
   const isInTemplates = pathnameDecoded.startsWith(prefix + "/templates");
+  const isInUsers = pathnameDecoded.startsWith(prefix + "/users");
 
   let page = "overview";
 
@@ -60,6 +61,8 @@ export default function NavigationSideBar(props) {
     page = "settings";
   } else if (isInTemplates) {
     page = "templates";
+  } else if (isInUsers) {
+    page = "users";
   }
 
   const items = useMemo(() => createItems(isCustomDomain, language, platformUser, page, styles, website), [isCustomDomain, language, page, pathname, platformUser, styles, website]);
@@ -91,6 +94,7 @@ function createItems(isCustomDomain, language, platformUser, page, styles, websi
   const canReadPage = can(permissions, "page", "read");
   const canReadMedia = can(permissions, "media", "read");
   const canReadModel = can(permissions, "model", "read");
+  const canReadUser = can(permissions, "user", "read");
   const canUpdateAccessibility = can(permissions, "website", "updateAccessibility");
   const canUpdateAnalytics = can(permissions, "website", "updateAnalytics");
   const canUpdateCollaborators = can(permissions, "website", "updateCollaborators");
@@ -154,6 +158,14 @@ function createItems(isCustomDomain, language, platformUser, page, styles, websi
       href: prefix + "/integrations",
       isActive: page === "integrations",
       label: <Item icon={faPuzzlePiece} isActive={page === "integrations"} styles={styles} text={platform.websiteAdmin.navigation.integrations[language]} />,
+    });
+  }
+
+  if (canReadUser) {
+    items.push({
+      href: prefix + "/users",
+      isActive: page === "users",
+      label: <Item icon={faUsers} isActive={page === "users"} styles={styles} text={platform.websiteAdmin.navigation.users[language]} />,
     });
   }
 

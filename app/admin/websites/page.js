@@ -92,8 +92,8 @@ export default function AdminWebsitesPage(props) {
                   </TableData>
                   <TableData>{getStatus(currentWebsite)}</TableData>
                   <TableData>{getVisibility(currentWebsite)}</TableData>
-                  <TableData textAlign="right">{new Date(currentWebsite.createdAt).toLocaleString("sv-SE")}</TableData>
-                  <TableData textAlign="right">{new Date(currentWebsite.updatedAt).toLocaleString("sv-SE")}</TableData>
+                  <TableData textAlign="right">{new Date(currentWebsite.createdAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
+                  <TableData textAlign="right">{new Date(currentWebsite.updatedAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
                 </TableRow>
               )),
             ],

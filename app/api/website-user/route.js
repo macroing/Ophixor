@@ -8,6 +8,7 @@ import isEmail from "validator/lib/isEmail";
 import jwt from "jsonwebtoken";
 
 import connect from "@/lib/database";
+import { can, getPermissions } from "@/lib/services/permissions";
 import { generateHtmlActivateAccount, generateSubjectActivateAccount, sendEmail } from "@/lib/email";
 import { getWebsiteUser } from "@/lib/auth/getWebsiteUser";
 import Website from "@/models/Website";
@@ -45,21 +46,12 @@ export async function GET(req) {
       return NextResponse.json({ message: "Website could not be found." }, { status: 404 });
     }
 
-    const isPlatformAdmin = !!currentPlatformUser?.isPlatformAdmin;
+    const permissions = getPermissions(currentPlatformUser, website);
 
-    const isOwner = currentPlatformUser && String(website.owner) === String(currentPlatformUser._id);
+    const canRead = can(permissions, "user", "read");
 
-    const isCollaborator = currentPlatformUser && website.collaborators?.some((c) => String(c.platformUser) === String(currentPlatformUser._id));
-
-    const isWebsiteUser = currentWebsiteUser && String(currentWebsiteUser.website) === String(website._id);
-
-    if (!(isPlatformAdmin || isOwner || isCollaborator || isWebsiteUser)) {
-      return NextResponse.json(
-        {
-          message: "You do not have permission to perform this operation.",
-        },
-        { status: 403 },
-      );
+    if (!canRead) {
+      return NextResponse.json({ message: "You do not have permission to perform this operation." }, { status: 403 });
     }
 
     const skip = Number.parseInt(url.searchParams.get("skip")) || 0;
@@ -161,23 +153,15 @@ export async function POST(req) {
       return NextResponse.json({ message: "Website could not be found." }, { status: 404 });
     }
 
-    const isPlatformAdmin = !!currentPlatformUser?.isPlatformAdmin;
+    const permissions = getPermissions(currentPlatformUser, website);
 
-    const isOwner = currentPlatformUser && String(website.owner) === String(currentPlatformUser._id);
-
-    const isCollaborator = currentPlatformUser && website.collaborators?.some((c) => String(c.platformUser) === String(currentPlatformUser._id));
-
-    const isWebsiteSelf = currentWebsiteUser && String(currentWebsiteUser.website) === String(website._id);
+    const canRead = can(permissions, "user", "read");
+    const canCreate = can(permissions, "user", "create");
 
     const isSelfRegistration = !currentPlatformUser && !currentWebsiteUser;
 
-    if (!(isPlatformAdmin || isOwner || isCollaborator || isWebsiteSelf || isSelfRegistration)) {
-      return NextResponse.json(
-        {
-          message: "You do not have permission to perform this operation.",
-        },
-        { status: 403 },
-      );
+    if (!((canRead && canCreate) || isSelfRegistration)) {
+      return NextResponse.json({ message: "You do not have permission to perform this operation." }, { status: 403 });
     }
 
     const emailNormalized = emailTrimmed.toLowerCase();

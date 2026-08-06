@@ -119,6 +119,24 @@ const websiteSchema = new mongoose.Schema(
               type: Boolean,
             },
           },
+          user: {
+            create: {
+              default: false,
+              type: Boolean,
+            },
+            delete: {
+              default: false,
+              type: Boolean,
+            },
+            read: {
+              default: true,
+              type: Boolean,
+            },
+            update: {
+              default: false,
+              type: Boolean,
+            },
+          },
           website: {
             delete: {
               default: false,

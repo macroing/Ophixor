@@ -26,12 +26,14 @@ export default function AddCollaboratorForm(props) {
   const [isAllowedToCreateModel, setIsAllowedToCreateModel] = useState(false);
   const [isAllowedToCreateModelData, setIsAllowedToCreateModelData] = useState(false);
   const [isAllowedToCreatePage, setIsAllowedToCreatePage] = useState(false);
+  const [isAllowedToCreateUser, setIsAllowedToCreateUser] = useState(false);
   const [isAllowedToDeleteComponentTemplate, setIsAllowedToDeleteComponentTemplate] = useState(false);
   const [isAllowedToDeleteIntegration, setIsAllowedToDeleteIntegration] = useState(false);
   const [isAllowedToDeleteMedia, setIsAllowedToDeleteMedia] = useState(false);
   const [isAllowedToDeleteModel, setIsAllowedToDeleteModel] = useState(false);
   const [isAllowedToDeleteModelData, setIsAllowedToDeleteModelData] = useState(false);
   const [isAllowedToDeletePage, setIsAllowedToDeletePage] = useState(false);
+  const [isAllowedToDeleteUser, setIsAllowedToDeleteUser] = useState(false);
   const [isAllowedToDeleteWebsite, setIsAllowedToDeleteWebsite] = useState(false);
   const [isAllowedToPublishPage, setIsAllowedToPublishPage] = useState(false);
   const [isAllowedToReadComponentTemplate, setIsAllowedToReadComponentTemplate] = useState(true);
@@ -40,6 +42,7 @@ export default function AddCollaboratorForm(props) {
   const [isAllowedToReadModel, setIsAllowedToReadModel] = useState(true);
   const [isAllowedToReadModelData, setIsAllowedToReadModelData] = useState(true);
   const [isAllowedToReadPage, setIsAllowedToReadPage] = useState(true);
+  const [isAllowedToReadUser, setIsAllowedToReadUser] = useState(true);
   const [isAllowedToUpdateAccessibility, setIsAllowedToUpdateAccessibility] = useState(false);
   const [isAllowedToUpdateAnalytics, setIsAllowedToUpdateAnalytics] = useState(false);
   const [isAllowedToUpdateCollaborators, setIsAllowedToUpdateCollaborators] = useState(false);
@@ -49,6 +52,7 @@ export default function AddCollaboratorForm(props) {
   const [isAllowedToUpdateModelData, setIsAllowedToUpdateModelData] = useState(false);
   const [isAllowedToUpdatePage, setIsAllowedToUpdatePage] = useState(false);
   const [isAllowedToUpdateTheme, setIsAllowedToUpdateTheme] = useState(false);
+  const [isAllowedToUpdateUser, setIsAllowedToUpdateUser] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [messageStatus, setMessageStatus] = useState("");
@@ -94,6 +98,12 @@ export default function AddCollaboratorForm(props) {
           publish: isAllowedToPublishPage,
           read: isAllowedToReadPage,
           update: isAllowedToUpdatePage,
+        },
+        user: {
+          create: isAllowedToCreateUser,
+          delete: isAllowedToCreateUser,
+          read: isAllowedToReadUser,
+          update: isAllowedToUpdateUser,
         },
         website: {
           delete: isAllowedToDeleteWebsite,
@@ -270,6 +280,23 @@ export default function AddCollaboratorForm(props) {
       <Section flexDirection="column" gap="0.5rem" padding="0px">
         <Label htmlFor="page-update" text="Update" />
         <Switch checked={isAllowedToUpdatePage} id="page-update" onChange={(e) => setIsAllowedToUpdatePage(e.target.checked)} text="Is allowed to update pages." />
+      </Section>
+      <Heading color="#0f172a" level="3" text="Users" />
+      <Section flexDirection="column" gap="0.5rem" padding="0px">
+        <Label htmlFor="user-create" text="Create" />
+        <Switch checked={isAllowedToCreateUser} id="user-create" onChange={(e) => setIsAllowedToCreateUser(e.target.checked)} text="Is allowed to create users." />
+      </Section>
+      <Section flexDirection="column" gap="0.5rem" padding="0px">
+        <Label htmlFor="user-delete" text="Delete" />
+        <Switch checked={isAllowedToDeleteUser} id="user-delete" onChange={(e) => setIsAllowedToDeleteUser(e.target.checked)} text="Is allowed to delete users." />
+      </Section>
+      <Section flexDirection="column" gap="0.5rem" padding="0px">
+        <Label htmlFor="user-read" text="View" />
+        <Switch checked={isAllowedToReadUser} id="user-read" onChange={(e) => setIsAllowedToReadUser(e.target.checked)} text="Is allowed to view users." />
+      </Section>
+      <Section flexDirection="column" gap="0.5rem" padding="0px">
+        <Label htmlFor="user-update" text="Update" />
+        <Switch checked={isAllowedToUpdateUser} id="user-update" onChange={(e) => setIsAllowedToUpdateUser(e.target.checked)} text="Is allowed to update users." />
       </Section>
       <Heading color="#0f172a" level="3" text="Website" />
       <Section flexDirection="column" gap="0.5rem" padding="0px">

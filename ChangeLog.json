@@ -3,6 +3,13 @@
     "date": "2026-08-06",
     "entries": [
       {
+        "id": "2026-08-06-feature-website-users",
+        "type": "feature",
+        "component": null,
+        "title": "Website user management",
+        "description": "New pages for website user management has been added. You can currently not do anything in particular here. But more functionality will be added."
+      },
+      {
         "id": "2026-08-06-feature-translation-to-swedish",
         "type": "feature",
         "component": null,

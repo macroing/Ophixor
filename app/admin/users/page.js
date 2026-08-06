@@ -58,8 +58,8 @@ export default function AdminUsersPage(props) {
                   </TableData>
                   <TableData>{currentPlatformUser.isPlatformAdmin ? platform.admin.users.yes[language] : platform.admin.users.no[language]}</TableData>
                   <TableData>{currentPlatformUser.plan}</TableData>
-                  <TableData textAlign="right">{new Date(currentPlatformUser.createdAt).toLocaleString("sv-SE")}</TableData>
-                  <TableData textAlign="right">{new Date(currentPlatformUser.updatedAt).toLocaleString("sv-SE")}</TableData>
+                  <TableData textAlign="right">{new Date(currentPlatformUser.createdAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
+                  <TableData textAlign="right">{new Date(currentPlatformUser.updatedAt).toLocaleString(language === "sv" ? "sv-SE" : "en-US")}</TableData>
                 </TableRow>
               )),
             ],
