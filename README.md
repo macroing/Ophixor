@@ -291,7 +291,7 @@ npm run start
 - Add support for password change requests to PlatformUsers.
 - Add support for password change requests to WebsiteUsers.
 - Add support for profile updating to WebsiteUsers with an Action.
-- Add WebsiteUser management to a Website.
+- Add WebsiteUser management to a Website. This has been started on.
 - Finish the collaborator feature. What's left is mainly to update existing collaborators.
 - Add subscription management. This includes being able to subscribe to a plan, cancel a subscription and management for administrators.
 - Add the isVisible property to all components so they can be hidden or shown dynamically.
@@ -331,3 +331,9 @@ npm run start
 - Add a server Action that delegates the following execution to the server and a client Action that delegates the following execution back to the client.
 - Add theme properties to the Checkbox component.
 - An AccordionItem can currently only use static values for isVisible in order for the Accordion component to work correctly. This needs a fix.
+- Add templates for PDF documents and e-mails. They can use the same pipeline.
+- Add an Action to send e-mail.
+- Add an Action to create a PDF document.
+- Add an Expression to get the age for a given date and time.
+- Add support for creating reusable Actions and Expressions.
+- Add import and export for everything.
