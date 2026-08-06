@@ -5,9 +5,11 @@
 
 import axios from "axios";
 import { useRef, useState, useEffect } from "react";
+import { faCheck, faCrop, faImage, faRefresh, faUpload } from "@fortawesome/pro-solid-svg-icons";
 
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Card from "@/lib/web-page-builder/components/card/Card";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Select from "@/lib/web-page-builder/components/select/Select";
 import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
@@ -495,7 +497,7 @@ function ControlsPanel({ applyCrop, cropActive, filter, language, onUpload, orig
           body: [
             <div className={styles.row} key="1">
               <FileInputButtonLabel accept="image/*" onChange={(e) => onUpload(e.target.files[0])} theme={originalImage ? undefined : "primary"}>
-                {platform.websiteAdmin.media.platformImageUploader.selectImage[language]}
+                <Icon icon={faImage} size={16} /> {platform.websiteAdmin.media.platformImageUploader.selectImage[language]}
               </FileInputButtonLabel>
               <Select
                 onChange={(e) => setFilter(e.target.value)}
@@ -536,16 +538,16 @@ function ControlsPanel({ applyCrop, cropActive, filter, language, onUpload, orig
             </div>,
             <div className={styles.row} key="2">
               <Button disabled={!originalImage} onClick={toggleCrop}>
-                {platform.websiteAdmin.media.platformImageUploader.crop[language]}
+                <Icon icon={faCrop} size={16} /> {platform.websiteAdmin.media.platformImageUploader.crop[language]}
               </Button>
               <Button disabled={!originalImage || !cropActive} onClick={applyCrop} theme={originalImage && cropActive ? "primary" : undefined}>
-                {platform.websiteAdmin.media.platformImageUploader.applyCrop[language]}
+                <Icon icon={faCheck} size={16} /> {platform.websiteAdmin.media.platformImageUploader.applyCrop[language]}
               </Button>
               <Button disabled={!originalImage} onClick={upload} theme={originalImage ? "primary" : undefined}>
-                {platform.websiteAdmin.media.platformImageUploader.upload[language]}
+                <Icon icon={faUpload} size={16} /> {platform.websiteAdmin.media.platformImageUploader.upload[language]}
               </Button>
               <Button disabled={!originalImage} onClick={restore} theme={originalImage ? "danger" : undefined}>
-                {platform.websiteAdmin.media.platformImageUploader.reset[language]}
+                <Icon icon={faRefresh} size={16} /> {platform.websiteAdmin.media.platformImageUploader.reset[language]}
               </Button>
             </div>,
           ],

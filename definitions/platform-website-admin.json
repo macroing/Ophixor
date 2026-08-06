@@ -581,6 +581,66 @@
         "en": "You do not have permission to view this page.",
         "sv": "Du saknar behörighet att visa denna sida."
       },
+      "mediaPicker": {
+        "uploadMessageSuccess": {
+          "en": "Your image has been successfully uploaded!",
+          "sv": "Din bild har laddats upp med ett lyckat resultat!"
+        },
+        "uploadMessageFailure": {
+          "en": "Your image could not be uploaded!",
+          "sv": "Din bild kunde inte laddas upp!"
+        },
+        "title": {
+          "en": "Select media",
+          "sv": "Välj media"
+        },
+        "searchPlaceholder": {
+          "en": "Type something to search for...",
+          "sv": "Skriv något att söka efter..."
+        },
+        "search": {
+          "en": "Search",
+          "sv": "Sök"
+        },
+        "selectFromPixabay": {
+          "en": "Select from Pixabay",
+          "sv": "Välj från Pixabay"
+        },
+        "back": {
+          "en": "Back",
+          "sv": "Tillbaka"
+        },
+        "browse": {
+          "en": "Browse",
+          "sv": "Bläddra"
+        },
+        "upload": {
+          "en": "Upload",
+          "sv": "Ladda upp"
+        },
+        "loading": {
+          "en": "Loading media...",
+          "sv": "Laddar media..."
+        },
+        "cancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "select": {
+          "en": "Select",
+          "sv": "Välj"
+        }
+      },
+      "pixabayMediaSelector": {
+        "error": {
+          "en": "Could not load images!",
+          "sv": "Kunde inte ladda bilder!"
+        },
+        "loading": {
+          "en": "Loading images...",
+          "sv": "Laddar bilder..."
+        }
+      },
       "platformImageUploader": {
         "noRotation": {
           "en": "No rotation",
@@ -1000,6 +1060,10 @@
           "en": "Apply",
           "sv": "Applicera"
         },
+        "bottom": {
+          "en": "Bottom",
+          "sv": "Botten"
+        },
         "cancel": {
           "en": "Cancel",
           "sv": "Avbryt"
@@ -1112,6 +1176,30 @@
           "en": "Desktop",
           "sv": "Dator"
         },
+        "enterCSSValue": {
+          "en": "Enter CSS value",
+          "sv": "Skriv CSS-värde"
+        },
+        "fixed": {
+          "en": "Fixed",
+          "sv": "Fixerad"
+        },
+        "function": {
+          "en": "Function",
+          "sv": "Funktion"
+        },
+        "global": {
+          "en": "Global",
+          "sv": "Global"
+        },
+        "intrinsic": {
+          "en": "Intrinsic",
+          "sv": "Egentlig"
+        },
+        "left": {
+          "en": "Left",
+          "sv": "Vänster"
+        },
         "mobile": {
           "en": "Mobile",
           "sv": "Mobiltelefon"
@@ -1120,9 +1208,17 @@
           "en": "-- Not selected --",
           "sv": "-- Ej vald --"
         },
+        "raw": {
+          "en": "Raw",
+          "sv": "Rå"
+        },
         "redo": {
           "en": "Redo",
           "sv": "Upprepa"
+        },
+        "right": {
+          "en": "Right",
+          "sv": "Höger"
         },
         "save": {
           "en": "Save",
@@ -1131,6 +1227,44 @@
         "selectColor": {
           "en": "Select color",
           "sv": "Välj färg"
+        },
+        "selectMedia": {
+          "en": "Select media",
+          "sv": "Välj media"
+        },
+        "selectors": {
+          "addSelector": {
+            "en": "Add selector",
+            "sv": "Lägg till selektor"
+          },
+          "addStyle": {
+            "en": "Add style",
+            "sv": "Lägg till stil"
+          },
+          "desktop": {
+            "en": "Desktop",
+            "sv": "Dator"
+          },
+          "mobile": {
+            "en": "Mobile",
+            "sv": "Mobiltelefon"
+          },
+          "noMedia": {
+            "en": "No media",
+            "sv": "Ingen media"
+          },
+          "placeholder": {
+            "en": "Selector (e.g. &:hover, & > .child)",
+            "sv": "Selektor (t.ex. &:hover, & > .element)"
+          },
+          "removeRule": {
+            "en": "Remove rule",
+            "sv": "Ta bort regel"
+          },
+          "tablet": {
+            "en": "Tablet",
+            "sv": "Platta"
+          }
         },
         "tablet": {
           "en": "Tablet",
@@ -1185,6 +1319,10 @@
         "templates": {
           "en": "Templates",
           "sv": "Mallar"
+        },
+        "top": {
+          "en": "Top",
+          "sv": "Topp"
         },
         "undo": {
           "en": "Undo",
