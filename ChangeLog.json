@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-06",
+    "entries": [
+      {
+        "id": "2026-08-06-feature-pixabay-improvements",
+        "type": "feature",
+        "component": null,
+        "title": "Pixabay improvements",
+        "description": "The Pixabay integration now has support for pagination."
+      }
+    ]
+  },
+  {
     "date": "2026-08-05",
     "entries": [
       {

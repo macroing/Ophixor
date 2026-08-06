@@ -1,0 +1,76 @@
+/*
+ * Copyright (C) 2026 Jörgen Lundgren <joergen.lundgren@macroing.org>
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.pagination {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pagination > .page {
+  align-items: center;
+  background: linear-gradient(180deg, #2d3748, #1f2937);
+  background-color: #1f2937;
+  border: 1px solid #2d3748;
+  border-radius: 50%;
+  color: #e5e7eb;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.pagination > .page:hover {
+  background: linear-gradient(180deg, #374151, #1f2937);
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+.pagination > .page.page_active {
+  background: linear-gradient(180deg, #6366f1, #4f46e5);
+  background-color: #6366f1;
+  border-color: #4f46e5;
+  color: var(--pc-semantic-text-inverse);
+  cursor: default;
+}
+
+.pagination > .page.page_active:hover {
+  background: linear-gradient(180deg, #6366f1, #4f46e5);
+  background-color: #6366f1;
+  border-color: #4f46e5;
+  color: var(--pc-semantic-text-inverse);
+  cursor: default;
+}
+
+.pagination > .page.page_disabled {
+  background: linear-gradient(180deg, #2d3748, #1f2937);
+  background-color: #1f2937;
+  border-color: #2d3748;
+  color: #6b7280;
+  cursor: default;
+}
+
+.pagination > .page.page_disabled:hover {
+  background: linear-gradient(180deg, #2d3748, #1f2937);
+  background-color: #1f2937;
+  border-color: #2d3748;
+  color: #6b7280;
+}
+
+.pagination > .page.page_disabled > svg {
+  color: #6b7280;
+}
+
+.pagination > .page.page_disabled:hover > svg {
+  color: #6b7280;
+}
