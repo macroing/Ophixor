@@ -3,6 +3,13 @@
     "date": "2026-08-06",
     "entries": [
       {
+        "id": "2026-08-06-fix-reactive-renderer",
+        "type": "fix",
+        "component": null,
+        "title": "Bug in the reactive renderer",
+        "description": "A bug in the reactive renderer that caused undo and redo not to work has been fixed."
+      },
+      {
         "id": "2026-08-06-feature-website-users",
         "type": "feature",
         "component": null,
