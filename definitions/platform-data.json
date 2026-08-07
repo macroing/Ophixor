@@ -763,6 +763,18 @@
         "en": "Background color - Success",
         "sv": "Bakgrundsfärg - Framgång"
       },
+      "backgroundColorTab": {
+        "en": "Background color - Tab",
+        "sv": "Bakgrundsfärg - Flik"
+      },
+      "backgroundColorTabSelected": {
+        "en": "Background color - Tab - Selected",
+        "sv": "Bakgrundsfärg - Flik - Vald"
+      },
+      "backgroundColorTabs": {
+        "en": "Background color - Tabs",
+        "sv": "Bakgrundsfärg - Flikar"
+      },
       "backgroundColorWarning": {
         "en": "Background color - Warning",
         "sv": "Bakgrundsfärg - Varning"
@@ -850,6 +862,10 @@
       "borderColorSuccess": {
         "en": "Border color - Success",
         "sv": "Bårdfärg - Framgång"
+      },
+      "borderColorTabBottomSelected": {
+        "en": "Border color - Tab - Bottom - Selected",
+        "sv": "Bårdfärg - Flik - Botten - Vald"
       },
       "borderColorWarning": {
         "en": "Border color - Warning",
@@ -958,6 +974,14 @@
       "colorSuccess": {
         "en": "Color - Success",
         "sv": "Färg - Framgång"
+      },
+      "colorTab": {
+        "en": "Color - Tab",
+        "sv": "Färg - Flik"
+      },
+      "colorTabSelected": {
+        "en": "Color - Tab - Selected",
+        "sv": "Färg - Flik - Vald"
       },
       "colorWarning": {
         "en": "Color - Warning",
@@ -1597,7 +1621,7 @@
       },
       "transformOrigin": {
         "en": "Transform origin",
-        "sv": "Transformationsursprung"
+        "sv": "Transformations-ursprung"
       },
       "transition": {
         "en": "Transition",

@@ -3,6 +3,23 @@
     "date": "2026-08-07",
     "entries": [
       {
+        "id": "2026-08-07-feature-tab-pane-props",
+        "type": "feature",
+        "component": "TabPane",
+        "title": "Add props to TabPane",
+        "description": "Add missing props to the TabPane component.",
+        "meta": {
+          "props": ["backgroundColor", "backgroundColorTab", "backgroundColorTabSelected", "backgroundColorTabs", "borderColor", "borderColorTabBottomSelected", "boxShadow", "colorTab", "colorTabSelected"]
+        }
+      },
+      {
+        "id": "2026-08-07-feature-translation-to-swedish",
+        "type": "feature",
+        "component": null,
+        "title": "Translation to Swedish",
+        "description": "The platform has been partially translated to Swedish. But there are a lot left to be translated."
+      },
+      {
         "id": "2026-08-07-feature-form-props",
         "type": "feature",
         "component": "Form",

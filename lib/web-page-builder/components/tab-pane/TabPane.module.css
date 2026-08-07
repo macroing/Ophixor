@@ -140,6 +140,7 @@
 
 .tab_pane > .tabs > .tab:hover {
   background-color: var(--tab-pane-background-color-tab-selected);
+  border-bottom-color: var(--tab-pane-border-color-tab-bottom-selected);
   color: var(--tab-pane-color-tab-selected);
 }
 

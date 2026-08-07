@@ -1172,6 +1172,76 @@
             "sv": "Visa sidans kod"
           }
         },
+        "dataSourceEditor": {
+          "source": {
+            "en": "Source",
+            "sv": "Källa"
+          },
+          "none": {
+            "en": "None",
+            "sv": "Ingen"
+          },
+          "model": {
+            "en": "Model",
+            "sv": "Modell"
+          },
+          "expression": {
+            "en": "Expression",
+            "sv": "Uttryck"
+          },
+          "integration": {
+            "en": "Integration",
+            "sv": "Integration"
+          },
+          "from": {
+            "en": "From",
+            "sv": "Från"
+          },
+          "selectSource": {
+            "en": "-- Select source --",
+            "sv": "-- Välj källa --"
+          },
+          "filter": {
+            "en": "Filter",
+            "sv": "Filtrera"
+          },
+          "field": {
+            "en": "Field",
+            "sv": "Fält"
+          },
+          "sort": {
+            "en": "Sort",
+            "sv": "Sortera"
+          },
+          "asc": {
+            "en": "Ascending",
+            "sv": "Stigande"
+          },
+          "desc": {
+            "en": "Descending",
+            "sv": "Fallande"
+          },
+          "limit": {
+            "en": "Limit",
+            "sv": "Begränsa"
+          },
+          "changeExpression": {
+            "en": "Change expression",
+            "sv": "Ändra uttryck"
+          },
+          "fallback": {
+            "en": "Fallback",
+            "sv": "Reserv"
+          },
+          "endpoint": {
+            "en": "Endpoint",
+            "sv": "Slutpunkt"
+          },
+          "edit": {
+            "en": "Edit",
+            "sv": "Redigera"
+          }
+        },
         "default": {
           "en": "Default",
           "sv": "Standard"
@@ -1323,6 +1393,28 @@
         "templates": {
           "en": "Templates",
           "sv": "Mallar"
+        },
+        "tooltip": {
+          "documentation": {
+            "en": "Documentation",
+            "sv": "Dokumentation"
+          },
+          "group": {
+            "en": "Group",
+            "sv": "Grupp"
+          },
+          "noDocumentation": {
+            "en": "No documentation available.",
+            "sv": "Ingen dokumentation finns tillgänglig."
+          },
+          "plan": {
+            "en": "Plan",
+            "sv": "Plan"
+          },
+          "returns": {
+            "en": "Returns",
+            "sv": "Returnerar"
+          }
         },
         "top": {
           "en": "Top",

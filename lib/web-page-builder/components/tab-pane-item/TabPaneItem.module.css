@@ -4,7 +4,7 @@
  */
 
 .tab_pane_item {
-  --tab-pane-item-background-color: var(--pc-semantic-surface-base);
+  --tab-pane-item-background-color: transparent;
 
   align-items: stretch;
   background-color: var(--tab-pane-item-background-color);
