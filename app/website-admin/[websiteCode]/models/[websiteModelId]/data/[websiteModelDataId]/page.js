@@ -86,7 +86,9 @@ export default function ModelsModelDataPage(props) {
       {canUpdateData && <ModelDataEditor setWebsiteModelData={setWebsiteModelData} websiteModel={websiteModel} websiteModelData={websiteModelData} />}
       {canDeleteData && (
         <div>
-          <Button onClick={(e) => setIsDialogVisible(true)} text={platform.websiteAdmin.models.model.data.delete[language]} theme="danger" />
+          <Button onClick={(e) => setIsDialogVisible(true)} theme="danger">
+            <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.model.data.delete[language]}
+          </Button>
         </div>
       )}
       {isDialogVisible && (

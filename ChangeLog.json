@@ -3,6 +3,16 @@
     "date": "2026-08-07",
     "entries": [
       {
+        "id": "2026-08-07-feature-heading-props",
+        "type": "feature",
+        "component": "Heading",
+        "title": "Add props to Heading",
+        "description": "Add missing props to the Heading component.",
+        "meta": {
+          "props": ["overflow", "textOverflow"]
+        }
+      },
+      {
         "id": "2026-08-07-feature-tab-pane-props",
         "type": "feature",
         "component": "TabPane",

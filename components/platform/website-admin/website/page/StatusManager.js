@@ -4,11 +4,13 @@
 "use client";
 
 import { useState } from "react";
+import { faArchive, faEye, faEyeSlash } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Card from "@/lib/web-page-builder/components/card/Card";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Section from "@/lib/web-page-builder/components/section/Section";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { useLanguage } from "@/context/language";
@@ -147,9 +149,21 @@ export default function StatusManager() {
               </Alert>
             ),
             <Section alignItems="flex-start" flexDirection={isMobile ? "column" : "row"} gap="1rem" justifyContent="flex-start" key="4" padding="0px">
-              {!isArchived && <Button disabled={isSubmitting || !canPublish} onClick={handlePublish} text={!hasPublishedVersion ? platform.websiteAdmin.pages.statusManager.publish[language] : hasDraftChangedFromPublished ? platform.websiteAdmin.pages.statusManager.publishChanges[language] : platform.websiteAdmin.pages.statusManager.publishChanges[language]} theme="primary" width={isMobile ? "100%" : "auto"} />}
-              {isPublished && <Button disabled={isSubmitting} onClick={handleUnpublish} text={platform.websiteAdmin.pages.statusManager.unpublish[language]} width={isMobile ? "100%" : "auto"} />}
-              {!isArchived && <Button disabled={isSubmitting} onClick={handleArchive} text={platform.websiteAdmin.pages.statusManager.archive[language]} theme="danger" width={isMobile ? "100%" : "auto"} />}
+              {!isArchived && (
+                <Button disabled={isSubmitting || !canPublish} onClick={handlePublish} theme="primary" width={isMobile ? "100%" : "auto"}>
+                  <Icon icon={faEye} size={16} style={{ color: "inherit" }} /> {!hasPublishedVersion ? platform.websiteAdmin.pages.statusManager.publish[language] : hasDraftChangedFromPublished ? platform.websiteAdmin.pages.statusManager.publishChanges[language] : platform.websiteAdmin.pages.statusManager.publishChanges[language]}
+                </Button>
+              )}
+              {isPublished && (
+                <Button disabled={isSubmitting} onClick={handleUnpublish} width={isMobile ? "100%" : "auto"}>
+                  <Icon icon={faEyeSlash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.pages.statusManager.unpublish[language]}
+                </Button>
+              )}
+              {!isArchived && (
+                <Button disabled={isSubmitting} onClick={handleArchive} theme="danger" width={isMobile ? "100%" : "auto"}>
+                  <Icon icon={faArchive} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.pages.statusManager.archive[language]}
+                </Button>
+              )}
             </Section>,
           ],
           footer: [],

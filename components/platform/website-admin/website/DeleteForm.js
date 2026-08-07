@@ -6,12 +6,14 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { faCancel, faTrash } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Card from "@/lib/web-page-builder/components/card/Card";
 import Dialog from "@/lib/web-page-builder/components/dialog/Dialog";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { useLanguage } from "@/context/language";
 import { useWebsite } from "@/context/website";
@@ -83,7 +85,7 @@ export default function DeleteForm(props) {
               ),
               <Text color="var(--pc-semantic-status-danger-text)" key="3" text={platform.websiteAdmin.deleteForm.text[language]} />,
               <Button borderRadius="8px" disabled={isShowingDialog} key="4" theme="danger">
-                {platform.websiteAdmin.deleteForm.button[language]}
+                <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.deleteForm.button[language]}
               </Button>,
             ],
             footer: [],
@@ -98,10 +100,10 @@ export default function DeleteForm(props) {
               body: [<Text key="1" text={platform.websiteAdmin.deleteForm.dialogText[language]} />],
               footer: [
                 <Button key="1" onClick={onClickCancel}>
-                  {platform.websiteAdmin.deleteForm.dialogCancel[language]}
+                  <Icon icon={faCancel} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.deleteForm.dialogCancel[language]}
                 </Button>,
                 <Button key="2" onClick={onClickDelete} theme="danger">
-                  {platform.websiteAdmin.deleteForm.dialogDelete[language]}
+                  <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.deleteForm.dialogDelete[language]}
                 </Button>,
               ],
             },

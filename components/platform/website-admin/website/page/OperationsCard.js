@@ -5,9 +5,11 @@
 
 import axios from "axios";
 import { useEffect, useMemo, useState } from "react";
+import { faEdit } from "@fortawesome/pro-solid-svg-icons";
 
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Card from "@/lib/web-page-builder/components/card/Card";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Link from "@/lib/web-page-builder/components/link/Link";
 import PageEditorDialog from "@/lib/web-page-builder/components/editor/PageEditorDialog";
 import { WebPageBuilderProvider } from "@/lib/web-page-builder/context/WebPageBuilderProvider";
@@ -264,7 +266,7 @@ export default function OperationsCard(props) {
             header: [],
             body: [
               <Button borderRadius="8px" key="1" onClick={onClickEdit} theme="primary">
-                {platform.websiteAdmin.pages.operationsCard.edit[language]}
+                <Icon icon={faEdit} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.pages.operationsCard.edit[language]}
               </Button>,
               <Link href={"/website/" + website.code + websitePage.path} key="2" target="_blank" text={platform.websiteAdmin.pages.operationsCard.view[language]} />,
             ],

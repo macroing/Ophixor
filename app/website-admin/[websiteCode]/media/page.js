@@ -6,6 +6,7 @@
 import axios from "axios";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { faCopy, faTrash } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
@@ -14,6 +15,7 @@ import ClickableCard from "@/components/platform/common/ClickableCard";
 import Dialog from "@/lib/web-page-builder/components/dialog/Dialog";
 import Grid from "@/lib/web-page-builder/components/grid/Grid";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Image from "@/lib/web-page-builder/components/image/Image";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { can, getPermissions } from "@/lib/services/permissions";
@@ -129,14 +131,14 @@ export default function MediaPage(props) {
                 {{
                   slots: {
                     header: [],
-                    body: [<Image alt={websiteMedia.alt} height={websiteMedia.height} key="1" src={websiteMedia.url} width={websiteMedia.width} />, <Heading color="#0f172a" key="2" level="6" text={websiteMedia.name} textAlign="center" />],
+                    body: [<Image alt={websiteMedia.alt} height={websiteMedia.height} key="1" src={websiteMedia.url} width={websiteMedia.width} />, <Heading color="#0f172a" key="2" level="6" overflow="hidden" text={websiteMedia.name} textAlign="center" textOverflow="ellipsis" />],
                     footer: [
                       <Button borderRadius="8px" disabled={copiedLinks[websiteMedia?._id?.toString()]} key="1" onClick={(e) => onClickCopyLink(e, websiteMedia)} width="calc(50% - 0.5rem)">
-                        {copiedLinks[websiteMedia?._id?.toString()] ? platform.websiteAdmin.media.linkCopied[language] : platform.websiteAdmin.media.copyLink[language]}
+                        <Icon icon={faCopy} size={16} /> {copiedLinks[websiteMedia?._id?.toString()] ? platform.websiteAdmin.media.linkCopied[language] : platform.websiteAdmin.media.copyLink[language]}
                       </Button>,
                       canDelete && (
                         <Button borderRadius="8px" key="2" onClick={(e) => setWebsiteMediaToDelete(websiteMedia)} theme="danger" width="calc(50% - 0.5rem)">
-                          {platform.websiteAdmin.media.delete[language]}
+                          <Icon icon={faTrash} size={16} /> {platform.websiteAdmin.media.delete[language]}
                         </Button>
                       ),
                     ],

@@ -4,7 +4,7 @@
 "use client";
 
 import { useState } from "react";
-import { faChevronDown, faChevronUp, faTrash } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronDown, faChevronUp, faPlus, faTrash } from "@fortawesome/pro-solid-svg-icons";
 
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
@@ -177,7 +177,7 @@ function AddNestedField(props) {
     <div className={styles.add_field}>
       <Input isDebounceDisabled={true} onChange={(e) => setName(e.target.value)} placeholder={platform.websiteAdmin.models.fieldEditor.fieldPlaceholder[language]} value={name} />
       <Button disabled={!name.trim()} onClick={addField} type="button">
-        {platform.websiteAdmin.models.fieldEditor.addField[language]}
+        <Icon icon={faPlus} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.fieldEditor.addField[language]}
       </Button>
     </div>
   );

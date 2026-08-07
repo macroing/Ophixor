@@ -6,11 +6,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { faPlus } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Form from "@/lib/web-page-builder/components/form/Form";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Input from "@/lib/web-page-builder/components/input/Input";
 import Label from "@/lib/web-page-builder/components/label/Label";
 import Section from "@/lib/web-page-builder/components/section/Section";
@@ -127,7 +129,9 @@ export default function CreateForm(props) {
         <Input id="url" isDebounceDisabled={true} onChange={(e) => setUrl(e.target.value)} placeholder={platform.websiteAdmin.createForm.urlPlaceholder[language]} readOnly={true} theme={urlTheme} type="text" value={url} />
       </Section>
       <Section alignItems="flex-start" flexDirection="row" gap="0.5rem" justifyContent="flex-end" padding="0px">
-        <Button disabled={disabled || isSubmitting} text={isSubmitting ? platform.websiteAdmin.createForm.creating[language] : platform.websiteAdmin.createForm.create[language]} theme="primary" />
+        <Button disabled={disabled || isSubmitting} theme="primary">
+          <Icon icon={faPlus} size={16} style={{ color: "inherit" }} /> {isSubmitting ? platform.websiteAdmin.createForm.creating[language] : platform.websiteAdmin.createForm.create[language]}
+        </Button>
       </Section>
     </Form>
   );

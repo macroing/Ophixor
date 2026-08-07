@@ -5,10 +5,12 @@
 
 import axios from "axios";
 import { useState } from "react";
+import { faSave } from "@fortawesome/pro-solid-svg-icons";
 
 import Button from "@/lib/web-page-builder/components/button/Button";
 import FieldValueEditor from "./FieldValueEditor";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Section from "@/lib/web-page-builder/components/section/Section";
 import Text from "@/lib/web-page-builder/components/text/Text";
 import { useLanguage } from "@/context/language";
@@ -90,7 +92,9 @@ export default function ModelDataEditor(props) {
             <Text color="#166534" element="p" text={message} />
           </Section>
         )}
-        <Button theme="primary">{platform.websiteAdmin.models.modelDataEditor.save[language]}</Button>
+        <Button theme="primary">
+          <Icon icon={faSave} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.modelDataEditor.save[language]}
+        </Button>
       </div>
     </form>
   );

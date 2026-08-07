@@ -1635,6 +1635,10 @@
         "en": "Uppercase",
         "sv": "Stora bokstäver"
       },
+      "value": {
+        "en": "Value",
+        "sv": "Värde"
+      },
       "visible": {
         "en": "Visible",
         "sv": "Synlig"

@@ -36,7 +36,9 @@
   --heading-line-height-level-5: 1.35;
   --heading-line-height-level-6: 1.4;
   --heading-margin: 0px;
+  --heading-overflow: visible;
   --heading-text-align: left;
+  --heading-text-overflow: clip;
   --heading-text-shadow: none;
 
   background: var(--heading-background);
@@ -46,8 +48,10 @@
   color: var(--heading-color);
   cursor: auto;
   margin: var(--heading-margin);
+  overflow: var(--heading-overflow);
   position: relative;
   text-align: var(--heading-text-align);
+  text-overflow: var(--heading-text-overflow);
   text-shadow: var(--heading-text-shadow);
 }
 

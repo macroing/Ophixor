@@ -921,8 +921,8 @@
           "sv": "Sträng"
         },
         "addField": {
-          "en": "Add field",
-          "sv": "Lägg till fält"
+          "en": "Add",
+          "sv": "Lägg till"
         },
         "fieldPlaceholder": {
           "en": "FieldName",

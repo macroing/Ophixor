@@ -5,10 +5,12 @@
 
 import axios from "axios";
 import { useState } from "react";
+import { faPlus, faSave } from "@fortawesome/pro-solid-svg-icons";
 
 import Button from "@/lib/web-page-builder/components/button/Button";
 import FieldEditor from "./FieldEditor";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Input from "@/lib/web-page-builder/components/input/Input";
 import Section from "@/lib/web-page-builder/components/section/Section";
 import Switch from "@/lib/web-page-builder/components/switch/Switch";
@@ -129,7 +131,7 @@ export default function ModelEditor(props) {
       <div className={styles.add_field}>
         <Input isDebounceDisabled={true} onChange={(e) => setNewFieldName(e.target.value)} placeholder={platform.websiteAdmin.models.modelEditor.fieldPlaceholder[language]} value={newFieldName} />
         <Button disabled={newFieldName.trim() === ""} onClick={addField} type="button">
-          {platform.websiteAdmin.models.modelEditor.add[language]}
+          <Icon icon={faPlus} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.modelEditor.add[language]}
         </Button>
       </div>
       <div className={styles.actions}>
@@ -144,7 +146,7 @@ export default function ModelEditor(props) {
           </Section>
         )}
         <Button disabled={model?.name?.trim() === "" || Object.keys(model?.fields || {}).length === 0 || (!isCreating && !hasChanged)} theme="primary">
-          {platform.websiteAdmin.models.modelEditor.save[language]}
+          <Icon icon={faSave} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.modelEditor.save[language]}
         </Button>
       </div>
     </form>

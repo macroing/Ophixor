@@ -4,11 +4,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { faSave } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Form from "@/lib/web-page-builder/components/form/Form";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Label from "@/lib/web-page-builder/components/label/Label";
 import Section from "@/lib/web-page-builder/components/section/Section";
 import Select from "@/lib/web-page-builder/components/select/Select";
@@ -124,7 +126,9 @@ export default function AccessibilitySettingsForm(props) {
         />
       </Section>
       <Section alignItems="flex-start" flexDirection="row" gap="0.5rem" justifyContent="flex-start" padding="0px">
-        <Button borderRadius="8px" disabled={disabled || isSubmitting} text={isSubmitting ? platform.websiteAdmin.accessibilitySettingsForm.saving[language] : platform.websiteAdmin.accessibilitySettingsForm.save[language]} theme="primary" />
+        <Button borderRadius="8px" disabled={disabled || isSubmitting} theme="primary">
+          <Icon icon={faSave} size={16} style={{ color: "inherit" }} /> {isSubmitting ? platform.websiteAdmin.accessibilitySettingsForm.saving[language] : platform.websiteAdmin.accessibilitySettingsForm.save[language]}
+        </Button>
       </Section>
     </Form>
   );

@@ -3,8 +3,11 @@
 
 "use client";
 
+import { faPlus, faTrash } from "@fortawesome/pro-solid-svg-icons";
+
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Input from "@/lib/web-page-builder/components/input/Input";
 import RichText from "@/lib/web-page-builder/components/rich-text/RichText";
 import Switch from "@/lib/web-page-builder/components/switch/Switch";
@@ -154,14 +157,14 @@ function CollectionEditor(props) {
           ))}
           <div className={styles.actions}>
             <Button onClick={() => removeItem(index)} type="button">
-              {platform.websiteAdmin.models.fieldValueEditor.remove[language]}
+              <Icon icon={faTrash} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.fieldValueEditor.remove[language]}
             </Button>
           </div>
         </div>
       ))}
       <div className={styles.actions}>
         <Button onClick={addItem} type="button">
-          {platform.websiteAdmin.models.fieldValueEditor.add[language]}
+          <Icon icon={faPlus} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.fieldValueEditor.add[language]}
         </Button>
       </div>
     </div>

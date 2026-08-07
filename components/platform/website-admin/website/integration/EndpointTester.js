@@ -72,7 +72,7 @@ export default function EndpointTester(props) {
   }
 
   return (
-    <Card borderRadius="8px" paddingBody="clamp(1rem, 3vw, 4rem)" width="100%">
+    <Card borderRadius="8px" width="100%">
       {{
         slots: {
           body: [

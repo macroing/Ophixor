@@ -7,10 +7,12 @@ import axios from "axios";
 import { useEffect, useMemo, useState } from "react";
 import NextLink from "next/link";
 import { useRouter } from "next/navigation";
+import { faPlus } from "@fortawesome/pro-solid-svg-icons";
 
 import Alert from "@/lib/web-page-builder/components/alert/Alert";
 import Button from "@/lib/web-page-builder/components/button/Button";
 import Heading from "@/lib/web-page-builder/components/heading/Heading";
+import Icon from "@/lib/web-page-builder/components/editor/Icon";
 import Link from "@/lib/web-page-builder/components/link/Link";
 import ModelEditor from "@/components/platform/website-admin/website/model/ModelEditor";
 import Table from "@/lib/web-page-builder/components/table/Table";
@@ -88,7 +90,9 @@ export default function ModelsModelPage(props) {
       {canUpdate && <ModelEditor setWebsiteModel={setWebsiteModel} websiteModel={websiteModel} />}
       {canCreateData && canReadData && (
         <div>
-          <Button onClick={onClick}>{platform.websiteAdmin.models.model.createData[language]}</Button>
+          <Button onClick={onClick}>
+            <Icon icon={faPlus} size={16} style={{ color: "inherit" }} /> {platform.websiteAdmin.models.model.createData[language]}
+          </Button>
         </div>
       )}
       {canReadData && (

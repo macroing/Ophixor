@@ -57,6 +57,8 @@ export default function IntegrationForm(props) {
     },
   );
 
+  const { isMobile } = useViewport();
+
   function addEndpoint() {
     setIntegration((prev) => ({
       ...prev,
@@ -138,7 +140,7 @@ export default function IntegrationForm(props) {
 
   return (
     <Section flexDirection="column" gap="2rem" padding="0px">
-      <Card paddingBody="clamp(1rem, 3vw, 4rem)">
+      <Card>
         {{
           slots: {
             header: [],
@@ -154,7 +156,7 @@ export default function IntegrationForm(props) {
           },
         }}
       </Card>
-      <Card paddingBody="clamp(1rem, 3vw, 4rem)">
+      <Card>
         {{
           slots: {
             header: [],
@@ -191,7 +193,7 @@ export default function IntegrationForm(props) {
           },
         }}
       </Card>
-      <Card paddingBody="clamp(1rem, 3vw, 4rem)">
+      <Card>
         {{
           slots: {
             header: [],
@@ -263,7 +265,7 @@ function AdvancedSection(props) {
   const { isMobile } = useViewport();
 
   return (
-    <Section alignItems="flex-start" backgroundColor="#f8fafc" borderColor="#e5e7eb" borderRadius="8px" borderWidth="1px" flexDirection="column" padding="1rem">
+    <Section alignItems="flex-start" backgroundColor="#f8fafc" borderColor="#e5e7eb" borderRadius="8px" borderWidth="1px" flexDirection="column" padding={isMobile ? "0.5rem" : "1rem"}>
       <Button minWidth="250px" onClick={() => setOpen(!open)} type="button" width={isMobile ? "100%" : "auto"}>
         <Icon icon={faCog} size={16} style={{ color: "inherit" }} /> {open ? platform.websiteAdmin.integrationForm.hideAdvanced[language] : platform.websiteAdmin.integrationForm.showAdvanced[language]}
       </Button>
@@ -288,8 +290,10 @@ function Endpoint(props) {
 
   const { language } = useLanguage();
 
+  const { isMobile } = useViewport();
+
   return (
-    <Card paddingBody="clamp(1rem, 3vw, 4rem)" width="100%">
+    <Card paddingBody={isMobile ? "0.5rem" : "2rem"} width="100%">
       {{
         slots: {
           body: [
@@ -376,7 +380,7 @@ function EndpointTesterSection(props) {
   const { isMobile } = useViewport();
 
   return (
-    <Section alignItems="flex-start" backgroundColor="#f8fafc" borderColor="#e5e7eb" borderRadius="8px" borderWidth="1px" flexDirection="column" padding="1rem">
+    <Section alignItems="flex-start" backgroundColor="#f8fafc" borderColor="#e5e7eb" borderRadius="8px" borderWidth="1px" flexDirection="column" padding={isMobile ? "0.5rem" : "1rem"}>
       <Button minWidth="250px" onClick={() => setOpen(!open)} type="button" width={isMobile ? "100%" : "auto"}>
         <Icon icon={faCog} size={16} style={{ color: "inherit" }} /> {open ? platform.websiteAdmin.integrationForm.hideEndpointTest[language] : platform.websiteAdmin.integrationForm.showEndpointTest[language]}
       </Button>
