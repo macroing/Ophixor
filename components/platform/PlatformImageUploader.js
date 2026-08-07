@@ -489,6 +489,8 @@ export default function PlatformImageUploader(props) {
 }
 
 function ControlsPanel({ applyCrop, cropActive, filter, language, onUpload, originalImage, restore, rotation, setAspect, setFilter, setRotation, styles, toggleCrop, upload, width }) {
+  const [aspectValue, setAspectValue] = useState("free");
+
   return (
     <Card flexDirectionBody="column">
       {{
@@ -520,6 +522,8 @@ function ControlsPanel({ applyCrop, cropActive, filter, language, onUpload, orig
                 onChange={(e) => {
                   const v = e.target.value;
 
+                  setAspectValue(v);
+
                   if (v === "free") {
                     setAspect(null);
                   } else {
@@ -534,6 +538,7 @@ function ControlsPanel({ applyCrop, cropActive, filter, language, onUpload, orig
                   { label: "4:3", value: "4/3" },
                   { label: "16:9", value: "16/9" },
                 ]}
+                value={aspectValue}
               />
             </div>,
             <div className={styles.row} key="2">
