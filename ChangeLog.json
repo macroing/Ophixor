@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-08-07",
+    "entries": [
+      {
+        "id": "2026-08-07-feature-form-props",
+        "type": "feature",
+        "component": "Form",
+        "title": "Add props to Form",
+        "description": "Add missing props to the Form component.",
+        "meta": {
+          "props": ["flexGrow", "flexShrink"]
+        }
+      },
+      {
+        "id": "2026-08-07-feature-website-users",
+        "type": "feature",
+        "component": null,
+        "title": "Website user management",
+        "description": "More functionality has been added to the website user management pages."
+      }
+    ]
+  },
+  {
     "date": "2026-08-06",
     "entries": [
       {

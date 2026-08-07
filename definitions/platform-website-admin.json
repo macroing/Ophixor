@@ -1782,6 +1782,68 @@
       "backToUsers": {
         "en": "Back to users",
         "sv": "Tillbaka till användare"
+      },
+      "user": {
+        "title": {
+          "en": "Account",
+          "sv": "Konto"
+        },
+        "accountInformation": {
+          "en": "Account information",
+          "sv": "Kontoinformation"
+        },
+        "email": {
+          "en": "E-mail address",
+          "sv": "E-postadress"
+        },
+        "name": {
+          "en": "Name",
+          "sv": "Namn"
+        },
+        "createdAt": {
+          "en": "Created at",
+          "sv": "Skapat"
+        },
+        "updatedAt": {
+          "en": "Updated at",
+          "sv": "Uppdaterat"
+        },
+        "changeNameTitle": {
+          "en": "Change name",
+          "sv": "Ändra namn"
+        },
+        "changeNameSubmit": {
+          "en": "Change name",
+          "sv": "Ändra namn"
+        },
+        "deleteAccountTitle": {
+          "en": "Delete account",
+          "sv": "Radera konto"
+        },
+        "deleteAccountText": {
+          "en": "Delete the account permanently. This action cannot be undone.",
+          "sv": "Radera kontot permanent. Det går inte att ångra denna åtgärd."
+        },
+        "deleteAccountButton": {
+          "en": "Delete account",
+          "sv": "Radera konto"
+        },
+        "deleteAccountDialogTitle": {
+          "en": "Delete account",
+          "sv": "Radera konto"
+        },
+        "deleteAccountDialogText": {
+          "en": "Are you sure you want to delete the account?",
+          "sv": "Är du säker på att du vill radera kontot?"
+        },
+        "deleteAccountDialogCancel": {
+          "en": "Cancel",
+          "sv": "Avbryt"
+        },
+        "deleteAccountDialogDelete": {
+          "en": "Delete",
+          "sv": "Radera"
+        }
       }
     }
   }
