@@ -1773,11 +1773,11 @@
       },
       "createdAt": {
         "en": "Created at",
-        "sv": "Skapad"
+        "sv": "Skapat"
       },
       "updatedAt": {
         "en": "Updated at",
-        "sv": "Uppdaterad"
+        "sv": "Uppdaterat"
       },
       "backToUsers": {
         "en": "Back to users",
