@@ -197,9 +197,9 @@
   color: #e5e7eb;
   display: flex;
   flex-direction: row;
-  gap: 0px;
+  gap: 0.5rem;
   justify-content: center;
-  min-width: 100px;
+  min-width: 140px;
   padding: 0.6rem 1rem;
 }
 
