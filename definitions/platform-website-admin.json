@@ -1056,6 +1056,10 @@
         "sv": "Skapa ny sida"
       },
       "editor": {
+        "add": {
+          "en": "Add",
+          "sv": "Lägg till"
+        },
         "all": {
           "en": "All",
           "sv": "Alla"
